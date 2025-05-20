@@ -7,8 +7,10 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "@huggingface/transformers": "^3.5.1",
     "cors": "^2.8.5",
     "csv-parse": "^5.5.3",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "langchain": "^0.3.26"
   }
 }
