@@ -25,6 +25,9 @@ current_batch_index = 0
 total_processed_rows = 0
 end_of_file = False
 
+# TODO: make this work for more than one user
+# TODO: create /feed endpoint that returns a batch with AI generated posts mixed in
+
 def read_csv_batch():
     global current_batch_index, total_processed_rows, end_of_file
     
