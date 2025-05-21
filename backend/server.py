@@ -2,22 +2,15 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 import csv
 import os
-from transformers import pipeline
-import torch
+from llm import llm_service
 
 app = Flask(__name__)
 CORS(app)
 
 # Configuration
-BATCH_SIZE = 3
+BATCH_SIZE = 10
 CSV_FILE = os.path.join(os.path.dirname(__file__), 'archive', 'outputRS_2022-11.csv')
-
-# Initialize the text generation pipeline
-try:
-    pipe = pipeline("text-generation", model="Qwen/Qwen3-0.6B", device=0 if torch.cuda.is_available() else -1)
-except Exception as e:
-    print(f"Error initializing pipeline: {e}")
-    pipe = None
+GENERATE_BATCH_SIZE = 3
 
 # Helper function to check if a post is valid
 def is_valid_post(post):
@@ -112,16 +105,40 @@ def reset():
     except Exception as e:
         return jsonify({'error': 'Internal server error', 'message': str(e)}), 500
 
+prompt = """
+Please generate a post for the subreddit r/ucla.
+Your post should be relatively short and hopefully humorous. It can be about anything. 
+Do not output any other text than the title and post.
+Example outputs:
+
+title: Cooked
+self_text: Can’t wait for this shit ass quarter to end. My jealousy for semester students is unmatched and cannot be measured in a quantifiable manner right now.
+
+title: don’t take people’s things 😭
+self_text: i can’t believe i even have to say this omg. whoever took my water bottle please give it back it’s purple with lots of stickers
+"""
+
 @app.route('/generate')
 def generate():
     try:
-        if pipe is None:
-            return jsonify({'error': 'Text generation model not initialized'}), 500
-            
-        messages = [{"role": "user", "content": "hi, how are you"}]
-        result = pipe(messages, max_length=100, num_return_sequences=1, temperature=0.7)
-        
-        return jsonify({'generated_text': result[0]['generated_text']})
+        results = []
+        for _ in range(GENERATE_BATCH_SIZE):
+            result = llm_service.generate_text(prompt)
+
+            title = result["generated_text"][result["generated_text"].index('title: ') + 7: result["generated_text"].index('\nself_text:')]
+            self_text = result["generated_text"][result["generated_text"].index('self_text:') + 11:]
+            results.append({
+                "title": title,
+                "self_text": self_text,
+                "subreddit": "ucla",
+                "post_id": "0",
+                "over_18": "false",
+                "link_flair_text": "AI"
+            })
+
+            if "error" in result:
+                return jsonify(result), 500
+        return jsonify(results)
     except Exception as e:
         return jsonify({'error': 'Text generation failed', 'message': str(e)}), 500
 
