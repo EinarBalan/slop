@@ -50,34 +50,15 @@ function Controls({ nextPost, prevPost }: { nextPost: () => void, prevPost: () =
 function App() {
   const [posts, setPosts] = useState<Post[]>([]);
   const [currentPostIndex, setCurrentPostIndex] = useState(0);
-  const [unseenAIPosts, setUnseenAIPosts] = useState<Post[]>([]);
-
-  const insertAIPost = (posts: Post[], aiPost: Post) => {
-    // Find a random position to insert the AI post
-    const insertIndex = Math.floor(Math.random() * (posts.length + 1));
-    const newPosts = [...posts];
-    newPosts.splice(insertIndex, 0, aiPost);
-    return newPosts;
-  };
 
   const nextPost = () => {
-    if (currentPostIndex >= posts.length - 1) {
+    if (currentPostIndex >= posts.length - 5) {
+      console.log(posts);
       // Get next batch of real posts
-      fetch('http://localhost:3000/batch')
+      fetch('http://localhost:3000/feed')
         .then(response => response.json())
         .then(data => {
-          let newPosts = data.posts;
-          
-          // If we have unseen AI posts, insert them randomly
-          if (unseenAIPosts.length > 0) {
-            unseenAIPosts.forEach(aiPost => {
-              newPosts = insertAIPost(newPosts, aiPost);
-            });
-            setUnseenAIPosts([]);
-          }
-          
-          setPosts(newPosts);
-          setCurrentPostIndex(0);
+          setPosts([...posts, ...data.posts]);
         });
     } else {
       setCurrentPostIndex(currentPostIndex + 1);
@@ -92,31 +73,12 @@ function App() {
 
   // retrieve real posts and initial AI posts
   useEffect(() => {
-    // Get initial batch of real posts
-    fetch('http://localhost:3000/batch')
+    fetch('http://localhost:3000/feed')
       .then(response => response.json())
       .then(data => {
         setPosts(data.posts);
       });
-
-    // Get initial batch of AI posts
-    fetch('http://localhost:3000/generate')
-      .then(response => response.json())
-      .then(data => {
-        setUnseenAIPosts(data);
-      });
   }, []);
-
-  // When we're running low on unseen AI posts, fetch more
-  useEffect(() => {
-    if (unseenAIPosts.length < 3) {
-      fetch('http://localhost:3000/generate')
-        .then(response => response.json())
-        .then(data => {
-          setUnseenAIPosts(prev => [...prev, ...data]);
-        });
-    }
-  }, [unseenAIPosts.length]);
 
   return (
     <div id="app">
