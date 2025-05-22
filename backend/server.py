@@ -8,9 +8,15 @@ import time
 import random
 from queue import Queue
 import json
+import argparse
 
 app = Flask(__name__)
 CORS(app)
+
+# Parse command line arguments
+parser = argparse.ArgumentParser(description='Run the Flask server with optional background LLM generation')
+parser.add_argument('--background', action='store_true', help='Enable background LLM generation')
+args = parser.parse_args()
 
 # Configuration
 BATCH_SIZE = 10
@@ -32,7 +38,7 @@ current_batch_index = 0
 total_processed_rows = 0
 end_of_file = False
 
-# TODO: create /feed endpoint that returns a batch with AI generated posts mixed in
+# TODO: make this work for more than one user
 # TODO: different endpoints for different experiments
 
 # Queue to store AI generated posts
@@ -78,9 +84,13 @@ def background_generation():
             print(f"Error in background generation: {e}")
             time.sleep(GENERATION_INTERVAL)
 
-# Start background generation thread
-generation_thread = threading.Thread(target=background_generation, daemon=True)
-generation_thread.start()
+# Start background generation thread if enabled
+if args.background:
+    generation_thread = threading.Thread(target=background_generation, daemon=True)
+    generation_thread.start()
+    print("Background LLM generation enabled")
+else:
+    print("Background LLM generation disabled")
 
 def read_csv_batch():
     global current_batch_index, total_processed_rows, end_of_file
@@ -172,19 +182,20 @@ def get_feed():
             
         posts = result['batch']
         
-        # Add AI posts randomly throughout the batch
+        # Add AI posts randomly throughout the batch if background generation is enabled
         ai_posts = []
-        while not ai_posts_queue.empty() and len(ai_posts) < BATCH_SIZE // 3:  # Add up to 1/3 AI posts
-            try:
-                ai_post = ai_posts_queue.get_nowait()
-                ai_posts.append(ai_post)
-            except Queue.Empty:
-                break
-                
-        # Insert AI posts at random positions
-        for ai_post in ai_posts:
-            insert_index = random.randint(0, len(posts))
-            posts.insert(insert_index, ai_post)
+        if args.background:
+            while not ai_posts_queue.empty() and len(ai_posts) < BATCH_SIZE // 3:  # Add up to 1/3 AI posts
+                try:
+                    ai_post = ai_posts_queue.get_nowait()
+                    ai_posts.append(ai_post)
+                except Queue.Empty:
+                    break
+                    
+            # Insert AI posts at random positions
+            for ai_post in ai_posts:
+                insert_index = random.randint(0, len(posts))
+                posts.insert(insert_index, ai_post)
             
         return jsonify({
             'posts': posts,
@@ -194,7 +205,8 @@ def get_feed():
             'totalProcessedRows': result['totalProcessedRows'],
             'endOfFile': result.get('endOfFile', False),
             'batchSize': BATCH_SIZE,
-            'aiPostsCount': len(ai_posts)
+            'aiPostsCount': len(ai_posts),
+            'backgroundGenerationEnabled': args.background
         })
     except Exception as e:
         return jsonify({'error': 'Internal server error', 'message': str(e)}), 500
@@ -205,13 +217,13 @@ Your post should be relatively short and preferably humorous. It can be about an
 Example outputs:
 
 title: Cooked
-self_text: Can’t wait for this shit ass quarter to end. My jealousy for semester students is unmatched and cannot be measured in a quantifiable manner right now.
+self_text: Can't wait for this shit ass quarter to end. My jealousy for semester students is unmatched and cannot be measured in a quantifiable manner right now.
 
-title: don’t take people’s things 😭
-self_text: i can’t believe i even have to say this omg. whoever took my water bottle please give it back it’s purple with lots of stickers
+title: don't take people's things 😭
+self_text: i can't believe i even have to say this omg. whoever took my water bottle please give it back it's purple with lots of stickers
 
 title: Dinner in Westwood
-self_text: My daughter has 2 day freshman orientation in July. Looking for recommendations for dinner on a Friday night we will be staying in Westwood that night. We will prefer not to drive. Thank you. We like all types of food. Just want her to get familiar with what’s close to campus.
+self_text: My daughter has 2 day freshman orientation in July. Looking for recommendations for dinner on a Friday night we will be staying in Westwood that night. We will prefer not to drive. Thank you. We like all types of food. Just want her to get familiar with what's close to campus.
 """
 
 summarize_prompt = """
@@ -229,7 +241,7 @@ maintaining a sense of normalcy in their life despite the challenges of universi
 Here is a new post that the user has liked:
 
 title: Dinner in Westwood
-self_text: My daughter has 2 day freshman orientation in July. Looking for recommendations for dinner on a Friday night we will be staying in Westwood that night. We will prefer not to drive. Thank you. We like all types of food. Just want her to get familiar with what’s close to campus.
+self_text: My daughter has 2 day freshman orientation in July. Looking for recommendations for dinner on a Friday night we will be staying in Westwood that night. We will prefer not to drive. Thank you. We like all types of food. Just want her to get familiar with what's close to campus.
 
 Based on the previous summary and this new post, please generate a new summary of the user's interests.
 """

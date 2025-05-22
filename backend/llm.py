@@ -43,6 +43,7 @@ class LLMService:
         except Exception as e:
             print(f"Error initializing lm: {e}")
 
+    # TODO: add parameter to specify which experiment to run
     def generate_text(self, prompt, max_length=1024, num_return_sequences=1, temperature=0.7):
         """Generate text using the pipeline.
         
