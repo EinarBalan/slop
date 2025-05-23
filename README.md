@@ -18,6 +18,7 @@ Experiments
 - comparing different model sizes (though all of them will have to be relatively small)
 - trying summarization technique on image diffusion models
     - use summarization technique to generate textual description which is then fed into diffusion model
+- large scale agent simulation (e.g. larger models via API pretending to be users)
 
 need to randomly interperse these different methods in the same session for a blind comparison
 
@@ -39,6 +40,9 @@ Alignment methods todo: add detail for each:
     - whenever a user likes a post, use an off the shelf LLM (probably via API) to update a summary of the user's preferences
     - this summary is then supplied to the local model at inference
     - using this method with larger models? image models?
+- user defined
+    - user can explain their taste in natural language
+    - or user can pick from a few options that describe their taste
 - no alignment (as a floor)
     - the prompt really matters, we can try a few different options
 

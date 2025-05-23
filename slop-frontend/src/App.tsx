@@ -1,6 +1,6 @@
 import './App.css'
 import likeIcon from './assets/like.svg';
-import commentIcon from './assets/comment.svg';
+// import commentIcon from './assets/comment.svg';
 import forwardIcon from './assets/forward.svg';
 import backIcon from './assets/back.svg';
 import robotIcon from './assets/robot.svg';
@@ -34,13 +34,63 @@ function InteractionButton({ icon, onClick }: { icon: string, onClick: () => voi
   )
 }
 
-function Controls({ nextPost, prevPost }: { nextPost: () => void, prevPost: () => void }) {
+function Controls({ nextPost, prevPost, currentPost }: { nextPost: () => void, prevPost: () => void, currentPost: Post }) {
+  const handleLike = async () => {
+    try {
+      const response = await fetch('http://localhost:3000/interactions/like', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(currentPost)
+      });
+      const data = await response.json();
+      console.log('Like response:', data);
+    } catch (error) {
+      console.error('Error liking post:', error);
+    }
+  };
+
+  const handleDislike = async () => {
+    try {
+      const response = await fetch('http://localhost:3000/interactions/dislike', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(currentPost)
+      });
+      const data = await response.json();
+      console.log('Dislike response:', data);
+    } catch (error) {
+      console.error('Error disliking post:', error);
+    }
+  };
+
+  const handleJudgeAI = async () => {
+    try {
+      const response = await fetch('http://localhost:3000/interactions/judgeAI', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          post: currentPost,
+          isAI: currentPost.link_flair_text === 'AI'
+        })
+      });
+      const data = await response.json();
+      console.log('AI judgment response:', data);
+    } catch (error) {
+      console.error('Error judging AI post:', error);
+    }
+  };
+
   return (
     <div id="controls">
-      <InteractionButton icon={likeIcon} onClick={() => console.log('Like')} />
-      <InteractionButton icon={commentIcon} onClick={() => console.log('Comment')} />
-      <InteractionButton icon={robotIcon} onClick={() => console.log('Robot')} />
-      <InteractionButton icon={dislikeIcon} onClick={() => console.log('Dislike')} />
+      <InteractionButton icon={likeIcon} onClick={handleLike} />
+      <InteractionButton icon={robotIcon} onClick={handleJudgeAI} />
+      <InteractionButton icon={dislikeIcon} onClick={handleDislike} />
       <InteractionButton icon={backIcon} onClick={prevPost} />
       <InteractionButton icon={forwardIcon} onClick={nextPost} />
     </div>
@@ -87,7 +137,11 @@ function App() {
         content={posts[currentPostIndex]?.self_text}
         subreddit={posts[currentPostIndex]?.subreddit}
       />
-      <Controls nextPost={nextPost} prevPost={prevPost} />
+      <Controls 
+        nextPost={nextPost} 
+        prevPost={prevPost} 
+        currentPost={posts[currentPostIndex]}
+      />
     </div>
   )
 }
