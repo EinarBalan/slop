@@ -3,17 +3,18 @@ import time
 from queue import Queue
 from flask import Blueprint, jsonify
 from llm import get_llm_service
+from config import (
+    args,
+    GENERATE_BATCH_SIZE,
+    AI_POSTS_QUEUE_SIZE,
+    GENERATION_INTERVAL
+)
 
 # Create a Blueprint for generation routes
 generate = Blueprint('generate', __name__)
 
-# Configuration
-GENERATE_BATCH_SIZE = 3
-AI_POSTS_QUEUE_SIZE = 10  # Maximum number of AI posts to store
-GENERATION_INTERVAL = 5  # Seconds between generation attempts
-
 # Initialize LLM service
-llm_service = get_llm_service("base")
+llm_service = get_llm_service(args.experiment)
 print("LLM service initialized")
 
 # Queue to store AI generated posts

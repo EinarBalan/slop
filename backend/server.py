@@ -4,9 +4,9 @@ import csv
 import os
 import random
 import json
-import argparse
 from post_interactions import post_interactions
 from generate import generate, start_background_generation, get_ai_posts
+from config import args, BATCH_SIZE, CSV_FILE
 
 app = Flask(__name__)
 CORS(app)
@@ -14,15 +14,6 @@ CORS(app)
 # Register the blueprints
 app.register_blueprint(post_interactions, url_prefix='/interactions')
 app.register_blueprint(generate, url_prefix='/generate')
-
-# Parse command line arguments
-parser = argparse.ArgumentParser(description='Run the Flask server with optional background LLM generation')
-parser.add_argument('--background', action='store_true', help='Enable background LLM generation')
-args = parser.parse_args()
-
-# Configuration
-BATCH_SIZE = 10
-CSV_FILE = os.path.join(os.path.dirname(__file__), 'archive', 'outputRS_2022-11.csv')
 
 # Start background generation thread if enabled
 if args.background:
