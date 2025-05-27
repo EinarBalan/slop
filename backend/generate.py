@@ -14,7 +14,7 @@ from config import (
 generate = Blueprint('generate', __name__)
 
 # Initialize LLM service
-llm_service = get_llm_service(args.experiment)
+llm_service = get_llm_service()
 print("LLM service initialized")
 
 # Queue to store AI generated posts
@@ -33,7 +33,7 @@ def parse_ai_post(generated_text):
         return {
             "title": title,
             "self_text": self_text,
-            "subreddit": "ucla",
+            "subreddit": "ai",
             "post_id": "0",
             "over_18": "false",
             "link_flair_text": "AI"

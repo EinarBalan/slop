@@ -1,6 +1,8 @@
 import os
 import json
 from flask import Blueprint, jsonify, request
+from config import args, PROMPTS, PROMPTS_FILE
+from llm import llm_service
 
 # Create a Blueprint for post interactions
 post_interactions = Blueprint('post_interactions', __name__)
@@ -31,12 +33,44 @@ def save_posts(posts, file_path):
         print(f"Error saving posts to {file_path}: {e}")
         return False
 
+def summarize_preferences(post):
+    """Update preference summary based on the post."""
+    
+    # load existing summary
+    summary = PROMPTS["summary"]
+    prompt = PROMPTS["summarize"]
+
+    # remove everything following "previous summary:"
+    prompt = prompt.split("previous summary:")[0]
+
+    # update summary with new post
+    formatted_summarize_prompt = f"""
+    {prompt}
+    previous summary: {summary}
+    new post: {post}
+    """
+    # generate new summary
+    new_summary = llm_service.generate_text(formatted_summarize_prompt)
+    
+    # save new summary
+    PROMPTS["summary"] = new_summary
+    PROMPTS["summarize"] = formatted_summarize_prompt
+
+    # write to prompts.json
+    with open(PROMPTS_FILE, 'w') as f:
+        json.dump(PROMPTS, f, indent=2)
+    
+
 @post_interactions.route('/like', methods=['POST'])
 def like_post():
     try:
         post = request.get_json()
         if not post:
             return jsonify({'error': 'No post data provided'}), 400
+
+        # summarize preferences if experiment is "summarize"
+        if args.experiment == "summarize":
+            summarize_preferences(post)
 
         # Load existing liked posts
         liked_posts = load_posts(LIKED_POSTS_FILE)
@@ -52,6 +86,7 @@ def like_post():
             })
         else:
             return jsonify({'error': 'Failed to save liked post'}), 500
+    
             
     except Exception as e:
         return jsonify({'error': 'Internal server error', 'message': str(e)}), 500

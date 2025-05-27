@@ -9,9 +9,9 @@ from config import (
     DEFAULT_MAX_LENGTH,
     DEFAULT_NUM_RETURN_SEQUENCES,
     DEFAULT_TEMPERATURE,
-    BASE_PROMPT,
-    SUMMARIZE_PROMPT
+    PROMPTS
 )
+from config import args
 
 class LLMService:
     def __init__(self, model, experiment):
@@ -72,15 +72,15 @@ class LLMService:
             temperature (float): Sampling temperature
         """
         if self.experiment == "base":
-            return self.generate_text(BASE_PROMPT, max_length, num_return_sequences, temperature)
+            return self.generate_text(PROMPTS["base"], max_length, num_return_sequences, temperature)
         elif self.experiment == "summarize":
-            return self.generate_text(SUMMARIZE_PROMPT, max_length, num_return_sequences, temperature)
+            return self.generate_text(PROMPTS["base-summarize"], max_length, num_return_sequences, temperature)
         elif self.experiment == "finetuned":  #TODO
-            return self.generate_text(BASE_PROMPT, max_length, num_return_sequences, temperature)
+            return self.generate_text(PROMPTS["base"], max_length, num_return_sequences, temperature)
         elif self.experiment == "slop":  #TODO
-            return self.generate_text(BASE_PROMPT, max_length, num_return_sequences, temperature)
+            return self.generate_text(PROMPTS["base"], max_length, num_return_sequences, temperature)
         elif self.experiment == "user-defined":  #TODO
-            return self.generate_text(BASE_PROMPT, max_length, num_return_sequences, temperature)
+            return self.generate_text(PROMPTS["base"], max_length, num_return_sequences, temperature)
 
     def generate_text(self, prompt, max_length=DEFAULT_MAX_LENGTH, num_return_sequences=DEFAULT_NUM_RETURN_SEQUENCES, temperature=DEFAULT_TEMPERATURE):
         """Generate text using the pipeline.
@@ -135,7 +135,7 @@ class LLMService:
             else:
                 content = full_response
 
-            print(f"generated post: {content}")
+            print(f"generated: {content}")
             return {"generated_text": content}
         except Exception as e:
             return {"error": f"Text generation failed: {str(e)}"}
@@ -159,6 +159,8 @@ class LLMService:
         
         
 
-def get_llm_service(experiment):
+llm_service = LLMService(args.experiment)
+
+def get_llm_service():
     """Get an instance of the LLM service."""
-    return LLMService(experiment) 
+    return llm_service
