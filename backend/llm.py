@@ -84,7 +84,7 @@ class LLMService:
 
             except Exception as e:
                 print(f"Error initializing lm: {e}")
-                elif self.experiment == "finetuned":  #TODO
+        elif self.experiment == "finetuned":  #TODO
             pass
         elif self.experiment == "slop":  #TODO
             pass
