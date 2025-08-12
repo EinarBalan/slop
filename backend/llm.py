@@ -1,7 +1,11 @@
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline, BitsAndBytesConfig
+from openai import OpenAI
 import torch
+import os
 from config import (
-    MODEL_NAME,
+    OPENAI_API_KEY,
+    OPENAI_MODEL_NAME,
+    LOCAL_MODEL_NAME,
     DEFAULT_MAX_LENGTH,
     DEFAULT_NUM_RETURN_SEQUENCES,
     DEFAULT_TEMPERATURE,
@@ -10,17 +14,27 @@ from config import (
 )
 
 class LLMService:
-    def __init__(self, experiment):
+    def __init__(self, model, experiment):
         self.pipe = None
-        self.model = None
+        self.model_type = model
+        self.local_model = None
+        self.api_client = None
         self.tokenizer = None
-        self.model_name = MODEL_NAME
+        self.local_model_name = LOCAL_MODEL_NAME
         self.experiment = experiment
         self.initialize_lm()
 
     def initialize_lm(self):
         """Initialize the text generation pipeline."""
-        
+        if self.model_type == "local":
+            self.initialize_local_lm()
+        elif self.model_type == "gpt-5" or self.model_type == "gpt-image":
+            self.initialize_openai()
+        else:
+            raise ValueError(f"Invalid model type: {self.model_type}")
+       
+    def initialize_local_lm(self):
+        """Initialize the local LLM."""
         if self.experiment == "base" or \
             self.experiment == "summarize" or \
             self.experiment == "user-defined":
@@ -29,9 +43,9 @@ class LLMService:
                     load_in_4bit=True,
                     # llm_int8_enable_fp32_cpu_offload=True
                 )
-                self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
-                self.model = AutoModelForCausalLM.from_pretrained(
-                    self.model_name,
+                self.tokenizer = AutoTokenizer.from_pretrained(self.local_model_name)
+                self.local_model = AutoModelForCausalLM.from_pretrained(
+                    self.local_model_name,
                     device_map="auto",
                     quantization_config=quantization_config,
                     torch_dtype="auto"
@@ -43,7 +57,12 @@ class LLMService:
             pass
         elif self.experiment == "slop":  #TODO
             pass
-        
+
+
+    def initialize_openai(self):
+        """Initialize the OpenAI API."""
+        self.api_client = OpenAI(api_key=OPENAI_API_KEY)
+
     def exp_generate_text(self, max_length=DEFAULT_MAX_LENGTH, num_return_sequences=DEFAULT_NUM_RETURN_SEQUENCES, temperature=DEFAULT_TEMPERATURE):
         """Generate text using the pipeline.
         
@@ -75,7 +94,18 @@ class LLMService:
         Returns:
             dict: Generated text or error message
         """
-        if self.model is None:
+        if self.model_type == "local":
+            return self.generate_text_local(prompt, max_length, num_return_sequences, temperature)
+        elif self.model_type == "gpt-5":
+            return self.generate_text_api(prompt, max_length, num_return_sequences, temperature)
+        elif self.model_type == "gpt-image":
+            return self.generate_image_api(prompt, max_length, num_return_sequences, temperature)
+        else:
+            raise ValueError(f"Invalid model type: {self.model_type}")
+        
+    def generate_text_local(self, prompt, max_length=DEFAULT_MAX_LENGTH, num_return_sequences=DEFAULT_NUM_RETURN_SEQUENCES, temperature=DEFAULT_TEMPERATURE):
+        """Generate text using the local model."""
+        if self.local_model is None:
             return {"error": "Text generation model not initialized"}
             
         try:
@@ -86,8 +116,8 @@ class LLMService:
                 add_generation_prompt=True
             )
     
-            inputs = self.tokenizer([text], return_tensors="pt").to(self.model.device)
-            generated_ids = self.model.generate(
+            inputs = self.tokenizer([text], return_tensors="pt").to(self.local_model.device)
+            generated_ids = self.local_model.generate(
                 **inputs,
                 max_length=max_length,
                 temperature=temperature
@@ -109,6 +139,25 @@ class LLMService:
             return {"generated_text": content}
         except Exception as e:
             return {"error": f"Text generation failed: {str(e)}"}
+    
+    def generate_text_api(self, prompt, max_length=DEFAULT_MAX_LENGTH, num_return_sequences=DEFAULT_NUM_RETURN_SEQUENCES, temperature=DEFAULT_TEMPERATURE):
+        """Generate text using the OpenAI API."""
+        response = self.api_client.responses.create(
+            model=OPENAI_MODEL_NAME,
+            prompt=prompt,
+            # max_tokens=max_length,
+            # temperature=temperature,
+            # n=num_return_sequences
+        )
+        return response[0]["content"][0]["text"]
+        
+    def generate_image_api(self, prompt, max_length=DEFAULT_MAX_LENGTH, num_return_sequences=DEFAULT_NUM_RETURN_SEQUENCES, temperature=DEFAULT_TEMPERATURE):
+        """Generate image using the OpenAI API."""
+        raise NotImplementedError("Image generation is not implemented yet")
+        
+        
+        
+        
 
 def get_llm_service(experiment):
     """Get an instance of the LLM service."""
