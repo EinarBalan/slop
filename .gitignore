@@ -7,5 +7,14 @@
 *.njsproj
 *.sln
 *.sw?
-**/.env
 frontend/node_modules
+
+backend/archive
+backend/archive.zip
+.vscode/*
+!.vscode/extensions.json
+backend/.DS_Store
+backend/node_modules/
+backend/__pycache__/
+backend/posts.csv
+backend/.env
