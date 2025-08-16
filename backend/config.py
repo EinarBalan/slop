@@ -1,6 +1,9 @@
 import argparse
 import os
 import json
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Run the Flask server with optional background LLM generation')

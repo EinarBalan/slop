@@ -145,14 +145,28 @@ class LLMService:
     
     def generate_text_api(self, prompt, max_length=DEFAULT_MAX_LENGTH, num_return_sequences=DEFAULT_NUM_RETURN_SEQUENCES, temperature=DEFAULT_TEMPERATURE):
         """Generate text using the OpenAI API."""
-        response = self.api_client.responses.create(
-            model=OPENAI_MODEL_NAME,
-            prompt=prompt,
-            # max_tokens=max_length,
-            # temperature=temperature,
-            # n=num_return_sequences
-        )
-        return response[0]["content"][0]["text"]
+        try:
+            response = self.api_client.responses.create(
+                model=OPENAI_MODEL_NAME,
+                input=prompt,
+                # temperature=temperature,
+                # The Responses API uses max_output_tokens
+                # max_output_tokens=max_length,
+            )
+
+            # Prefer the helper property when available
+            text = getattr(response, "output_text", None)
+            if not text:
+                # Fallback to structured parsing
+                try:
+                    text = response.output[0].content[0].text
+                except Exception:
+                    text = str(response)
+
+            print(f"generated post: {text}") #TODO: remove
+            return {"generated_text": text}
+        except Exception as e:
+            return {"error": f"OpenAI generation failed: {str(e)}"}
         
     def generate_image_api(self, prompt, max_length=DEFAULT_MAX_LENGTH, num_return_sequences=DEFAULT_NUM_RETURN_SEQUENCES, temperature=DEFAULT_TEMPERATURE):
         """Generate image using the OpenAI API."""
@@ -162,8 +176,6 @@ class LLMService:
         
         
 
-llm_service = LLMService(args.experiment)
-
-def get_llm_service():
+def get_llm_service(model,experiment):
     """Get an instance of the LLM service."""
-    return llm_service
+    return LLMService(model,experiment) 

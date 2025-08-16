@@ -14,7 +14,8 @@ from config import (
 generate = Blueprint('generate', __name__)
 
 # Initialize LLM service
-llm_service = get_llm_service()
+
+llm_service = get_llm_service(args.model, args.experiment)
 print("LLM service initialized")
 
 # Queue to store AI generated posts
