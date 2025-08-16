@@ -10,5 +10,17 @@
     },
     "isAI": false,
     "timestamp": null
+  },
+  {
+    "post": {
+      "link_flair_text": "Social",
+      "over_18": "false",
+      "post_id": "yit4st",
+      "self_text": "https://docs.google.com/forms/d/18hpcLF376FnnQl5C7xAA2LH5Emx4XHi8T38JZ0BzK8I/edit  Please complete the survey",
+      "subreddit": "teenagers",
+      "title": "Aight, let's settle this. Is pineapple on pizza acceptable?"
+    },
+    "isAI": true,
+    "timestamp": null
   }
 ]
