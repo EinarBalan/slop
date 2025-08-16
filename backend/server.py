@@ -32,7 +32,7 @@ def is_valid_post(post):
 
 # Global variables for CSV reading
 current_batch_index = 0
-total_processed_rows = 0
+total_processed_rows = 400 #! adjust starting point to see new posts
 end_of_file = False
 
 def read_csv_batch():

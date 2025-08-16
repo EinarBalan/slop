@@ -11,3 +11,4 @@
 *.sw?
 node_modules/
 __pycache__/
+posts.csv

@@ -37,7 +37,8 @@ class LLMService:
         """Initialize the local LLM."""
         if self.experiment == "base" or \
             self.experiment == "summarize" or \
-            self.experiment == "user-defined":
+            self.experiment == "user-defined" or \
+            self.experiment == "like-history-text": #TODO
             try:
                 quantization_config = BitsAndBytesConfig(
                     load_in_4bit=True,
@@ -80,6 +81,8 @@ class LLMService:
         elif self.experiment == "slop":  #TODO
             return self.generate_text(PROMPTS["base"], max_length, num_return_sequences, temperature)
         elif self.experiment == "user-defined":  #TODO
+            return self.generate_text(PROMPTS["user-defined"], max_length, num_return_sequences, temperature)
+        elif self.experiment == "like-history-text": #TODO
             return self.generate_text(PROMPTS["base"], max_length, num_return_sequences, temperature)
 
     def generate_text(self, prompt, max_length=DEFAULT_MAX_LENGTH, num_return_sequences=DEFAULT_NUM_RETURN_SEQUENCES, temperature=DEFAULT_TEMPERATURE):

@@ -102,6 +102,14 @@ function App() {
   const [currentPostIndex, setCurrentPostIndex] = useState(0);
 
   const nextPost = () => {
+    fetch('http://localhost:3000/interactions/next', { // for stats purposes
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(posts[currentPostIndex])
+    });
+
     if (currentPostIndex >= posts.length - 5) {
       console.log(posts);
       // Get next batch of real posts

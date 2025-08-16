@@ -14,11 +14,12 @@ args = parse_args()
 
 # Server configuration
 BATCH_SIZE = 10
-CSV_FILE = os.path.join(os.path.dirname(__file__), 'archive', 'outputRS_2022-11.csv')
+CSV_FILE = os.path.join(os.path.dirname(__file__), 'posts.csv')
+STATS_FILE = os.path.join(os.path.dirname(__file__), 'stats.json')  
 
-# Generation configuration
+# Generation configuration(
 GENERATE_BATCH_SIZE = 3
-AI_POSTS_QUEUE_SIZE = 10  # Maximum number of AI posts to store
+AI_POSTS_QUEUE_SIZE = 5  # Maximum number of AI posts to store
 GENERATION_INTERVAL = 5  # Seconds between generation attempts
 
 # local LLM configuration

@@ -26,17 +26,24 @@ def parse_ai_post(generated_text):
         title_start = generated_text.find('title: ') + 7
         title_end = generated_text.find('\nself_text:')
         self_text_start = title_end + 11
+        subreddit_start = generated_text.find('\nsubreddit: ') + 11
         
         title = generated_text[title_start:title_end].strip()
-        self_text = generated_text[self_text_start:].strip()
+        self_text = generated_text[self_text_start:subreddit_start-11].strip()
+        subreddit = generated_text[subreddit_start:].strip()
+        
+        # Remove 'r/' prefix if present
+        if subreddit.startswith('r/'):
+            subreddit = subreddit[2:]
         
         return {
             "title": title,
             "self_text": self_text,
-            "subreddit": "ai",
+            "subreddit": subreddit,
             "post_id": "0",
             "over_18": "false",
-            "link_flair_text": "AI"
+            "link_flair_text": "AI",
+            "is_ai": True
         }
     except Exception as e:
         print(f"Error parsing AI post: {e}")

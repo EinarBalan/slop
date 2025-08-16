@@ -3,6 +3,7 @@ import json
 from flask import Blueprint, jsonify, request
 from config import args, PROMPTS, PROMPTS_FILE
 from llm import llm_service
+from stats import increment_ai_post_count, increment_real_post_count, increment_liked_ai_post_count, increment_liked_real_post_count
 
 # Create a Blueprint for post interactions
 post_interactions = Blueprint('post_interactions', __name__)
@@ -80,6 +81,11 @@ def like_post():
         
         # Save updated list
         if save_posts(liked_posts, LIKED_POSTS_FILE):
+            if post.get('is_ai', False):
+                increment_liked_ai_post_count()
+            else:
+                increment_liked_real_post_count()
+
             return jsonify({
                 'message': 'Post liked successfully',
                 'totalLikedPosts': len(liked_posts)
@@ -116,6 +122,28 @@ def dislike_post():
     except Exception as e:
         return jsonify({'error': 'Internal server error', 'message': str(e)}), 500
 
+@post_interactions.route('/next', methods=['POST'])
+def next_post():
+    try:
+        post = request.get_json()
+        if not post:
+            return jsonify({'error': 'No post data provided'}), 400
+        
+        if post.get('is_ai', False):
+            increment_ai_post_count()
+        else:
+            increment_real_post_count()
+
+        return jsonify({
+            'message': 'Post processed successfully',
+            'post': post
+        })
+    
+    except Exception as e:
+        return jsonify({'error': 'Internal server error', 'message': str(e)}), 500
+
+
+
 @post_interactions.route('/judgeAI', methods=['POST'])
 def judge_ai_post():
     try:
@@ -124,7 +152,7 @@ def judge_ai_post():
             return jsonify({'error': 'Invalid data provided. Need post and isAI fields'}), 400
 
         post = data['post']
-        is_ai = data['isAI']
+        is_ai = data.get('isAI', False)
 
         # Load existing AI judged posts
         judged_posts = load_posts(AI_JUDGED_POSTS_FILE)
