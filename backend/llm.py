@@ -75,7 +75,7 @@ class LLMService:
         if self.experiment == "base":
             return self.generate_text(PROMPTS["base"], max_length, num_return_sequences, temperature)
         elif self.experiment == "summarize":
-            return self.generate_text(PROMPTS["base-summarize"], max_length, num_return_sequences, temperature)
+            return self.generate_text(PROMPTS["base-summarize"] + PROMPTS["summary"]["generated_text"], max_length, num_return_sequences, temperature)
         elif self.experiment == "finetuned":  #TODO
             return self.generate_text(PROMPTS["base"], max_length, num_return_sequences, temperature)
         elif self.experiment == "slop":  #TODO

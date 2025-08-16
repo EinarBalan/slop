@@ -2,11 +2,13 @@ import os
 import json
 from flask import Blueprint, jsonify, request
 from config import args, PROMPTS, PROMPTS_FILE
-from llm import llm_service
+from llm import get_llm_service
 from stats import increment_ai_post_count, increment_real_post_count, increment_liked_ai_post_count, increment_liked_real_post_count
 
 # Create a Blueprint for post interactions
 post_interactions = Blueprint('post_interactions', __name__)
+
+llm_service = get_llm_service(args.model, args.experiment)
 
 # File paths for storing different types of interactions
 LIKED_POSTS_FILE = os.path.join(os.path.dirname(__file__), 'postsLiked.json')
