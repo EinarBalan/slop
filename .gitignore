@@ -8,3 +8,4 @@
 *.sln
 *.sw?
 **/.env
+frontend/node_modules
