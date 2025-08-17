@@ -119,24 +119,23 @@ class LLMService:
                 add_generation_prompt=True
             )
     
-            inputs = self.tokenizer([text], return_tensors="pt").to(self.local_model.device)
-            generated_ids = self.local_model.generate(
+            inputs = self.tokenizer.apply_chat_template(
+                messages,
+                add_generation_prompt=True,
+                tokenize=True,
+                return_dict=True,
+                return_tensors="pt",
+            ).to(self.local_model.device)
+            
+            outputs = self.local_model.generate(    
                 **inputs,
                 max_length=max_length,
                 temperature=temperature
             )
             
-            # Extract only the assistant's response
-            full_response = self.tokenizer.batch_decode(generated_ids)[0]
-            # Find the last assistant response
-            assistant_start = full_response.rfind("<|start_header_id|>assistant<|end_header_id|>")
-            if assistant_start != -1:
-                assistant_start += len("<|start_header_id|>assistant<|end_header_id|>")
-                content = full_response[assistant_start:].strip()
-                # Remove any trailing end tokens
-                content = content.replace("<|eot_id|>", "").strip()
-            else:
-                content = full_response
+            prompt_length = inputs["input_ids"].size(-1)
+            generated_ids = outputs[0, prompt_length:].tolist()
+            content = self.tokenizer.decode(generated_ids, skip_special_tokens=True)
 
             print(f"generated: {content}")
             return {"generated_text": content}

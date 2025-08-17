@@ -26,7 +26,7 @@ AI_POSTS_QUEUE_SIZE = 5  # Maximum number of AI posts to store
 GENERATION_INTERVAL = 5  # Seconds between generation attempts
 
 # local LLM configuration
-LOCAL_MODEL_NAME = "deepseek-ai/DeepSeek-R1"
+LOCAL_MODEL_NAME = "meta-llama/Llama-3.1-8B-Instruct"
 DEFAULT_MAX_LENGTH = 1024
 DEFAULT_NUM_RETURN_SEQUENCES = 1
 DEFAULT_TEMPERATURE = 0.7

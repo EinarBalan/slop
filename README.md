@@ -80,3 +80,14 @@ models to try:
 
 unsloth models
 https://huggingface.co/unsloth?sort_models=likes#models
+
+# Build and Run
+
+```
+docker build -t slop:conda /home/ubuntu/slop-utah/slop
+```
+```
+docker run --gpus all -it -p 3000:3000 slop:conda
+# Inside container:
+conda run -n slop python /app/backend/server.py
+```

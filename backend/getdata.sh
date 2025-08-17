@@ -1,6 +1,9 @@
 #!/bin/bash
+# curl -L -o archive.zip\
+#   https://www.kaggle.com/api/v1/datasets/download/noahpersaud/reddit-submissions-dec-2022-to-feb-2023
+
 curl -L -o archive.zip\
-  https://www.kaggle.com/api/v1/datasets/download/noahpersaud/reddit-submissions-dec-2022-to-feb-2023
+  https://www.kaggle.com/api/v1/datasets/download/einarbalan/slop-reddit
 
 unzip archive.zip -d archive
 
