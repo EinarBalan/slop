@@ -40,15 +40,15 @@ class LLMService:
             self.experiment == "user-defined" or \
             self.experiment == "like-history-text": #TODO
             try:
-                quantization_config = BitsAndBytesConfig(
-                    load_in_4bit=True,
-                    # llm_int8_enable_fp32_cpu_offload=True
-                )
+                # quantization_config = BitsAndBytesConfig(
+                #     load_in_4bit=True,
+                #     # llm_int8_enable_fp32_cpu_offload=True
+                # )
                 self.tokenizer = AutoTokenizer.from_pretrained(self.local_model_name)
                 self.local_model = AutoModelForCausalLM.from_pretrained(
                     self.local_model_name,
                     device_map="auto",
-                    quantization_config=quantization_config,
+                    # quantization_config=quantization_config,
                     torch_dtype="auto"
                 )
 
@@ -115,7 +115,7 @@ class LLMService:
             messages = [{"role": "user", "content": prompt}]
             text = self.tokenizer.apply_chat_template(
                 messages,
-                tokenize=False,
+                tokenize=True,
                 add_generation_prompt=True
             )
     

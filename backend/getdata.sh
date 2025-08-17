@@ -1,9 +1,8 @@
 #!/bin/bash
-#!/bin/bash
-curl -L -o ~/development/research/slop/backend/archive.zip\
+curl -L -o archive.zip\
   https://www.kaggle.com/api/v1/datasets/download/noahpersaud/reddit-submissions-dec-2022-to-feb-2023
 
-unzip ~/development/research/slop/backend/archive.zip -d ~/development/research/slop/backend/archive
+unzip archive.zip -d archive
 
 # rm ~/development/research/slop/backend/archive.zip
 
