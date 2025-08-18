@@ -1,6 +1,4 @@
-from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline, BitsAndBytesConfig
 from openai import OpenAI
-import torch
 import os
 from config import (
     OPENAI_API_KEY,
@@ -35,6 +33,15 @@ class LLMService:
        
     def initialize_local_lm(self):
         """Initialize the local LLM."""
+        # Lazy import heavy deps only if local model is requested
+        try:
+            from transformers import AutoTokenizer, AutoModelForCausalLM
+            import torch  # noqa: F401
+        except Exception as e:
+            print(f"Local LLM dependencies not available: {e}")
+            self.local_model = None
+            self.tokenizer = None
+            return
         if self.experiment == "base" or \
             self.experiment == "summarize" or \
             self.experiment == "user-defined" or \

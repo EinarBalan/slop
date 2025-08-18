@@ -1,7 +1,7 @@
 import threading
 import time
-from queue import Queue
-from flask import Blueprint, jsonify
+from queue import Queue, Empty, Full
+from flask import Blueprint, jsonify, request, Response
 from llm import get_llm_service
 from config import (
     args,
@@ -9,6 +9,12 @@ from config import (
     AI_POSTS_QUEUE_SIZE,
     GENERATION_INTERVAL
 )
+from db import db_session
+from db.models import AiGeneratedPost
+from auth import require_auth
+from sqlalchemy import desc
+import csv
+import io
 
 # Create a Blueprint for generation routes
 generate = Blueprint('generate', __name__)
@@ -55,14 +61,55 @@ def background_generation():
     while True:
         try:
             if not ai_posts_queue.full():
-                result = llm_service.exp_generate_text()
-                if "error" not in result:
-                    post = parse_ai_post(result["generated_text"])
-                    if post:
-                        try:
-                            ai_posts_queue.put_nowait(post)
-                        except Queue.Full:
-                            pass  # Queue is full, skip this post
+                if args.archive:
+                    # Pull recent archived AI posts to buffer the queue
+                    try:
+                        with db_session() as session:
+                            rows = (
+                                session.query(AiGeneratedPost)
+                                .order_by(desc(AiGeneratedPost.generated_at))
+                                .limit(GENERATE_BATCH_SIZE)
+                                .all()
+                            )
+                        for r in rows:
+                            post = {
+                                "title": r.title,
+                                "self_text": r.self_text,
+                                "subreddit": r.subreddit,
+                                "post_id": "0",
+                                "over_18": "false",
+                                "link_flair_text": "AI",
+                                "is_ai": True,
+                            }
+                            try:
+                                ai_posts_queue.put_nowait(post)
+                            except Full:
+                                break
+                    except Exception as e:
+                        print(f"Failed to fetch archived AI posts: {e}")
+                else:
+                    result = llm_service.exp_generate_text()
+                    if "error" not in result:
+                        post = parse_ai_post(result["generated_text"])
+                        if post:
+                            # Persist to archive table
+                            try:
+                                with db_session() as session:
+                                    session.add(AiGeneratedPost(
+                                        title=post.get("title", ""),
+                                        self_text=post.get("self_text", ""),
+                                        subreddit=post.get("subreddit"),
+                                        model_name=f"{args.model}",
+                                        prompt=None,
+                                    ))
+                            except Exception as e:
+                                print(f"Failed to persist AI post: {e}")
+
+                            # Enqueue for serving
+                            try:
+                                ai_posts_queue.put_nowait(post)
+                            except Full:
+                                pass  # Queue is full, skip this post
             time.sleep(GENERATION_INTERVAL)
         except Exception as e:
             print(f"Error in background generation: {e}")
@@ -81,7 +128,7 @@ def get_ai_posts():
         try:
             ai_post = ai_posts_queue.get_nowait()
             ai_posts.append(ai_post)
-        except Queue.Empty:
+        except Empty:
             break
     return ai_posts
 
@@ -128,3 +175,49 @@ def generate_summarize():
 def generate_finetuned():
     # TODO: Implement finetuned generation
     return jsonify({'error': 'Not implemented yet'}), 501 
+
+
+@generate.route('/ai_posts', methods=['GET'])
+@require_auth
+def list_ai_posts():
+    try:
+        limit = int(request.args.get('limit') or 50)
+        offset = int(request.args.get('offset') or 0)
+        fmt = (request.args.get('format') or 'json').lower()
+
+        with db_session() as session:
+            q = (
+                session.query(AiGeneratedPost)
+                .order_by(desc(AiGeneratedPost.generated_at))
+                .offset(offset)
+                .limit(min(limit, 500))
+            )
+            rows = q.all()
+
+        data = [
+            {
+                'id': r.id,
+                'title': r.title,
+                'self_text': r.self_text,
+                'subreddit': r.subreddit,
+                'model_name': r.model_name,
+                'prompt': r.prompt,
+                'generated_at': r.generated_at.isoformat(),
+            }
+            for r in rows
+        ]
+
+        if fmt == 'csv':
+            output = io.StringIO()
+            writer = csv.DictWriter(output, fieldnames=list(data[0].keys()) if data else ['id','title','self_text','subreddit','model_name','prompt','generated_at'])
+            writer.writeheader()
+            for row in data:
+                writer.writerow(row)
+            csv_bytes = output.getvalue()
+            return Response(csv_bytes, mimetype='text/csv', headers={
+                'Content-Disposition': 'attachment; filename="ai_posts.csv"'
+            })
+
+        return jsonify({'items': data, 'count': len(data), 'offset': offset, 'limit': limit})
+    except Exception as e:
+        return jsonify({'error': 'Failed to list AI posts', 'message': str(e)}), 500

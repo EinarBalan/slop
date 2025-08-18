@@ -7,10 +7,26 @@ export default defineConfig({
   server: {
     port: 5174,
     proxy: {
-      '/feed': 'http://127.0.0.1:3000',
-      '/reset': 'http://127.0.0.1:3000',
-      '/generate': 'http://127.0.0.1:3000',
-      '/interactions': 'http://127.0.0.1:3000'
+      '/feed': {
+        target: 'http://127.0.0.1:3000',
+        changeOrigin: true,
+      },
+      '/reset': {
+        target: 'http://127.0.0.1:3000',
+        changeOrigin: true,
+      },
+      '/generate': {
+        target: 'http://127.0.0.1:3000',
+        changeOrigin: true,
+      },
+      '/interactions': {
+        target: 'http://127.0.0.1:3000',
+        changeOrigin: true,
+      },
+      '/auth': {
+        target: 'http://127.0.0.1:3000',
+        changeOrigin: true,
+      },
     }
   }
 })

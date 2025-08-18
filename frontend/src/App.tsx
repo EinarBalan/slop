@@ -30,6 +30,10 @@ export function App(): JSX.Element {
   const [theme, setTheme] = useState(prefersDark() ? 'dark' : 'light')
   const [openMenu, setOpenMenu] = useState<number | null>(null)
   const [votes, setVotes] = useState<Record<string, 'up' | 'down'>>({})
+  const [token, setToken] = useState<string | null>(() => localStorage.getItem('token'))
+  const [username, setUsername] = useState<string>(() => localStorage.getItem('username') || `user_${Math.floor(Math.random()*100000)}`)
+  const [authError, setAuthError] = useState<string | null>(null)
+  const [loggingIn, setLoggingIn] = useState(false)
 
   useEffect(() => {
     const media = window.matchMedia('(prefers-color-scheme: dark)')
@@ -46,7 +50,18 @@ export function App(): JSX.Element {
     setLoading(true)
     setError(null)
     try {
-      const res = await fetch('/feed')
+      const tok = localStorage.getItem('token')
+      if (!tok) throw new Error('Not authenticated')
+      const res = await fetch('/feed?limit=10', {
+        headers: { 'Authorization': `Bearer ${tok}` }
+      })
+      if (res.status === 401) {
+        // force re-login UI
+        localStorage.removeItem('token')
+        setToken(null)
+        setAuthError('Session expired. Please log in.')
+        throw new Error('Not authenticated')
+      }
       if (!res.ok) throw new Error('Failed to fetch feed')
       const data: FeedResponse = await res.json()
       setFeed(data.posts)
@@ -58,8 +73,31 @@ export function App(): JSX.Element {
   }
 
   useEffect(() => {
+    if (!token) return
     fetchFeed()
-  }, [])
+  }, [token])
+
+  const doLogin = async (e?: React.FormEvent) => {
+    if (e) e.preventDefault()
+    setAuthError(null)
+    setLoggingIn(true)
+    try {
+      localStorage.setItem('username', username)
+      const res = await fetch('/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username })
+      })
+      if (!res.ok) throw new Error('Login failed')
+      const data = await res.json()
+      localStorage.setItem('token', data.token)
+      setToken(data.token)
+    } catch (err: any) {
+      setAuthError(err.message || 'Login failed')
+    } finally {
+      setLoggingIn(false)
+    }
+  }
 
   useEffect(() => {
     const closeMenus = () => setOpenMenu(null)
@@ -94,9 +132,10 @@ export function App(): JSX.Element {
 
   const markSeen = async (post: Post) => {
     try {
+      const token = localStorage.getItem('token')
       await fetch('/interactions/next', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify(post)
       })
     } catch {}
@@ -105,9 +144,10 @@ export function App(): JSX.Element {
   const onVote = async (post: Post, dir: 'up' | 'down', key: string) => {
     try {
       const url = dir === 'up' ? '/interactions/like' : '/interactions/dislike'
+      const token = localStorage.getItem('token')
       await fetch(url, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify(post)
       })
       // Also mark as seen for stats consistency
@@ -118,9 +158,10 @@ export function App(): JSX.Element {
 
   const onJudgeAI = async (post: Post, isAI: boolean) => {
     try {
+      const token = localStorage.getItem('token')
       await fetch('/interactions/judgeAI', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify({ post, isAI })
       })
     } catch {}
@@ -130,10 +171,31 @@ export function App(): JSX.Element {
     <div className="app">
       <header className="app-header">
         <div className="brand">slop</div>
+        {token && (
+          <div style={{ marginLeft: 'auto', display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+            <span className="pill subtle">{username}</span>
+            <button className="ghost" onClick={() => { localStorage.removeItem('token'); setToken(null); setFeed([]); }}>Log out</button>
+          </div>
+        )}
       </header>
+
+      {!token && (
+        <main className="feed" style={{ maxWidth: 720, margin: '2rem auto' }}>
+          <form onSubmit={doLogin} className="card" style={{ padding: '1rem' }}>
+            <h2>Log in</h2>
+            {authError && <div className="banner error" style={{ marginBottom: '0.5rem' }}>{authError}</div>}
+            <label htmlFor="username">Username</label>
+            <input id="username" value={username} onChange={e => setUsername(e.target.value)} placeholder="your name" />
+            <div style={{ height: '0.5rem' }} />
+            <button className="ripple" type="submit" disabled={loggingIn}>{loggingIn ? 'Logging in…' : 'Continue'}</button>
+            <p className="muted" style={{ marginTop: '0.5rem' }}>No password needed in dev. A user will be created if it doesn’t exist.</p>
+          </form>
+        </main>
+      )}
 
       {error && <div className="banner error">{error}</div>}
 
+      {token && (
       <main className="feed">
         {feed.map((p, i) => {
           const key = `${p.post_id || i}-${i}`
@@ -162,7 +224,9 @@ export function App(): JSX.Element {
               <p className="post-text">{p.self_text}</p>
               <div className="post-meta">
                 <span className="pill">r/{p.subreddit || 'ucla'}</span>
-                {p.link_flair_text && <span className="pill subtle">{p.link_flair_text}</span>}
+                {p.link_flair_text && !p.is_ai && p.link_flair_text !== 'AI' && (
+                  <span className="pill subtle">{p.link_flair_text}</span>
+                )}
                 {p.is_ai && <span className="pill ai">AI</span>}
               </div>
               <div className="post-actions" />
@@ -170,12 +234,15 @@ export function App(): JSX.Element {
           </article>
         )})}
       </main>
+      )}
 
-      <footer className="pager">
-        <button className="ghost" onClick={async () => { await fetchFeed(); window.scrollTo({ top: 0, behavior: 'smooth' }) }} disabled={loading}>
-          {loading ? 'Loading…' : 'Next page →'}
-        </button>
-      </footer>
+      {token && (
+        <footer className="pager">
+          <button className="ghost" onClick={async () => { await fetchFeed(); window.scrollTo({ top: 0, behavior: 'smooth' }) }} disabled={loading}>
+            {loading ? 'Loading…' : 'Next page →'}
+          </button>
+        </footer>
+      )}
     </div>
   )
 }

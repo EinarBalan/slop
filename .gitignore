@@ -9,12 +9,13 @@
 *.sw?
 frontend/node_modules
 
-backend/archive
-backend/archive.zip
+backend/data/**
+!backend/data/getdata.sh
+!backend/data/export_ai_posts.py
 .vscode/*
 !.vscode/extensions.json
 backend/.DS_Store
 backend/node_modules/
 backend/__pycache__/
-backend/posts.csv
 backend/.env
+backend/app.sqlite*
