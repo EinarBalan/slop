@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
 
 type Post = {
+  id?: number
   title: string
   self_text: string
   subreddit?: string
@@ -30,6 +31,7 @@ export function App(): JSX.Element {
   const [theme, setTheme] = useState(prefersDark() ? 'dark' : 'light')
   const [openMenu, setOpenMenu] = useState<number | null>(null)
   const [votes, setVotes] = useState<Record<string, 'up' | 'down'>>({})
+  const [judged, setJudged] = useState<Set<string>>(() => new Set())
   const [token, setToken] = useState<string | null>(() => localStorage.getItem('token'))
   const [username, setUsername] = useState<string>(() => localStorage.getItem('username') || `user_${Math.floor(Math.random()*100000)}`)
   const [authError, setAuthError] = useState<string | null>(null)
@@ -130,16 +132,7 @@ export function App(): JSX.Element {
     return () => document.removeEventListener('click', handler)
   }, [])
 
-  const markSeen = async (post: Post) => {
-    try {
-      const token = localStorage.getItem('token')
-      await fetch('/interactions/next', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
-        body: JSON.stringify(post)
-      })
-    } catch {}
-  }
+  // Removed per-post 'next' calls. We record skipped in batch on Next page.
 
   const onVote = async (post: Post, dir: 'up' | 'down', key: string) => {
     try {
@@ -150,8 +143,6 @@ export function App(): JSX.Element {
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify(post)
       })
-      // Also mark as seen for stats consistency
-      markSeen(post)
       setVotes(prev => ({ ...prev, [key]: dir }))
     } catch {}
   }
@@ -164,6 +155,33 @@ export function App(): JSX.Element {
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
         body: JSON.stringify({ post, isAI })
       })
+      // Track as interacted to avoid counting as skipped
+      // Find key in current feed
+      const idx = feed.findIndex(p => p === post)
+      if (idx >= 0) {
+        const key = `${post.post_id || idx}-${idx}`
+        setJudged(prev => new Set(prev).add(key))
+      }
+    } catch {}
+  }
+
+  const sendSkippedAndNext = async () => {
+    try {
+      const token = localStorage.getItem('token')
+      const postsToSkip: Post[] = []
+      feed.forEach((p, i) => {
+        const key = `${p.post_id || i}-${i}`
+        if (!votes[key] && !judged.has(key)) {
+          postsToSkip.push(p)
+        }
+      })
+      if (postsToSkip.length > 0) {
+        await fetch('/interactions/nextBatch', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
+          body: JSON.stringify({ posts: postsToSkip })
+        })
+      }
     } catch {}
   }
 
@@ -238,7 +256,7 @@ export function App(): JSX.Element {
 
       {token && (
         <footer className="pager">
-          <button className="ghost" onClick={async () => { await fetchFeed(); window.scrollTo({ top: 0, behavior: 'smooth' }) }} disabled={loading}>
+          <button className="ghost" onClick={async () => { await sendSkippedAndNext(); await fetchFeed(); window.scrollTo({ top: 0, behavior: 'smooth' }) }} disabled={loading}>
             {loading ? 'Loading…' : 'Next page →'}
           </button>
         </footer>

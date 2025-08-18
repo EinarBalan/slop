@@ -3,18 +3,26 @@ import sqlite3
 from contextlib import contextmanager
 from sqlalchemy import create_engine, event
 from sqlalchemy.orm import scoped_session, sessionmaker
-from config import DB_FILE
+from config import DB_FILE, DATABASE_URL
 
-# Create SQLAlchemy engine for SQLite with check_same_thread disabled for Flask threads
-engine = create_engine(
-    f"sqlite:///{DB_FILE}",
-    connect_args={"check_same_thread": False, "timeout": 30},
-    pool_pre_ping=True,
-)
+if DATABASE_URL:
+    # External DB (e.g., PostgreSQL). Example URL: postgresql+psycopg://user:pass@host:5432/slop
+    engine = create_engine(
+        DATABASE_URL,
+        pool_pre_ping=True,
+    )
+else:
+    # SQLite local file
+    engine = create_engine(
+        f"sqlite:///{DB_FILE}",
+        connect_args={"check_same_thread": False, "timeout": 30},
+        pool_pre_ping=True,
+    )
 
 # Ensure SQLite pragmas are set for concurrency and performance
 @event.listens_for(engine, "connect")
 def set_sqlite_pragma(dbapi_connection, connection_record):
+    # Only applies to SQLite
     if isinstance(dbapi_connection, sqlite3.Connection):
         cursor = dbapi_connection.cursor()
         cursor.execute("PRAGMA journal_mode=WAL;")

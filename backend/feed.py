@@ -66,10 +66,11 @@ def get_feed():
     # Map to response schema
     resp_posts = [
         {
+            'id': p.id,
             'title': p.title,
             'self_text': p.self_text,
             'subreddit': p.subreddit,
-            'post_id': p.post_id or str(p.id),
+            'post_id': p.post_id,
             'over_18': 'true' if p.over_18 else 'false',
             'link_flair_text': p.link_flair_text,
             'is_ai': bool(p.is_ai),

@@ -28,6 +28,10 @@ os.makedirs(DB_DIR, exist_ok=True)
 DB_FILE = os.path.join(DB_DIR, 'app.sqlite3')
 CSV_FILE = os.path.join(DB_DIR, 'posts.csv')
 
+# External database (optional). If set, overrides local SQLite.
+# Example: postgresql+psycopg://user:pass@host:5432/slop
+DATABASE_URL = os.getenv("DATABASE_URL")
+
 # Auth configuration
 SECRET_KEY = os.getenv("SECRET_KEY", "yea-secret")
 DEV_AUTH_NO_PASSWORD = os.getenv("DEV_AUTH_NO_PASSWORD", "true").lower() in ("1", "true", "yes")
@@ -60,6 +64,7 @@ __all__ = [
     'CSV_FILE',
     'DB_FILE',
     'DB_DIR',
+    'DATABASE_URL',
     'SECRET_KEY',
     'DEV_AUTH_NO_PASSWORD',
     'GENERATE_BATCH_SIZE',

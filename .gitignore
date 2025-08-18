@@ -19,3 +19,5 @@ backend/node_modules/
 backend/__pycache__/
 backend/.env
 backend/app.sqlite*
+
+database

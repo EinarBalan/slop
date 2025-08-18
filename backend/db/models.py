@@ -1,5 +1,5 @@
 from datetime import datetime
-from sqlalchemy import Column, Integer, String, Boolean, DateTime, ForeignKey, Text, UniqueConstraint
+from sqlalchemy import Column, Integer, BigInteger, String, Boolean, DateTime, ForeignKey, Text, UniqueConstraint
 from sqlalchemy.orm import declarative_base, relationship
 
 Base = declarative_base()
@@ -26,7 +26,7 @@ class Post(Base):
     over_18 = Column(Boolean, default=False, nullable=False)
     link_flair_text = Column(String(128), nullable=True)
     is_ai = Column(Boolean, default=False, nullable=False)
-    random_key = Column(Integer, index=True, nullable=False)
+    random_key = Column(BigInteger, index=True, nullable=False)
 
     interactions = relationship("Interaction", back_populates="post", cascade="all, delete-orphan")
     served = relationship("ServedPost", back_populates="post", cascade="all, delete-orphan")

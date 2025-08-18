@@ -8,6 +8,7 @@ from auth import require_auth
 from db import db_session
 from db.models import Post, Interaction
 import random
+from sqlalchemy.exc import IntegrityError
 
 # Create a Blueprint for post interactions
 post_interactions = Blueprint('post_interactions', __name__)
@@ -195,6 +196,61 @@ def next_post():
         return jsonify({'error': 'Internal server error', 'message': str(e)}), 500
 
 
+
+@post_interactions.route('/nextBatch', methods=['POST'])
+@require_auth
+def next_batch():
+    try:
+        data = request.get_json() or {}
+        posts = data.get('posts', [])
+        if not isinstance(posts, list):
+            return jsonify({'error': 'Invalid data provided. Expected {"posts": [...]}'}), 400
+
+        ai_count = 0
+        real_count = 0
+        with db_session() as session:
+            for post in posts:
+                if not isinstance(post, dict):
+                    continue
+                is_ai = bool(post.get('is_ai', False))
+                ai_count += 1 if is_ai else 0
+                real_count += 0 if is_ai else 1
+                db_post = session.query(Post).filter(
+                    (Post.post_id == post.get('post_id')) | (Post.title == post.get('title'))
+                ).first()
+                if db_post is None:
+                    db_post = Post(
+                        post_id=post.get('post_id'),
+                        title=post.get('title', ''),
+                        self_text=post.get('self_text', ''),
+                        subreddit=post.get('subreddit'),
+                        over_18=str(post.get('over_18', 'false')).lower() == 'true',
+                        link_flair_text=post.get('link_flair_text'),
+                        is_ai=is_ai,
+                        random_key=random.getrandbits(63),
+                    )
+                    session.add(db_post)
+                    session.flush()
+                try:
+                    session.add(Interaction(
+                        user_id=g.current_user_id,
+                        post_id=db_post.id,
+                        action='next'
+                    ))
+                except IntegrityError:
+                    session.rollback()
+                    # Ignore duplicate next for same user/post
+                    continue
+
+        # Update stats outside the session
+        for _ in range(ai_count):
+            increment_ai_post_count()
+        for _ in range(real_count):
+            increment_real_post_count()
+
+        return jsonify({'message': 'Batch processed successfully', 'count': len(posts)})
+    except Exception as e:
+        return jsonify({'error': 'Internal server error', 'message': str(e)}), 500
 
 @post_interactions.route('/judgeAI', methods=['POST'])
 @require_auth
