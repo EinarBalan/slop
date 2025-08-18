@@ -83,6 +83,20 @@ https://huggingface.co/unsloth?sort_models=likes#models
 
 # Build and Run
 
+The docker file does not work yet and I may not actually get it to work at all
+
+```
+/backend % conda env create --file env.yml
+/backend % conda activate slop 
+/backend % python server.py --background --model gpt-5 --experiment base
+
+/backend % cd ../frontend
+/frontend % npm install
+/frontend % npm run dev
+```
+
+Once the docker file works:
+
 ```
 docker build -t slop:conda /home/ubuntu/slop-utah/slop
 ```
