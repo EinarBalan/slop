@@ -5,7 +5,7 @@ from generate import generate, start_background_generation
 from config import args
 from auth import auth
 from feed import feed
-from db.seed import seed_if_empty
+from db.seed import seed_if_empty, clear_served_posts
 
 app = Flask(__name__)
 CORS(app)
@@ -13,6 +13,7 @@ CORS(app)
 # Initialize database (idempotent) at startup
 try:
     seed_if_empty()
+    clear_served_posts()
 except Exception as e:
     print(f"Database init failed: {e}")
 

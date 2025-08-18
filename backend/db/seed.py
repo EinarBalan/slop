@@ -4,7 +4,7 @@ import random
 from sqlalchemy import select
 from config import CSV_FILE
 from db import engine, db_session
-from db.models import Base, Post
+from db.models import Base, Post, ServedPost
 
 
 def init_db():
@@ -64,6 +64,13 @@ def seed_if_empty():
             print(f"Seeded {n} posts from CSV")
         else:
             print(f"DB already has {count} posts; skipping seed")
+
+
+def clear_served_posts():
+    """Clear per-user served history so posts can be reshown between server sessions."""
+    with db_session() as session:
+        deleted = session.query(ServedPost).delete()
+        print(f"Cleared {deleted} entries from served_posts")
 
 
 if __name__ == '__main__':
