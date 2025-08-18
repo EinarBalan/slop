@@ -23,12 +23,7 @@ BATCH_SIZE = 10
 STATS_FILE = os.path.join(os.path.dirname(__file__), 'stats.json')  
 
 # Database configuration
-DB_DIR = os.path.join(os.path.dirname(__file__), 'data')
-os.makedirs(DB_DIR, exist_ok=True)
-DB_FILE = os.path.join(DB_DIR, 'app.sqlite3')
-CSV_FILE = os.path.join(DB_DIR, 'posts.csv')
-
-# External database (optional). If set, overrides local SQLite.
+# External database is required 
 # Example: postgresql+psycopg://user:pass@host:5432/slop
 DATABASE_URL = os.getenv("DATABASE_URL")
 
@@ -62,8 +57,6 @@ __all__ = [
     'args', 
     'BATCH_SIZE', 
     'CSV_FILE',
-    'DB_FILE',
-    'DB_DIR',
     'DATABASE_URL',
     'SECRET_KEY',
     'DEV_AUTH_NO_PASSWORD',
