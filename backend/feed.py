@@ -3,7 +3,7 @@ from typing import List
 from flask import Blueprint, jsonify, request, g
 from sqlalchemy import and_, select
 from auth import require_auth
-from config import BATCH_SIZE
+from config import BATCH_SIZE, AI_POSTS_RATIO
 from db import db_session
 from db.models import Post, ServedPost
 from generate import get_ai_posts
@@ -77,8 +77,9 @@ def get_feed():
         for p in posts
     ]
 
-    # Interleave AI posts
-    ai_posts = get_ai_posts()
+    # Interleave AI posts up to the requested ratio
+    desired_ai = max(0, min(len(posts), int(round(len(posts) * AI_POSTS_RATIO))))
+    ai_posts = get_ai_posts()[:desired_ai]
     for ai in ai_posts:
         idx = random.randint(0, len(resp_posts))
         resp_posts.insert(idx, ai)

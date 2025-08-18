@@ -36,6 +36,7 @@ DEV_AUTH_NO_PASSWORD = os.getenv("DEV_AUTH_NO_PASSWORD", "true").lower() in ("1"
 GENERATE_BATCH_SIZE = 3
 AI_POSTS_QUEUE_SIZE = 5  # Maximum number of AI posts to store
 GENERATION_INTERVAL = 5  # Seconds between generation attempts
+AI_POSTS_RATIO = 0.4    # Fraction of AI posts in the feed (0.0 - 1.0)
 
 # local LLM configuration
 LOCAL_MODEL_NAME = "meta-llama/Llama-3.1-8B-Instruct"
@@ -64,6 +65,7 @@ __all__ = [
     'GENERATE_BATCH_SIZE',
     'AI_POSTS_QUEUE_SIZE',
     'GENERATION_INTERVAL',
+    'AI_POSTS_RATIO',
     'LOCAL_MODEL_NAME',
     'OPENAI_API_KEY',
     'OPENAI_MODEL_NAME',
