@@ -104,6 +104,8 @@ def require_auth(fn):
             if not user:
                 return jsonify({'error': 'user not found'}), 401
             g.current_user_id = user.id
+            g.current_experiment = user.current_experiment
+            g.current_user_aware = user.aware_of_experiment
         return fn(*args, **kwargs)
     return wrapper
 

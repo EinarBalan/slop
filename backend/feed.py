@@ -7,6 +7,7 @@ from config import BATCH_SIZE, AI_POSTS_RATIO
 from db import db_session
 from db.models import Post, ServedPost
 from generate import get_ai_posts
+from stats import increment_ai_post_count, increment_real_post_count
 
 feed = Blueprint('feed', __name__)
 
@@ -19,8 +20,13 @@ def sample_random_posts_excluding_served(user_id: int, limit: int) -> List[Post]
     attempts = 5
     with db_session() as session:
         for _ in range(attempts):
-            a = random.getrandbits(63)
-            b = a + (1 << 60)  # large span; SQLite will clamp
+            # Pick a random center and clamp window within signed BIGINT range
+            center = random.getrandbits(63)  # [0, 2^63-1]
+            half_span = 1 << 59  # keep total span at 2^60
+            min_bigint = 0
+            max_bigint = (1 << 63) - 1
+            a = center - half_span if center >= half_span else min_bigint
+            b = center + half_span if center <= (max_bigint - half_span) else max_bigint
             q = (
                 session.query(Post)
                 .outerjoin(ServedPost, and_(ServedPost.user_id == user_id, ServedPost.post_id == Post.id))
@@ -84,6 +90,12 @@ def get_feed():
     for ai in ai_posts:
         idx = random.randint(0, len(resp_posts))
         resp_posts.insert(idx, ai)
+
+    # Update served counters: real posts and AI posts served
+    for _ in range(len(posts)):
+        increment_real_post_count()
+    for _ in range(len(ai_posts)):
+        increment_ai_post_count()
 
     return jsonify({
         'posts': resp_posts,

@@ -9,30 +9,41 @@ from config import (
     DEFAULT_TEMPERATURE,
     PROMPTS
 )
-from config import args
+from flask import g
 
 class LLMService:
-    def __init__(self, model, experiment):
+    def __init__(self, model, default_experiment: str = 'base'):
         self.pipe = None
         self.model_type = model
         self.local_model = None
         self.api_client = None
         self.tokenizer = None
         self.local_model_name = LOCAL_MODEL_NAME
-        self.experiment = experiment
-        self.initialize_lm()
+        # Default experiment if none provided by request
+        self._default_experiment = default_experiment or 'base'
+        # Tracks which experiment the underlying model/client is initialized for
+        self._initialized_experiment: str | None = None
+        # Defer heavy initialization until first use
 
-    def initialize_lm(self):
-        """Initialize the text generation pipeline."""
+    def ensure_experiment_initialized(self):
+        """Ensure underlying clients/models are initialized for the active experiment.
+
+        If the effective experiment differs from what we last initialized, reinitialize as needed.
+        """
+        active_exp = self.experiment
+        if self._initialized_experiment == active_exp:
+            return
+        # Initialize per model type
         if self.model_type == "local":
-            self.initialize_local_lm()
-        elif self.model_type == "gpt-5" or self.model_type == "gpt-image":
+            self.initialize_local_lm(active_exp)
+        elif self.model_type in ("gpt-5", "gpt-image"):
             self.initialize_openai()
         else:
             raise ValueError(f"Invalid model type: {self.model_type}")
+        self._initialized_experiment = active_exp
        
-    def initialize_local_lm(self):
-        """Initialize the local LLM."""
+    def initialize_local_lm(self, exp: str):
+        """Initialize or reinitialize the local LLM for a given experiment."""
         # Lazy import heavy deps only if local model is requested
         try:
             from transformers import AutoTokenizer, AutoModelForCausalLM
@@ -42,10 +53,7 @@ class LLMService:
             self.local_model = None
             self.tokenizer = None
             return
-        if self.experiment == "base" or \
-            self.experiment == "summarize" or \
-            self.experiment == "user-defined" or \
-            self.experiment == "like-history-text": #TODO
+        if exp in ("base", "summarize", "user-defined", "like-history-text", "slop", "finetuned"):
             try:
                 # quantization_config = BitsAndBytesConfig(
                 #     load_in_4bit=True,
@@ -61,15 +69,26 @@ class LLMService:
 
             except Exception as e:
                 print(f"Error initializing lm: {e}")
-        elif self.experiment == "finetuned":  #TODO
-            pass
-        elif self.experiment == "slop":  #TODO
+        else:
+            # Unknown experiment bucket for local model; leave current model as-is
             pass
 
 
     def initialize_openai(self):
         """Initialize the OpenAI API."""
         self.api_client = OpenAI(api_key=OPENAI_API_KEY)
+
+    @property
+    def experiment(self) -> str:
+        """Effective experiment for the current request or default."""
+        try:
+            exp = getattr(g, 'current_experiment', None)
+            if exp:
+                return exp
+        except Exception:
+            # Outside request context
+            pass
+        return self._default_experiment or 'base'
 
     def exp_generate_text(self, max_length=DEFAULT_MAX_LENGTH, num_return_sequences=DEFAULT_NUM_RETURN_SEQUENCES, temperature=DEFAULT_TEMPERATURE):
         """Generate text using the pipeline.
@@ -79,17 +98,19 @@ class LLMService:
             num_return_sequences (int): Number of sequences to return
             temperature (float): Sampling temperature
         """
-        if self.experiment == "base":
+        self.ensure_experiment_initialized()
+        exp = self.experiment
+        if exp == "base":
             return self.generate_text(PROMPTS["base"], max_length, num_return_sequences, temperature)
-        elif self.experiment == "summarize":
+        elif exp == "summarize":
             return self.generate_text(PROMPTS["base-summarize"] + PROMPTS["summary"]["generated_text"], max_length, num_return_sequences, temperature)
-        elif self.experiment == "finetuned":  #TODO
+        elif exp == "finetuned":  #TODO
             return self.generate_text(PROMPTS["base"], max_length, num_return_sequences, temperature)
-        elif self.experiment == "slop":  #TODO
+        elif exp == "slop":  #TODO
             return self.generate_text(PROMPTS["base"], max_length, num_return_sequences, temperature)
-        elif self.experiment == "user-defined":  #TODO
+        elif exp == "user-defined":  #TODO
             return self.generate_text(PROMPTS["user-defined"], max_length, num_return_sequences, temperature)
-        elif self.experiment == "like-history-text": #TODO
+        elif exp == "like-history-text": #TODO
             return self.generate_text(PROMPTS["base"], max_length, num_return_sequences, temperature)
 
     def generate_text(self, prompt, max_length=DEFAULT_MAX_LENGTH, num_return_sequences=DEFAULT_NUM_RETURN_SEQUENCES, temperature=DEFAULT_TEMPERATURE):

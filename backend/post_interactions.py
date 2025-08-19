@@ -3,7 +3,14 @@ import json
 from flask import Blueprint, jsonify, request, g
 from config import args, PROMPTS, PROMPTS_FILE
 from llm import get_llm_service
-from stats import increment_ai_post_count, increment_real_post_count, increment_liked_ai_post_count, increment_liked_real_post_count
+from stats import (
+    increment_ai_post_count,
+    increment_real_post_count,
+    increment_liked_ai_post_count,
+    increment_liked_real_post_count,
+    increment_marked_as_ai,
+    increment_dislike,
+)
 from auth import require_auth
 from db import db_session
 from db.models import Post, Interaction
@@ -13,7 +20,7 @@ from sqlalchemy.exc import IntegrityError
 # Create a Blueprint for post interactions
 post_interactions = Blueprint('post_interactions', __name__)
 
-llm_service = get_llm_service(args.model, args.experiment)
+llm_service = get_llm_service(args.model, 'base')
 
 # File paths for storing different types of interactions
 DATA_DIR = os.path.join(os.path.dirname(__file__), 'data')
@@ -79,17 +86,24 @@ def like_post():
             return jsonify({'error': 'No post data provided'}), 400
 
         # summarize preferences if experiment is "summarize"
-        if args.experiment == "summarize":
+        from flask import g
+        current_exp = getattr(g, 'current_experiment', None) or 'base'
+        if current_exp == "summarize":
             summarize_preferences(post)
 
         # Persist interaction
         with db_session() as session:
-            db_post = session.query(Post).filter(
-                (Post.post_id == post.get('post_id')) | (Post.title == post.get('title'))
-            ).first()
+            lookup_post_id = post.get('post_id')
+            # If the external id is a stable AI id like ai-<id>, prefer matching by post_id
+            if lookup_post_id and isinstance(lookup_post_id, str) and lookup_post_id.startswith('ai-'):
+                db_post = session.query(Post).filter(Post.post_id == lookup_post_id).first()
+            else:
+                db_post = session.query(Post).filter(
+                    (Post.post_id == lookup_post_id) | (Post.title == post.get('title'))
+                ).first()
             if db_post is None:
                 db_post = Post(
-                    post_id=post.get('post_id'),
+                    post_id=lookup_post_id,
                     title=post.get('title', ''),
                     self_text=post.get('self_text', ''),
                     subreddit=post.get('subreddit'),
@@ -127,12 +141,16 @@ def dislike_post():
         if not post:
             return jsonify({'error': 'No post data provided'}), 400
         with db_session() as session:
-            db_post = session.query(Post).filter(
-                (Post.post_id == post.get('post_id')) | (Post.title == post.get('title'))
-            ).first()
+            lookup_post_id = post.get('post_id')
+            if lookup_post_id and isinstance(lookup_post_id, str) and lookup_post_id.startswith('ai-'):
+                db_post = session.query(Post).filter(Post.post_id == lookup_post_id).first()
+            else:
+                db_post = session.query(Post).filter(
+                    (Post.post_id == lookup_post_id) | (Post.title == post.get('title'))
+                ).first()
             if db_post is None:
                 db_post = Post(
-                    post_id=post.get('post_id'),
+                    post_id=lookup_post_id,
                     title=post.get('title', ''),
                     self_text=post.get('self_text', ''),
                     subreddit=post.get('subreddit'),
@@ -149,6 +167,8 @@ def dislike_post():
                 action='dislike'
             )
             session.add(interaction)
+        # Update dislike counters by true post type
+        increment_dislike(is_ai_post=bool(post.get('is_ai', False)))
         return jsonify({'message': 'Post disliked successfully'})
             
     except Exception as e:
@@ -215,12 +235,16 @@ def next_batch():
                 is_ai = bool(post.get('is_ai', False))
                 ai_count += 1 if is_ai else 0
                 real_count += 0 if is_ai else 1
-                db_post = session.query(Post).filter(
-                    (Post.post_id == post.get('post_id')) | (Post.title == post.get('title'))
-                ).first()
+                lookup_post_id = post.get('post_id')
+                if lookup_post_id and isinstance(lookup_post_id, str) and lookup_post_id.startswith('ai-'):
+                    db_post = session.query(Post).filter(Post.post_id == lookup_post_id).first()
+                else:
+                    db_post = session.query(Post).filter(
+                        (Post.post_id == lookup_post_id) | (Post.title == post.get('title'))
+                    ).first()
                 if db_post is None:
                     db_post = Post(
-                        post_id=post.get('post_id'),
+                        post_id=lookup_post_id,
                         title=post.get('title', ''),
                         self_text=post.get('self_text', ''),
                         subreddit=post.get('subreddit'),
@@ -237,16 +261,13 @@ def next_batch():
                         post_id=db_post.id,
                         action='next'
                     ))
+                    session.flush()
                 except IntegrityError:
                     session.rollback()
                     # Ignore duplicate next for same user/post
                     continue
 
-        # Update stats outside the session
-        for _ in range(ai_count):
-            increment_ai_post_count()
-        for _ in range(real_count):
-            increment_real_post_count()
+        # Stats are updated when the feed is served; do not double count here
 
         return jsonify({'message': 'Batch processed successfully', 'count': len(posts)})
     except Exception as e:
@@ -261,26 +282,39 @@ def judge_ai_post():
             return jsonify({'error': 'Invalid data provided. Need post and isAI fields'}), 400
 
         post = data['post']
-        is_ai = data.get('isAI', False)
+        is_ai_judgment = data.get('isAI', False)
 
-        # Load existing AI judged posts
-        judged_posts = load_posts(AI_JUDGED_POSTS_FILE)
-        
-        # Add new judgment to the list
-        judged_posts.append({
-            'post': post,
-            'isAI': is_ai,
-            'timestamp': data.get('timestamp', None)  # Optional timestamp
-        })
-        
-        # Save updated list
-        if save_posts(judged_posts, AI_JUDGED_POSTS_FILE):
-            return jsonify({
-                'message': 'AI judgment recorded successfully',
-                'totalJudgedPosts': len(judged_posts)
-            })
-        else:
-            return jsonify({'error': 'Failed to save AI judgment'}), 500
+        # Persist a 'markedai' interaction
+        with db_session() as session:
+            db_post = session.query(Post).filter(
+                (Post.post_id == post.get('post_id')) | (Post.title == post.get('title'))
+            ).first()
+            if db_post is None:
+                db_post = Post(
+                    post_id=post.get('post_id'),
+                    title=post.get('title', ''),
+                    self_text=post.get('self_text', ''),
+                    subreddit=post.get('subreddit'),
+                    over_18=str(post.get('over_18', 'false')).lower() == 'true',
+                    link_flair_text=post.get('link_flair_text'),
+                    is_ai=bool(post.get('is_ai', False)),
+                    random_key=random.getrandbits(63),
+                )
+                session.add(db_post)
+                session.flush()
+            try:
+                session.add(Interaction(
+                    user_id=g.current_user_id,
+                    post_id=db_post.id,
+                    action='markedai'
+                ))
+                session.flush()
+            except IntegrityError:
+                session.rollback()
+                # Ignore duplicate mark
+        # Update experiment counters for marked-as-AI based on the actual post type, not the user's judgment
+        increment_marked_as_ai(is_ai_post=bool(db_post.is_ai), amount=1)
+        return jsonify({'message': 'AI judgment recorded successfully'})
             
     except Exception as e:
         return jsonify({'error': 'Internal server error', 'message': str(e)}), 500

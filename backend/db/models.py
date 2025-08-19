@@ -1,5 +1,5 @@
 from datetime import datetime
-from sqlalchemy import Column, Integer, BigInteger, String, Boolean, DateTime, ForeignKey, Text, UniqueConstraint
+from sqlalchemy import Column, Integer, BigInteger, String, Boolean, DateTime, ForeignKey, Text, UniqueConstraint, Float
 from sqlalchemy.orm import declarative_base, relationship
 
 Base = declarative_base()
@@ -11,6 +11,8 @@ class User(Base):
     username = Column(String(128), unique=True, nullable=False)
     password_hash = Column(String(256), nullable=True)
     created_at = Column(DateTime, default=datetime.utcnow, nullable=False)
+    current_experiment = Column(String(128), nullable=True)
+    aware_of_experiment = Column(Boolean, default=True, nullable=False)
 
     interactions = relationship("Interaction", back_populates="user", cascade="all, delete-orphan")
     served = relationship("ServedPost", back_populates="user", cascade="all, delete-orphan")
@@ -73,4 +75,31 @@ class AiGeneratedPost(Base):
     prompt = Column(Text, nullable=True)
     generated_at = Column(DateTime, default=datetime.utcnow, nullable=False)
 
+
+class Experiment(Base):
+    __tablename__ = 'experiments'
+    id = Column(Integer, primary_key=True)
+    experiment = Column(String(128), nullable=False)
+    user_id = Column(Integer, ForeignKey('users.id', ondelete='CASCADE'), nullable=False)
+    aware_of_experiment = Column(Boolean, default=True, nullable=False)
+    ai_post_count = Column(Integer, default=0, nullable=False)
+    liked_ai_post_count = Column(Integer, default=0, nullable=False)
+    real_post_count = Column(Integer, default=0, nullable=False)
+    liked_real_post_count = Column(Integer, default=0, nullable=False)
+    ai_marked_as_ai_count = Column(Integer, default=0, nullable=False)
+    real_marked_as_ai_count = Column(Integer, default=0, nullable=False)
+    ai_dislike_count = Column(Integer, default=0, nullable=False)
+    real_dislike_count = Column(Integer, default=0, nullable=False)
+    ai_like_rate = Column(Float, default=0.0, nullable=False)
+    real_like_rate = Column(Float, default=0.0, nullable=False)
+    ai_marked_as_ai_rate = Column(Float, default=0.0, nullable=False)
+    real_marked_as_ai_rate = Column(Float, default=0.0, nullable=False)
+    ai_dislike_rate = Column(Float, default=0.0, nullable=False)
+    real_dislike_rate = Column(Float, default=0.0, nullable=False)
+    created_at = Column(DateTime, default=datetime.utcnow, nullable=False)
+    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow, nullable=False)
+
+    __table_args__ = (
+        UniqueConstraint('experiment', 'user_id', name='uq_experiment_user'),
+    )
 

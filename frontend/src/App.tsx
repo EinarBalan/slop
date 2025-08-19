@@ -36,6 +36,10 @@ export function App(): JSX.Element {
   const [username, setUsername] = useState<string>(() => localStorage.getItem('username') || `user_${Math.floor(Math.random()*100000)}`)
   const [authError, setAuthError] = useState<string | null>(null)
   const [loggingIn, setLoggingIn] = useState(false)
+  const [currentExperiment, setCurrentExperiment] = useState<string | null>(null)
+  const [experimentOptions, setExperimentOptions] = useState<string[]>([])
+  const [showExperimentPage, setShowExperimentPage] = useState(false)
+  const [selectedExperiment, setSelectedExperiment] = useState<string>('random')
 
   useEffect(() => {
     const media = window.matchMedia('(prefers-color-scheme: dark)')
@@ -47,6 +51,13 @@ export function App(): JSX.Element {
   useEffect(() => {
     document.documentElement.dataset.theme = theme
   }, [theme])
+
+  // When opening the experiment page, refresh available options
+  useEffect(() => {
+    if (showExperimentPage) {
+      refreshExperiment()
+    }
+  }, [showExperimentPage])
 
   const fetchFeed = async () => {
     setLoading(true)
@@ -74,8 +85,22 @@ export function App(): JSX.Element {
     }
   }
 
+  const refreshExperiment = async () => {
+    try {
+      const tok = localStorage.getItem('token')
+      if (!tok) return
+      const res = await fetch('/experiments/options', { headers: { 'Authorization': `Bearer ${tok}` } })
+      if (res.ok) {
+        const data = await res.json()
+        setExperimentOptions(data.experiments || [])
+        setCurrentExperiment(data.current || null)
+      }
+    } catch {}
+  }
+
   useEffect(() => {
     if (!token) return
+    refreshExperiment()
     fetchFeed()
   }, [token])
 
@@ -192,6 +217,8 @@ export function App(): JSX.Element {
         {token && (
           <div style={{ marginLeft: 'auto', display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
             <span className="pill subtle">{username}</span>
+            {currentExperiment && <span className="pill subtle">exp: {currentExperiment}</span>}
+            <button className="ghost" onClick={async () => { await refreshExperiment(); setSelectedExperiment(currentExperiment || 'random'); setShowExperimentPage(true) }}>Change experiment</button>
             <button className="ghost" onClick={() => { localStorage.removeItem('token'); setToken(null); setFeed([]); }}>Log out</button>
           </div>
         )}
@@ -211,9 +238,45 @@ export function App(): JSX.Element {
         </main>
       )}
 
+      {token && showExperimentPage && (
+        <main className="feed" style={{ maxWidth: 720, margin: '2rem auto' }}>
+          <div className="card" style={{ padding: '1rem' }}>
+            <h2>Change experiment</h2>
+            <p className="muted" style={{ marginBottom: '0.5rem' }}>Pick an experiment or choose Random to let the system decide silently.</p>
+            <label htmlFor="exp-select">Experiment</label>
+            <select id="exp-select" value={selectedExperiment} onChange={(e) => setSelectedExperiment(e.target.value)}>
+              <option value="random">Random</option>
+              {experimentOptions.map(opt => (
+                <option key={opt} value={opt}>{opt}</option>
+              ))}
+            </select>
+            <div style={{ display: 'flex', gap: 8, justifyContent: 'flex-end', marginTop: 12 }}>
+              <button className="ghost" onClick={() => setShowExperimentPage(false)}>Cancel</button>
+              <button className="ripple" onClick={async () => {
+                try {
+                  const tok = localStorage.getItem('token')
+                  const res = await fetch('/experiments/set', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${tok}` },
+                    body: JSON.stringify({ experiment: selectedExperiment })
+                  })
+                  if (res.ok) {
+                    const data = await res.json()
+                    setCurrentExperiment(data.current || null)
+                    setShowExperimentPage(false)
+                    setFeed([])
+                    await fetchFeed()
+                  }
+                } catch {}
+              }}>Save</button>
+            </div>
+          </div>
+        </main>
+      )}
+
       {error && <div className="banner error">{error}</div>}
 
-      {token && (
+      {token && !showExperimentPage && (
       <main className="feed">
         {feed.map((p, i) => {
           const key = `${p.post_id || i}-${i}`
@@ -254,13 +317,14 @@ export function App(): JSX.Element {
       </main>
       )}
 
-      {token && (
+      {token && !showExperimentPage && (
         <footer className="pager">
           <button className="ghost" onClick={async () => { await sendSkippedAndNext(); await fetchFeed(); window.scrollTo({ top: 0, behavior: 'smooth' }) }} disabled={loading}>
             {loading ? 'Loading…' : 'Next page →'}
           </button>
         </footer>
       )}
+      
     </div>
   )
 }

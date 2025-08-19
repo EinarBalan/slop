@@ -5,6 +5,7 @@ from generate import generate, start_background_generation
 from config import args
 from auth import auth
 from feed import feed
+from experiments import experiments
 from db.seed import seed_if_empty, clear_served_posts
 
 app = Flask(__name__)
@@ -22,6 +23,7 @@ app.register_blueprint(post_interactions, url_prefix='/interactions')
 app.register_blueprint(generate, url_prefix='/generate')
 app.register_blueprint(auth, url_prefix='/auth')
 app.register_blueprint(feed)
+app.register_blueprint(experiments, url_prefix='/experiments')
 
 # Start background generation thread if enabled
 if args.background:

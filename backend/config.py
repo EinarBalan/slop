@@ -8,7 +8,6 @@ load_dotenv()
 def parse_args():
     parser = argparse.ArgumentParser(description='Run the Flask server with optional background LLM generation')
     parser.add_argument('--background', action='store_true', help='Enable background LLM generation')
-    parser.add_argument('--experiment', type=str, default='base', help='Experiment to run')
     parser.add_argument('--model', type=str, default='local', help='Choose from local, gpt-5, gpt-image')
     parser.add_argument('--archive', action='store_true',
                         help='Serve AI posts from archive instead of generating new ones. '
@@ -20,7 +19,6 @@ args = parse_args()
 
 # Server configuration
 BATCH_SIZE = 10
-STATS_FILE = os.path.join(os.path.dirname(__file__), 'stats.json')  
 
 # Database configuration
 # External database is required 
@@ -36,6 +34,16 @@ GENERATE_BATCH_SIZE = 3
 AI_POSTS_QUEUE_SIZE = 5  # Maximum number of AI posts to store
 GENERATION_INTERVAL = 5  # Seconds between generation attempts
 AI_POSTS_RATIO = 0.4    # Fraction of AI posts in the feed (0.0 - 1.0)
+
+# Experiments
+AVAILABLE_EXPERIMENTS = [
+    'base',
+    'summarize',
+    'user-defined',
+    'like-history-text',
+    'slop',
+    'finetuned',
+]
 
 # local LLM configuration
 LOCAL_MODEL_NAME = "meta-llama/Llama-3.1-8B-Instruct"
@@ -71,5 +79,6 @@ __all__ = [
     'DEFAULT_NUM_RETURN_SEQUENCES',
     'DEFAULT_TEMPERATURE',
     'PROMPTS',
-    'PROMPTS_FILE'
+    'PROMPTS_FILE',
+    'AVAILABLE_EXPERIMENTS'
 ] 

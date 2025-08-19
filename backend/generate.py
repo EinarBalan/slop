@@ -21,7 +21,7 @@ generate = Blueprint('generate', __name__)
 
 # Initialize LLM service
 
-llm_service = get_llm_service(args.model, args.experiment)
+llm_service = get_llm_service(args.model, 'base')
 print("LLM service initialized")
 
 # Queue to store AI generated posts
@@ -47,7 +47,7 @@ def parse_ai_post(generated_text):
             "title": title,
             "self_text": self_text,
             "subreddit": subreddit,
-            "post_id": "0",
+            # post_id will be assigned from archive id (ai-<id>) when enqueuing
             "over_18": "false",
             "link_flair_text": "AI",
             "is_ai": True
@@ -76,7 +76,7 @@ def background_generation():
                                 "title": r.title,
                                 "self_text": r.self_text,
                                 "subreddit": r.subreddit,
-                                "post_id": "0",
+                                "post_id": f"ai-{r.id}",
                                 "over_18": "false",
                                 "link_flair_text": "AI",
                                 "is_ai": True,
@@ -90,23 +90,36 @@ def background_generation():
                 else:
                     result = llm_service.exp_generate_text()
                     if "error" not in result:
-                        post = parse_ai_post(result["generated_text"])
-                        if post:
-                            # Persist to archive table
+                        fields = parse_ai_post(result["generated_text"])
+                        if fields:
+                            # Persist to archive table and use its id as external post_id
+                            new_id = None
                             try:
                                 with db_session() as session:
-                                    session.add(AiGeneratedPost(
-                                        title=post.get("title", ""),
-                                        self_text=post.get("self_text", ""),
-                                        subreddit=post.get("subreddit"),
+                                    row = AiGeneratedPost(
+                                        title=fields.get("title", ""),
+                                        self_text=fields.get("self_text", ""),
+                                        subreddit=fields.get("subreddit"),
                                         model_name=f"{args.model}",
                                         prompt=None,
-                                    ))
+                                    )
+                                    session.add(row)
+                                    session.flush()
+                                    new_id = row.id
                             except Exception as e:
                                 print(f"Failed to persist AI post: {e}")
 
-                            # Enqueue for serving
+                            # Enqueue for serving with stable external id
                             try:
+                                post = {
+                                    "title": fields.get("title", ""),
+                                    "self_text": fields.get("self_text", ""),
+                                    "subreddit": fields.get("subreddit"),
+                                    "post_id": f"ai-{new_id}" if new_id is not None else None,
+                                    "over_18": "false",
+                                    "link_flair_text": "AI",
+                                    "is_ai": True,
+                                }
                                 ai_posts_queue.put_nowait(post)
                             except Full:
                                 pass  # Queue is full, skip this post
