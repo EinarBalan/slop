@@ -30,6 +30,8 @@ def sample_random_posts_excluding_served(user_id: int, limit: int, source: str) 
             if source == 'humorposts':
                 q = (
                     session.query(HumorPost)
+                    .filter(HumorPost.image_url.isnot(None))
+                    .filter(~HumorPost.image_url.like('%external-preview.redd.it%'))
                     .order_by(func.random())
                     .limit(limit - len(results))
                 )
@@ -54,6 +56,8 @@ def sample_random_posts_excluding_served(user_id: int, limit: int, source: str) 
             if source == 'humorposts':
                 q = (
                     session.query(HumorPost)
+                    .filter(HumorPost.image_url.isnot(None))
+                    .filter(~HumorPost.image_url.like('%external-preview.redd.it%'))
                     .order_by(func.random())
                     .limit(remainder * 2)
                 )
@@ -97,6 +101,7 @@ def get_feed():
             'over_18': 'true' if getattr(p, 'over_18', False) else 'false',
             'link_flair_text': getattr(p, 'link_flair_text', None),
             'is_ai': bool(getattr(p, 'is_ai', False)),
+            'image_url': getattr(p, 'image_url', None),
         }
     resp_posts = [to_dict(p) for p in posts]
     # If source is humor, include humor_id to enable interactions

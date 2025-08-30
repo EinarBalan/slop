@@ -146,6 +146,23 @@ body {
 .segmented > button { background: transparent; color: var(--text); padding: 8px 10px; border: 0; cursor: pointer; }
 .segmented > button:hover { background: color-mix(in srgb, var(--brand) 10%, transparent); }
 
+.post-media { margin: 8px 0 10px; }
+.post-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  display: block;
+}
+.post-video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  display: block;
+  background: black;
+}
+
 .pager {
   position: sticky;
   bottom: 0;

@@ -9,6 +9,25 @@ type Post = {
   over_18?: string | boolean
   link_flair_text?: string
   is_ai?: boolean
+  image_url?: string | null
+}
+
+const isVideoUrl = (url: string): boolean => {
+  try {
+    const lower = url.toLowerCase()
+    return lower.endsWith('.mp4') || lower.endsWith('.webm') || lower.endsWith('.gifv')
+  } catch {
+    return false
+  }
+}
+
+const normalizeVideoUrl = (url: string): string => {
+  // Convert common .gifv to .mp4 (e.g., imgur)
+  try {
+    return url.replace(/\.gifv(\?.*)?$/i, '.mp4$1')
+  } catch {
+    return url
+  }
 }
 
 type FeedResponse = {
@@ -341,6 +360,28 @@ export function App(): JSX.Element {
                 )}
                 {p.is_ai && <span className="pill ai">AI</span>}
               </div>
+              {p.image_url && (
+                <div className="post-media">
+                  {isVideoUrl(p.image_url) ? (
+                    <video
+                      className="post-video"
+                      src={normalizeVideoUrl(p.image_url)}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                    />
+                  ) : (
+                    <img
+                      className="post-image"
+                      src={p.image_url}
+                      alt={p.title}
+                      loading="lazy"
+                      referrerPolicy="no-referrer"
+                    />
+                  )}
+                </div>
+              )}
               <p className="post-text">{p.self_text}</p>
               <div className="post-actions" />
             </div>
