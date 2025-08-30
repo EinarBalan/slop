@@ -302,7 +302,6 @@ export function App(): JSX.Element {
             </div>
             <div className="post-body">
               <h2 className="post-title">{p.title}</h2>
-              <p className="post-text">{p.self_text}</p>
               <div className="post-meta">
                 <span className="pill">r/{p.subreddit || 'ucla'}</span>
                 {p.link_flair_text && !p.is_ai && p.link_flair_text !== 'AI' && (
@@ -310,6 +309,7 @@ export function App(): JSX.Element {
                 )}
                 {p.is_ai && <span className="pill ai">AI</span>}
               </div>
+              <p className="post-text">{p.self_text}</p>
               <div className="post-actions" />
             </div>
           </article>

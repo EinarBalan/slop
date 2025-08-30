@@ -24,21 +24,21 @@ def is_valid_row(row):
     return True
 
 
-def _find_posts_csv() -> Path | None:
-    # Try common locations
-    candidates = [
-        Path(__file__).resolve().parent.parent / 'data' / 'posts.csv',          # backend/data/posts.csv
-        Path(__file__).resolve().parent.parent / 'posts.csv',                   # backend/posts.csv
-        Path(__file__).resolve().parents[2] / 'data' / 'posts.csv',            # repo_root/data/posts.csv
-    ]
-    for p in candidates:
-        if p.exists():
-            return p
-    return None
+# def _find_posts_csv() -> Path | None:
+#     # Try common locations
+#     candidates = [
+#         Path(__file__).resolve().parent.parent / 'data' / 'posts.csv',          # backend/data/posts.csv
+#         Path(__file__).resolve().parent.parent / 'posts.csv',                   # backend/posts.csv
+#         Path(__file__).resolve().parents[2] / 'data' / 'posts.csv',            # repo_root/data/posts.csv
+#     ]
+#     for p in candidates:
+#         if p.exists():
+#             return p
+#     return None
 
 
 def load_posts_from_csv(limit: int | None = None, batch_size: int = 1000) -> int:
-    csv_path = _find_posts_csv()
+    csv_path = './data/posts.csv' #_find_posts_csv()
     if not csv_path:
         print("No posts.csv found. Skipping seed.")
         return 0

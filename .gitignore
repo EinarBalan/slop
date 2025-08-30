@@ -20,4 +20,6 @@ backend/__pycache__/
 backend/.env
 backend/app.sqlite*
 
+__pycache__
+
 database
