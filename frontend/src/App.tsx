@@ -5,7 +5,7 @@ type Post = {
   title: string
   self_text: string
   subreddit?: string
-  post_id?: string
+  humor_id?: number
   over_18?: string | boolean
   link_flair_text?: string
   is_ai?: boolean
@@ -190,7 +190,7 @@ export function App(): JSX.Element {
       // Find key in current feed
       const idx = feed.findIndex(p => p === post)
       if (idx >= 0) {
-        const key = `${post.post_id || idx}-${idx}`
+        const key = `${post.id || post.humor_id || idx}-${idx}`
         setJudged(prev => new Set(prev).add(key))
       }
     } catch {}
@@ -201,7 +201,7 @@ export function App(): JSX.Element {
       const token = localStorage.getItem('token')
       const postsToSkip: Post[] = []
       feed.forEach((p, i) => {
-        const key = `${p.post_id || i}-${i}`
+        const key = `${p.id || p.humor_id || i}-${i}`
         if (!votes[key] && !judged.has(key)) {
           postsToSkip.push(p)
         }
@@ -311,7 +311,7 @@ export function App(): JSX.Element {
       {token && !showExperimentPage && !showSourcePage && (
       <main className="feed">
         {feed.map((p, i) => {
-          const key = `${p.post_id || i}-${i}`
+          const key = `${p.id || p.humor_id || i}-${i}`
           const voted = votes[key]
           return (
           <article className="post" key={key}>

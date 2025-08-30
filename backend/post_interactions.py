@@ -13,7 +13,7 @@ from stats import (
 )
 from auth import require_auth
 from db import db_session
-from db.models import Post, Interaction
+from db.models import Post, Interaction, HumorPost, AiGeneratedPost
 import random
 from sqlalchemy.exc import IntegrityError
 
@@ -94,32 +94,51 @@ def like_post():
         # Persist interaction
         with db_session() as session:
             lookup_post_id = post.get('post_id')
-            # If the external id is a stable AI id like ai-<id>, prefer matching by post_id
-            if lookup_post_id and isinstance(lookup_post_id, str) and lookup_post_id.startswith('ai-'):
-                db_post = session.query(Post).filter(Post.post_id == lookup_post_id).first()
-            else:
-                db_post = session.query(Post).filter(
-                    (Post.post_id == lookup_post_id) | (Post.title == post.get('title'))
-                ).first()
-            if db_post is None:
-                db_post = Post(
-                    post_id=lookup_post_id,
-                    title=post.get('title', ''),
-                    self_text=post.get('self_text', ''),
-                    subreddit=post.get('subreddit'),
-                    over_18=str(post.get('over_18', 'false')).lower() == 'true',
-                    link_flair_text=post.get('link_flair_text'),
-                    is_ai=bool(post.get('is_ai', False)),
-                    random_key=random.getrandbits(63),
+            humor_id = post.get('humor_id')
+            # Determine source and external id
+            if isinstance(lookup_post_id, str) and lookup_post_id.startswith('ai-'):
+                # Extract numeric id after ai-
+                try:
+                    ai_numeric_id = int(lookup_post_id.split('ai-')[-1])
+                except Exception:
+                    ai_numeric_id = None
+                interaction = Interaction(
+                    user_id=g.current_user_id,
+                    ai_id=ai_numeric_id,
+                    action='like'
                 )
-                session.add(db_post)
-                session.flush()
-            interaction = Interaction(
-                user_id=g.current_user_id,
-                post_id=db_post.id,
-                action='like'
-            )
-            session.add(interaction)
+                session.add(interaction)
+            elif humor_id is not None:
+                hp = session.query(HumorPost).filter(HumorPost.id == humor_id).first()
+                interaction = Interaction(
+                    user_id=g.current_user_id,
+                    humor_id=hp.id if hp else None,
+                    action='like'
+                )
+                session.add(interaction)
+            else:
+                # Normal post flow; ensure Post exists and log by internal id
+                db_post = session.query(Post).filter(
+                    (Post.title == post.get('title'))
+                ).first()
+                if db_post is None:
+                    db_post = Post(
+                        title=post.get('title', ''),
+                        self_text=post.get('self_text', ''),
+                        subreddit=post.get('subreddit'),
+                        over_18=str(post.get('over_18', 'false')).lower() == 'true',
+                        link_flair_text=post.get('link_flair_text'),
+                        is_ai=bool(post.get('is_ai', False)),
+                        random_key=random.getrandbits(63),
+                    )
+                    session.add(db_post)
+                    session.flush()
+                interaction = Interaction(
+                    user_id=g.current_user_id,
+                    post_id=db_post.id,
+                    action='like'
+                )
+                session.add(interaction)
         if post.get('is_ai', False):
             increment_liked_ai_post_count()
         else:
@@ -142,31 +161,48 @@ def dislike_post():
             return jsonify({'error': 'No post data provided'}), 400
         with db_session() as session:
             lookup_post_id = post.get('post_id')
-            if lookup_post_id and isinstance(lookup_post_id, str) and lookup_post_id.startswith('ai-'):
-                db_post = session.query(Post).filter(Post.post_id == lookup_post_id).first()
+            humor_id = post.get('humor_id')
+            if isinstance(lookup_post_id, str) and lookup_post_id.startswith('ai-'):
+                try:
+                    ai_numeric_id = int(lookup_post_id.split('ai-')[-1])
+                except Exception:
+                    ai_numeric_id = None
+                interaction = Interaction(
+                    user_id=g.current_user_id,
+                    ai_id=ai_numeric_id,
+                    action='dislike'
+                )
+                session.add(interaction)
+            elif humor_id is not None:
+                hp = session.query(HumorPost).filter(HumorPost.id == humor_id).first()
+                interaction = Interaction(
+                    user_id=g.current_user_id,
+                    humor_id=hp.id if hp else None,
+                    action='dislike'
+                )
+                session.add(interaction)
             else:
                 db_post = session.query(Post).filter(
-                    (Post.post_id == lookup_post_id) | (Post.title == post.get('title'))
+                    (Post.title == post.get('title'))
                 ).first()
-            if db_post is None:
-                db_post = Post(
-                    post_id=lookup_post_id,
-                    title=post.get('title', ''),
-                    self_text=post.get('self_text', ''),
-                    subreddit=post.get('subreddit'),
-                    over_18=str(post.get('over_18', 'false')).lower() == 'true',
-                    link_flair_text=post.get('link_flair_text'),
-                    is_ai=bool(post.get('is_ai', False)),
-                    random_key=random.getrandbits(63),
+                if db_post is None:
+                    db_post = Post(
+                        title=post.get('title', ''),
+                        self_text=post.get('self_text', ''),
+                        subreddit=post.get('subreddit'),
+                        over_18=str(post.get('over_18', 'false')).lower() == 'true',
+                        link_flair_text=post.get('link_flair_text'),
+                        is_ai=bool(post.get('is_ai', False)),
+                        random_key=random.getrandbits(63),
+                    )
+                    session.add(db_post)
+                    session.flush()
+                interaction = Interaction(
+                    user_id=g.current_user_id,
+                    post_id=db_post.id,
+                    action='dislike'
                 )
-                session.add(db_post)
-                session.flush()
-            interaction = Interaction(
-                user_id=g.current_user_id,
-                post_id=db_post.id,
-                action='dislike'
-            )
-            session.add(interaction)
+                session.add(interaction)
         # Update dislike counters by true post type
         increment_dislike(is_ai_post=bool(post.get('is_ai', False)))
         return jsonify({'message': 'Post disliked successfully'})
@@ -188,28 +224,49 @@ def next_post():
             increment_real_post_count()
 
         with db_session() as session:
-            db_post = session.query(Post).filter(
-                (Post.post_id == post.get('post_id')) | (Post.title == post.get('title'))
-            ).first()
-            if db_post is None:
-                db_post = Post(
-                    post_id=post.get('post_id'),
-                    title=post.get('title', ''),
-                    self_text=post.get('self_text', ''),
-                    subreddit=post.get('subreddit'),
-                    over_18=str(post.get('over_18', 'false')).lower() == 'true',
-                    link_flair_text=post.get('link_flair_text'),
-                    is_ai=bool(post.get('is_ai', False)),
-                    random_key=random.getrandbits(63),
+            lookup_post_id = post.get('post_id')
+            humor_id = post.get('humor_id')
+            if isinstance(lookup_post_id, str) and lookup_post_id.startswith('ai-'):
+                try:
+                    ai_numeric_id = int(lookup_post_id.split('ai-')[-1])
+                except Exception:
+                    ai_numeric_id = None
+                interaction = Interaction(
+                    user_id=g.current_user_id,
+                    ai_id=ai_numeric_id,
+                    action='next'
                 )
-                session.add(db_post)
-                session.flush()
-            interaction = Interaction(
-                user_id=g.current_user_id,
-                post_id=db_post.id,
-                action='next'
-            )
-            session.add(interaction)
+                session.add(interaction)
+            elif humor_id is not None:
+                hp = session.query(HumorPost).filter(HumorPost.id == humor_id).first()
+                interaction = Interaction(
+                    user_id=g.current_user_id,
+                    humor_id=hp.id if hp else None,
+                    action='next'
+                )
+                session.add(interaction)
+            else:
+                db_post = session.query(Post).filter(
+                    (Post.title == post.get('title'))
+                ).first()
+                if db_post is None:
+                    db_post = Post(
+                        title=post.get('title', ''),
+                        self_text=post.get('self_text', ''),
+                        subreddit=post.get('subreddit'),
+                        over_18=str(post.get('over_18', 'false')).lower() == 'true',
+                        link_flair_text=post.get('link_flair_text'),
+                        is_ai=bool(post.get('is_ai', False)),
+                        random_key=random.getrandbits(63),
+                    )
+                    session.add(db_post)
+                    session.flush()
+                interaction = Interaction(
+                    user_id=g.current_user_id,
+                    post_id=db_post.id,
+                    action='next'
+                )
+                session.add(interaction)
         return jsonify({'message': 'Post processed successfully', 'post': post})
     
     except Exception as e:
@@ -236,15 +293,42 @@ def next_batch():
                 ai_count += 1 if is_ai else 0
                 real_count += 0 if is_ai else 1
                 lookup_post_id = post.get('post_id')
-                if lookup_post_id and isinstance(lookup_post_id, str) and lookup_post_id.startswith('ai-'):
-                    db_post = session.query(Post).filter(Post.post_id == lookup_post_id).first()
-                else:
-                    db_post = session.query(Post).filter(
-                        (Post.post_id == lookup_post_id) | (Post.title == post.get('title'))
+                db_post = session.query(Post).filter(
+                    (Post.title == post.get('title'))
+                ).first()
+                if isinstance(lookup_post_id, str) and lookup_post_id.startswith('ai-'):
+                    try:
+                        ai_numeric_id = int(lookup_post_id.split('ai-')[-1])
+                    except Exception:
+                        ai_numeric_id = None
+                    try:
+                        session.add(Interaction(
+                            user_id=g.current_user_id,
+                            ai_id=ai_numeric_id,
+                            action='next'
+                        ))
+                        session.flush()
+                    except IntegrityError:
+                        session.rollback()
+                        continue
+                    continue
+                if isinstance(lookup_post_id, str) and lookup_post_id.startswith('humor-'):
+                    hp = session.query(HumorPost).filter(
+                        (HumorPost.title == post.get('title')) & (HumorPost.subreddit == post.get('subreddit'))
                     ).first()
+                    try:
+                        session.add(Interaction(
+                            user_id=g.current_user_id,
+                            humor_id=hp.id if hp else None,
+                            action='next'
+                        ))
+                        session.flush()
+                    except IntegrityError:
+                        session.rollback()
+                        continue
+                    continue
                 if db_post is None:
                     db_post = Post(
-                        post_id=lookup_post_id,
                         title=post.get('title', ''),
                         self_text=post.get('self_text', ''),
                         subreddit=post.get('subreddit'),
@@ -286,34 +370,66 @@ def judge_ai_post():
 
         # Persist a 'markedai' interaction
         with db_session() as session:
-            db_post = session.query(Post).filter(
-                (Post.post_id == post.get('post_id')) | (Post.title == post.get('title'))
-            ).first()
-            if db_post is None:
-                db_post = Post(
-                    post_id=post.get('post_id'),
-                    title=post.get('title', ''),
-                    self_text=post.get('self_text', ''),
-                    subreddit=post.get('subreddit'),
-                    over_18=str(post.get('over_18', 'false')).lower() == 'true',
-                    link_flair_text=post.get('link_flair_text'),
-                    is_ai=bool(post.get('is_ai', False)),
-                    random_key=random.getrandbits(63),
-                )
-                session.add(db_post)
-                session.flush()
-            try:
-                session.add(Interaction(
-                    user_id=g.current_user_id,
-                    post_id=db_post.id,
-                    action='markedai'
-                ))
-                session.flush()
-            except IntegrityError:
-                session.rollback()
-                # Ignore duplicate mark
+            lookup_post_id = post.get('post_id')
+            humor_id = post.get('humor_id')
+            is_ai_actual = False
+
+            if isinstance(lookup_post_id, str) and lookup_post_id.startswith('ai-'):
+                try:
+                    ai_numeric_id = int(lookup_post_id.split('ai-')[-1])
+                except Exception:
+                    ai_numeric_id = None
+                try:
+                    session.add(Interaction(
+                        user_id=g.current_user_id,
+                        ai_id=ai_numeric_id,
+                        action='markedai'
+                    ))
+                    session.flush()
+                except IntegrityError:
+                    session.rollback()
+                is_ai_actual = True
+            elif humor_id is not None:
+                hp = session.query(HumorPost).filter(HumorPost.id == humor_id).first()
+                try:
+                    session.add(Interaction(
+                        user_id=g.current_user_id,
+                        humor_id=hp.id if hp else None,
+                        action='markedai'
+                    ))
+                    session.flush()
+                except IntegrityError:
+                    session.rollback()
+                is_ai_actual = False
+            else:
+                db_post = session.query(Post).filter(
+                    (Post.title == post.get('title'))
+                ).first()
+                if db_post is None:
+                    db_post = Post(
+                        title=post.get('title', ''),
+                        self_text=post.get('self_text', ''),
+                        subreddit=post.get('subreddit'),
+                        over_18=str(post.get('over_18', 'false')).lower() == 'true',
+                        link_flair_text=post.get('link_flair_text'),
+                        is_ai=bool(post.get('is_ai', False)),
+                        random_key=random.getrandbits(63),
+                    )
+                    session.add(db_post)
+                    session.flush()
+                try:
+                    session.add(Interaction(
+                        user_id=g.current_user_id,
+                        post_id=db_post.id,
+                        action='markedai'
+                    ))
+                    session.flush()
+                except IntegrityError:
+                    session.rollback()
+                is_ai_actual = bool(db_post.is_ai)
+
         # Update experiment counters for marked-as-AI based on the actual post type, not the user's judgment
-        increment_marked_as_ai(is_ai_post=bool(db_post.is_ai), amount=1)
+        increment_marked_as_ai(is_ai_post=is_ai_actual, amount=1)
         return jsonify({'message': 'AI judgment recorded successfully'})
             
     except Exception as e:

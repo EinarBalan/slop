@@ -94,12 +94,15 @@ def get_feed():
             'title': p.title,
             'self_text': p.self_text,
             'subreddit': p.subreddit,
-            'post_id': getattr(p, 'post_id', None),
             'over_18': 'true' if getattr(p, 'over_18', False) else 'false',
             'link_flair_text': getattr(p, 'link_flair_text', None),
             'is_ai': bool(getattr(p, 'is_ai', False)),
         }
     resp_posts = [to_dict(p) for p in posts]
+    # If source is humor, include humor_id to enable interactions
+    if request.args.get('source') == 'humorposts':
+        for i, p in enumerate(posts):
+            resp_posts[i]['humor_id'] = p.id
 
     # Interleave AI posts up to the requested ratio
     desired_ai = max(0, min(len(posts), int(round(len(posts) * AI_POSTS_RATIO))))

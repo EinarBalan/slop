@@ -11,6 +11,7 @@ from db.models import Base, Post, ServedPost, Experiment, HumorPost
 
 def init_db():
     Base.metadata.create_all(bind=engine)
+    ensure_interactions_schema()
 
 
 def is_valid_row(row):
@@ -56,7 +57,6 @@ def load_posts_from_csv(limit: int | None = None, batch_size: int = 1000) -> int
                     continue
                 try:
                     post = Post(
-                        post_id=row.get('post_id') or row.get('id') or None,
                         title=row.get('title', '')[:10000],
                         self_text=row.get('self_text', '')[:100000],
                         subreddit=row.get('subreddit'),
@@ -106,11 +106,12 @@ def seed_humor_posts_if_empty():
             with open(text_csv, 'r', encoding='utf-8', newline='') as f:
                 reader = csv.DictReader(f)
                 for row in reader:
+                    title = (row.get('title') or '').strip()[:10000]
+                    subreddit = (row.get('subreddit') or None)
                     hp = HumorPost(
-                        post_id=None,
-                        title=(row.get('title') or '').strip()[:10000],
+                        title=title,
                         self_text=(row.get('text') or '').strip()[:100000],
-                        subreddit=(row.get('subreddit') or None),
+                        subreddit=subreddit,
                         over_18=False,
                         link_flair_text=None,
                         is_ai=False,
@@ -127,16 +128,18 @@ def seed_humor_posts_if_empty():
             with open(image_csv, 'r', encoding='utf-8', newline='') as f:
                 reader = csv.DictReader(f)
                 for row in reader:
+                    title = (row.get('title') or '').strip()[:10000]
+                    subreddit = (row.get('subreddit') or None)
+                    image_url = (row.get('image_url') or None)
                     hp = HumorPost(
-                        post_id=None,
-                        title=(row.get('title') or '').strip()[:10000],
+                        title=title,
                         self_text=(row.get('text') or '').strip()[:100000],
-                        subreddit=(row.get('subreddit') or None),
+                        subreddit=subreddit,
                         over_18=False,
                         link_flair_text=None,
                         is_ai=False,
                         random_key=random.getrandbits(63),
-                        image_url=(row.get('image_url') or None),
+                        image_url=image_url,
                         score=parse_score(row.get('score')),
                     )
                     session.add(hp)
@@ -149,6 +152,39 @@ def seed_humor_posts_if_empty():
     print(f"Finished seeding humorposts. Inserted {inserted} rows.")
     return inserted
 
+
+def ensure_interactions_schema():
+    """Ensure interactions has nullable post_id and humor_id, ai_id FKs."""
+    try:
+        with engine.begin() as conn:
+            # Make post_id nullable (keep as integer FK type)
+            try:
+                conn.execute(text("ALTER TABLE interactions ALTER COLUMN post_id DROP NOT NULL"))
+            except Exception:
+                pass
+            # Add humor_id and ai_id columns if missing
+            conn.execute(text("ALTER TABLE interactions ADD COLUMN IF NOT EXISTS humor_id INTEGER"))
+            conn.execute(text("ALTER TABLE interactions ADD COLUMN IF NOT EXISTS ai_id INTEGER"))
+            # Add foreign keys (ignore if already exist)
+            try:
+                conn.execute(text("ALTER TABLE interactions ADD CONSTRAINT fk_interactions_humor FOREIGN KEY (humor_id) REFERENCES humorposts(id) ON DELETE CASCADE"))
+            except Exception:
+                pass
+            try:
+                conn.execute(text("ALTER TABLE interactions ADD CONSTRAINT fk_interactions_ai FOREIGN KEY (ai_id) REFERENCES ai_generated_posts(id) ON DELETE CASCADE"))
+            except Exception:
+                pass
+            # Replace old unique constraint with new one covering all ids
+            try:
+                conn.execute(text("ALTER TABLE interactions DROP CONSTRAINT IF EXISTS uq_user_post_action"))
+            except Exception:
+                pass
+            try:
+                conn.execute(text("ALTER TABLE interactions ADD CONSTRAINT uq_user_target_action UNIQUE (user_id, post_id, humor_id, ai_id, action)"))
+            except Exception:
+                pass
+    except Exception as e:
+        print(f"ensure_interactions_schema: {e}")
 
 
 

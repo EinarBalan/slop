@@ -21,7 +21,6 @@ class User(Base):
 class Post(Base):
     __tablename__ = 'posts'
     id = Column(Integer, primary_key=True)
-    post_id = Column(String(64), unique=True, nullable=True)
     title = Column(Text, nullable=False)
     self_text = Column(Text, nullable=False)
     subreddit = Column(String(128), nullable=True)
@@ -38,7 +37,9 @@ class Interaction(Base):
     __tablename__ = 'interactions'
     id = Column(Integer, primary_key=True)
     user_id = Column(Integer, ForeignKey('users.id', ondelete='CASCADE'), nullable=False)
-    post_id = Column(Integer, ForeignKey('posts.id', ondelete='CASCADE'), nullable=False)
+    post_id = Column(Integer, ForeignKey('posts.id', ondelete='CASCADE'), nullable=True)
+    humor_id = Column(Integer, ForeignKey('humorposts.id', ondelete='CASCADE'), nullable=True)
+    ai_id = Column(Integer, ForeignKey('ai_generated_posts.id', ondelete='CASCADE'), nullable=True)
     action = Column(String(16), nullable=False)  # like, dislike, next
     created_at = Column(DateTime, default=datetime.utcnow, nullable=False)
 
@@ -46,7 +47,7 @@ class Interaction(Base):
     post = relationship("Post", back_populates="interactions")
 
     __table_args__ = (
-        UniqueConstraint('user_id', 'post_id', 'action', name='uq_user_post_action'),
+        UniqueConstraint('user_id', 'post_id', 'humor_id', 'ai_id', 'action', name='uq_user_target_action'),
     )
 
 
@@ -110,8 +111,6 @@ class Experiment(Base):
 class HumorPost(Base):
     __tablename__ = 'humorposts'
     id = Column(Integer, primary_key=True)
-    # Align with Post schema for interchangeability in feed
-    post_id = Column(String(64), nullable=True)
     title = Column(Text, nullable=False)
     self_text = Column(Text, nullable=False)
     subreddit = Column(String(128), nullable=True)
