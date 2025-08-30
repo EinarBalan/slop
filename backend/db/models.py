@@ -65,6 +65,9 @@ class ServedPost(Base):
     )
 
 
+ 
+
+
 class AiGeneratedPost(Base):
     __tablename__ = 'ai_generated_posts'
     id = Column(Integer, primary_key=True)
@@ -103,3 +106,20 @@ class Experiment(Base):
         UniqueConstraint('experiment', 'user_id', name='uq_experiment_user'),
     )
 
+
+class HumorPost(Base):
+    __tablename__ = 'humorposts'
+    id = Column(Integer, primary_key=True)
+    # Align with Post schema for interchangeability in feed
+    post_id = Column(String(64), nullable=True)
+    title = Column(Text, nullable=False)
+    self_text = Column(Text, nullable=False)
+    subreddit = Column(String(128), nullable=True)
+    over_18 = Column(Boolean, default=False, nullable=False)
+    link_flair_text = Column(String(128), nullable=True)
+    is_ai = Column(Boolean, default=False, nullable=False)
+    random_key = Column(BigInteger, index=True, nullable=False)
+
+    # Extra fields specific to humor source
+    image_url = Column(Text, nullable=True)
+    score = Column(Integer, nullable=True)

@@ -22,6 +22,8 @@ type FeedResponse = {
   aiPostsCount: number
 }
 
+type Source = 'posts' | 'humorposts'
+
 const prefersDark = () => window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
 
 export function App(): JSX.Element {
@@ -40,6 +42,9 @@ export function App(): JSX.Element {
   const [experimentOptions, setExperimentOptions] = useState<string[]>([])
   const [showExperimentPage, setShowExperimentPage] = useState(false)
   const [selectedExperiment, setSelectedExperiment] = useState<string>('random')
+  const [currentSource, setCurrentSource] = useState<Source>(() => (localStorage.getItem('source') as Source) || 'posts')
+  const [showSourcePage, setShowSourcePage] = useState(false)
+  const [selectedSource, setSelectedSource] = useState<Source>('posts')
 
   useEffect(() => {
     const media = window.matchMedia('(prefers-color-scheme: dark)')
@@ -65,7 +70,8 @@ export function App(): JSX.Element {
     try {
       const tok = localStorage.getItem('token')
       if (!tok) throw new Error('Not authenticated')
-      const res = await fetch('/feed?limit=10', {
+      const src = (localStorage.getItem('source') as Source) || currentSource || 'posts'
+      const res = await fetch(`/feed?limit=10&source=${encodeURIComponent(src)}`, {
         headers: { 'Authorization': `Bearer ${tok}` }
       })
       if (res.status === 401) {
@@ -218,7 +224,9 @@ export function App(): JSX.Element {
           <div style={{ marginLeft: 'auto', display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
             <span className="pill subtle">{username}</span>
             {currentExperiment && <span className="pill subtle">exp: {currentExperiment}</span>}
+            {currentSource && <span className="pill subtle">src: {currentSource}</span>}
             <button className="ghost" onClick={async () => { await refreshExperiment(); setSelectedExperiment(currentExperiment || 'random'); setShowExperimentPage(true) }}>Change experiment</button>
+            <button className="ghost" onClick={() => { setSelectedSource(currentSource || 'posts'); setShowSourcePage(true) }}>Change source</button>
             <button className="ghost" onClick={() => { localStorage.removeItem('token'); setToken(null); setFeed([]); }}>Log out</button>
           </div>
         )}
@@ -235,6 +243,30 @@ export function App(): JSX.Element {
             <button className="ripple" type="submit" disabled={loggingIn}>{loggingIn ? 'Logging in…' : 'Continue'}</button>
             <p className="muted" style={{ marginTop: '0.5rem' }}>No password needed in dev. A user will be created if it doesn’t exist.</p>
           </form>
+        </main>
+      )}
+
+      {token && showSourcePage && (
+        <main className="feed" style={{ maxWidth: 720, margin: '2rem auto' }}>
+          <div className="card" style={{ padding: '1rem' }}>
+            <h2>Change source</h2>
+            <p className="muted" style={{ marginBottom: '0.5rem' }}>Choose which dataset to use for the feed.</p>
+            <label htmlFor="src-select">Source</label>
+            <select id="src-select" value={selectedSource} onChange={(e) => setSelectedSource(e.target.value as Source)}>
+              <option value="posts">posts</option>
+              <option value="humorposts">humorposts</option>
+            </select>
+            <div style={{ display: 'flex', gap: 8, justifyContent: 'flex-end', marginTop: 12 }}>
+              <button className="ghost" onClick={() => setShowSourcePage(false)}>Cancel</button>
+              <button className="ripple" onClick={async () => {
+                localStorage.setItem('source', selectedSource)
+                setCurrentSource(selectedSource)
+                setShowSourcePage(false)
+                setFeed([])
+                await fetchFeed()
+              }}>Save</button>
+            </div>
+          </div>
         </main>
       )}
 
@@ -276,7 +308,7 @@ export function App(): JSX.Element {
 
       {error && <div className="banner error">{error}</div>}
 
-      {token && !showExperimentPage && (
+      {token && !showExperimentPage && !showSourcePage && (
       <main className="feed">
         {feed.map((p, i) => {
           const key = `${p.post_id || i}-${i}`
@@ -317,7 +349,7 @@ export function App(): JSX.Element {
       </main>
       )}
 
-      {token && !showExperimentPage && (
+      {token && !showExperimentPage && !showSourcePage && (
         <footer className="pager">
           <button className="ghost" onClick={async () => { await sendSkippedAndNext(); await fetchFeed(); window.scrollTo({ top: 0, behavior: 'smooth' }) }} disabled={loading}>
             {loading ? 'Loading…' : 'Next page →'}

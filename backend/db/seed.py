@@ -2,11 +2,11 @@ import csv
 import os
 import random
 from pathlib import Path
-from sqlalchemy import select
+from sqlalchemy import select, text
 from sqlalchemy.exc import IntegrityError
 from config import DATABASE_URL
 from db import engine, db_session
-from db.models import Base, Post, ServedPost, Experiment
+from db.models import Base, Post, ServedPost, Experiment, HumorPost
 
 
 def init_db():
@@ -80,6 +80,78 @@ def load_posts_from_csv(limit: int | None = None, batch_size: int = 1000) -> int
     return inserted
 
 
+def seed_humor_posts_if_empty():
+    """Load humor posts from CSVs into humorposts table if empty."""
+    base_dir = Path(__file__).resolve().parent.parent / 'data'
+    text_csv = base_dir / 'humor_text_posts.csv'
+    image_csv = base_dir / 'humor_image_posts.csv'
+
+    with db_session() as session:
+        existing = session.query(HumorPost).count()
+        if existing > 0:
+            print(f"DB has {existing} humor posts; skipping humor seed")
+            return 0
+
+    inserted = 0
+
+    def parse_score(value):
+        try:
+            return int(value)
+        except Exception:
+            return None
+
+    def insert_text_rows(session):
+        nonlocal inserted
+        if text_csv.exists():
+            with open(text_csv, 'r', encoding='utf-8', newline='') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    hp = HumorPost(
+                        post_id=None,
+                        title=(row.get('title') or '').strip()[:10000],
+                        self_text=(row.get('text') or '').strip()[:100000],
+                        subreddit=(row.get('subreddit') or None),
+                        over_18=False,
+                        link_flair_text=None,
+                        is_ai=False,
+                        random_key=random.getrandbits(63),
+                        image_url=None,
+                        score=parse_score(row.get('score')),
+                    )
+                    session.add(hp)
+                    inserted += 1
+
+    def insert_image_rows(session):
+        nonlocal inserted
+        if image_csv.exists():
+            with open(image_csv, 'r', encoding='utf-8', newline='') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    hp = HumorPost(
+                        post_id=None,
+                        title=(row.get('title') or '').strip()[:10000],
+                        self_text=(row.get('text') or '').strip()[:100000],
+                        subreddit=(row.get('subreddit') or None),
+                        over_18=False,
+                        link_flair_text=None,
+                        is_ai=False,
+                        random_key=random.getrandbits(63),
+                        image_url=(row.get('image_url') or None),
+                        score=parse_score(row.get('score')),
+                    )
+                    session.add(hp)
+                    inserted += 1
+
+    with db_session() as session:
+        insert_text_rows(session)
+        insert_image_rows(session)
+
+    print(f"Finished seeding humorposts. Inserted {inserted} rows.")
+    return inserted
+
+
+
+
 def seed_if_empty():
     init_db()
     with db_session() as session:
@@ -93,6 +165,8 @@ def seed_if_empty():
                 print(f"Automatic CSV seed failed: {e}")
         else:
             print(f"DB has {count} posts; skipping seed")
+
+    seed_humor_posts_if_empty()
 
 
 def clear_served_posts():

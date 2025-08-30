@@ -1,18 +1,18 @@
 import random
 from typing import List
 from flask import Blueprint, jsonify, request, g
-from sqlalchemy import and_, select
+from sqlalchemy import and_, select, func
 from auth import require_auth
 from config import BATCH_SIZE, AI_POSTS_RATIO
 from db import db_session
-from db.models import Post, ServedPost
+from db.models import Post, ServedPost, HumorPost
 from generate import get_ai_posts
 from stats import increment_ai_post_count, increment_real_post_count
 
 feed = Blueprint('feed', __name__)
 
 
-def sample_random_posts_excluding_served(user_id: int, limit: int) -> List[Post]:
+def sample_random_posts_excluding_served(user_id: int, limit: int, source: str) -> List[Post]:
     # Two-phase sampling using random_key windows to avoid ORDER BY RANDOM() cost
     # 1) try to pick a random window and fetch LIMIT rows not served
     # 2) if insufficient, fall back to a few retries; finally fallback to ORDER BY RANDOM for small remainder
@@ -27,15 +27,22 @@ def sample_random_posts_excluding_served(user_id: int, limit: int) -> List[Post]
             max_bigint = (1 << 63) - 1
             a = center - half_span if center >= half_span else min_bigint
             b = center + half_span if center <= (max_bigint - half_span) else max_bigint
-            q = (
-                session.query(Post)
-                .outerjoin(ServedPost, and_(ServedPost.user_id == user_id, ServedPost.post_id == Post.id))
-                .filter(
-                    Post.random_key.between(a, b),
-                    ServedPost.id.is_(None),
+            if source == 'humorposts':
+                q = (
+                    session.query(HumorPost)
+                    .order_by(func.random())
+                    .limit(limit - len(results))
                 )
-                .limit(limit - len(results))
-            )
+            else:
+                q = (
+                    session.query(Post)
+                    .outerjoin(ServedPost, and_(ServedPost.user_id == user_id, ServedPost.post_id == Post.id))
+                    .filter(
+                        Post.random_key.between(a, b),
+                        ServedPost.id.is_(None),
+                    )
+                    .limit(limit - len(results))
+                )
             chunk = q.all()
             results.extend(chunk)
             if len(results) >= limit:
@@ -44,20 +51,28 @@ def sample_random_posts_excluding_served(user_id: int, limit: int) -> List[Post]
         if len(results) < limit:
             # Fallback: simple random order for the remainder
             remainder = limit - len(results)
-            q = (
-                session.query(Post)
-                .outerjoin(ServedPost, and_(ServedPost.user_id == user_id, ServedPost.post_id == Post.id))
-                .filter(ServedPost.id.is_(None))
-                .order_by(Post.random_key)
-                .limit(remainder * 10)
-            )
+            if source == 'humorposts':
+                q = (
+                    session.query(HumorPost)
+                    .order_by(func.random())
+                    .limit(remainder * 2)
+                )
+            else:
+                q = (
+                    session.query(Post)
+                    .outerjoin(ServedPost, and_(ServedPost.user_id == user_id, ServedPost.post_id == Post.id))
+                    .filter(ServedPost.id.is_(None))
+                    .order_by(Post.random_key)
+                    .limit(remainder * 10)
+                )
             pool = q.all()
             random.shuffle(pool)
             results.extend(pool[:remainder])
 
-        # Mark served
-        for p in results:
-            session.add(ServedPost(user_id=user_id, post_id=p.id))
+        # Mark served only for posts (reverting humor marking)
+        if source != 'humorposts':
+            for p in results:
+                session.add(ServedPost(user_id=user_id, post_id=p.id))
 
     return results
 
@@ -67,22 +82,24 @@ def sample_random_posts_excluding_served(user_id: int, limit: int) -> List[Post]
 def get_feed():
     limit = int(request.args.get('limit') or BATCH_SIZE)
     user_id = g.current_user_id
-    posts = sample_random_posts_excluding_served(user_id, limit)
+    source = request.args.get('source') or 'posts'
+    if source not in ('posts', 'humorposts'):
+        source = 'posts'
+    posts = sample_random_posts_excluding_served(user_id, limit, source)
 
     # Map to response schema
-    resp_posts = [
-        {
+    def to_dict(p):
+        return {
             'id': p.id,
             'title': p.title,
             'self_text': p.self_text,
             'subreddit': p.subreddit,
-            'post_id': p.post_id,
-            'over_18': 'true' if p.over_18 else 'false',
-            'link_flair_text': p.link_flair_text,
-            'is_ai': bool(p.is_ai),
+            'post_id': getattr(p, 'post_id', None),
+            'over_18': 'true' if getattr(p, 'over_18', False) else 'false',
+            'link_flair_text': getattr(p, 'link_flair_text', None),
+            'is_ai': bool(getattr(p, 'is_ai', False)),
         }
-        for p in posts
-    ]
+    resp_posts = [to_dict(p) for p in posts]
 
     # Interleave AI posts up to the requested ratio
     desired_ai = max(0, min(len(posts), int(round(len(posts) * AI_POSTS_RATIO))))
