@@ -25,12 +25,19 @@ app.register_blueprint(auth, url_prefix='/auth')
 app.register_blueprint(feed)
 app.register_blueprint(experiments, url_prefix='/experiments')
 
-# Start background generation thread if enabled
-if args.background:
-    generation_thread = start_background_generation()
-    print("Background LLM generation enabled")
-else:
-    print("Background LLM generation disabled")
+_bg_started = False
+
+@app.before_request
+def _start_background_if_needed():
+    global _bg_started
+    if _bg_started:
+        return
+    if args.background:
+        start_background_generation()
+        print("Background LLM generation enabled")
+    else:
+        print("Background LLM generation disabled")
+    _bg_started = True
 
 
 if __name__ == '__main__':

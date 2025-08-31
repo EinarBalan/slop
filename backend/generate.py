@@ -61,6 +61,7 @@ def background_generation():
     while True:
         try:
             if not ai_posts_queue.full():
+                print(f"[bg] Queue has space. Current size: {ai_posts_queue.qsize()}")
                 if args.archive:
                     # Pull recent archived AI posts to buffer the queue
                     try:
@@ -83,15 +84,23 @@ def background_generation():
                             }
                             try:
                                 ai_posts_queue.put_nowait(post)
+                                print(f"[bg] Enqueued archived AI post id=ai-{r.id}. Queue size: {ai_posts_queue.qsize()}")
                             except Full:
+                                print("[bg] Queue full while enqueuing archived posts")
                                 break
                     except Exception as e:
                         print(f"Failed to fetch archived AI posts: {e}")
                 else:
                     result = llm_service.exp_generate_text()
-                    if "error" not in result:
-                        fields = parse_ai_post(result["generated_text"])
-                        if fields:
+                    if "error" in result:
+                        print(f"[bg] Generation error: {result.get('error')}")
+                    else:
+                        txt = result.get("generated_text", "")
+                        print(f"[bg] Generated text length: {len(txt)}")
+                        fields = parse_ai_post(txt)
+                        if not fields:
+                            print("[bg] Parse failed; skipping enqueue")
+                        else:
                             # Persist to archive table and use its id as external post_id
                             new_id = None
                             try:
@@ -121,8 +130,9 @@ def background_generation():
                                     "is_ai": True,
                                 }
                                 ai_posts_queue.put_nowait(post)
+                                print(f"[bg] Enqueued AI post id={post['post_id']}. Queue size: {ai_posts_queue.qsize()}")
                             except Full:
-                                pass  # Queue is full, skip this post
+                                print("[bg] Queue full while enqueuing generated post")
             time.sleep(GENERATION_INTERVAL)
         except Exception as e:
             print(f"Error in background generation: {e}")
@@ -134,15 +144,27 @@ def start_background_generation():
     generation_thread.start()
     return generation_thread
 
-def get_ai_posts():
-    """Get AI posts from the background generation queue."""
+def get_ai_posts(max_count: int | None = None):
+    """Get up to max_count AI posts from the background generation queue.
+
+    Falls back to GENERATE_BATCH_SIZE if max_count is not provided.
+    """
+    limit = max_count if isinstance(max_count, int) and max_count > 0 else GENERATE_BATCH_SIZE
     ai_posts = []
-    while not ai_posts_queue.empty() and len(ai_posts) < GENERATE_BATCH_SIZE:
+    try:
+        print(f"[get_ai_posts] Queue starting size: {ai_posts_queue.qsize()}, requested: {limit}")
+    except Exception:
+        pass
+    while not ai_posts_queue.empty() and len(ai_posts) < limit:
         try:
             ai_post = ai_posts_queue.get_nowait()
             ai_posts.append(ai_post)
         except Empty:
             break
+    try:
+        print(f"[get_ai_posts] Returning {len(ai_posts)} posts; queue now size: {ai_posts_queue.qsize()}")
+    except Exception:
+        pass
     return ai_posts
 
 def generate_batch():

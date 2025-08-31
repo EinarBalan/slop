@@ -12,6 +12,8 @@ def parse_args():
     parser.add_argument('--archive', action='store_true',
                         help='Serve AI posts from archive instead of generating new ones. '
                              'If enabled, the chosen --model/--experiment will not be honored for AI posts.')
+    parser.add_argument('--source', type=str, choices=['base', 'base-humor'], default='base',
+                        help='Choose generation prompt source ("base" or "base-humor")')
     return parser.parse_args()
 
 # Parse arguments once when the module is imported
@@ -30,10 +32,10 @@ SECRET_KEY = os.getenv("SECRET_KEY", "yea-secret")
 DEV_AUTH_NO_PASSWORD = os.getenv("DEV_AUTH_NO_PASSWORD", "true").lower() in ("1", "true", "yes")
 
 # Generation configuration(
-GENERATE_BATCH_SIZE = 3
-AI_POSTS_QUEUE_SIZE = 5  # Maximum number of AI posts to store
-GENERATION_INTERVAL = 5  # Seconds between generation attempts
-AI_POSTS_RATIO = 0.4    # Fraction of AI posts in the feed (0.0 - 1.0)
+GENERATE_BATCH_SIZE = int(os.getenv("GENERATE_BATCH_SIZE", "5"))
+AI_POSTS_QUEUE_SIZE = int(os.getenv("AI_POSTS_QUEUE_SIZE", "30"))  # Maximum number of AI posts to store
+GENERATION_INTERVAL = float(os.getenv("GENERATION_INTERVAL", "2"))  # Seconds between generation attempts
+AI_POSTS_RATIO = float(os.getenv("AI_POSTS_RATIO", "0.4"))    # Fraction of AI posts in the feed (0.0 - 1.0)
 
 # Experiments
 AVAILABLE_EXPERIMENTS = [

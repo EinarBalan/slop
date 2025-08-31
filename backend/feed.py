@@ -111,10 +111,14 @@ def get_feed():
 
     # Interleave AI posts up to the requested ratio
     desired_ai = max(0, min(len(posts), int(round(len(posts) * AI_POSTS_RATIO))))
-    ai_posts = get_ai_posts()[:desired_ai]
+    print(f"Desired AI posts: {desired_ai}")
+    num_ai_posts = 0
+    ai_posts = get_ai_posts(desired_ai)
     for ai in ai_posts:
         idx = random.randint(0, len(resp_posts))
         resp_posts.insert(idx, ai)
+        num_ai_posts += 1
+    print(f"Actual AI posts: {num_ai_posts}")
 
     # Update served counters: real posts and AI posts served
     for _ in range(len(posts)):

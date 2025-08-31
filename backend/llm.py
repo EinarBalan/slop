@@ -7,7 +7,8 @@ from config import (
     DEFAULT_MAX_LENGTH,
     DEFAULT_NUM_RETURN_SEQUENCES,
     DEFAULT_TEMPERATURE,
-    PROMPTS
+    PROMPTS,
+    args
 )
 from flask import g
 
@@ -101,7 +102,10 @@ class LLMService:
         self.ensure_experiment_initialized()
         exp = self.experiment
         if exp == "base":
-            return self.generate_text(PROMPTS["base"], max_length, num_return_sequences, temperature)
+            use_humor = (getattr(args, 'source', 'base') == 'base-humor')
+            prompt_key = "base-humor" if use_humor else "base"
+            print(f"Using prompt: {prompt_key}")
+            return self.generate_text(PROMPTS[prompt_key], max_length, num_return_sequences, temperature)
         elif exp == "summarize":
             return self.generate_text(PROMPTS["base-summarize"] + PROMPTS["summary"]["generated_text"], max_length, num_return_sequences, temperature)
         elif exp == "finetuned":  #TODO
