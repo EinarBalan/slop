@@ -4,6 +4,7 @@ from auth import require_auth
 from db import db_session
 from db.models import User
 from config import AVAILABLE_EXPERIMENTS
+from generate import set_background_experiment
 
 experiments = Blueprint('experiments', __name__)
 
@@ -43,8 +44,32 @@ def set_experiment():
     # update request context for remainder of this request
     g.current_experiment = chosen
 
+    # Also update background generator's experiment so future AI posts match
+    try:
+        set_background_experiment(chosen)
+    except Exception:
+        pass
     # response hides choice if not aware
     response_choice = chosen if aware else None
     return jsonify({'ok': True, 'current': response_choice})
+
+
+@experiments.route('/set-source', methods=['POST'])
+@require_auth
+def set_source_for_background():
+    data = request.get_json(force=True) or {}
+    src = data.get('source')  # 'posts' or 'humorposts'
+    if src not in ('posts', 'humorposts'):
+        return jsonify({'error': 'invalid source'}), 400
+    # Update the prompt source used by background generator
+    try:
+        from generate import llm_service
+        llm_service.prompt_source = 'base-humor' if src == 'humorposts' else 'base'
+        print(f"Background prompt source updated to: {llm_service.prompt_source} (requested source: {src})")
+        # ensure it re-initializes next call if needed
+        llm_service._initialized_experiment = None
+        return jsonify({'ok': True})
+    except Exception as e:
+        return jsonify({'error': 'failed to set source', 'message': str(e)}), 500
 
 

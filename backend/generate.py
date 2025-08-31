@@ -21,7 +21,7 @@ generate = Blueprint('generate', __name__)
 
 # Initialize LLM service
 
-llm_service = get_llm_service(args.model, 'base')
+llm_service = get_llm_service(args.model, args.experiment or 'base')
 print("LLM service initialized")
 
 # Queue to store AI generated posts
@@ -144,6 +144,18 @@ def start_background_generation():
     generation_thread.start()
     return generation_thread
 
+
+def set_background_experiment(experiment: str):
+    """Update the default experiment used by the background generator."""
+    try:
+        new_exp = experiment or 'base'
+        llm_service._default_experiment = new_exp
+        # Force re-initialization under the new experiment on next generation call
+        llm_service._initialized_experiment = None
+        print(f"Background experiment set to: {new_exp}")
+    except Exception as e:
+        print(f"Failed to set background experiment: {e}")
+
 def get_ai_posts(max_count: int | None = None):
     """Get up to max_count AI posts from the background generation queue.
 
@@ -182,6 +194,7 @@ def generate_batch():
 ###########
 
 @generate.route('/base')
+@require_auth
 def generate_base():
     try:
         results = generate_batch()
@@ -197,6 +210,7 @@ def generate_slop():
     return jsonify({'error': 'Not implemented yet'}), 501
 
 @generate.route('/summarize')
+@require_auth
 def generate_summarize():
     try:
         result = llm_service.exp_generate_text()

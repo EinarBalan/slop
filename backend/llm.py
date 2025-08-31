@@ -8,8 +8,11 @@ from config import (
     DEFAULT_NUM_RETURN_SEQUENCES,
     DEFAULT_TEMPERATURE,
     PROMPTS,
-    args
+    args,
+    HUMOR_SUBREDDITS,
+    WHITELIST_SUBREDDITS,
 )
+import random
 from flask import g
 
 class LLMService:
@@ -24,6 +27,9 @@ class LLMService:
         self._default_experiment = default_experiment or 'base'
         # Tracks which experiment the underlying model/client is initialized for
         self._initialized_experiment: str | None = None
+        # Mutable prompt source used by background generation and requests without explicit source context
+        # Values: 'base' or 'base-humor'
+        self.prompt_source: str = getattr(args, 'source', 'base') or 'base'
         # Defer heavy initialization until first use
 
     def ensure_experiment_initialized(self):
@@ -101,10 +107,10 @@ class LLMService:
         """
         self.ensure_experiment_initialized()
         exp = self.experiment
+        print(f"Using experiment: {exp}")
         if exp == "base":
-            use_humor = (getattr(args, 'source', 'base') == 'base-humor')
+            use_humor = (self.prompt_source == 'base-humor')
             prompt_key = "base-humor" if use_humor else "base"
-            print(f"Using prompt: {prompt_key}")
             return self.generate_text(PROMPTS[prompt_key], max_length, num_return_sequences, temperature)
         elif exp == "summarize":
             return self.generate_text(PROMPTS["base-summarize"] + PROMPTS["summary"]["generated_text"], max_length, num_return_sequences, temperature)
@@ -116,6 +122,19 @@ class LLMService:
             return self.generate_text(PROMPTS["user-defined"], max_length, num_return_sequences, temperature)
         elif exp == "like-history-text": #TODO
             return self.generate_text(PROMPTS["base"], max_length, num_return_sequences, temperature)
+        elif exp == "subreddit":
+            # Choose subreddit set by source
+            use_humor = (self.prompt_source == 'base-humor')
+            if use_humor:
+                pool = HUMOR_SUBREDDITS
+            else:
+                pool = list(WHITELIST_SUBREDDITS)
+            try:
+                chosen = random.choice(pool)
+            except Exception:
+                chosen = 'AskReddit'
+            prompt = PROMPTS["subreddit"].replace("{subreddit}", chosen)
+            return self.generate_text(prompt, max_length, num_return_sequences, temperature)
 
     def generate_text(self, prompt, max_length=DEFAULT_MAX_LENGTH, num_return_sequences=DEFAULT_NUM_RETURN_SEQUENCES, temperature=DEFAULT_TEMPERATURE):
         """Generate text using the pipeline.
@@ -206,6 +225,7 @@ class LLMService:
         
         
         
+
 
 def get_llm_service(model,experiment):
     """Get an instance of the LLM service."""

@@ -280,6 +280,14 @@ export function App(): JSX.Element {
               <button className="ripple" onClick={async () => {
                 localStorage.setItem('source', selectedSource)
                 setCurrentSource(selectedSource)
+                try {
+                  const tok = localStorage.getItem('token')
+                  await fetch('/experiments/set-source', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${tok}` },
+                    body: JSON.stringify({ source: selectedSource })
+                  })
+                } catch {}
                 setShowSourcePage(false)
                 setFeed([])
                 await fetchFeed()
