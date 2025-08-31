@@ -10,6 +10,8 @@
 frontend/node_modules
 
 backend/data/**
+!backend/data/getjokes.py
+!backend/data/README.md
 !backend/data/getdata.sh
 !backend/data/export_ai_posts.py
 .vscode/*
