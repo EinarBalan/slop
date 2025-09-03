@@ -13,6 +13,7 @@ backend/data/**
 !backend/data/getjokes.py
 !backend/data/README.md
 !backend/data/getdata.sh
+!backend/data/sampleposts.py
 !backend/data/export_ai_posts.py
 .vscode/*
 !.vscode/extensions.json
