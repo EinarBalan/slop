@@ -87,7 +87,10 @@ def validate_table_name(engine: Engine, table: str) -> str:
 
 def fetch_sample(engine: Engine, table: str, limit: int) -> list[dict[str, Any]]:
     # Use ORDER BY random() which is supported on Postgres
-    sql = text(f"SELECT * FROM {table} ORDER BY random() LIMIT :limit")
+    if table == "humorposts":
+        sql = text(f"SELECT * FROM {table} WHERE self_text != '' AND image_url IS NULL AND (subreddit IS NULL OR subreddit NOT ILIKE '%joke%') ORDER BY random() LIMIT :limit")
+    else:
+        sql = text(f"SELECT * FROM {table} ORDER BY random() LIMIT :limit")
     with engine.connect() as conn:
         result = conn.execute(sql, {"limit": limit})
         rows = [dict(row._mapping) for row in result]
