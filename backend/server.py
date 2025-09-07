@@ -7,6 +7,7 @@ from auth import auth
 from feed import feed
 from experiments import experiments
 from db.seed import seed_if_empty, clear_served_posts
+from datasets import datasets
 
 app = Flask(__name__)
 CORS(app)
@@ -24,6 +25,7 @@ app.register_blueprint(generate, url_prefix='/generate')
 app.register_blueprint(auth, url_prefix='/auth')
 app.register_blueprint(feed)
 app.register_blueprint(experiments, url_prefix='/experiments')
+app.register_blueprint(datasets, url_prefix='/datasets')
 
 _bg_started = False
 

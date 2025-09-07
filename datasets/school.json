@@ -1,0 +1,458 @@
+[
+  {
+    "source": "posts",
+    "id": 476061,
+    "title": "Computer Engineering or Computer Science",
+    "self_text": "So currently I am only 13 so I'm obviously looking way into the future. If I am looking to become a computer engineer out of college and eventually work at a FAANG company, Would I be better inclined to major in computer science or computer engineering in college? Also would going to an Ivy League better my chances at landing programming jobs?",
+    "subreddit": "learnprogramming",
+    "selected_at": "2025-09-06T23:16:52.736077Z"
+  },
+  {
+    "source": "posts",
+    "id": 620095,
+    "title": "Tracking Progress with new design",
+    "self_text": "I just got the learning path today.  As I understand it, there are no more crowns, is that correct?  I liked the crowns to see how far I still have to go and how much progress I've made. I had challenged myself to do 5 crowns every week.  Is there any similar feature to track my progress? Or at least to know many percent of the path I have completed?   XP is useless because of boosts and other weird stuff.",
+    "subreddit": "duolingo",
+    "selected_at": "2025-09-06T23:19:14.456045Z"
+  },
+  {
+    "source": "posts",
+    "id": 321979,
+    "title": "UK University spLD assessment for accessibility. What can I ask for?",
+    "self_text": "So I have an disability appointment for spLD with my university, after my ADHD appointment.   One of the main reasons I went for my assessment was because of how badly it impacted my undergraduate. I am currently doing my masters & already struggling - which is why I am going for this appointment.   I just don’t really know what kind of support I can ask for? they asked how do I think they can help, so what they offer, I’m guessing, will be based on what I say I struggle with at uni  Obviously I don’t want to ask for things that won’t actually help.   At the same time, does anyone have examples of things that their university or DSA assisted them with that made university more accessible for them.   I struggle with inattentive/hyperactive and impulsive & I know support is individual, but if I could get ideas of examples it would be helpful.  (I literally know nothing about the service because I didn’t even know this was a thing till my course director told me)",
+    "subreddit": "ADHD",
+    "selected_at": "2025-09-06T23:19:56.484028Z"
+  },
+  {
+    "source": "posts",
+    "id": 933407,
+    "title": "Do education councillors get a percentage of fees for enrolling students into certain universities abroad?",
+    "self_text": "So a bunch of my friends and I  are in process of applying to uni abroad for further studies but every education councillors some of us have visited scrap our list of preferred colleges and keep on insisting on applying to the colleges from their list, it’s not like we don’t have the marks, on avg our marks fall in the bracket of 85%-90%. Do these people get a cut for enrolling students in their given list of abroad colleges?  Let’s not even start talking about their exorbitant fees just to help with a damn SOP 😒",
+    "subreddit": "mumbai",
+    "selected_at": "2025-09-06T23:20:08.227248Z"
+  },
+  {
+    "source": "posts",
+    "id": 308658,
+    "title": "FastAPI seems to be losing connection with mysql database",
+    "self_text": "Hey all.. Weird thing going on. I've got a very simple rest api built with FastAPI. it connects to a MySQL database with  the pymysql module and I do really simple 'select' queries. It runs great for a while and then suddenly it starts giving me 'internal server error' for anything that gets database content.  it's not logging anything except for the actual internal server error message, so that's kinda useless.  It feels like it's losing database connection but since I don't get any errors, I'm not sure how to check this (or how to fix that if that is what's happening).  Does anyone know where to start looking?",
+    "subreddit": "learnpython",
+    "selected_at": "2025-09-06T23:23:23.407537Z"
+  },
+  {
+    "source": "posts",
+    "id": 553002,
+    "title": "Advice for someone taking the test tmr",
+    "self_text": "For the test takers that took it today, what do you wish you studied more? Are there any helpful tips you guys can give me? Thanks in advance. I hope you all reached your goal or did even better!!!",
+    "subreddit": "LSAT",
+    "selected_at": "2025-09-06T23:24:11.636489Z"
+  },
+  {
+    "source": "posts",
+    "id": 783034,
+    "title": "EA decision notifications",
+    "self_text": "My son (not on Reddit) applied EA to a healthy range of schools for CS.  He was accepted into UD only a couple of days after their deadline and into SUNY Buffalo (honors) a few days ago.  I thought EA notifications were similar to ED in that each school has a specific date in which they send out all their decisions.  My son was also accepted to Pitt, but that makes sense to me given that it is rolling admissions.  I just didn't realize EA notifications might work that way as well.  Is this the norm?",
+    "subreddit": "ApplyingToCollege",
+    "selected_at": "2025-09-06T23:24:50.295182Z"
+  },
+  {
+    "source": "posts",
+    "id": 421470,
+    "title": "Is it okay to accept a verbal offer and then ask for a deadline extension?",
+    "self_text": "I accepted a verbal offer from a company last Thursday, and then they sent me an offer letter with a deadline of 3 days. But I have changed my idea and want to wait for the result of other bigger companies in about 2 weeks. Is it okay if I ask for an extension of the offer deadline?  I am an international student and applied for this company through Handshake. I am worried that the company may tell the school if I reneged.",
+    "subreddit": "csMajors",
+    "selected_at": "2025-09-06T23:24:58.087109Z"
+  },
+  {
+    "source": "posts",
+    "id": 668643,
+    "title": "College is great",
+    "self_text": "I've developed 10 new insecurities and discovered a new lack of self worth.",
+    "subreddit": "teenagers",
+    "selected_at": "2025-09-06T23:27:47.893675Z"
+  },
+  {
+    "source": "posts",
+    "id": 303175,
+    "title": "Thoughts on 700 S Gregory Apartments (JSM Gregory Place)",
+    "self_text": "Does anyone have any thoughts/experiences to share about these apartments? Wanted to move somewhere quieter and better for studying. When I went on the tour a saw a lot of people with instruments living here. Has instrument practicing been a problem for anyone living here? The layout is pretty small, but I think I could live with that since it has pretty much everything I need. Does JSM bother residents with a lot of tours? Is there any way around that?",
+    "subreddit": "UIUC",
+    "selected_at": "2025-09-06T23:28:30.354429Z"
+  },
+  {
+    "source": "posts",
+    "id": 765542,
+    "title": "IT/Cloud certification pathway advice",
+    "self_text": "Just looking for some advice on where I should go/ what I should do next. I currently work in administration and am looking to transition into IT. To be more specific, into the cloud and cloud security. Currently I hold Google It Support, AZ-900(Azure Fundamentals), SC-900(Security Fundamentals), AZ-140(Azure Virtual Desktop Specialist). I am at a bit of an impasse as to what certification I should get next. Looking to grow my knowledge, as well as work toward a position working in the cloud. Although I don't have any work experience in IT. I have a domain where I post documentation and tutorials of projects that I do. Mainly as a way to show I have experience and showcase some of my skills. I know I'll probably need Security+, but besides that I'm not sure where to go next. Any advice would be appreciated.",
+    "subreddit": "ITCareerQuestions",
+    "selected_at": "2025-09-06T23:33:04.871130Z"
+  },
+  {
+    "source": "posts",
+    "id": 721802,
+    "title": "Is it ok to walk into random classes and attend lectures?",
+    "self_text": "I just took my O's and I'm looking to pass my time. Attending these sorts of lectures kind of help me feel more productive in a way. The obvious answer for the question \"Is it ok to walk into random classes and attend lectures?\" seems like a no, but I've had some of my older friends and some seniors say its perfectly fine. Even upon searching for clarification through visiting sites, there were different answers. So for Singaporean UNIs, is it ok to attend lectures without enrolling in?  P.S: I cant exactly disguise myself as someone who actually enrolled in a class when I'm really attending a lecture I didn't pay for, as I'm 16 and they'll definitely know that I didn't enroll in the class lmao.  Edit : For those of you saying I can't learn UNI stuff, I'm solely looking for computing-related courses. I actually learnt computing through the UNI syllabus and I've been to UNI lectures, so I'll be able to understand it.",
+    "subreddit": "SGExams",
+    "selected_at": "2025-09-06T23:34:53.138853Z"
+  },
+  {
+    "source": "posts",
+    "id": 957146,
+    "title": "Internationals who apply ED, how do you check what amount of financial aid you'd get?",
+    "self_text": "I'm mainly talking about need blind schools who do give financial aid to internationals. Their NPCs are often for US citizens only. So how do you check as to what amount you'd have to pay?",
+    "subreddit": "ApplyingToCollege",
+    "selected_at": "2025-09-06T23:37:30.610164Z"
+  },
+  {
+    "source": "posts",
+    "id": 330598,
+    "title": "How do i know my ACT STEM score?",
+    "self_text": "I'm able to self report my score, but the ACT website doesn't directly tell me what my stem score is.   The University's admin office said it's the average of my math and science score. So i averaged them and it came out to a 28.5  Now it has to be a whole number, so do i round it up or down? I'm afraid that if i round up or down it'll be the opposite of what the official score would indicate.",
+    "subreddit": "ApplyingToCollege",
+    "selected_at": "2025-09-06T23:38:43.240277Z"
+  },
+  {
+    "source": "posts",
+    "id": 881633,
+    "title": "Career opportunities as an accountant in an Investment bank",
+    "self_text": "Graduated recently and first job I got is to work as a junior accountant in an investment bank. Any ideas what opportunities would be open for me? I've always been interested in works related to financial analysis but I'm not sure if staying here would help me gain the skills required for that. But any idea what can other expectations i can have from my current kind of job?",
+    "subreddit": "Accounting",
+    "selected_at": "2025-09-06T23:40:23.534731Z"
+  },
+  {
+    "source": "posts",
+    "id": 751208,
+    "title": "I spent 3 days trying to solve this problem. Can anyone help me?",
+    "self_text": "\"All students of a class are of the same age, except for seven who are 1 year yonger, and two who are 2 years older. The age of all students added together equals 330. How many students are there in this class?\"  It seems to me like there is not enough data to solve this. I only managed to build one equation, which I verified to be true. But I need a second one to do that x&y-system thing. Any help is appreciated.",
+    "subreddit": "learnmath",
+    "selected_at": "2025-09-06T23:42:41.487409Z"
+  },
+  {
+    "source": "posts",
+    "id": 601668,
+    "title": "Hey anyone know anything about Bryn Mawr’s environmental studies program?",
+    "self_text": "Need help with Bryn Mawr “why this school” essay. Their website doesn’t tell you crap about their envsci program.",
+    "subreddit": "ApplyingToCollege",
+    "selected_at": "2025-09-06T23:50:26.171115Z"
+  },
+  {
+    "source": "posts",
+    "id": 691368,
+    "title": "Winter Stats 10 Lecture 4",
+    "self_text": "Does anyone want to drop stats 10 (lecture 4) for this winter? Please let me know.",
+    "subreddit": "ucla",
+    "selected_at": "2025-09-06T23:51:14.643386Z"
+  },
+  {
+    "source": "posts",
+    "id": 883492,
+    "title": "question about logs of negative values",
+    "self_text": "help with log of negative numbers  Was just curious and surfing math stuff and I stumbled across deriving ln(-1) = ipi with e^(i pi) +1 = 0  I understand how this makes sense, but I have an inconsistency I came across I need an explaination for.   ln(-1) = i pi 2ln(-1) = ln[(-1)^2] = ln 1 = 0 != 2i pi This doesnt make much sense to me, there must be an error in reasoning. Any help? Also are there some real life applications of logs of negative values, or is it just pure theory?",
+    "subreddit": "learnmath",
+    "selected_at": "2025-09-06T23:53:20.411609Z"
+  },
+  {
+    "source": "posts",
+    "id": 347422,
+    "title": "Day 2 of learning Python, question about something fundamental about arrays",
+    "self_text": "I literally only yesterday decided to start learning Python, following the free course over on Datacamp, which has been excellent so far. It starts of slowly of course, arrays (and Numpy arrays) were quickly introduced. However I have a fundamental question about arrays.  This was one of the tasks (working with fictitious height & weight data)  # Print mean height (first column) avg = np.mean(np_baseball[:,0]) print(\"Average: \" + str(avg))   The coding itself is easy to understand, but I keep struggling with internalising the \"[:,0]\" bit. It is used to take out the first column of data, and do some analysis on that. But in my mind, \"[:,0]\" means to take the first row instead.  I see them as coordinates, which always follow the [x,y] formula. For me, the colon means to take everything from the first x value (so the data from the horizontal/row), with the 0 limiting it to the first row.  I hope that all made sense, because it is a fundamental problem for me right now. How am I wrong in my interpretation that arrays use the coordinate system the wrong way around? [0,:] for me means to stop on the first x value, and take everything from the y axis.",
+    "subreddit": "learnpython",
+    "selected_at": "2025-09-06T23:54:33.334472Z"
+  },
+  {
+    "source": "posts",
+    "id": 383589,
+    "title": "Aspiring LA Teacher: Transness and Safety",
+    "self_text": "Hi,  I really want to be a high school teacher. I love my subject area, I love teaching and working with kids, and a huge amount of my self-esteem comes from experiences where I served as a role model to younger people.  However, I'm scared that being transgender (especially as I'm almost certainly not going to pass as cisgender, at least not when I would begin student teaching) will put me in danger. I currently live in a blue state in an urban area, but I've also experienced flak for being trans from complete strangers here. I'm not too worried about being insulted, but I'm worried about being safe.  So, yeah. Is being a teacher a sane profession for me to pursue?",
+    "subreddit": "Teachers",
+    "selected_at": "2025-09-06T23:54:42.641670Z"
+  },
+  {
+    "source": "posts",
+    "id": 686301,
+    "title": "Flix Bus",
+    "self_text": "Anyone knows how to get to UCSD Health La Jolla Station?",
+    "subreddit": "UCSD",
+    "selected_at": "2025-09-06T23:57:07.007215Z"
+  },
+  {
+    "source": "posts",
+    "id": 823813,
+    "title": "Boot camps on Cloud and Coding?",
+    "self_text": "Hello , I am a Sales Engineer who got laid off last week . Before Sales Engineering I worked as a Senior Systems Engineer and did some minimal coding . But for the last 4 years being a SaaS Sales Engineer I totally lost touch of any of the programming languages and coding. Now after lay off,  when I am applying for Sales Engineering jobs there are technical evaluations done by few companies where I am failing miserably. So I am planning to register in a coding boot camp and increase my confidence in coding and also learn concepts around CLOUD, migrations, SQL. It would be of great help if someone can suggest a relevant boot camp course.",
+    "subreddit": "careerguidance",
+    "selected_at": "2025-09-07T00:07:23.246229Z"
+  },
+  {
+    "source": "posts",
+    "id": 525998,
+    "title": "Optional video submission",
+    "self_text": "What are we supposed to talk about in these? The guidelines for one school just said “tell us more about you” but idk how to best do that. Is it better to flesh out stuff mentioned in our submitted application, or say something completely new?",
+    "subreddit": "ApplyingToCollege",
+    "selected_at": "2025-09-07T00:07:32.186344Z"
+  },
+  {
+    "source": "posts",
+    "id": 737755,
+    "title": "Teachers can really suck man",
+    "self_text": "I had the worst teacher ever in 6th grade. I'm in high school now but I just remembered this.  Let's call her Ms. Davis. (Ms. Because who would marry this monster)  She had a walker, not important but whatever. There were these two boys in my class who thought they were the funniest people alive. Constantly making inappropriate and verbally assaulting remarks about me/to me. (I'm a female, so there was more of this to come.) One day, they made a joke about my chest. Obviously I was getting sick of this, so I raised my hand and told the teacher. And you know what she did? She yelled at ME because I had not only interrupted class, I was tattle telling and being ridiculous. She did nothing, and I got detention. The harassment went on. Another day, the most annoying one (We'll call him J) Is making inappropriate jokes again. So you know what fed up with all this me does? I slap him, hard. They stopped after that. Thanks a lot Ms. Davis.",
+    "subreddit": "teenagers",
+    "selected_at": "2025-09-07T00:07:41.251447Z"
+  },
+  {
+    "source": "posts",
+    "id": 587828,
+    "title": "Should I write an LSAT addendum?",
+    "self_text": "Hey all,  I would appreciate some insights into my situation. This might sound a bit crazy, but I've taken the LSAT seven times over a four-year period (2 takes before testing limits were placed). I was a reckless college kid and was really just taking the test for the heck of it for the first few times. As a result, I got three cancels on my record and improved by almost 30 pts from the first take. But my performance was stable in the last three takes (within 10 pts). So should I write an addendum to provide a narrative? I'm an ESL student, and it has been a struggle and I might be a bit obsessive. But I really don't want AOs to think I'm pathological with this test.",
+    "subreddit": "lawschooladmissions",
+    "selected_at": "2025-09-07T00:10:02.681455Z"
+  },
+  {
+    "source": "posts",
+    "id": 947489,
+    "title": "Personally, what's your favorite Ivy League school and why?",
+    "self_text": "I think all the national rankings and associated prestige with some of the ivies compared to others are skewing our perception of which school would actually be a good fit for YOU. So I'm curious, prestige aside, what's your favorite ivy league school?   I'll start off... I absolutely love Brown. The open curriculum, the cross-registration with RISD, the pass/fail option for classes, the collaborative environment, the happy and vibrant student population, the openness to trying new things, the intimacy of Providence, etc. This list can go on forever. Some people think Brown has a bad rep because it's not as \"rigorous\" or \"cut-throat\" as the other ivies (as if that were a measure of intellect and success). Still, I personally think that Brown is one of the best schools to go to if you want to grow and experiment with all that's out there.",
+    "subreddit": "ApplyingToCollege",
+    "selected_at": "2025-09-07T00:10:06.652084Z"
+  },
+  {
+    "source": "posts",
+    "id": 534960,
+    "title": "MBA from India or from Europe?",
+    "self_text": "I scored 98 percentile in CAT last year. Got calls from baby IIM's, messed up the interview as I wasn't prepared. This year I'm going to score similar too.   The thing I'm confused about is if it's worth it. Or should I explore my options from European countries?   Only reason is because the fees in India and Europe are similar. For e.g. if I don't get admitted into an IIM, the next best option consists of a college like MDI Gurgaon. It has a fees of 27 lacs. I can do an MBA from Europe for this amount of money.  My end goal is to work in Europe maybe even settling down there (no matter if I do an MBA from India or Europe).  Anyone experienced in this, please do help. Thank you!",
+    "subreddit": "india",
+    "selected_at": "2025-09-07T00:10:55.937397Z"
+  },
+  {
+    "source": "posts",
+    "id": 346987,
+    "title": "Desperate for promotion?",
+    "self_text": "I'm currently working as a remote employee and I have ambitious goals. At this point, I'd like to move from an individual contributor to a managerial role. I talked to my manager about it and they said \"just be good at your current role\", and \"we will check\" to see how we can move you up a couple of months ago. Not sure how many times I've heard this in the past, only to be ultimately left hanging. Not saying that I will have the same outcomes as my previous managers who told me the exact same thing, but probably I have a tough time trusting these lines anymore without any immediate action/progress to my goals.  Now I'm thinking to message one of the company's exec who appears to be approachable (I've exchanged some emails with them when I was completing a project), to see their perspective as they have more influence. For context, the exec is 2-3 lines higher than my manager. Maybe somewhere along the lines of - to ask if they offer a \"leadership rotational program\" or plan to offer one in the future, or an internship to an open role where I can move up to a role with more influence. Will it do bad more than good for me in this scenario? Any peeps who had done the same and had quite some success rate?",
+    "subreddit": "careerguidance",
+    "selected_at": "2025-09-07T00:13:47.361373Z"
+  },
+  {
+    "source": "posts",
+    "id": 336791,
+    "title": "New TA: How to respond to inappropriate questions?",
+    "self_text": "I am new to education. I work as a TA at a special ed middle school. For context, I am young and female. My lead teacher (middle aged female) had the class working on a journaling assignment about pajamas. I walked up to a random male student and asked what they were planning to write about as helping students develop and write their ideas is part of my job.   Here’s how the conversation went:   (Also, the whole conversation was in sign language- it’s a deaf classroom- so while my teacher was in the room, her back was turned- she was busy talking to another staff person so she didn’t see the exchange).   Me: “What are you planning to write about?”   Him: “Ummm…you! (My name)”   Me: “That’s not appropriate. Find something else to write about.”   Him: …comments about me and pajamas…   Me: interrupting “No. Something else…for example,…”   Him: Interrupts and starts rapid firing questions about whether I have a girlfriend or boyfriend or am I married…   Me: “I won’t answer that.” (Glances around for my teacher and feeling unsure of what’s to do…first time dealing with this- she’s still busy and I can’t easily get her attention)…I then walk away signing “Absolutely not- find another topic” and focused on other students. Students who witnessed this joked that the male student should be spanked.   Should report this to the lead teacher and possibly administration? This student’s Dad works at our school too so I have the option of talking to him directly if needed. I know that I am naive but I don’t know what to do.   Have any advice on how to handle this?",
+    "subreddit": "Teachers",
+    "selected_at": "2025-09-07T00:14:16.365487Z"
+  },
+  {
+    "source": "posts",
+    "id": 676104,
+    "title": "css",
+    "self_text": "How many colleges did you submit your CSS profile to?",
+    "subreddit": "ApplyingToCollege",
+    "selected_at": "2025-09-07T00:16:05.396077Z"
+  },
+  {
+    "source": "posts",
+    "id": 820797,
+    "title": "Medical Withdrawal - Am I F***ed?",
+    "self_text": "Hello, everyone! I hope you are having a great day. I have not posted to this subreddit before, but I have a problem for which I need some advice.  I am a second-year computer engineering major at UVA with a current LSAC GPA of 3.95 who hopes to practice patent law. The dream is to get accepted to UVA law or get a significant scholarship at GW. This semester I took a medical withdrawal, adding six additional withdrawals to my transcript. I already had two, giving me eight total withdrawals. I am wondering how to address this on my law school applications, or if I should even bother applying. All of the withdrawals were received due to the same mental health issue, which has been (and to a degree continues to be) addressed. I also plan on participating in an extracurricular activity at UVA that would enable me to help other students deal with similar issues. Should I just tell my story on my apps, or is discussing mental health a bad idea?  I would greatly appreciate any advice. Thanks for reading!",
+    "subreddit": "lawschooladmissions",
+    "selected_at": "2025-09-07T00:18:44.145668Z"
+  },
+  {
+    "source": "posts",
+    "id": 709470,
+    "title": "Any advice?",
+    "self_text": "What kind of professor (adjunct, tenured, etc.) did you ask for a LOR when applying to a Master's program that accepted you?",
+    "subreddit": "gradadmissions",
+    "selected_at": "2025-09-07T00:18:47.383132Z"
+  },
+  {
+    "source": "posts",
+    "id": 424177,
+    "title": "I don't feel like I'm growing. What's average growth in first couple years?",
+    "self_text": "I have 1.5 years at a small company. I don't feel like I've grown much since joining. The first few months I picked up all the industry jargon and essential code/tech knowledge. I'd call that the onboarding phase. Since then I don't feel like I've gotten a deeper understanding of anything or come up with any innovative ideas. I feel like I plateaud very quickly. It could be my ability, my motivation, the management & start-up culture, or me having unrealistic expectations.  I haven't learned to build bigger things, just build the things I was building but at a slightly quicker pace. Basically, I feel like my growth & impact is linear/sublinear whereas I had expectations that it should be exponential (building bigger things rather than building quicker). My manager assures I'm doing good work, but they never give me concrete goals and I worry: 1) being disposable in the current economy 2) failing to improve myself for future jobs.  Are my expectations realistic? What is typical growth for 0-2 years?",
+    "subreddit": "cscareerquestions",
+    "selected_at": "2025-09-07T00:23:17.956067Z"
+  },
+  {
+    "source": "posts",
+    "id": 964714,
+    "title": "What stim/fidget toys do you reccomend for learning (college)",
+    "self_text": "I want to know generally what youd recommend for a learning environment and then generally what you think i would like (more so for home/breaks lol)   I like things that twist or spin a lot but i also like squishy things and things that make noise.",
+    "subreddit": "autism",
+    "selected_at": "2025-09-07T00:24:33.810769Z"
+  },
+  {
+    "source": "posts",
+    "id": 520057,
+    "title": "I Keep Making Mistakes",
+    "self_text": "I’m a new grad in an ICU working what I thought was my dream job. Our orientation lasts a couple months and I’m toward the end of it. Even this far into orientation, I’m making the dumbest mistakes. Mainly forgetting little things like taking temps, scanning things, checking for medication compatibility, etc. I’m extremely hard on myself because I want to do everything I can to be the best nurse for my patients. But I’m starting to feel like maybe I’m not meant to be a nurse… how can I be a good nurse if I’m making stupid mistakes. At this point, it’s very easy to sense that my preceptor and the other experienced nurses on the floor are frustrated with me and disappointed in me. I feel like no one wants me there. And I don’t even know if I want to be there anymore because I feel so stupid and embarrassed. I know in the back of my mind how to do all these things and yet I’m still forgetful and still making mistakes. I’m really disappointed in myself and I don’t know if I should be a nurse.",
+    "subreddit": "nursing",
+    "selected_at": "2025-09-07T00:25:53.600886Z"
+  },
+  {
+    "source": "posts",
+    "id": 815154,
+    "title": "I haven't even tried studying in my life.",
+    "self_text": "I did all the shools up until graduating high school without opening my books home or doing any homework. Now I study to be a marine engineer and not studying earlier in life has made it super hard for me. I don't understand shit about maths or physics or I can't speak any swedish (I study in Finland and in here swedish is mandatory because it is for some fucked up reason the second official language of Finland.) I try to open my books at home and do homework, but everytime I just quit after like 5 minutes. Basically I don't know how to study. To this point I would say that I haven't studied ever in my life. For 12 years, I have just went to school, listen for 6-8 hours, go home and then do that again tomorrow. I have done quite poorly in school but graduated nevertheless. I can't for real think a time I studied at home for more than 15 minutes, I didn't do that even for my finals in high school. So how the fuck am I supposed to study? Like what do I even do? I just might drop out for real to be a mailman or work in fucking KFC for 50 years till retirement.  fuk this!",
+    "subreddit": "Vent",
+    "selected_at": "2025-09-07T00:27:01.282181Z"
+  },
+  {
+    "source": "posts",
+    "id": 795077,
+    "title": "Learn C++ in one day",
+    "self_text": "hello, I'm a first semester student of computer science. My programming language is C++ in college, but I'm 100% new to this world of programming. and we have a team project regarding c++, my team makes games. but, from the beginning of the semester until now, I don't understand anything about c++...(i know its my fault). I understand just barely. In this team, I only work on reports. and tomorrow I have a presentation about this project. I'm afraid to let my team down. because, the assessment is that all team members must understand. please, does anyone here know how to learn c++ in just one day? I don't expect to be an expert in C++, but just understand the language, so that when my lecturer asks at least I understand.",
+    "subreddit": "learnprogramming",
+    "selected_at": "2025-09-07T00:27:30.735114Z"
+  },
+  {
+    "source": "posts",
+    "id": 756778,
+    "title": "IB and Medicine",
+    "self_text": "Does IB prepare you well enough for medicine and med school?  Do you have to take private lessons ? In bulgaria normal non-IB schools are way harder and still do not prepare you well for the medical academy as they do not cover all of the needed material .",
+    "subreddit": "IBO",
+    "selected_at": "2025-09-07T00:27:50.628202Z"
+  },
+  {
+    "source": "posts",
+    "id": 342237,
+    "title": "Academic Accommodations for mental health",
+    "self_text": "TW: self harm   I am a 5th year in college who is non-traditional student aged. I was previously academically dismissed and worked so hard to get back into my college and I did! The community college classes I took in the time between was so easy and I didn’t really learn to cultivate better habits as I was able to quickly do work and still get As, which felt good, but not the same at a 4 year college. I have been diagnosed with ADHD/ anxiety/ depression since the 5th grade and didn’t start utilizing accommodations until high school. Used them and did great. College is another story as I started to having to advocate for myself and thought all of my negative symptoms were how everyone felt and who I was. I never saw those things as barriers, but as I have gotten older, the dots have started clicking. I have been embarrassed to use my accommodations until this year because past friends made comments that it’s unfair and I took those to heart. The academic resource center purged my files upon my dismissal so it’s been a mess trying to get the correct documentation and my doctor only sent in the documentation last week even though I was asking for months. I am very frustrated as I’ve been falling behind due to my mental health rapidly declining this semester upon starting a new medication that made everything worse: insomnia, more anxiety, not taking care of myself, thoughts of unaliving myself, and started c*tting myself for a few weeks. I started to make the connection that it was my new med I started and then cut it cold Turkey and have felt better, but I’m still in a disassociative state making functioning hard. I am scared to disclose all of this as I can’t afford to medically withdraw and am supposed to graduate in the spring. I would appreciate any advice for how to handle this",
+    "subreddit": "college",
+    "selected_at": "2025-09-07T00:28:46.352791Z"
+  },
+  {
+    "source": "posts",
+    "id": 487757,
+    "title": "Can my company use the results of a personality test against me?",
+    "self_text": "My boss just had all of the office workers take the 16 personalities test and email him the results privately for \"team building\". I have severe generalized anxiety that I am currently taking medication for but it has dramatically impacted my test answers. A coworker has made a bet that they will be using this to fire people, if they do I know my scores wont look good. What could they be using this info for? Can they really fire someone over a personality test? If I something were to happen, what are my rights?",
+    "subreddit": "careerguidance",
+    "selected_at": "2025-09-07T00:31:08.794737Z"
+  },
+  {
+    "source": "posts",
+    "id": 721713,
+    "title": "Italian Clitics hell - a tip",
+    "self_text": "I’d heard the Clitics section in Italian was notorious enough. But that combined with the new layout meant when I did get there it was almost unfathomable to me. I’ll be honest it stopped my learning in its tracks and I was really disappointed but this section of this website (below) was marvellous and helped me immeasurably. I’d highly recommend it if you want to continue your duo Italian journey beyond this difficult and annoying stage:  https://www.fluentu.com/blog/italian/direct-object-pronouns-italian/",
+    "subreddit": "duolingo",
+    "selected_at": "2025-09-07T00:33:58.932725Z"
+  },
+  {
+    "source": "posts",
+    "id": 575542,
+    "title": "Did everyone have 2 RC today??",
+    "self_text": "I feel like everyone got hit with an easy RC to start, a hard LG, a hard RC, and a meh LR",
+    "subreddit": "LSAT",
+    "selected_at": "2025-09-07T00:35:17.868923Z"
+  },
+  {
+    "source": "posts",
+    "id": 276793,
+    "title": "Being on grade level is not the same as getting straight As.",
+    "self_text": "Your child is not a straight A student. They are on grade level, but they are not masters of the content and that is okay.  Over pushing your child is going to make them hate education and make them afraid to be wrong. Asking me to send homework home will not fix this.  I also am not sending homework home. I will send what we are studying and they can make their own work.",
+    "subreddit": "Teachers",
+    "selected_at": "2025-09-07T00:36:00.304643Z"
+  },
+  {
+    "source": "posts",
+    "id": 840704,
+    "title": "Anybody else feel oddly zen?",
+    "self_text": "Like, I really hope I got my target score. God I don’t like this test. But also, I feel at peace. No amount of calculating and nail-biting will change my score now, so what’s the point? I can’t do anything about it now, that possibility stopped the second my test stopped. I felt super nervous and anxious when I started The Wait™️ , but now I’m just sick of worrying about it. It took enough of my time already; and it might take even more in the future. This test will not take another unnecessary ounce of my sanity.",
+    "subreddit": "LSAT",
+    "selected_at": "2025-09-07T00:41:34.088530Z"
+  },
+  {
+    "source": "posts",
+    "id": 710071,
+    "title": "Google STEP application timeline",
+    "self_text": "Hello!  Can you please share your application timeline  If you got rejected:   When you applied   Where are you from  Where you applied  If you received questionnaire or was on interview with timeline  When you got rejected   If you got accepted:    When you applied   Where are you from  Where you applied  When you received questionnaire/OA  When was the first interview and when they reached you after questionnaire  When was the second interview and when they reached you after first one  If there was a third interview when they reached you after second interview   When you got accepted   The information you provide could help other candidates to a great extent, please if you can help us, don’t ignore this post.   Thanks in advance!",
+    "subreddit": "csMajors",
+    "selected_at": "2025-09-07T15:33:57.959697Z"
+  },
+  {
+    "source": "posts",
+    "id": 460648,
+    "title": "CMU SAT Score Send \"Score Choice\"",
+    "self_text": "I have only taken the SAT once so I only have one score to report. However, when sending my official scores to CMU, I selected \"Score Choice\" instead of \"All Scores\" and recently discovered that CMU requires all scores. Is this fine as I have only done one sitting (how would the Admissions office even know?) or should I re-send it with the All Scores option?",
+    "subreddit": "ApplyingToCollege",
+    "selected_at": "2025-09-07T15:40:14.612905Z"
+  },
+  {
+    "source": "posts",
+    "id": 821247,
+    "title": "An error in my LOR",
+    "self_text": "Hey guys. I'm applying for spring 2023 and am going to submit on Monday, but my boss put in her letter \"she will be a great asset to the dietetic internship!\" at the end 😭   Yes I did tell her I was applying to my MPH I'm person. She is used to writing letters for students since so many nutrition students do the internship first.  Is there a way she can resubmit her letter? And if it comes down to it will this hurt my chances? I'd really hate getting rejected over this. It's just the deadline is 12/1.",
+    "subreddit": "gradadmissions",
+    "selected_at": "2025-09-07T15:51:52.566666Z"
+  },
+  {
+    "source": "posts",
+    "id": 861121,
+    "title": "Am I crazy for considering going back to teaching?",
+    "self_text": "I left teaching a year ago and have stayed a part of this Reddit community to ensure that I don’t romanticize teaching while away.  Not sure if returning to teaching would be like starting a new relationship or going back to a toxic ex…",
+    "subreddit": "Teachers",
+    "selected_at": "2025-09-07T15:53:14.885200Z"
+  },
+  {
+    "source": "posts",
+    "id": 363117,
+    "title": "Waitlisted 🥲",
+    "self_text": "I know I should be happy to even receive an II but I really thought this was the school for me. Anyone have some positive waitlist stories?",
+    "subreddit": "premed",
+    "selected_at": "2025-09-07T15:58:25.457164Z"
+  },
+  {
+    "source": "posts",
+    "id": 890642,
+    "title": "Is working for a government agency considered \"industry\" experience?",
+    "self_text": "I'm writing in my personal statement about a job I did with the FDA and I want to call it \"industry\" experience. Would that be an incorrect term? I don't know the difference between governmental jobs, public research, private sector, industry, etc.: all these terms for non-academic work. The only thing I can define in my head is what academia is. Is \"industry\" a broad term, that I can use here, or is it specific to something?",
+    "subreddit": "gradadmissions",
+    "selected_at": "2025-09-07T16:46:43.599929Z"
+  },
+  {
+    "source": "posts",
+    "id": 945627,
+    "title": "Taking Bloomberg over more well-known companies?",
+    "self_text": "To preface, I recognize that this is a first-world problem. I went into this recruiting cycle thinking that as long as I got an offer, I'd be very happy. I already feel very grateful to have gotten the opportunity to interview and be thinking about this in the first place.  I had a Bloomberg offer deadline that was set pretty early. Was also in late stage for SWE intern at a trading firm. Three days before my deadline, another recruiter reached out to me for Citadel Launch, an internship program for sophomores.  Both recruiters knew of my deadline and asked me to get an extension since they couldn't expedite the process any further. The time I asked for an extension happened to be the time my Bloomberg recruiter was transitioning to another role. She said that she would put me in touch with my new recruiter, that she couldn't promise an extension but would forward the message along, and in the meantime, treat the deadline as the original.  I accepted the Bloomberg offer as the deadline approached, as I wanted to have a guarantee and hadn't heard much follow-up about the extension. Clearly, accepting offer = no extension  The recruiters asked me for news on the Bloomberg extension request. I didn't want to lie about my extension, also felt icky about reneging. Given the job market situation for CS internships, I'd rather not burn any bridges, especially since I'll be interviewing again next year and the year after. After learning more about the nature of the work, I've also become less certain that I'd enjoy HFT as a long-term career. I'm interested in trying, but not enough to outweigh the cost of reneging.  Among the offers I had, I narrowed it down to Bloomberg and two Big-Ns. My reason for leaning towards Bloomberg was that it would be a very different experience. I want to see more of the East Coast, as I grew up on the West Coast, previously interned at a Big-N, and think that the other two Big-Ns wouldn't be too different (both are either based in my hometown or near the place I was at last summer). I'm also curious to explore outside of pure tech companies and learn more about finance as a domain, including finance outside of trading.  Am I sacrificing career opportunities by making this decision? I'm fairly confident in my reasons, but a few people whose opinions I trust have asked me why not renege, or take the more well-known options. I'm willing to reconsider if it's worth it. Thank you!",
+    "subreddit": "cscareerquestions",
+    "selected_at": "2025-09-07T16:51:05.837741Z"
+  },
+  {
+    "source": "posts",
+    "id": 536227,
+    "title": "Help any good colleges that are open/inclusive to underrepresented minorities?",
+    "self_text": "Demographics   Living in Mississippi, immigrant from St Kitts Public school Male, ethnically mixed African, native American   Other special factors  (first generation to college, legacy, athlete, etc.) : URM  Income: Not sure, I think around ~350k or something but not sure  Intended Major(s) : CS   (Gpa 3.5, Took several aps, etc)  Hey guys, any good colleges that are NA/black friendly? I'm looking to apply to colleges like Stanford, Berkeley, CMU for cs. Or should I look elsewhere? Thanks!!",
+    "subreddit": "ApplyingToCollege",
+    "selected_at": "2025-09-07T16:51:32.046998Z"
+  },
+  {
+    "source": "posts",
+    "id": 629420,
+    "title": "$170k+ Technical Sales Salary",
+    "self_text": "Hello everyone,  I have a friend who went to a non-prestigious school for undergrad and MBA. He works at a tech company now making $170k+ doing technical sales (plus commission?). He's only been working a few months and is already making this much. I was looking at his account on LinkedIn and many of his coworkers have similar educational paths. He's also working remotely in a low cost of living area while the position is stationed in a high COL city in California.  I'd personally much prefer to do technical sales since there is a higher degree of personal interaction, and I am extroverted/competitive. The main reason I'm grinding leetcode and working in SWE is due to the salary. I would gladly take a minor dip in salary to be doing something like technical sales. I mean $170k is more than a many SWE's make. I did a bit of research on this subreddit but most of the posts are dated.  TLDR: Friend making $170k+ in technical sales after a few months of work.  Is it viable to transition to technical sales and get an MBA? Does anybody know how competitive this field is in terms of salary/positions compared to SWE?  Thanks for reading.  EDIT: for clarification, I have a new grad SWE job lined up in the summer. Pays decently. I'm just trying to see if there's something I could be more happy doing while also making more money.",
+    "subreddit": "cscareerquestions",
+    "selected_at": "2025-09-07T18:23:34.247769Z"
+  },
+  {
+    "source": "posts",
+    "id": 283956,
+    "title": "published research?",
+    "self_text": "I hope I am not offending anyone w this question but I am still learning. I am interested in pursuing an MD/PHD and would like to start research and get published but don't know where to begin. My advisors tell me that I should just focus on my GPA this semester but I know it takes time awhile to get published. Any tips you guys can offer on how to find research and get published and also what MD/PHD programs really like to see on applications?",
+    "subreddit": "premed",
+    "selected_at": "2025-09-07T18:27:34.053816Z"
+  },
+  {
+    "source": "posts",
+    "id": 515872,
+    "title": "Unlucky",
+    "self_text": "How do I increase luck",
+    "subreddit": "csMajors",
+    "selected_at": "2025-09-07T18:29:40.211190Z"
+  },
+  {
+    "source": "posts",
+    "id": 447422,
+    "title": "Thinking about going into teaching--- but scared. Is there anything good about it?",
+    "self_text": "I've been thinking about going back to school to finish an English BA and then a master's in education. But honestly, I hear so many bad things about teaching. I'd want to teach high school English. Seasoned teachers, is it even worthwhile?  FWIW, I'm not yet a new teacher, just considering teaching. There wasn't really a flair that fit. :)",
+    "subreddit": "Teachers",
+    "selected_at": "2025-09-07T18:30:01.168994Z"
+  }
+]

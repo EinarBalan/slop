@@ -1,0 +1,458 @@
+[
+  {
+    "source": "posts",
+    "id": 982733,
+    "title": "How to change blue print pivot",
+    "self_text": "How can I change the Pivot of an object within a prefab?  I want to rotate the doors of my wardrobe so I need to change the Pivot where the hinges are  It seems that i cant really do it in UE? but is there a workaround for something like this?  https://preview.redd.it/ortfjm9trn2a1.jpg?width=1440&format=pjpg&auto=webp&s=c4a0861acf57110a2159a1e3208446e769c7b879",
+    "subreddit": "unrealengine",
+    "selected_at": "2025-09-06T23:38:52.328638Z"
+  },
+  {
+    "source": "posts",
+    "id": 873679,
+    "title": "Old bookshelf speakers is it worth upgrading",
+    "self_text": "Hey there I've got an older home theater system in (probably 15ish years old) and I'm wondering what the overall consensus would be about the speakers I have and if it would be worth upgrading them... If so, what would be some good options? Newer bookshelves? Floor standing? Etc... I would typically use the setup for tv/movies and occasionally music. My preference would be to keep it all under 1000$ cad if possible, I could reasonably piece something together over time as well.  My current setup is 2 Energy 4.1e bookshelves, a Kenwood crs157 center, I have a 10\" generic sub.   I am in Canada so I know options can be limited here...  Edit: my living room size is about 13x15' or so couch is maybe 11-12 ft back from the tv",
+    "subreddit": "hometheater",
+    "selected_at": "2025-09-06T23:38:57.302943Z"
+  },
+  {
+    "source": "posts",
+    "id": 657107,
+    "title": "Best gpu for i5",
+    "self_text": "I've been looking to build my first pc. Currently have the better part of most components. I just want opinions on what gpu to purchase for an i5 12600k. Would prefer to keep it under 400$ if possible.",
+    "subreddit": "PcBuild",
+    "selected_at": "2025-09-06T23:40:27.577891Z"
+  },
+  {
+    "source": "posts",
+    "id": 810621,
+    "title": "Best way to store actor groups?",
+    "self_text": "Basically I want to make a bunch of premade rooms and spawn them in randomly, connected to another. I'm unsure what the best way of storing these rooms would be. Thanks in advance!",
+    "subreddit": "unrealengine",
+    "selected_at": "2025-09-06T23:40:34.756222Z"
+  },
+  {
+    "source": "posts",
+    "id": 960297,
+    "title": "Cpu and mobo upgrade, but not sure on what to get",
+    "self_text": "Looking to upgrade my PC into something more.. modern   Current specs are;   Nvidia GTX 1070 8gb  CPU: i5-6500  MOBO: Asus h110m-a/dp   RAM: 16gb   I'm currently looking into upgrading my cpu and mobo and was debating either;  CPU: i5-12400F or i5-12600KF  MOBO: honestly not sure, had a few in mind but any recommendations would be helpful.   Budget will be 500-ish.   Thanks.",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-06T23:40:52.722735Z"
+  },
+  {
+    "source": "posts",
+    "id": 1013913,
+    "title": "R9 7950x + ASUS ROG STRIX B650E-F GAMING WIFI",
+    "self_text": "Is this mobo good enough to power the 7950x? I do not plan to OC.  It has 12+2 Power Stages at 80A and only 1x 8-pin + 1x 4-pin Power Connectors.  Is this a significant weakness of this board when combo'd with the 7950x?  I would love to get the ASUS ROG STRIX B650E-E GAMING WIFI, but it's out of stock everywhere, where I live.  Edit: Added some information about the mobo in question and that I do not OC.",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-06T23:42:43.754334Z"
+  },
+  {
+    "source": "posts",
+    "id": 361330,
+    "title": "If I send someone a workbook with power pivot tabes will they need power pivot installed to view the tables?",
+    "self_text": "I'm doing a test for an interview and I have solved it by using power pivot but I want to check that they will be able see everything. The chances are that they will have it installed (this is for a data analyst role) but will they at least be able to see the values of the pivot tables if they don't have it?",
+    "subreddit": "excel",
+    "selected_at": "2025-09-06T23:49:13.702334Z"
+  },
+  {
+    "source": "posts",
+    "id": 475361,
+    "title": "Something in my PC first died, then I killed the PSU. A repair dwindle boogaloo. A man versus technology narration that will move all rationale you've got left into computer repair. A simple ... ;;; Perchance ;;;.",
+    "self_text": "Hello Redditors! Very,  very  funny story happened today. Well, not for me, but that's not the point.  &nbsp;  It had been a beautiful morning of Eight of November. A young, yet aspiring man hath riseth from his bed, waddled to his seat, and henceforth the story fully began. He awoke his computer from sleep as always, and frittered away the time. Seconds felt like pure blissful eons, as he scrolled through the endless internet. He decided to start a long dead game called Evolve, and start it he did, indeed. 10 minutes into a thousandth match of his life, his PC  suddenly   shut down . This has happened before.     \"A power outage it must've been!\"  , - he thinks to himself. But, as swiftly as he came to that conclusion, he just as quickly noticed the contradiction in front of him, as well as above him. Ceiling lights remained on, and router remained on as well. By this time - the computer has already started turning itself back on. He waits 15 seconds for the splash image to arrive - but it never does. So, he resets the computer. Still nothing.  Coincidentally, he notices that the mouse and keyboard lights aren't coming on either, so he grabs his pluggable USB voltage meter and plugs it into his USB ports - it reads 3.5V. 1.5V lower than intended. Instantly, frightened of data loss, he turns off the computer and removes all drives. Then, he grabs his voltmeter and measures 12V, 5V and 3.3V rails of the PSU. He reads 9.5V, 3.5V and 2.7V. All lower. Not good. He thinks it's a bad PSU when he notices that his motherboard has LED debugging LEDs. He reads what the LED says - the \"CPU FAULT\" LED is on. What could it be?   The introduction has been pretty simple so far.   Sudden shutdown  Won't post, but fans spin  Low voltage on all rails, but...  IS IT?   the story continues     He decides to remove the GPU as well, to prevent the damage to it, as he remembers the GPU has very sensitive MOSFETs that operate in a specific voltage saturation region and low voltage could kill them. Besides, the computer has integrated graphics, so that's not a problem.  &nbsp;  Correcting steps, commence!  &nbsp;    With only PSU, Motherboard, RAM and CPU remaining in the case, he decides to clear the BIOS via BIOS jumper as well as remove the BIOS battery for 30 minutes. He does it, no change.    He decides to shuffle ram, no change.    Voltage gets measured again, and this time..  SURPRISE!  Voltages are good and within spec! 12V, 4.98V and 3.3V!    He decides to take out PSU completely and to the paperclip test - it works great! So..  is it not the psu after all?      What do we know so far?   Voltages seem to be fine now  Still no post  Paperclip PSU test works ok   What happened next?    Stupidest moment of the story begins!   Next loical step in diagnostic would be reseating the CPU, possibly a new one and trying a second motherboard. As motherboards are more expensive than cheapest compatible CPU, he decides to get a CPU. However, the seller said it will have to wait until tomorrow, so he grows impatient. He searches the internet a bit about the problem a Youtube video about an user facing the exact same issue and solving it! And the comment section is FULL or positive replies. So he decides to try it!  &nbsp;   How is it done?   Simple, turn on your PC that won't post, and then quickly shift your ON/OFF switch on the PSU back and forth, quickly as in crazy fast.  I did that once, nothing happened. Second time, nothing. I guessed I was too slow. Third time I'll try it super fast, I thought to myself. So I do it and - woo! Power outage for real!! Wait - that's my breakers popping. Wait hold on did my PSU just blo-----.   Yes.    Yes it did.    So all in all my beloved Redditors, now I'm stuck with a dead PSU and either a dead motherboard or CPU. I'm out of ideas or any thoughts at all, so I hoped that you'd have something to share in the comments.  &nbsp;  Thanks for reading, love you all.",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-06T23:50:33.987469Z"
+  },
+  {
+    "source": "posts",
+    "id": 399668,
+    "title": "which 3080 ti should i go for? gigabyte gaming oc or asus TUF oc",
+    "self_text": "gigabyte is around $1.120  asus tuf is around $1.218  pretty much $100 more expensive, i'm gonna be honest looks-wise i much prefer the gigabyte one but according to some people the asus tuf is better? I'm not quite sure better in what regards, but is it really worth the price difference?",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-06T23:57:23.385840Z"
+  },
+  {
+    "source": "posts",
+    "id": 636771,
+    "title": "Good enough VRAM?",
+    "self_text": "I'm sorry for asking so many questions. Is the  NVIDIA GeForce RTX 3060 with 6GB GDDR6 VRAM good for stuff like Photoshop? (I'm looking at the MSI GE76 Raider). I think I have 8gb in my old laptop with GTX880M. But I imagine newer systems are more efficient?  &#x200B;  https://preview.redd.it/mzx4t0dok10a1.jpg?width=563&format=pjpg&auto=webp&s=5c8cbaeb2adf0ef2aa0b3efb14d2b0cc65216a44",
+    "subreddit": "GamingLaptops",
+    "selected_at": "2025-09-07T00:10:32.521377Z"
+  },
+  {
+    "source": "posts",
+    "id": 415431,
+    "title": "PC build help",
+    "self_text": "CPU: i3 12100F Mobo: ASRock H610M-HVS RAM: FURY Beast black 2x8GB GPU: ASRock intel ARC A380 Challenger PSU: EVGA 500 BQ 80+ Bronze  These are the parts and I just want to know if these parts are a decent match for eachother.",
+    "subreddit": "PcBuild",
+    "selected_at": "2025-09-07T00:10:50.810388Z"
+  },
+  {
+    "source": "posts",
+    "id": 678025,
+    "title": "best Cpu for rx 580",
+    "self_text": "Best ryzen cpu to pair with rx 580? For 175$.",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-07T00:14:29.989421Z"
+  },
+  {
+    "source": "posts",
+    "id": 982589,
+    "title": "Any motherboard alternatives for my build?",
+    "self_text": "Hi I'm looking for some advice on my build that I am looking to buy soon. Any help would be appreciated   https://au.pcpartpicker.com/list/LBG9Q6",
+    "subreddit": "pcmasterrace",
+    "selected_at": "2025-09-07T00:15:31.586788Z"
+  },
+  {
+    "source": "posts",
+    "id": 836751,
+    "title": "My phone turns to light mode out of no where and apps and games get access to mobile data when I had that turned off…",
+    "self_text": "I sadly don’t have pictures but today, when I wanted to show my friends a video that was in my library, my phone turned to light mode when I turned my phone to landscape. So it was in dark mode in portrait and turned to light mode as soon as I turned my phone to portrait mode. What I also have been noticing is that games I play that are offline( but when you’re connected to WiFi you get ads ) suddenly get ads( I never am connected to WiFi because I have a subscription with unlimited data and my WiFi is worse then my data so might as well ). When I went to look in the settings for the app, it said it didn’t have permission. But I clearly got an ad when I DIDNT HAVE WIFI ON and was only connected to data.  That was it",
+    "subreddit": "iphone",
+    "selected_at": "2025-09-07T00:16:38.778955Z"
+  },
+  {
+    "source": "posts",
+    "id": 843194,
+    "title": "help me choose a mouse!",
+    "self_text": "hi, i am looking to upgrade from my razer viper ultimate.  i have hand size 19.7x11.4 and use a relaxed claw grip, however i am willing to change grip it needed.  while i will play csgo and other games, my use is not primarily gaming, however i prefer the mouse to be very light and comfortable.  i also prefer wirelesss, the vaxee shape is particularly interesting, however it is not wireless, please let me know if there have been any updates in vaxee’s wireless release, i plan to upgrade this winter.",
+    "subreddit": "MouseReview",
+    "selected_at": "2025-09-07T00:17:14.629420Z"
+  },
+  {
+    "source": "posts",
+    "id": 802707,
+    "title": "are these specs good / properly balanced ?",
+    "self_text": "this is prebuild, but hope its ok to ask what you think of these specs is it balenced? Im interested in gaming and it being mostly quiet.   AMD Ryzen 5 5600x Wraith Stealth / 3.5-4.6 GHz, ASUS GeForce RTX 3070 DUAL V2 LHR - 8GB , ASUS PRIME B550M-A, DUTZO Kori ARGB 240 - CPU watercooling, Corsair Vengeance LPX DDR4-3200 C16 BK DC (AMD optimized), WD Black SN750 SE M.2 NVMe Battlefield 2042 SSD - 1TB, DUTZO C720 Mesh Airflow RGB, DUTZO PS700B V2 PSU - 700 Watt - 120 mm - 80 Plus Bronze certified",
+    "subreddit": "PcBuild",
+    "selected_at": "2025-09-07T00:18:53.318864Z"
+  },
+  {
+    "source": "posts",
+    "id": 934585,
+    "title": "Creating new Smart Home",
+    "self_text": "Hi all!  In my previous apartment I had a really nice Home Assistant setup, but some time has passed since then and my conditions changed a lot, so I need some help to get me started.  In the old apartment I used Sonoff devices to control the lights and heating. For thermostats I used Mijia bluetooth devices and everything worked just great...  I currently have a couple of Nest Mini and Nest Hub devices that shall be used for voice control. I also have a Xiaomi desk lamp and a Roborock cleaning robot. I plan to display the Home Assistant dashboard on the Nest Hubs, but I am not sure how that actually works. I have seen the cast option, but still have 2 questions:   Is casting a 2 way control, or is it just for showing the dashboard?  Can I make the cast always available on the Hub, so that the user can switch between different things on the Hub?   Now I need a solution for my radiators. I have seen that the Bosch has released a new version of their Zigbee thermostats. I have shortly used them and they had a problem with overshooting the temperature a lot. I quess that they have fixed that by now with an update, but if I connect HA directly to thermostats without a bridge, I wouldn't get the updates. The other option would be to get Tado devices, which are not Zigbee, but I have seen that they should work with HomeKit in Home Assistant. I guess that Tado software is more mature than Bosch and has more functionality overall. Finally, I could get Aqara thermostats for almost the same money as Tado, but I was not really impressed with the build quality...   Is there any way to update the devices without a bridge and cloud, but directly via Zigbee for example?  Das Tado work locally with HA and HomeKit?  How does Tado integrate into HA?    I plan to automate lighting again, but this time probably with Shelly devices instead of Sonoff. I guess they are a fair bit better too...  Which Zigbee stick would you choose? ConBee II or Sonoff Plus?   Do you maybe have some other advice for me? What should I consider or take care about?  Thanks a lot!!! :)",
+    "subreddit": "homeassistant",
+    "selected_at": "2025-09-07T00:23:35.533260Z"
+  },
+  {
+    "source": "posts",
+    "id": 311254,
+    "title": "in your opinion, what's the best Zowie/Vaxee shape?",
+    "self_text": "I've been looking into Zowie and Vaxee mice recently. I'll probably still wait until 2029 when they both go wireless but I'd still like to get opinions on the shapes. Btw, I know that shapes vary hand to hand.",
+    "subreddit": "MouseReview",
+    "selected_at": "2025-09-07T00:23:47.196915Z"
+  },
+  {
+    "source": "posts",
+    "id": 567016,
+    "title": "iPhone 14Pro Video @ 1080/4K 24/30",
+    "self_text": "Dears,  Anyone experincing jitter or shakes when you try to shoot video at lower FPS for 1080 and 4K videos? It shoots smooth at 60 fps for both resolutions, however if at 24/30 fps it will shakes & jitters even before you press the capture button.",
+    "subreddit": "iphone",
+    "selected_at": "2025-09-07T00:26:17.805944Z"
+  },
+  {
+    "source": "posts",
+    "id": 725097,
+    "title": "Can’t get Wi-Fi on Rog Strix B550-f Motherboard",
+    "self_text": "I’m looking for help!!! I just built my first pc yesterday with the Rog Strix B550-f Wi-Fi (II) motherboard. While setting up windows 11 I need internet to finish the setup but no Wi-Fi is showing… when trying to update the wireless internet drivers in the bios using a usb it shows the folder but when clicked nothing shows in the folder nor gives me any option to install. Does anyone have any answers or ran into the same problem??",
+    "subreddit": "pcmasterrace",
+    "selected_at": "2025-09-07T00:27:32.640676Z"
+  },
+  {
+    "source": "posts",
+    "id": 403794,
+    "title": "So, AMD is doing what Nvidia did with 4080 variants, right?",
+    "self_text": "I read an article in wich the AMD chief architect confirmed that the 7900 cards are both targeted to battle against the 4080, looking at the specifications.   So basically AMD is doing what Nvidia did with the 4080 versions, \"masking\" cards with an higher tier name to bump up prices, and not with just one card but two.  The only reason AMD \"shine\" it's because Nvidia cards are insanely more expensive but in the end is the same kind of scam.  Here is one of the articles talking about it: https://gamerant.com/amd-radeon-rx-7900-xtx-designed-compete-nvidia-rtx-4080-not-4090/",
+    "subreddit": "pcmasterrace",
+    "selected_at": "2025-09-07T00:29:06.985323Z"
+  },
+  {
+    "source": "posts",
+    "id": 942728,
+    "title": "Bonding two gigabit fiber lines?",
+    "self_text": "I'm working on a home network setup where 2gbps up/down is going to be ideal. We have the ability to get dual fiber gigabit lines added, but I'm trying to figure out which hardware I need to make this happen. I've seen gigabit bonding routers for around $80, but haven't seen any that will combine >1gbps.  Any input on which hardware I could use to accomplish the task would be great thanks!",
+    "subreddit": "HomeNetworking",
+    "selected_at": "2025-09-07T00:30:55.571430Z"
+  },
+  {
+    "source": "posts",
+    "id": 288901,
+    "title": "Got malware after being dumb but removed it within minutes, am I safe?",
+    "self_text": "So basically I was dumb and got malware from something I definitely should not have downloaded, but I picked up on it within minutes of infection and quickly scanned with Malwarebytes. It found 110 items, so I quickly quarantined and deleted them. Of course, it didn't come without complications, and over the last few days or so I've had multiple accounts attempted to be hacked. I made sure to change all passwords and have every single kind of protection on my accounts, and I've been vigilantly watching them to make sure I'm in the clear. Here's the thing though, while my computer is running pretty much as it should and I feel mostly safe, there's still something in the back of my mind that's telling me that it isn't safe, and I've noticed certain things like commands in Chrome take twice or three times to respond (Like CTRL + T and CTRL + W), and the fact that I've scanned with Malwarebytes in safe mode and it hasn't picked up on anything which makes me believe there's something still hiding somewhere. I've pretty much installed a good portion of the reputable antivirus programs out there (Bitdefender, Malwarebytes, Hitmanpro, etc.), none of which have picked up anything since the original infection, and I've even considered using Norton Power Eraser as well. I know a lot of you will say to just wipe and reinstall Windows, but it's incredibly time consuming and I'm not sure I'm able to currently.   Sorry if this is incredibly long, I'm just not sure what I should do going forward. Any advice is incredibly appreciated.",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-07T00:31:43.937663Z"
+  },
+  {
+    "source": "posts",
+    "id": 583445,
+    "title": "Home Theater setup - need some advice",
+    "self_text": "Hello all! New to this subreddit, need some help as I'm trying to wrap my brain around a (complex to me) configuration issue.  Here's where I'm at:  I have an Xbox one X in a closet in my \"Theater\" room. I run an optical HDMI cable through the wall and up into the attic over to my  Optoma UHD30 Projector.This has worked fine, however, the audio from this projector is absolutely horrible.  I recently purchased a Sonos Beam and 2 Sonos SL's in a \"Surround\" setup. I currently have the Optical Audio converter cable to a ridiculously long HDMI cable ran on the ground to the Beam... which is not ideal and will not be permanent. Currently, I'm not getting true surround on the Sonos system and I think it has to do with the Optical Audio.  Here's where I need the beautiful brains of the internet to point me in the right direction. I'd ideally like to use some sort of HDMI splitter to extract audio via HDMI and have that go into an HDMI wireless transmitter. I've searched around online and nothing really stands out as a solid solution.  Or- perhaps I'm going at this the wrong way. I'm open to advice if anyone's willing to share!  Pardon the mess in the images, I have 2 kids that like to throw stuff everywhere :P  https://preview.redd.it/4qyqomr91nz91.jpg?width=4000&format=pjpg&auto=webp&s=bacb2aca26030cfa3322ef9486254c07a8775682  https://preview.redd.it/uqp2ior91nz91.jpg?width=3000&format=pjpg&auto=webp&s=3929248899121e4beddb7380cd3905aeaa96fa61  https://preview.redd.it/97uhjpr91nz91.jpg?width=3000&format=pjpg&auto=webp&s=e0d52b1d3cd891d335a692bd21e32110101fc4ab",
+    "subreddit": "hometheater",
+    "selected_at": "2025-09-07T00:31:46.352662Z"
+  },
+  {
+    "source": "posts",
+    "id": 1054888,
+    "title": "PC randomly turns off when booting up games or doing certain things.",
+    "self_text": "Hi. I was wondering if someone could help me with my computer. For the past 6 months at least, it's been randomly turning off on certain games or while booting up games. I recently bought a new motherboard, processor, cpu cooler, and ssd to try and fix this. These current specs are MSI MPG B550 Gaming Plus, Ryzen 7 5700x, GTX 1660 Super. I have 16 gb of ram and 650 watts of power. I had to do a manual bios update with the flash button on the motherboard to allow support for the processor. After fixing my computer I loaded up warzone from my harddrive and played a game. Everything went well. My brother then took a turn after me and right when he clicked to go back to the lobby, the computer, monitor, and all of the lights turned off completely. When we turned it back on, the CPU light went on so we turned it back off immediately. We then turned it on again for the CPU light to go on for a few seconds until it turned off, to then the VGA light going on and turning off, to the boot light going on and off, until it began booting normally. I reset my computer and my drives and then redownloaded windows onto my SSD. I redownloaded call of duty but every time I open it, my computer turns off. I can't even click the button to turn it back on anymore. I have to flip the power supply switch like 4 or 5 times before it finally turns on. Any help is much appreciated.",
+    "subreddit": "pcmasterrace",
+    "selected_at": "2025-09-07T00:32:55.008620Z"
+  },
+  {
+    "source": "posts",
+    "id": 730929,
+    "title": "Pixel 7 Pro and Mi Band 5 Music Control",
+    "self_text": "The Mi Band 5 Music Control is not working when the screen of the P7Pro is off or in AlwaysOnDisplay mode, so practically useless to me. On the Band I can read: \"No music is playing\". But as soon as I try to unlock the phone and it goes to the lock screen the Band recognizes the music playing and I can use the controls.  The same Band connected to a LG V30 works as it should. I have searched through the settings and online for a solution but found nothing. Can it be a setting preventing the Band reading the media playing? Or maybe it's a security feature with no workaround?",
+    "subreddit": "GooglePixel",
+    "selected_at": "2025-09-07T00:33:15.327134Z"
+  },
+  {
+    "source": "posts",
+    "id": 654137,
+    "title": "GPU Fans keep starting and stopping no matter what I set the threshold temperature to",
+    "self_text": "I have the EVGA XC3 Ultra RTX 3070 and use \"Fan Control\" to set my fan curve. However, I keep having the issue where the fans will turn on with a brief annoying noise, and then cool the GPU down slightly so that it's under the threshold and they turn off, and then gain some heat so that they turn on again etc. I have tried many different threshold temperatures for the 0 rpm mode (between 45 - 60 degrees) but the issue persists. Ideally, I would prefer not to just have them running constantly as I like idle fan stop as a feature but this is really frustrating to hear when I'm not in-game. Any ideas?",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-07T00:34:33.293871Z"
+  },
+  {
+    "source": "posts",
+    "id": 418607,
+    "title": "confused",
+    "self_text": "I have a gtx 1650; for some reason, the fans don't spin while my PC is on. What's going on? halp",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-07T00:36:07.024471Z"
+  },
+  {
+    "source": "posts",
+    "id": 549899,
+    "title": "Trying to figure out the best way to set this up",
+    "self_text": "So I have a router from an online research study project right now and as much as it sucks to not be able to set up everything that I want to on it, it is basically paying for my internet right now so ditching that is out. I would like to add a second router behind that router though, and yes, i know that is a PITA to get just right. I'm curious though..  The current router and the one I want to add both have DMZ and VLAN options, and I also have a Cisco 48 10/100 managed switch I could throw at it if that'd help matters. I am fixing to start my server setup as well that will handle my media library, nas, security dvr, and a few other things so it'd be nice to get everything segmented out beforehand if possible.",
+    "subreddit": "HomeNetworking",
+    "selected_at": "2025-09-07T00:36:19.118381Z"
+  },
+  {
+    "source": "posts",
+    "id": 889097,
+    "title": "Best Small lightweight wireless mouse for Aggressive Claw (18 x 9)?",
+    "self_text": "Currently have the Hati - S Wireless ,someone suggested the Pulsar X2 Mini so if anyone has experience with either of these mice and they have aggressive claw then please comment under this post or DM me with your experience please.",
+    "subreddit": "MouseReview",
+    "selected_at": "2025-09-07T00:36:33.080628Z"
+  },
+  {
+    "source": "posts",
+    "id": 485017,
+    "title": "RAM Voltage question.",
+    "self_text": "I have two Kingston 16GB/5600MHz DDR-5 FURY Beast Black (KF556C40BB-16) memories. When I installed them fresh, the bios decided to default them to 4800MHz. Of course, I want to use them @ 5600, but it asked me whether I want to put the voltage to 1.0V or 1.35V. The timings are set automatically in both cases. According to the RAM's description, it has a 1.25 base voltage and here's my probably stupid question (please, keep in mind I'm basically a noob when it comes to voltages). I've set it to 1.35V which is clearly over 1.25V. Does the 1.25V means it's only the RAM's base voltage, not the upper limit I can set and I can safely set it to 1.35V?",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-07T00:36:40.138842Z"
+  },
+  {
+    "source": "posts",
+    "id": 769396,
+    "title": "I really don’t want to receive a motherboard that doesn’t work",
+    "self_text": "So, the final part of my build will be my motherboard. I originally laid everything out, then slowly started researching every individual part and how well it could work with each other part. PSU and motherboard seemed to be the most problematic ones. Eventually I got the PSU figured out (at least thats what I think), but the motherboard is still just… uncertain. I found a psu that seemed to pass all the tests, yet every single b550 motherboard I research seems to have some problem. And its tricky too… I search amazon and go straight to the one star reviews. Filter out some more blatant DOA reviews. There was one board I had my eyes set on, the ASUS ROG Strix B550-A (also applies to F), and there is just a massive undiscussed issue with its ethernet ports apparently, they just dont work for many people. Every single board has this weird problem or multiple problems, and all I can think every single time is “wow, I would pay more so I can avoid that issue.” But while that may work for psu’s, it seems that the reviews play volleyball with the manufacturers— “never buying an msi product again. Plugged in x asus board and worked perfectly.” Reverse that on the asus product page.   I hate that uncertainty. Maybe Im just a baby though. What I suppose Im asking is, when it comes to b550’s, which is the best brand/model that can be proven (preferably through a reliable reviewing tech site)? Or is it not proven and just hearsay?",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-07T00:38:13.368362Z"
+  },
+  {
+    "source": "posts",
+    "id": 968951,
+    "title": "Thinking of buying a used Thinkpad off Amazon; if I get one with a Windows pro license, is it guaranteed to be transferable?",
+    "self_text": "I don't plan to use the laptop for Windows at all, but I do have a main computer that I only usually use at home that runs Windows and it would be nice to get a cheap second laptop and a Windows upgrade to my current computer for a nice cheap price",
+    "subreddit": "thinkpad",
+    "selected_at": "2025-09-07T00:42:07.887569Z"
+  },
+  {
+    "source": "posts",
+    "id": 888100,
+    "title": "I Need help with my desktop!",
+    "self_text": "I bought a legion i5 desktop about a year ago and ervery day since then the monitor has randomly been freezing. It is a pre bult and I have changed nothing about it and it freezes even when I'm just watching YouTube on it. Advice would be greatly appreciated to solve my problem. Thank you.",
+    "subreddit": "pcmasterrace",
+    "selected_at": "2025-09-07T00:45:30.195029Z"
+  },
+  {
+    "source": "posts",
+    "id": 549133,
+    "title": "I need someone I can reliably ask for help. Just occasional guidance/ work when I’m stumped.",
+    "self_text": "Currently I have a game bare bones enough that it’s playable. It’s a tower defense. But I want to make a few more complicated changes and I can’t seem to figure them out.   If someone is able to spend a few extra minutes helping on the project, I’d be ever so grateful.",
+    "subreddit": "unrealengine",
+    "selected_at": "2025-09-07T00:45:49.057068Z"
+  },
+  {
+    "source": "posts",
+    "id": 995356,
+    "title": "Any downside to filming ALL video in Cinematic mode on iPhone 14 Pro?",
+    "self_text": "Given the new iPhone 14 Pro can record Cinematic mode in 4k at 24 fps, I'm wondering if there's any reason not to ALWAYS film in Cinematic mode.  If I later decide I don't want the Cinematic effect for a particular video, I can toggle off Cinematic mode by Editing the recorded video in the Photos app. This leaves me with the same 4k at 24 fps video I would have recorded if I didn't use Cinematic mode, right? So basically, recording in Cinematic mode leaves me with more options for later.  Is my understanding incorrect? Other thoughts? Please set me straight!  Thanks in advance for your patience with my inquiry. Cheers!",
+    "subreddit": "iphone",
+    "selected_at": "2025-09-07T15:34:40.061552Z"
+  },
+  {
+    "source": "posts",
+    "id": 388221,
+    "title": "Upgraded PC (Xeon) not booting",
+    "self_text": "Hi. I've just upgraded my computer but is it not starting anymore. Here are the specs: CPU: Xeon E5-2687W v3 Motherboard : MSI X99A SLI Plus RAM: 2x16 DDR4 2133 GPU: GTX 1660 PSU: 850W  Only my GPU didn't change since before the upgrade, rest is all new. I've also gotten a new SSD and HDD but idk if that could related to the cause. Only the clear cmos led turn on when the computer is plugged in. Holding the power button down for a few seconds make a led blink.",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-07T15:39:25.781214Z"
+  },
+  {
+    "source": "posts",
+    "id": 944504,
+    "title": "CPU Temp - I think I am a little hot - Options?",
+    "self_text": "Hi Sub, I have a R9 5950 and I noticed things have gotten a bit 'hangy' of late. Nothing crazy, just some stuff takes a while to respond.  PC system health looks ok, it has been about 2 years and not done a rebuild so probably a little laggy is ok. But it's been quite bad.  So I have been running a temp monitoring tool and I am quite surprised to see my temps are hitting almost 80deg. That just seems a little hot for me.   I have a Corsair water cooled unit and I can't shake the idea that I need to repaste and reseat?  Worth a repaste? And is 80deg too hot? I think I know the answer but I am always hoping to learn.",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-07T15:42:18.097354Z"
+  },
+  {
+    "source": "posts",
+    "id": 545201,
+    "title": "Lenovo legion desktop i5 to i7 help",
+    "self_text": "Tried to put an i7 in my Lenovo legion desktop. It currently has an i5. Everything is compatible but it boots into a checking media presence screen and says start pxe over ipv4 mac. Any idea on how to rake the i7 work ?",
+    "subreddit": "PcBuild",
+    "selected_at": "2025-09-07T15:55:06.818535Z"
+  },
+  {
+    "source": "posts",
+    "id": 851781,
+    "title": "Deco M4 and Virgin Hub 5 problem",
+    "self_text": "I've recently had a Hub 5 delivered and previously I was using a Hub 3 with Deco M4 units which worked great  I've put the Hub 5 in modem mode and connected the Deco units but the speeds are coming in a lot worse (150 mbps).  I can’t work out what I’m doing wrong  Any help is much appreciated",
+    "subreddit": "HomeNetworking",
+    "selected_at": "2025-09-07T15:55:09.083049Z"
+  },
+  {
+    "source": "posts",
+    "id": 888991,
+    "title": "3090 CPU Upgrade",
+    "self_text": "Hello everyone, I was thinking of upgrading my cpu. I have an intel i9 10850K but need something a bit more. What would be the best option for me without breaking the bank? Thanks! (gpu is 3090 and i have 32 gigs of ram)",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-07T15:58:33.144479Z"
+  },
+  {
+    "source": "posts",
+    "id": 754284,
+    "title": "This is my plan for the first audio system setup. Any thoughts?",
+    "self_text": "I got a lot of help in this subreddit with research to build my first audio system. Thank you all. This is the comp I decided to buy but I would like to get some advice before I jump in.  - Center: Elac UC52  - Front L/R: 2 Elac UF52s(tower speakers)  - AVR: Denon 3800H  It seems like 3800H is overkill for the Elac unifi 2.0 series. However, I'm planning to add more pieces like a subwoofer and surround system (eventually 7.1.2 or 7.1.4) and upgrade my speakers step by step.  - Does this setup make sense at all? Is the AVR still too much compared to the speakers?  - Is this setup decent for gaming experience as well assuming that I will add a surround system down the road?",
+    "subreddit": "hometheater",
+    "selected_at": "2025-09-07T16:46:05.176481Z"
+  },
+  {
+    "source": "posts",
+    "id": 449679,
+    "title": "Suddenly restarted",
+    "self_text": "Just wondering if this is normal that my iPhone 14 Pro suddenly restarted on its own. Went to open the phone and right after I swiped up to unlock it suddenly restarted. This is the first time I’ve encountered this though.",
+    "subreddit": "iphone",
+    "selected_at": "2025-09-07T16:46:07.864896Z"
+  },
+  {
+    "source": "posts",
+    "id": 1028051,
+    "title": "Is a TI-Nspire CX II Worth it?",
+    "self_text": "My birthday is tomorrow and I am wondering if I should get a TI-Nspire. I already have a TI-86 and a Casio FX-CG50. I do not know much about it but I have heard that it is very popular. I would use it for my calculus II class (and multivariable calc next semester,) and for personal calculations. I also program calculators for mathematical applications and. However, I have heard that this calculator may not be programmer-friendly. How much of this is true?",
+    "subreddit": "teenagers",
+    "selected_at": "2025-09-07T16:48:53.737194Z"
+  },
+  {
+    "source": "posts",
+    "id": 436093,
+    "title": "RTX 3060 display disconnecting",
+    "self_text": "Hello,  I built my girlfriend a PC about a year ago, and I've just recently found out that since it was built, the display tends to cut out every hour or so.   Issue   About every hour, the display will turn black as if the cable was disconnected. The monitor will receive no signal for about 2-3 seconds and then it kicks back in.   Specs   Gigabyte RTX 3060  AMD Ryzen 5 3600  Corsair Vengeance RGB DDR4 (2*8gb)  MSI B550 Tomahawk Max +WiFi  Corsair RM 750W PSU  Asus ROG 1080p@144hz Display  Windows 10 Home   Attempted Solutions   I have tried the display on a separate PC and the issue does not occur.  I have updated the video drivers to the latest version, including a clean install.  I am going to poke around in the BIOS to see if there's any settings there that might be the issue.",
+    "subreddit": "pcmasterrace",
+    "selected_at": "2025-09-07T16:48:56.907612Z"
+  },
+  {
+    "source": "posts",
+    "id": 675720,
+    "title": "Question: Game Design - do I need to add \"complications\"? / \"depth\"?",
+    "self_text": "G'Day  In the last week or so I've put together a game on my PC - which is mainly for my own personal benefit - I have no expectation that others will play it.  It's a space battle game - that shows fancy space battles being fought in spectacular fashion. I enjoy just watching the battles.  I know however that other players would probably expect more depth to the game. They might expect a proper, well structure story based campaign? Or a map campaign? Or similar.  They might expect more gameplay mechanics.  However - I like it as it is currently.  Although I know that I could add such things as described above if I wanted to.  I'm working on the assumption - which I don't want to debate here - that no one will play it, as that has  been the case with everything I've made for 30+ years. And that's fine.  &#x200B;  But - I kind of feel that I really should spend the time putting a proper campaign of some sort into the game - with either a map or a story based campaign.  &#x200B;  What do you think? Should I leave it to play simply as a bit of a 'screen saver' type idle thingy, or should I actually add a real campaign to the game?  &#x200B;  Thoughts?",
+    "subreddit": "gamedev",
+    "selected_at": "2025-09-07T16:49:28.301915Z"
+  },
+  {
+    "source": "posts",
+    "id": 551274,
+    "title": "First pc advice",
+    "self_text": "Hi all, couple weeks back I asked for advice about gaming pc’s as I’m planning on getting one for my brother (10) who’s been asking for ages. I have some basic knowledge on them but just need some advice before I pull the trigger on one really.   I found this deal and would love some input, good for the price? Is the PC good? Lacking or anything guidance would be great.  Bluetooth: Y Depth: 432 MM Dongle Required: N Intel Core i5 Six Core Processor i5-12400F - Discover the benefits of amazing performance, brilliant HD video & Graphics 8GB NVIDIA GEFORCE RTX 3050 - the latest Ampere architecture delivers unparalleled gaming performance. Genuine Windows 11 Home 64 Bit - Digital License Norton 360 inc. Game Optimizer - Free 90 Day License 3 Year Standard Warranty (1 Month Collect & Return, 1 Year Parts, 3 Year Labour) RGB Lighting - Customise your PCs lighting to your hearts desire with this professionaly manufactured PCSpecialist gaming PC WIRELESS INTEL® Wi-Fi 6 AX200 2,400Mbps/5GHz, 300Mbps/2.4GHz PCI-E CARD + BT 5.0 Graphics: 8GB NVIDIA GEFORCE GTX 3050 Storage: 512 Gb Height: 447 MM Processor: Intel Core i5-12400F RAM Memory: 16 GB Width: 217 MM Wifi Enabled: Y",
+    "subreddit": "pcmasterrace",
+    "selected_at": "2025-09-07T18:16:59.169098Z"
+  },
+  {
+    "source": "posts",
+    "id": 971608,
+    "title": "RDR2 can’t get more than 20FPS on a semi good Laptop on medium/high settings.",
+    "self_text": "Bought the game on steam yesterday and it just doesn’t get past it.   Specs:  RTX 3050 AMD-Ryzen 74800H  16GB RAM  1TB HDD External storage  What do I do? How do I fix, I know lowering settings is advised but I wouldn’t think that I’d have to play on Low when I have more than recommended requirements",
+    "subreddit": "reddeadredemption",
+    "selected_at": "2025-09-07T18:17:07.574384Z"
+  },
+  {
+    "source": "posts",
+    "id": 942960,
+    "title": "Advice needed please out of these 4",
+    "self_text": "Hi all so with black Friday here I'm looking to buy some headphones but can't decide out of these 4. And due to health and safety can't try them on before buying which makes it a little difficult to decide. For quality of sound and bass . I also gave a Samsung phone which would people recommend and why please ?  Sony wf1000xm4 Bose quiet comfort in ear  Bose sport earbuds Beats fit pro true wireless",
+    "subreddit": "HeadphoneAdvice",
+    "selected_at": "2025-09-07T18:21:58.881524Z"
+  },
+  {
+    "source": "posts",
+    "id": 642378,
+    "title": "stupid question about ram",
+    "self_text": "Hello everyone, let me start by saying I haven't built a pc since I was a kid with my dad, I just got my first desktop in over a decade, I had to use laptops due to lack of space.  Recently got a pre built desktop and i love everything about it, except I'd like to add ram.  Can I just make sure if I get another stick  it's also 3200mhz and simply plug and play, or do I have to do something in bios.  Sorry for the wall of text and probably stupid question.",
+    "subreddit": "PcBuild",
+    "selected_at": "2025-09-07T18:23:43.337155Z"
+  },
+  {
+    "source": "posts",
+    "id": 870489,
+    "title": "The calories are more accurate, as I entered my leanmass instead of my weight.",
+    "self_text": "I'm at 100kg and my resting calories on the apple watch were like 2400kcal, which is waaay too much. At the end of the day the calories burned were at like 3000kcal, although I did nothing on that day.   My body fat percentage is approximately 25%, so my leanmass would be 75kg.  Now my calories are much more accurate.  Just try it out if you think the calories on your apple watch are way off.",
+    "subreddit": "AppleWatch",
+    "selected_at": "2025-09-07T18:27:23.095332Z"
+  },
+  {
+    "source": "posts",
+    "id": 903862,
+    "title": "Worth upgrading CPU from i5-9600k with RTX3070?",
+    "self_text": "My current specs are RTX 3070 i5 9600k oced to 4.8Ghz DDR4 3200 16gb  I just recently upgraded my RTX2060 to 3070 and feel a strong bottleneck from CPU (I was aware of it thats why I'm thinking about the change). I was thinking to upgrade to I7-12700k but is it worth the upgrade cost+motherboard? I'm a fps junkie and run a 240hz monitor so more fps I can pull the better. What are your opinions?",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-07T18:27:36.043205Z"
+  },
+  {
+    "source": "posts",
+    "id": 626052,
+    "title": "School issued Chromebook broadcasting Wifi network",
+    "self_text": "My teen's Chromebook is somehow set to broadcast a wifi network, the school's. I'm sure it won't work, but why would they be set to do this, and are there any concerns I should have?",
+    "subreddit": "HomeNetworking",
+    "selected_at": "2025-09-07T18:28:44.055947Z"
+  },
+  {
+    "source": "posts",
+    "id": 364530,
+    "title": "Can't get my Google Account on my Pixel Watch",
+    "self_text": "I've tried hard resetting my brand new watch 3 times now. I've tried resetting my password to see if that unlocked something. I can sync a random new account to it but not my decade plus old Google account. Just get a something went wrong try again later. Support has not been able to help. Any ideas?",
+    "subreddit": "GooglePixel",
+    "selected_at": "2025-09-07T18:29:21.963230Z"
+  },
+  {
+    "source": "posts",
+    "id": 354146,
+    "title": "Suggestions For Dual Monitor Mounts?",
+    "self_text": "I currently have one 24in monitor and was looking to get another one around Black Friday or Christmas. I want to get a decent monitor mount for two monitors so I can save some desk space. I would also prefer the months to be able to swivel so one monitor can be vertical for programming.  Thanks!",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-07T18:29:51.261607Z"
+  },
+  {
+    "source": "posts",
+    "id": 847570,
+    "title": "Pixel shy after negative Pixel 6 experience. Is Pixel 7 really better?",
+    "self_text": "After using iPhones for over a decade I'm wanting to switch to an Android. Last year I bought a Pixel 6 on release day and spent the next 10 months regretting it. When it worked I loved the device. Unfortunately my Pixel 6 plagued with bugs and glitches that each update couldn't seem to fix. The only issue that improved was the fingerprint sensor thanks to the March 2022 update. In July 2022 I just couldn't take anymore of this awesome yet extremely buggy experience. So I sold the Pixel 6 and bought an iPhone 13. The iPhone 13 works perfectly with no bugs or glitches, but is so boring and limiting.  Since the release of the Pixel 7, I've heard people say the Pixel 7 is the Pixel 6 fixed and best Pixel so far. I want to believe this. After all, when my Pixel 6 wasn't acting buggy/glitchy the experience was amazing. I want to make the permeant switch to Android. Specifically Google's version of Android due to the fact I currently use nearly all of Google's services. So the Pixel seems like the device for me, but I need to know this device is seriously reliable. I mean iPhone reliable. The iPhone is extremely boring, but it's also extremely reliable. Is the Pixel 7 reliable? If I buy one, will I spend the following months regretting it again???",
+    "subreddit": "GooglePixel",
+    "selected_at": "2025-09-07T18:29:55.020430Z"
+  },
+  {
+    "source": "posts",
+    "id": 480896,
+    "title": "Orange DRAM Light",
+    "self_text": "I updated my PC with some new parts. Replaced everything except my GPU, RAM, and hard drives. I got the PC to boot to BIOS and was messing around with the DRAM speed and changed the speed to 3600 MHz (ram is rated for 3600).  When I rebooted, I didn't get any video out and now have an orange DRAM Light on my board.   Is there a way to hard reset the BIOS since I can't get any video out? I tried reseating the ram a bunch of different ways and now have the CMOS battery out. Is there anything else I can do or is my Mobo/ram bricked?",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-07T18:32:02.754818Z"
+  }
+]

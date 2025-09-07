@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Datasets Labeling</title>
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 24px; }
+      header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+      .counts { display: flex; gap: 12px; flex-wrap: wrap; }
+      .count { padding: 6px 10px; border: 1px solid #ddd; border-radius: 8px; background: #f8f8f8; }
+      .controls { display: flex; align-items: center; gap: 8px; margin: 12px 0; }
+      .post { border: 1px solid #e5e5e5; border-radius: 8px; padding: 12px; margin-bottom: 12px; }
+      .title { font-weight: 600; margin-bottom: 6px; }
+      .meta { color: #666; font-size: 12px; margin-bottom: 6px; }
+      .grid { display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 10px; }
+      @media (min-width: 900px) {
+        .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      }
+      .pagination { display: flex; gap: 8px; justify-content: flex-end; margin-top: 12px; }
+      button { cursor: pointer; }
+      .checkboxes { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+      .category { display: inline-flex; align-items: center; gap: 6px; padding: 4px 8px; border: 1px solid #e5e5e5; border-radius: 6px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Datasets Labeling</h2>
+      <div class="counts" id="counts"></div>
+    </header>
+
+    <div class="controls">
+      <label>Batch size <input id="batch" type="number" min="1" max="50" value="10"></label>
+      <button id="reload">Reload</button>
+      <input id="newCat" type="text" placeholder="New category" />
+      <button id="addCat">Add Category</button>
+      <select id="removeCat"></select>
+      <button id="delCat">Remove Selected</button>
+      <span id="status"></span>
+    </div>
+
+    <div class="grid" id="posts"></div>
+    <div class="pagination">
+      <button id="next">Next 10 ➜</button>
+    </div>
+
+    <script>
+      const API_BASE = '/datasets';
+      let CATEGORIES = [];
+
+      const countsEl = document.getElementById('counts');
+      const postsEl = document.getElementById('posts');
+      const nextBtn = document.getElementById('next');
+      const reloadBtn = document.getElementById('reload');
+      const batchEl = document.getElementById('batch');
+      const statusEl = document.getElementById('status');
+
+      function fmtCounts(counts, target) {
+        countsEl.innerHTML = '';
+        CATEGORIES.forEach(cat => {
+          const c = counts[cat] || 0;
+          const div = document.createElement('div');
+          div.className = 'count';
+          div.textContent = `${cat}: ${c} / ${target}`;
+          countsEl.appendChild(div);
+        });
+      }
+
+      function renderRemoveSelect() {
+        const sel = document.getElementById('removeCat');
+        sel.innerHTML = '';
+        CATEGORIES.forEach(cat => {
+          const opt = document.createElement('option');
+          opt.value = cat;
+          opt.textContent = cat;
+          sel.appendChild(opt);
+        });
+      }
+
+      async function fetchCategories() {
+        const res = await fetch(`${API_BASE}/categories`);
+        const data = await res.json();
+        CATEGORIES = data.categories || [];
+        renderRemoveSelect();
+      }
+
+      async function fetchStats() {
+        const res = await fetch(`${API_BASE}/stats`);
+        const data = await res.json();
+        fmtCounts(data.counts || {}, data.target || 500);
+      }
+
+      function renderPosts(posts) {
+        postsEl.innerHTML = '';
+        posts.forEach((p, idx) => {
+          const div = document.createElement('div');
+          div.className = 'post';
+          div.innerHTML = `
+            <div class="title">${p.title ? escapeHtml(p.title) : '(no title)'}<\/div>
+            <div class="meta">${escapeHtml(p.subreddit || '')} • ${escapeHtml(p.source)} • id ${p.id}<\/div>
+            <div class="self">${escapeHtml((p.self_text || '').slice(0, 800))}<\/div>
+          `;
+
+          const checks = document.createElement('div');
+          checks.className = 'checkboxes';
+          CATEGORIES.forEach(cat => {
+            const label = document.createElement('label');
+            label.className = 'category';
+            const cb = document.createElement('input');
+            cb.type = 'checkbox';
+            cb.addEventListener('change', async (ev) => {
+              if (!cb.checked) return; // only on tick
+              cb.disabled = true;
+              try {
+                const resp = await fetch(`${API_BASE}/annotate`, {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({
+                    category: cat,
+                    post: p,
+                  }),
+                });
+                const data = await resp.json();
+                if (!data.ok) throw new Error('Annotate failed');
+                await fetchStats();
+                statusEl.textContent = `Saved to ${cat}`;
+              } catch (e) {
+                console.error(e);
+                alert('Failed to save annotation');
+              } finally {
+                cb.disabled = false;
+              }
+            });
+            label.appendChild(cb);
+            const span = document.createElement('span');
+            span.textContent = cat;
+            label.appendChild(span);
+            checks.appendChild(label);
+          });
+          div.appendChild(checks);
+          postsEl.appendChild(div);
+        });
+      }
+
+      async function loadRandom(limit) {
+        const res = await fetch(`${API_BASE}/random?limit=${encodeURIComponent(limit)}`);
+        const data = await res.json();
+        renderPosts(data.posts || []);
+      }
+
+      nextBtn.addEventListener('click', async () => {
+        await loadRandom(Number(batchEl.value) || 10);
+      });
+      reloadBtn.addEventListener('click', async () => {
+        await loadRandom(Number(batchEl.value) || 10);
+        await fetchStats();
+      });
+
+      document.getElementById('addCat').addEventListener('click', async () => {
+        const name = (document.getElementById('newCat').value || '').trim();
+        if (!name) return;
+        const res = await fetch(`${API_BASE}/categories`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name }),
+        });
+        const data = await res.json();
+        if (data.ok) {
+          await fetchCategories();
+          await fetchStats();
+          await loadRandom(Number(batchEl.value) || 10);
+          statusEl.textContent = `Added category ${name}`;
+          document.getElementById('newCat').value = '';
+        }
+      });
+
+      document.getElementById('delCat').addEventListener('click', async () => {
+        const sel = document.getElementById('removeCat');
+        const name = sel.value;
+        if (!name) return;
+        if (!confirm(`Remove category ${name}?`)) return;
+        const res = await fetch(`${API_BASE}/categories?name=${encodeURIComponent(name)}`, { method: 'DELETE' });
+        const data = await res.json();
+        if (data.ok) {
+          await fetchCategories();
+          await fetchStats();
+          await loadRandom(Number(batchEl.value) || 10);
+          statusEl.textContent = `Removed category ${name}`;
+        }
+      });
+
+      function escapeHtml(str) {
+        return (str || '').replace(/[&<>"']/g, (c) => ({
+          '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;'
+        })[c]);
+      }
+
+      (async function init() {
+        await fetchCategories();
+        await loadRandom(10);
+        await fetchStats();
+      })();
+    </script>
+  </body>
+</html>
+
+
