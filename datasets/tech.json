@@ -726,5 +726,477 @@
     "self_text": "Title and a few other things to note.  When I first turned it on, the middle fan didn’t spin at all, even under load. I saw a suggestion to try and spin the middle fan while the PC is off so I tried that and now it spins. However it makes this noise now.  I’ve had weird issues in games too like more frequent crashes. Also I played halo infinite yesterday and the temp went up 82 degrees. I figured this was unusually hot so I shut it off until I can get other opinions on it. Another thing is that I expected even a slight performance boost over my 2060. I know it wouldn’t be a huge jump because my CPU is still bottlenecking it but the performance seems pretty identical to my 2060. On top of that, everytime I open a game, it has a “very high power usage” in the task manager. Also the gpu usage would spike randomly to like 20% even while idle.  I bought it from amazon about 2 weeks ago and got around to installing it yesterday. I have a month to return it. Should I just return it to amazon or contact MSI?  Motherboard: MSI B550 Tomahawk CPU: Ryzen 3600 (i have a 5900 but haven’t had the time to install it yet) New GPU: MSI RTX 3080 TI Gaming X Trio Power supply: EVGA 850w gold  Here is the video: https://cdn.discordapp.com/attachments/780233666437185556/1043974120112656404/IMG_9774.mov",
     "subreddit": "buildapc",
     "selected_at": "2025-09-07T22:14:04.521743Z"
+  },
+  {
+    "source": "posts",
+    "id": 346452,
+    "title": "Can Ryzen 7 3800x and 3070ti together not cause overheat?",
+    "self_text": "Okay so I was just researching on the internet to see the possibility of hardware replacement in the future. I have a Ryzen 7 3800x CPU and a 5700xt Sapphire Pulse card. And I found out that the perfect match to my R7 processor is a 3070ti or 3080 card. So I have 3070ti saved in my amazon list, but before I finalize my decision I need to know if my R7 cpu and 3070ti won't cause any overheating like the 5700xt has been doing the last couple of months. I was hoping this ends my overheating problem.",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-07T22:44:16.619276Z"
+  },
+  {
+    "source": "posts",
+    "id": 980775,
+    "title": "High Upstream Power Levels",
+    "self_text": "If my 8x4 modem has been posting 51-54 dB upstream on all 4 channels, is this something I should take action for? It's been like this for a couple months now when I checked my diagnostics page after a legitimate ISP outage I was notified about. Power Level is between 0-2dB and SNR 38dB. I haven't had any connection issues and would like to prevent losing my internet and having to call Comcast, a company that thinks a 3 day wait for a technician is acceptable, but I don't want to get charged because \"I see nothing wrong here.\" Usually the upstream power level is 48. I was under the impression anything over 51db is awful.  In the past every time the upstream power levels spiked I had constant connection issues, but it would swing +/-5 constantly, this seems to be stable which puzzles me.",
+    "subreddit": "HomeNetworking",
+    "selected_at": "2025-09-07T23:04:01.208867Z"
+  },
+  {
+    "source": "posts",
+    "id": 647809,
+    "title": "What do YOU put on your nvme SSD?",
+    "self_text": "Recently I discovered nvme SSD’s and their speed compared to SATA SSD’s. I already own 2 Samsung SATA SSD’s. 1tb and 500gb.  I’m not short on storage space at the moment, but it did make me think.  What kind of storage benefits from an nvme SSD? For instance, is it certain types of games, certain types of programmes, etc.   What have you got stored on your nvme SSD?   Perhaps black friday offers a good deal on an nvme SSD and I might just go for it if it offers me a benefit.  Thank you in advance!",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-07T23:05:58.015463Z"
+  },
+  {
+    "source": "posts",
+    "id": 846225,
+    "title": "VirtualBox 7: \"restore snapshot\" option gone in shutdown menu",
+    "self_text": "In VirtualBox 7 is there anyway to get the \"restore snapshot\" option back when closing a VM? It used to be there in previous versions. Now the only options during machine closure are \"Save the machine state\", \"Send the shutdown signal\" or \"Power off the machine\".",
+    "subreddit": "linuxquestions",
+    "selected_at": "2025-09-07T23:06:11.161704Z"
+  },
+  {
+    "source": "posts",
+    "id": 889222,
+    "title": "On the low end of AM4, should I upgrade to AM5 now with Black Friday Sales or wait?",
+    "self_text": "Quick overview of my system:   Motherboard - X470 M7AC  CPU -  5600x  GPU - 3060ti  RAM - 32gb of DDR4 @ 3000mhz  Memory - 1tb of SSD, 2tb of HDD  Been looking at Black Friday Deals and considering if its worth for me to upgrade to AM5 and replace my Motherboard, RAM, and CPU. Doing so will total out about ~$750 based on the deals I found so far. The price isn't too much of a concern for me but I just want to know if its even worth considering the parts I already have. I've seen some people with similar specs to mine say they're gonna skip out on AM5 but they're on the slightly higher end of AM4 with 5800x's and 3080's. I do play on a 360hz monitor w/ GSYNC on so I would like to maximize it to it's fullest but if I won't get that much of an upgrade in most modern games I probably won't bother. Or should I just stay in AM4 and maybe upgrade my CPU and call it a day and wait till AM5 is cheaper?  TLDR: On low end of AM4, do I upgrade to AM5 or just wait? Or should I upgrade to higher end AM4?",
+    "subreddit": "pcmasterrace",
+    "selected_at": "2025-09-07T23:07:12.451104Z"
+  },
+  {
+    "source": "posts",
+    "id": 699182,
+    "title": "Monitor setups.",
+    "self_text": "Just a random question and thoughts from others. I have a pretty beefy PC, i9900 cpu, 32gb ddr4, rtx 3080 founders edition.  Currently I’m running a 27” 2k 144hz monitor for my main display. Then I have two 22” 1080p 60hz side monitors.   My question is. I would like to upgrade the two side monitors to be higher HZ, would getting another 2 2k monitors be too much for my pc to handle. Could I make the two side monitors downscale to 1080p and have the high hz? I basically have a pretty cheap way to get the same monitor I use as my main display. Just wondering if that would run well. Thanks everyone.",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-07T23:08:41.417470Z"
+  },
+  {
+    "source": "posts",
+    "id": 895863,
+    "title": "How much could two old ps3's sell for?",
+    "self_text": "I am not selling them here, but how much could they fetch for on Craigslist since they are pretty much old hardware and no one's really playing on these systems anymore AFAIK.  Would it even be considered in the $50-100  range?   Am I better off waiting a few more year to sell it as an antique to some game collector?",
+    "subreddit": "ask",
+    "selected_at": "2025-09-07T23:13:59.992339Z"
+  },
+  {
+    "source": "posts",
+    "id": 911114,
+    "title": "Pixel 7 Promos - Verizon",
+    "self_text": "Has anyone had luck trading in a Pixel 3 for the Pixel 7/pro? I've heard many reports that people had previously been able to trade in the P3 (or even p2) for a free Pixel 7, and now that doesn't seem to be the case. It appears I waited 3 weeks too long to trade.   The best Verizon promo I can seem to find is $400 via 36 months of promo credit (ick) - 24 months is no longer an option.   Has anyone seen anything better?",
+    "subreddit": "GooglePixel",
+    "selected_at": "2025-09-07T23:15:53.190211Z"
+  },
+  {
+    "source": "posts",
+    "id": 823302,
+    "title": "ELI5 How do videogame or software developer find bugs?",
+    "self_text": "Especially on videogames. Do they really have play tester that try to do everything in the game? Imagine that would took quite some time",
+    "subreddit": "explainlikeimfive",
+    "selected_at": "2025-09-07T23:16:18.030001Z"
+  },
+  {
+    "source": "posts",
+    "id": 1016445,
+    "title": "High cpu temps",
+    "self_text": "I'm running a ryzen 9 3900 with an aio. I keep getting Temps of 100-106c and my computer shutting down playing mw2. I have removed and reapplied thermal paste and it helped a little but still getting Temps 100-103. In my bios I have aio rpm indication. Can anyone provide further guidance on where to look next?",
+    "subreddit": "PcBuild",
+    "selected_at": "2025-09-07T23:16:28.749966Z"
+  },
+  {
+    "source": "posts",
+    "id": 582665,
+    "title": "Parts check for my friend",
+    "self_text": "My friend asked me for help with his first build, and I helped him pick out a list of parts, and I wanted to check with people more experienced if it’d work or if there’s a recommended alternative.  Parts list:  CPU: AMD ryzen 5 4500 MB: MSI B450M Pro-M2 Max micro atx am4 Memory: Corsair vengeance lpx 16 Gb (2x8) Storage: crucial BX500 1 TB 2.5” ssd GPU: msi geoforce gtx 1630 ventus xs 4G OC Case: NZXT H5 10 ATX mid tower PS: corsair TX550M gold 550 W 80+ semi modula WiFi adapter: TP-Link WiFi 6 AX3000 PCIe WiFi Card  Thank you in advance!  Edit: his budget is to stay under $800",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-08T13:40:19.354588Z"
+  },
+  {
+    "source": "posts",
+    "id": 600431,
+    "title": "Any thoughts on this build?",
+    "self_text": "Im currently building a ,,dream pc'' but i was never into hardware so with some help of youtube reviews and different forums I have managed to set up this build. I ask you guys for thoughts and advices of what can be changed for something better from the same price range and save me from making huge mistake (if any of those are shit). Here are all the parts:   CPU   1x  Intel® Core i7-12700K, 3,6 GHz (4,9 GHz Turbo Boost) socket 1700 processor  € 449,00    MOTHERBOARD   1x  MSI MAG Z690 TOMAHAWK WIFI DDR4, socket 1700  € 313,00    CPU COOLER   1x  Noctua NH-D15 chromax.black  € 119,90    GRAPHIC CARD   1x  GIGABYTE GeForce RTX 3080 Gaming OC 10G  € 949,00    RAM   2x  G.Skill 16 GB DDR4-3200  € 158,90    MEMORY   1x   SSD:  SAMSUNG 980 PRO, 1 TB SSD  € 154,90   1x   SSD:  SAMSUNG 980 PRO, 2 TB SSD  € 279,00    CASE   1x  be quiet! PURE BASE 500DX  € 119,90    POWER   1x  be quiet! Straight Power 11 Platinum 850W  € 179,90    SYSTEM   1x   Windows:  Microsoft Windows 11 Home",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-08T13:41:32.802979Z"
+  },
+  {
+    "source": "posts",
+    "id": 499495,
+    "title": "Rate My Build / Liquid vs Air",
+    "self_text": "My current custom PC is around three years old and the flashed RX 5700 regularly sounds like an airplane taking off; it's time for an upgrade! This started out with doing a price check on the components of some popular prebuilt systems, as a family member told me they saved money by buying prebuilt; my cynical self wanted to prove that all the hours I've spent building my own computers weren't wasted.  So, without further ado, here's my build: PCPartPicker Build  I'd love any feedback - is the CPU overkill? An AIO CPU cooler is listed, but I'm toying with the idea of building my first open liquid loop, as I figure I'd want liquid cooling on my GPU if I'm going to bother at all. So, lovers of air and liquid, I'd appreciate your thoughts on what makes sense. Thanks in advance!",
+    "subreddit": "pcmasterrace",
+    "selected_at": "2025-09-08T13:42:41.680279Z"
+  },
+  {
+    "source": "posts",
+    "id": 454568,
+    "title": "Formatting a laptop with broken screen",
+    "self_text": "Im trying to upgrade my laptop hdd to an ssd, my problem lies in formatting it as I don’t have access/ can’t see the bios to be able to install windows since an external monitor only displays when it reach the login page on windows.  My Laptop is rog g56jk, the screen is busted. Other than that everything is fine.  Workarounds done: I already tried using VGA or hdmi to be able to see the actual start of the PC to access bios, Removed the screen so it forces to recognise that there is no screen, but still doesn’t do, my current setup is everything is exposed since i kept the screen disconnected. Tried cloning the hdd for some reasons it always fails or says success but doesnt really work, i think the hdd has bad sectors ald.  Please help.",
+    "subreddit": "pcmasterrace",
+    "selected_at": "2025-09-08T13:44:32.801798Z"
+  },
+  {
+    "source": "posts",
+    "id": 903498,
+    "title": "Is The Gigabyte M27Q-P Discontinued?",
+    "self_text": "I've been lookin at the M27Q-P from gigabyte for a while now as my first monitor to jump over to 1440p, but I've noticed it's literally out of stock everywhere? Has it been replaced by something else I'm not aware of, or is it just done?",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-08T13:45:00.122866Z"
+  },
+  {
+    "source": "posts",
+    "id": 987758,
+    "title": "Best Band to Get \"Official\" From Apple?",
+    "self_text": "I'm probably getting my first Apple Watch today and I'm trying to decide which band to get. I anticipate that I'll probably end up getting a bunch of third party bands, but is there a band that Apple really does better than the knockoffs?  Edit: Thanks for the comments. Went with a Nike Sport Loop!",
+    "subreddit": "AppleWatch",
+    "selected_at": "2025-09-08T13:45:30.910943Z"
+  },
+  {
+    "source": "posts",
+    "id": 792673,
+    "title": "Durable daily use headphones?",
+    "self_text": "My SHP-9500s are a little bit broken and I was kinda wanting an upgrade anyway, so are there any nice comfortable open backs that will last a few years of being thrown in a backpack or slept in? They need to be open back, have thick ear pads, and have a detachable cable, and my budget is $250 max, cheaper would be nice. It would also be nice if they were low resistance so that the battery in my Bluetooth DAC lasts longer.",
+    "subreddit": "HeadphoneAdvice",
+    "selected_at": "2025-09-08T13:45:32.991020Z"
+  },
+  {
+    "source": "posts",
+    "id": 430590,
+    "title": "480s Touchpad compatible with T480?",
+    "self_text": "Hi fellow thinkpadders, I own a t480 and my touchpad peeled and scratcjed off too much to be useful. My local repair shop has a t480s touchpad, will it work as a drop in replacement?",
+    "subreddit": "thinkpad",
+    "selected_at": "2025-09-08T13:48:39.442422Z"
+  },
+  {
+    "source": "posts",
+    "id": 1051803,
+    "title": "Firecuda 530 500gb",
+    "self_text": "Hi. I finally decided the ssd to buy.  I chose the firecuda 530 500gb ssd.  Should i buy it with the factory heatsink or one without the heatsink and they buy an aftermarket heatsink? It will be used mainly for heavy writing on it.  Thanks",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-08T13:49:32.287919Z"
+  },
+  {
+    "source": "posts",
+    "id": 406815,
+    "title": "Copying photos from the photo app in mac",
+    "self_text": "Hi All,  I have a question, how do i copy photos from inside photo app in a mac?  When right clicked i dont see an option of copying, am i missing something. Can someone please help me here?",
+    "subreddit": "mac",
+    "selected_at": "2025-09-08T13:51:39.268597Z"
+  },
+  {
+    "source": "posts",
+    "id": 1046060,
+    "title": "How would I write code that scrapes the address from a block of text/webpage and automatically inputs the data in the relevant fields (name, street name, street number, postcode, etc) on a delivery website? (DHL/FedEx)",
+    "self_text": "I have no idea how to go about making something like this, or even if there's software that'll do it for me. But I think it would be a fun project to try and develop something like this if it's not too hard for a complete beginner.   So, how would I begin? What coding language would you recommend? Is there a tutorial you could point to for something like this?  Thanks!",
+    "subreddit": "NoStupidQuestions",
+    "selected_at": "2025-09-08T13:54:22.810330Z"
+  },
+  {
+    "source": "posts",
+    "id": 732894,
+    "title": "New GPU Running Hot?",
+    "self_text": "Just upgraded from a 3060ti to a 3080. I bought the 3080 used online, with a 30 day return window. It came looking completely clean, and honestly looks like it was brand new and returned. However, I'm definitely noticing that it seems to be running way hotter than my 3060ti did? For example I'm playing dishonored 2 and it's hovering around 80-81 degrees Celsius. MW2 it's hovering around 83 degrees. The fans are also extremely loud compared to the 3060ti. How can I know if there's something wrong with this used GPU? Or are loud fans and higher temperatures normal for the 3080.. For what it's worth the card is definitely performing much better than the 3060ti in terms of FPS. I'm kind of new to upgrading my PC so any help is appreciated.",
+    "subreddit": "pcmasterrace",
+    "selected_at": "2025-09-08T13:54:28.143598Z"
+  },
+  {
+    "source": "posts",
+    "id": 814881,
+    "title": "GTX 970 just died, need a decent replacement for the new few years",
+    "self_text": "My PC unexpectedly shut down earlier today and won't turn on unless I remove the graphics card, so I'm guessing it's caput. The rest of my build is all >6 years old (specs below). I am in the process of saving up for a full rebuild, but that's likely at least 2 years away so I'm needing a suitable replacement that will get me that far, preferably beyond.  I don't tend to play that many recent titles, so my GTX 970 had been doing well enough. When it died I was playing modded skyrim at 4k, 40-60fps, which is fine by me. I'm basically happy with a card that can handle stuff like dark souls 3, subnautica, the RE2 remake at similar framerates and resolution, though if it could also cover more recent games that would be good too.  The rest of my build is:   Z75 Pro3 LGA 1155 motherboard pcie3 graphics card interface  Not sure of the CPU, an i5 of some kind, probably 8 years old  EVGA 750W G2 PSU  2x4GB Corsair 1866Mhz RAM   For a new graphics card, I was thinking either the RX 6650 XT (or this one, I'm not sure what the difference is), or splurging a bit more on the RX 6700 XT. AFAIK my PSU is good enough for these.  What do you think? Are there better cards I am missing? Should I aim to buy on Black Friday or are the saving illusory? Thanks in advance.",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-08T13:59:19.260143Z"
+  },
+  {
+    "source": "posts",
+    "id": 730498,
+    "title": "Printers are evil, but need help on a proof of concept",
+    "self_text": "My idea:   Our company has 18+ sites, sometimes people migrate from one location to another without our knowing, and there is a change in AD through our third party service that HR makes changes in. However the devices have to be manually moved to Site OUs and they get printers that way, could there be an automation setup to move these devices to the site OUs after a change from HR.   &#x200B;  So my proof on concept:  -Dynamically assign printers based on device location in the OUs (already setup as GPOs and this works)  -Dynamically moving Devices to the proper OU based on X field/change on the User OU (This is not setup, and I am unsure how to have a device tied to a person in AD).   The devices are not directly tied to the person. Was contemplating a PS script that senses IP address subnet on login and migrates the Device to that locations OU. Certain I'm over thinking this, just seeing if anyone in the community has designed or setup something like this.  I will add more information if requested.",
+    "subreddit": "sysadmin",
+    "selected_at": "2025-09-08T13:59:30.297164Z"
+  },
+  {
+    "source": "posts",
+    "id": 326766,
+    "title": "Arctic liquid freezer ii 240 vs Cooler Master Masterliquid ml240l v2 ARGB",
+    "self_text": "For the CPU it will be for a 5 5600X",
+    "subreddit": "PcBuild",
+    "selected_at": "2025-09-08T14:00:21.729803Z"
+  },
+  {
+    "source": "posts",
+    "id": 771607,
+    "title": "Big Hands Wireless Gaming Mouse Problem",
+    "self_text": "Hi People!  As the title states - I have a problem with wireless and big mouse's. I went through DeathAdder Essential where the scroll broke in few months. Now the Basilisk x HyperSpeed - I love the grip, as I loved it in DeathAdder but the Bluetooth connection is now broken, and also the mouse needs hard reset in every few hours (remove and insert the battery again). As the Black Friday is close, I though about changing the mouse. I quite don't like the Logitech series - my brother has g502 and this mouse is little tricky - I might get used to it, but I prefer the \"Razer-styled\" design.  And here goes the problem. There a little to none big wireless mouse's - The Corsair DarkCore has been hated merrily everywhere where I looked for reviews due to quality problems. My biggest need is the mouse to suit my big hand - the grip for Basilisk or DeathAdder as I said was perfect. My budget is around 100 Euro, as I live in Poland and the average price for a high end mouse is around 400/500 PLN. I'd love some suggestions as I find myself almost blind in all of those models. Cheers!  &#x200B;  EDIT: My hand size - length 190mm and width 100mm.",
+    "subreddit": "MouseReview",
+    "selected_at": "2025-09-08T14:01:49.862580Z"
+  },
+  {
+    "source": "posts",
+    "id": 740700,
+    "title": "3 pin rgb header to 4 pin rgb",
+    "self_text": "recently i got a 6800xt and a AIO they both take 3 pin headers for the rgb but my board only takes 4 pin headers, is there a way i can get my gpu and aio RGB to still work with my pc. right now i got it plugged into my old case rgb controller but the problem is it registers my gpu as a pc case and causes some issues with the rgb",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-08T14:04:19.779658Z"
+  },
+  {
+    "source": "posts",
+    "id": 1013457,
+    "title": "AW4 LTE with its own number but paired with iPhone",
+    "self_text": "I have 3 phone numbers with 3 different carriers (let's call them A, B and C). Only A supports AW LTE in my country. I can't add cellular using SIM B or SIM C  My plan is to insert SIM 'A' into the iPhone, pair it up and add a cellular plan. Once setup, take out SIM 'A' and use the iPhone with SIM B and SIM C only.  Will there be any problems I should know before trying this?",
+    "subreddit": "AppleWatch",
+    "selected_at": "2025-09-08T14:05:56.022165Z"
+  },
+  {
+    "source": "posts",
+    "id": 437836,
+    "title": "Need Some Help/Advice on Which Mouse to Buy Next",
+    "self_text": "I started out only buying ergo mice (EC2-A, NP-01, MM720, Orochi) but then got a couple ambi ones (GPW, Viper Mini). I have small 16.5 x 9cm hands and play with a relaxed claw grip. I am still waiting for the Viper Mini Wireless as I love that shape, but the clicks feel cheap and I wasn't a fan of the cable all that much. I recently switched back to the NP-01 and am loving it. The mouse I'm thinking of buying are the NP-01S because the grip width sometime feels to wide on the NP-01. Or sometimes I feel with a mouse of that size I want it to fill my palm out more so its between the EC3-C or the Outset AX. The new MM712 looks nice, but if the clicks and scrollwheel are anything like the MM720 I am NOT a fan. If anyone has owned the mouse I mentioned please let me know your experience + pros and cons of them, thanks!",
+    "subreddit": "MouseReview",
+    "selected_at": "2025-09-08T14:06:18.423103Z"
+  },
+  {
+    "source": "posts",
+    "id": 727267,
+    "title": "Help please",
+    "self_text": "Ive just built my first PC.  And all went well until I installed windows from a USB boot drive.   It allowed me to go through the full set up even getting into the windows main screen but then the screen goes blank and I can’t get back into windows.   The sound is still evident and after rebooting it just boots back into a blank screen.   I’ve repeated the install now 3 times and I get the exact same end result.  Any ideas please I’ve sat all day on google but find nothing   Running: ASUS Strix x670e-e Ryzen 7700 Palet gamerock 3090  I’m gutterred and lost what to do.  I maybe thought a display driver but I can’t even get time to download from Nvidia and why would it work at a point  I am able to access the bios menu",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-08T14:06:41.856800Z"
+  },
+  {
+    "source": "posts",
+    "id": 651534,
+    "title": "Keyboard help.",
+    "self_text": "So I used swiftkey for the longest time on android and then came over to iPhone a couple years ago. It become so buggy over the years it’s almost completely not worth it to use it. So I use the default keyboard now. I really really do not like it at all. Any other options out there I don’t mind paying for an app once but not interested in a monthly subscription for a keyboard. Any help is appreciated.",
+    "subreddit": "iphone",
+    "selected_at": "2025-09-08T14:06:58.169598Z"
+  },
+  {
+    "source": "posts",
+    "id": 346390,
+    "title": "Seeking a consensus from everyone. I want everyone's opinions on a potential upgrade!",
+    "self_text": "So I've tried doing my own research, and it just sends me down a huge rabbit hole of PCIe versions, bottleneck percentages, and cpu types until I feel like i am getting nowhere. So I turn to you wonderful folks at r/buildapc to get some advice. I generally find that en-mass consensus is more important and helpful than one or two people's opinions, so I'm looking for as many people as possible to respond!  &#x200B;  I'd like to do some upgrades to a gaming PC i built 6 years ago. I'm starting to notice that modern games are outstripping my PC's capabilities, so I'd like to get a meaningful boost  to FPS and load times and get another 5-7 years out of my current PC before a full rebuild. With a new baby on the way I'm trying to get some meaningful upgrades for not too much money. My current specs are as follows:  MOBO: Asus M5A97 R2.0 (2 PCIe 2.0 X16 slots)  CPU: AMD FX-8370 Eight-Core Processor, 4000 Mhz, 4 Core(s), 8 Logical Processor(s)  GPU: ZOTAC GTX 1070  RAM: 16GB DDR3  Keep in mind my monitor runs at 1440p and 60hz, so I'm not one of those types who NEEDS 120 fps to play. I'm happy at 60, so long as it stays relatively close to 60 throughout the experience. My most demanding games are things like Destiny 2, Racing Sims, and big Strategy Games with a lot on screen at once.  &#x200B;  I was thinking of putting in an NVMe M.2 SSD using a PCIe converter (my MOBO doesn't have an M.2 capable slot as is.)  Overclocking the CPU to 4.5 ghz, and a RTX 3070 Ti into the current MOBO, going for a load time reduction in the SSD and some extra GPU power to see me through the next 5-7 years or so. Is this a decent upgrade in everyone's opinion, or will I experience too much CPU bottleneck for this to be worthwhile? I feel like a 4.5ghz CPU should still be very fast, but I've heard that my particular brand of CPU isn't great, which leaves me worried the extra GPU money would be wasted without also buying a new CPU. I've tried to find out myself, but i feel get so much different information i get overwhelmed and can't figure out exactly what to do.   &#x200B;  So in the all-knowing opinion of build-a-pc, what do y'all think? Is this a worthwhile upgrade or not?",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-08T14:08:14.869406Z"
+  },
+  {
+    "source": "posts",
+    "id": 548787,
+    "title": "Is it wise to buy a PC?",
+    "self_text": "Hi guys, not sure if this is the right sub but it is one of the largest.   I am considering buying a PC this black Friday but am kind of conflicted about what to get. Just to give some context, I use to game on a laptop but I then bought a PS5 and play exclusives and the AAA games on it exclusively. I traded in my laptop for a macbook for work and such but I still use my Mac for multiplayer games like WoW.  I am considering getting a PC because of new exclusives like Starfield and Game Pass. Plush, the mac heats up too quickly. I tried getting a pre-built but the prices are a bit outrageous for older harder when I would mostly use it for multiplayer and exclusives.  So my question is, should I even get a PC? It is a pretty big investment and I don't plan on splurging more than 700 especially when I don't know much about the hardware",
+    "subreddit": "pcmasterrace",
+    "selected_at": "2025-09-08T14:12:37.634276Z"
+  },
+  {
+    "source": "posts",
+    "id": 822549,
+    "title": "How to emulate 60fps using your TV?",
+    "self_text": "So, I had a Panasonic TV 43inch 4K with my PS4 and there was this setting called movement enhancement with 3 options: low, mid and high, when you were playing any game at 30fps like RDR2 or Fallout 4 for example, and you set it on high, the game magically seemed like 60 fps even if you move, you were able to play any 30fps game for hours looking like you're playing at 60fps, it was amazing. So now I bought a PS5 and a new TV Sony 65inch 4K, so when I started playing Fallout 4 it looked really slow, like 30fps, the same for RDR2 it's not the same smoothness and I don’t like it at all, I mean how is possible that a 200$ TV is looking better and smoother than 1K one?  What can I do? Return the Sony TV and buy a Panasonic or the problem is that the PS5 doesn’t allow this 60fps emulation kinda like? Sorry if it is too long, but I was used to play at “60fps”, now my games look so slow.",
+    "subreddit": "playstation",
+    "selected_at": "2025-09-08T14:13:47.265090Z"
+  },
+  {
+    "source": "posts",
+    "id": 706849,
+    "title": "Ethernet Not working",
+    "self_text": "Bought a new PC recently but the Ethernet cable is not working properly. I think it's a loose concact cuz it connects for a brief moment when I wiggle it around. Is it a Problem with the mainboard?",
+    "subreddit": "pcmasterrace",
+    "selected_at": "2025-09-08T14:14:31.217928Z"
+  },
+  {
+    "source": "posts",
+    "id": 471394,
+    "title": "AIO freaks out when I plug an external drive in...",
+    "self_text": "So, super weird question, and I have no idea what's wrong. Whenever I plug an external hard drive in, my AIO ramps up to 100% speed and gets loud, it only happens with my two WD externals, not flash drives or anything else, and it doesn't stop when I unplug them.  Any ideas?",
+    "subreddit": "pcmasterrace",
+    "selected_at": "2025-09-08T14:26:50.213380Z"
+  },
+  {
+    "source": "posts",
+    "id": 1014791,
+    "title": "Google is heavily screwing me over",
+    "self_text": "Bought like 8 pairs of pixel buds for the office as Christmas gifts. Saw Best Buy had better price nearing up in Black Friday. I decided let me return the  8 pairs and just buy in Best Buy. Google store then decides after a month of back and forth that they will not be refunding me for my Ear buds nor sending back the returned items to me. Sent proof of tracking for credit card dispute. Now a month later and dispute has been denied.   I don’t get it I returned all items and have proof from tracking and gave all RMA numbers to credit card company. Out about $1000+ and wouldn’t mind if I just had the damn earbuds I returned…",
+    "subreddit": "GooglePixel",
+    "selected_at": "2025-09-08T14:30:13.675943Z"
+  },
+  {
+    "source": "posts",
+    "id": 768624,
+    "title": "I was an early adopter from iOS 2.0 - iOS 11, and have been on Android since. Today I just got an iPhone again. What did I miss?",
+    "self_text": "A lot is familiar, a lot isn’t. I consider my self a pro user, so to all the pro users out there, what are some things I missed? What do you do to be a “pro user”?  For one, I made a lot of shortcuts that run automations. Just cant figure out how to disable it notifying me every time it runs.",
+    "subreddit": "iphone",
+    "selected_at": "2025-09-08T14:30:47.646261Z"
+  },
+  {
+    "source": "posts",
+    "id": 291457,
+    "title": "Mac Trackpad Gone Crazy",
+    "self_text": "So I recently. noticed that my trackpad has been playing up and doing this (see below) I contacted apple and they told me to do an SMC reset and try safe mode, but that didn't work so now I have to give it to an apple certified technician, but I would rather avoid the 200 dollar fee. this only happens when I touch the trackpad, an external mouse doesn't have the same issue. any ideas?  https://reddit.com/link/yk028v/video/ij9b2luw5ix91/player",
+    "subreddit": "mac",
+    "selected_at": "2025-09-08T14:31:31.469020Z"
+  },
+  {
+    "source": "posts",
+    "id": 323704,
+    "title": "Unity Shaders for UI",
+    "self_text": "Is it a common practice to create UI elements with Shaders? I've started creating my buttons and some backgrounds using shaders instead of image assets, and i begin to wonder if that's a solid practice or not worth the burden on the GPU.  What's the most comoon practice in the industry?",
+    "subreddit": "gamedev",
+    "selected_at": "2025-09-08T14:33:08.011685Z"
+  },
+  {
+    "source": "posts",
+    "id": 544111,
+    "title": "GPU Upgrade",
+    "self_text": "So my build is… CPU i5-12600K GPU GTX 1660Ti Cooler DeepCool AK620 PSU EVGA 500W BR Bronze RAM T-Force Vulcan Z 3200MHz Case NZXT H510  My monitor is 1080p 165Hz so I’m not trying to hit the best stats but I’ve notice my GPU is lagging. I’m shooting to kinda cap out around those limits or at least get a noticeable upgrade. What kind of upgrades should I be looking at if I wanted to upgrade my GPU? I was thinking a 3070 (specifically GIGABYTE Gaming GeForce RTX 3070 Ti 8GB GDDR6X PCI Express 4.0 ATX Video Card GV-N307TGAMING OC-8GD) but I don’t want to bottleneck. Also would I need to upgrade my PSU/case?  I also don’t really want to spend more than 1k on the GPU. I mostly play fps/VR games (EFT, MW2, NMS, Destiny 2, Saints and Sinners, HL Alyx, Boneworks, but lately been getting into a few story games, RDR2, Spider-Man, GoW).   EDIT  I forgot to mention my motherboard is a B660M from gigabyte",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-08T14:36:00.182268Z"
+  },
+  {
+    "source": "posts",
+    "id": 670417,
+    "title": "DeepCool AS500 PLUS - Temp difference between cores - Intel 12600K",
+    "self_text": "Hey guys, I just received  my DeepCool AS500 PLUS yesterday and installed it. everything went smoothly and it looks way more badass.  Temps are way better than Cooler master H410, Idle temp is around 23-25C compared to 30-30C on the Cooler master H410.  Load temps with cinebench r23 running for around 10 mins is way better with the AS500P :  Load temps with CM H410 is around 82-85C at 125W stock PL  Load temps with with Deepcool AS500p is around 65-74C,,,where there is around 9c core temps difference between the coolest and hottest cores.i'm honestly not sure if its mounting issue? or should i ignore it and consider it normal even though  i think 9c deference is not normal.  Thanks,,  &#x200B;  Edit: Im talking about core temps difference between the P cores BTW.",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-08T14:38:00.517186Z"
+  },
+  {
+    "source": "posts",
+    "id": 882739,
+    "title": "2nd router Vs mesh Vs access point",
+    "self_text": "Gathering advice on setting up my home network. I game, a TV streams 4k, a little one on the way and because she wants two, another will be added to the family in the future. .  Currently my router (Virgin's super crap) gets sketchy WiFi upstairs at best.   Options that I'm thinking is to: Hard wire a cable from downstairs, up into the attic, where I can then wire in several ports, one in each room and a 2nd WiFi router next to the gaming pc.  WiFi mesh which is new stuff to me but I'm getting put off of WiFi after experiences.  Or something I've not looked into yet, access points?  Suggestions please?",
+    "subreddit": "HomeNetworking",
+    "selected_at": "2025-09-08T14:38:45.213125Z"
+  },
+  {
+    "source": "posts",
+    "id": 889428,
+    "title": "password problem on gg pixel 3a",
+    "self_text": "So seems pretty strange, i am using my phone and turned it off. After try to sign in again ( like usual ) its said my pass was wrong, eventhough im pretty sure it was the right one ( i’m not a guy that have a lot of pssw btw and my memory muscle can still remember how to unlock it since i do it every single day ) now s on 42 times and lock me each 1 mins  What should i do now…heard that factory reset will need to remember the passcode as well ?",
+    "subreddit": "GooglePixel",
+    "selected_at": "2025-09-08T14:38:50.054362Z"
+  },
+  {
+    "source": "posts",
+    "id": 907720,
+    "title": "PC BUILD HELP-BEGINNER",
+    "self_text": "Hello guys, This will be my first time building a PC. Here are some pieces of information that I think would be useful. -I am from PH  -I  plan to use 3 monitors at most  -I have a very small desk space  - I am leaning toward a micro or mini or small  -I use Solidworks, Catia, and NX for work, then I only play DOTA 2 mostly.  -NO RGB, please.  Thank you very much for the help.",
+    "subreddit": "PcBuild",
+    "selected_at": "2025-09-08T14:39:22.806199Z"
+  },
+  {
+    "source": "posts",
+    "id": 528414,
+    "title": "Should / How Do I Set Up One 4k Monitor With Two Secondary 1080p Monitors?",
+    "self_text": "Hi! I'm preparing to build my first PC and my vision is to have a 32\" 4K 240Hz monitor in the middle (Samsung Odyssey Neo G8) and have two 24\" 1080p 60Hz monitors (Dell UltraSharp U2414H) oriented vertically, one on either side. The other relevant parts will  hopefully  be an i9 13900K CPU, an ASUS TUF GAMING 4090 GPU, and an ASUS ROG MAXIMUS Z790 HERO motherboard.  I have a couple questions about how this multi-monitor setup would work.   Question the first   What would happen if I ran all three monitors off the 4090 (4K via HDMI, 1080p's via DisplayPort)?  Say I'm playing a game on the 4K monitor. Would I get higher FPS if I turned off the 1080p's? Also, do all the monitors have to run at the same refresh rate? Since two of the monitors are 60Hz, would it cap the 4K 240Hz monitor at 60Hz as well?  If the answer to any of the above is yes, would it be better if I ran only the 4K off the 4090 and ran the two 1080p's via the i9's integrated graphics (using the motherboard's two USB-C DisplayPort outputs)? Are there any downsides to doing it that way?   Question the second   Say I use the i9's integrated graphics to power the 1080p monitors as described above. Does dragging an application window from those monitors to the 4K monitor change which GPU it's running on? I feel like that wouldn't make sense but idk.   Question the third   Once I eventually get all three monitors working in whatever configuration is best, what do I need to do in order to make it so that the cursor and applications move seamlessly between screens? I know how to adjust display position and scaling in Windows. Is it just as easy as setting the display scaling on the 4K monitor to 200%?  Thank you for helping me live my multi-monitor dream/nightmare :)",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-08T14:39:55.178122Z"
+  },
+  {
+    "source": "posts",
+    "id": 524987,
+    "title": "Need people's opinions - $2500 Custom PC Build versus $2500 Pre build PC found on Newegg",
+    "self_text": "The gist of things, I am looking to purchase a gaming pc for about $2500. I want to have a high potential for gaming and I do not really have as much need for application processing.  The Newegg one has a   i7-12700K 3.6GHz paired with a 3080ti while my custom build has a Ryzen 7 5800x3D paired with potentially a Radeon Rx 6900 xt GPU, but I am waiting until mid December for the release of the next gen AMD GPUs. I haven't purchased anything yet, but would really appreciate the wise people of this subreddits advice. The custom one would definitely take the edge in aesthetics and likely cooling, with those both being important to me.  Throughout benchmarks I have viewed, the AMD cpu setup tends to barely beat out the Intel one in gaming, while the intel one crushes the AMD one in application processing.    Newegg pre build : https://www.newegg.com/abs-ali630/p/N82E16883360295?Item=N82E16883360295  &#x200B;   Custom PC  [PCPartPicker Part List](https://pcpartpicker.com/list/zwwQNc)  Type|Item|Price  :----|:----|:----  **CPU** | [AMD Ryzen 7 5800X3D 3.4 GHz 8-Core Processor](https://pcpartpicker.com/product/CZ3gXL/amd-ryzen-7-5800x3d-34-ghz-8-core-processor-100-100000651wof) | $406.20 @ Amazon   **CPU Cooler** | [Corsair iCUE H150i ELITE LCD 58.1 CFM Liquid CPU Cooler](https://pcpartpicker.com/product/GLjBD3/corsair-icue-h150i-elite-lcd-581-cfm-liquid-cpu-cooler-cw-9060062-ww) | $289.95 @ B&H   **Motherboard** | [Asus TUF GAMING X570-PLUS (WI-FI) ATX AM4 Motherboard](https://pcpartpicker.com/product/dmGnTW/asus-tuf-gaming-x570-plus-wi-fi-atx-am4-motherboard-tuf-gaming-x570-plus-wi-fi) | $191.46 @ Amazon   **Memory** | [Corsair Vengeance RGB RT 32 GB (2 x 16 GB) DDR4-4600 CL18 Memory](https://pcpartpicker.com/product/Bm2WGX/corsair-vengeance-rgb-rt-32-gb-2-x-16-gb-ddr4-4600-cl18-memory-cmn32gx4m2z4600c18) | $234.99 @ Amazon   **Storage** | [Samsung 970 Evo Plus 1 TB M.2-2280 PCIe 3.0 X4 NVME Solid State Drive](https://pcpartpicker.com/product/Zxw7YJ/samsung-970-evo-plus-1-tb-m2-2280-nvme-solid-state-drive-mz-v7s1t0bam) | $109.99 @ Amazon   **Storage** | [Western Digital WD_BLACK 8 TB 3.5\" 7200 RPM Internal Hard Drive](https://pcpartpicker.com/product/jf4Ycf/western-digital-wd_black-8-tb-35-7200rpm-internal-hard-drive-wd8002fzwx) | $173.40 @ Amazon   **Video Card** | [XFX Speedster SWFT 319 Radeon RX 6900 XT 16 GB Video Card](https://pcpartpicker.com/product/WnrRsY/xfx-radeon-rx-6900-xt-16-gb-speedster-swft-319-video-card-rx-69xtaqfd9) | $669.99 @ B&H   **Case** | [Phanteks Eclipse P500A D-RGB ATX Mid Tower Case](https://pcpartpicker.com/product/GmhmP6/phanteks-eclipse-p500a-d-rgb-atx-mid-tower-case-ph-ec500atg_dwt01) | $177.88 @ Amazon   **Power Supply** | [Corsair RM850x (2021) 850 W 80+ Gold Certified Fully Modular ATX Power Supply](https://pcpartpicker.com/product/26rRsY/corsair-rm850x-2021-850-w-80-gold-certified-fully-modular-atx-power-supply-cp-9020200-na) | $149.99 @ Amazon   **Operating System** | [Microsoft Windows 11 Home Retail - USB 64-bit](https://pcpartpicker.com/product/hMYmP6/microsoft-windows-11-home-retail-usb-64-bit-haj-00108) | $139.00 @ B&H   | *Prices include shipping, taxes, rebates, and discounts* |  | **Total** | **$2542.85**  | Generated by [PCPartPicker](https://pcpartpicker.com) 2022-11-10 15:53 EST-0500 |",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-08T14:41:43.145778Z"
+  },
+  {
+    "source": "posts",
+    "id": 773224,
+    "title": "random crashes with planes in mixed-battles",
+    "self_text": "Hey guys! i have some problems since the last update and it driving me nuts. It doesn't happen every time but while in game (several rounds finished with no issue) i crash for about 2-3 seconds on the desktop (game is still running) and then jump into the game again.   The last time i crashed on desktop the game crashed total and i got the error \"3d card not found\" and the error message \"cant reset 3d device\"  All the suggestions by gaijin are not working (cache clearing, etc)  Does anybody have any clue what could be the problem? Does anybody have the same issue??  Primarily it happens in mixed battles when i fly a plane. If i stick with tanks it never happens. Weird!  My drivers are all up to date and plenty of free space  my specs: i3-12100F 16 gb ddr4 ram gtx 1070  i have no problems in other games and the 3dmark stresstest runs 1 hour without any problem.  it worked fine days ago. Since the latest update with \"fixes\" it crashes all the time.",
+    "subreddit": "Warthunder",
+    "selected_at": "2025-09-08T14:42:15.367696Z"
+  },
+  {
+    "source": "posts",
+    "id": 586015,
+    "title": "newly installed Debian 11 doesn't show Windows install in GRUB",
+    "self_text": "I've tried twice with the same result, a few times, the GRUB bootloader shows up with just Debian and advanced options thereof, and nothing else, and then it stops showing up, going straight to Debian.",
+    "subreddit": "linuxquestions",
+    "selected_at": "2025-09-08T14:44:12.573805Z"
+  },
+  {
+    "source": "posts",
+    "id": 1013690,
+    "title": "Can I use an external hdd as a 2nd internal drive for a pc?",
+    "self_text": "Hello there! I'm quite new to building pcs so yeah, apologies in advance.  I found a external hdd of 2tb cheaper than a standard hdd cuz it was on sale. It is a toshiba canvio external. Can I just remove the hard drive inside the external out of its case and use it as a 2nd drive or is it a pass?  Thank you for answers :D",
+    "subreddit": "pcmasterrace",
+    "selected_at": "2025-09-08T14:46:11.468559Z"
+  },
+  {
+    "source": "posts",
+    "id": 904853,
+    "title": "Help with BSOD. Happens every few minutes or so. ThinkPad T490",
+    "self_text": "Error code: secure_pci_config_space_access_violation What failed: wnpdriver.sys I'm on Windows 11 22H2 with the latest updates installed as of 25/11/2022. This was happening yesterday too and I uninstalled a quality update from recovery to fix it but surely there's gotta be a proper fix for this.",
+    "subreddit": "thinkpad",
+    "selected_at": "2025-09-08T14:46:47.411105Z"
+  },
+  {
+    "source": "posts",
+    "id": 712644,
+    "title": "is this laptop any good for 750 cad?",
+    "self_text": "Its an  HP 15-ef3017ca 15.6\" Laptop, AMD Ryzen 5 5625U, 16GB RAM, 1TB SSD, Windows 11 Home.  I'm looking for a middle of the road laptop with a decent processor, good memory and good storage. Wondering what people think of this one. It's normally 1000 cad or so this seller is advertising. It's from Staples.  Any input would be greatly appreciated!",
+    "subreddit": "buildapc",
+    "selected_at": "2025-09-08T14:50:19.525639Z"
+  },
+  {
+    "source": "posts",
+    "id": 914170,
+    "title": "Game Jams?",
+    "self_text": "Hi, very new indie game dev. I know that places hold conferences for game jams an people to show off there stuff but I’m too new to know about any of them. Are there any events coming up were I can meet other game devs?",
+    "subreddit": "gamedev",
+    "selected_at": "2025-09-08T14:50:59.050986Z"
+  },
+  {
+    "source": "posts",
+    "id": 348149,
+    "title": "TV unit with PC space for living room?",
+    "self_text": "Hi, I work from home and sit at my desk all day so when it comes to down time the last thing I want to do is stay at that desk where my PC currently is.  I'm thinking about hooking up my PC to my TV in my living room. However, I don't want my living room to look untidy. Currently the PC case etc will look out of place just sat next to my TV stand.  Does anyone know if any TV units that have a PC space? Or any possible suggestions. Thank you.",
+    "subreddit": "PcBuild",
+    "selected_at": "2025-09-08T14:52:42.125551Z"
+  },
+  {
+    "source": "posts",
+    "id": 858075,
+    "title": "5G cellular signal and FM radio frequency conflict",
+    "self_text": "I was on break earlier and her radio seems to make a horrid buzzing noise when my new S22Ultra 5G is in the vehicle. Anyone know why that might be? Does 5G interfere with FM radio frequency?",
+    "subreddit": "NoStupidQuestions",
+    "selected_at": "2025-09-08T14:53:18.954394Z"
+  },
+  {
+    "source": "posts",
+    "id": 441171,
+    "title": "Can I change the alarm duration with iPhone 14 Pro at iOS 16.1?",
+    "self_text": "Hello, I was wondering if it's possible to change the alarm duration to be less than 15 minutes? Couldn't find any new information about this.  Thanks",
+    "subreddit": "iphone",
+    "selected_at": "2025-09-08T14:54:41.971647Z"
+  },
+  {
+    "source": "posts",
+    "id": 579710,
+    "title": "Unity or Unreal 5 for Mobile Game?",
+    "self_text": "Hi, im want to create a mobile game but i have to choose with Unreal Engine 5 and Unity. What Engine you are gues reccomedet for new creators? Thank you if you answer for this!",
+    "subreddit": "gamedev",
+    "selected_at": "2025-09-08T14:58:41.490178Z"
+  },
+  {
+    "source": "posts",
+    "id": 781315,
+    "title": "Switch Joycon type controller for the PC?",
+    "self_text": "I have a ton of nerve damage in my arm. So it starts to cramp up after extended play. However, using a Joycon for my switch is very comfortable because I don't need to keep my hands close to each other.  Is there a blue tooth controller for the PC that is in two parts? Even if it have a wire between the two pieces I'd be fine.",
+    "subreddit": "pcmasterrace",
+    "selected_at": "2025-09-08T15:00:30.973666Z"
+  },
+  {
+    "source": "posts",
+    "id": 882822,
+    "title": "SteelSeries Nova 7 Wireless vs HyperX Cloud Alpha Wireless",
+    "self_text": "Hello, I'm looking for a wireless headphones and can't choose between nova 7 Wireless  and cloud alpha wireless. I have blackshark v2 pro now.  My budget is 200$.  Cloud Alpha costs 180$ and Nova 7 200$ in my country   I use headphones on my laptop for movies, music, gaming.  I don't care about microphone, bluetooth. I care about sound quality, comfort and especially battery life.  &#x200B;  Thanks.",
+    "subreddit": "HeadphoneAdvice",
+    "selected_at": "2025-09-08T15:01:39.021187Z"
   }
 ]

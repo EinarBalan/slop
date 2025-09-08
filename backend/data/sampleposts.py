@@ -4,7 +4,7 @@ import os
 import sys
 from datetime import datetime
 from decimal import Decimal
-from typing import Any
+from typing import Any, Optional
 
 from dotenv import load_dotenv
 from sqlalchemy import create_engine, text
@@ -32,6 +32,15 @@ def parse_args() -> argparse.Namespace:
         type=str,
         default="-",
         help="Output file path (default: - for stdout)",
+    )
+    parser.add_argument(
+        "--subreddit",
+        action="append",
+        default=[],
+        help=(
+            "Restrict to specific subreddit(s). "
+            "Pass multiple times or comma-separated (exact match)."
+        ),
     )
     return parser.parse_args()
 
@@ -73,10 +82,6 @@ def validate_table_name(engine: Engine, table: str) -> str:
         "posts",
         "humorposts",
         "ai_generated_posts",
-        "users",
-        "interactions",
-        "served_posts",
-        "experiments",
     }
     if table not in allowed_tables:
         raise ValueError(
@@ -85,14 +90,30 @@ def validate_table_name(engine: Engine, table: str) -> str:
     return table
 
 
-def fetch_sample(engine: Engine, table: str, limit: int) -> list[dict[str, Any]]:
+def fetch_sample(engine: Engine, table: str, limit: int, subreddits: Optional[list[str]] = None) -> list[dict[str, Any]]:
     # Use ORDER BY random() which is supported on Postgres
+    params: dict[str, Any] = {"limit": limit}
+
+    # Build optional subreddit filter
+    sub_filter = ""
+    if subreddits:
+        placeholders = ", ".join([f":sub_{i}" for i in range(len(subreddits))])
+        sub_filter = f" AND subreddit IN ({placeholders})"
+        for i, name in enumerate(subreddits):
+            params[f"sub_{i}"] = name
+
     if table == "humorposts":
-        sql = text(f"SELECT * FROM {table} WHERE self_text != '' AND image_url IS NULL AND (subreddit IS NULL OR subreddit NOT ILIKE '%joke%') ORDER BY random() LIMIT :limit")
+        sql = text(
+            f"SELECT * FROM {table} "
+            "WHERE self_text != '' AND image_url IS NULL "
+            "AND (subreddit IS NULL OR subreddit NOT ILIKE '%joke%')"
+            f"{sub_filter} ORDER BY random() LIMIT :limit"
+        )
     else:
-        sql = text(f"SELECT * FROM {table} ORDER BY random() LIMIT :limit")
+        where_clause = f"WHERE true{sub_filter}" if sub_filter else ""
+        sql = text(f"SELECT * FROM {table} {where_clause} ORDER BY random() LIMIT :limit")
     with engine.connect() as conn:
-        result = conn.execute(sql, {"limit": limit})
+        result = conn.execute(sql, params)
         rows = [dict(row._mapping) for row in result]
     return rows
 
@@ -105,7 +126,13 @@ def main() -> None:
 
     engine = get_engine()
     table = validate_table_name(engine, args.table)
-    rows = fetch_sample(engine, table, args.limit)
+    # Normalize subreddit inputs (support repeated flags and comma-separated values)
+    subs: list[str] = []
+    for item in (args.subreddit or []):
+        subs.extend([s.strip() for s in item.split(',') if s.strip()])
+    subs = list(dict.fromkeys(subs))  # de-duplicate, preserve order
+
+    rows = fetch_sample(engine, table, args.limit, subreddits=subs or None)
     dump_rows_as_json(rows, args.out)
 
 
