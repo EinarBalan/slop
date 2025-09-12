@@ -23,6 +23,8 @@ backend/__pycache__/
 backend/.env
 backend/app.sqlite*
 
+/backend/notebooks/models/*
+
 __pycache__
 
 database
