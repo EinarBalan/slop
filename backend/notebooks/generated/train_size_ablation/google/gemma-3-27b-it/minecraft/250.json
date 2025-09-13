@@ -1,0 +1,502 @@
+[
+  {
+    "title": "Why do they have to make it so hard to find the correct version of a mod?",
+    "self_text": "I'm trying to download optifine for minecraft and I keep getting sent to random, bad websites with viruses. Is there any way to get Optifine without having to worry about getting something dangerous on my computer?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "I keep getting disconnected from my minecraft server, please help me!",
+    "self_text": "Hi everyone, i'm trying to play on a public mc server and i get randomly disconnected. It happens after like 20 minutes of playing and then it says \"Server Disconnected\". Anyone know what could be causing that?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Why is it that when I download a Minecraft map from the internet, all of the structures are flat?",
+    "self_text": "When I download a Minecraft map from the internet and open it in-game, all of the structures are flat, as if they were made with only flat blocks. However, I have seen videos of people playing on these same maps without any issues. What could be causing this problem?  I tried downloading different versions of the map, but none of them work. The map I downloaded was for version 1.16.5. I am currently running version 1.19.4. Could this be the issue?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Minecraft Bedrock Server - How do I get it to show up in the server list?",
+    "self_text": "Hi, I'm new to hosting a Minecraft Bedrock server and would like some help.  I have opened port 19132 on my router (and firewall) but for whatever reason, I cannot see my server listed when searching through the \"Add Server\" section of the game.   The server is running and my friend has been able to connect to it using my IP address + port number.   Any advice?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Bedrock players help!",
+    "self_text": "I have a bedrock account, but when i go to the minecraft store and click on the marketplace, it says no items available for purchase.  Can someone help?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "How can i get a modded server to run on my pc?",
+    "self_text": "I’m trying to set up a modded Minecraft server for me and some friends, but it keeps crashing after a few minutes of play time. My pc has an intel core i5-12400f processor, 32gb of ram, and a gtx 1660 super graphics card. Any advice would be appreciated!",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "My friend wants to play with me on Minecraft, but he doesn't have a microsoft account. What do I do?",
+    "self_text": "I want to play with my friend and i can't find any information about it anywhere. Help?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Need help finding a mod to make mob heads stackable",
+    "self_text": "I'm trying to build a collection of all the mob heads in the game, but they take up so much space! Is there a mod that will allow them to be stacked? Or is there another way to store them more efficiently?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Minecraft crashes with a black screen after the \"loading\" animation",
+    "self_text": "I've tried everything. I am running the latest version of Optifine, and have allocated 8GB RAM to it. The crash happens randomly, but is usually during loading chunks. I will get to the loading animation, then my monitor turns off for like half a second before going back to the game in a black screen. It doesn't freeze, as Alt + F4 works fine.  I can run other games at max settings without issues. My specs are below; CPU: Intel Core i5-9600K GPU: RTX 2070 Super RAM: 16GB Motherboard: ASRock Z390 Pro4 Operating System: Windows 10   Is there anything I haven't thought of?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Bedrock edition crashing during startup?",
+    "self_text": "Hi, I am trying to play minecraft bedrock on my samsung galaxy s21 ultra and it keeps crashing when starting up the game. I have tried everything but nothing seems to work. Please help!",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "I need help with a command block to kill all the zombies and skeletons in my world",
+    "self_text": "I am trying to make a command block that kills all the zombies and skeletons, but it is not working. I have tried many different commands, but none of them seem to work. Can someone please help me?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "What does the \"R\" button do?",
+    "self_text": "I have a lot of trouble with Minecraft, and was wondering if anyone could tell me what the \"R\" key is for?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Need help with a server setup!",
+    "self_text": "Hi everyone, I’m looking to set up a minecraft server for me and my friends but am having some trouble getting it to work properly.  I have been following the guides online for setting up a java edition server on Windows 10 but when I try to run the .jar file it comes up with an error message saying “Error: Unable to access jarfile MinecraftServer.1.19.2.jar” Any suggestions as to how to fix this? Thanks in advance :)",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "What's the best way to get a villager breeder working? I have tried all of the guides and nothing seems to be working.",
+    "self_text": "I am trying to make a villager breeder, but it doesn't seem to be working at all. I have already tried many different designs and they still don't work. Can anyone help me with making a good villager breeder that actually works? I have a java edition server with version 1.20.4.",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "What is the best way to play Minecraft on a PC with high latency?",
+    "self_text": "I'm having trouble playing Minecraft on my PC because of high latency.  I've tried everything I can think of, but nothing seems to work.  What is the best way to play Minecraft on a PC with high latency?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Minecraft's End Portal Frame not working on Bedrock?",
+    "self_text": "I'm trying to make an end portal frame in minecraft bedrock but it won't place the blocks so that they connect and form a portal.  I've tried it multiple times, made sure I'm placing them correctly (in a square), and even watched youtube videos. But none of these things have worked! What am I doing wrong?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "How do I get a modpack to run on the latest version of Minecraft?",
+    "self_text": "So, I have been trying to use a modpack called \"Skyfactory 3\" for a few days now but it doesn't seem to be working. It says that I need to install Forge 1.12.2 but when I go to download Forge it asks me what version of Minecraft I want to download it for and if I select 1.12.2 then it just says that there is no such file. Is this modpack obsolete or am I missing something here?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Why can't I change my skin?",
+    "self_text": "So, i want to change my skin but it doesn't work... I tried changing my skin in the launcher and on the minecraft website. But when i go into minecraft my skin is still the same.  I don't have any mods installed. Is there something wrong with my account or...? Please help!",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Command Block help!",
+    "self_text": "I am trying to make a command block that gives me a beacon, but it says the id is invalid even though i know beacons exist in the game!  What am i doing wrong?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Can anyone help me with a weird glitch?",
+    "self_text": "I'm trying to make an armor stand look like my character but it won't work, the head is just always floating above the body and no matter what I do it won't stay put.  Any advice on how to fix this?   I tried using /summon minecraft:armor_stand ~ ~ ~ {Equipment:[{},{},{},{}],ShowArms:true,ArmorDropChances:[0.2F,0.2F,0.2F,0.2F]} but that didn't seem to do anything, also tried putting armor onto it manually by right clicking but that still doesn't change anything.  Is there something else I should try?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "I want to make a minecraft map but i need help figuring out the best way to make it look good on mobile and pc",
+    "self_text": "I'm trying to make a Minecraft map that looks good on both PC and Mobile, but I don't know how to do that!  I tried making a simple parkour course with lots of blocks but when I tested it on my phone it looked really bad because of the size of the blocks and the fact that they were so close together.  Any tips?  thanks for your time!",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "can't find my world",
+    "self_text": "i just made a new world in minecraft and im trying to go into it but the only worlds listed are old ones, even though ive gone through all the options for where it could be saved (or that i think of anyway)  is there any way to fix this? or do i have to remake my world?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Need help making a server!",
+    "self_text": "I am looking for people to join my minecraft bedrock server. It is currently under development so it will not be perfect yet, but there are some things that are already finished like the spawn area and some houses. Please send your gamertag if you would like to join!",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "What are your thoughts on the new minecraft launcher?",
+    "self_text": "I'm not saying it is bad but it is kinda weird to see so many changes with each update, its getting hard to follow. Also what about you guys using a mac/linux system? Does the launcher work for you?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "How do you make a custom block with different textures on each side?",
+    "self_text": "I want to create a block that has a different texture for each of its sides, but the only way i know how is using resource packs. Is there a mod or something else that allows me to customize blocks without needing to change all the textures in my pack?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Can someone help me find a good seed for Minecraft 1.9?",
+    "self_text": "I'm looking for a good seed for Minecraft 1.9.  I've tried several seeds, but none of them have been very good.  I'm looking for a seed that has a lot of interesting features, such as villages, temples, and mineshafts.  I'm also looking for a seed that is relatively easy to explore.  Any suggestions?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Need help with getting the ender dragon to spawn?",
+    "self_text": "I'm in creative mode and have placed all of the end portal blocks, but it won't spawn. Any ideas?  I don't want to use commands.",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "New player help",
+    "self_text": "I just started playing Minecraft and I can't figure out how to get a pickaxe or shovel.  I tried punching the dirt and stone but it does nothing. Can anyone help me?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "How do I get my skin to show up in Minecraft Bedrock Edition on Xbox?",
+    "self_text": "My skin isn't showing up and it says there was a problem getting your profile, is there anything I can do to fix this?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "I think my minecraft is broken?",
+    "self_text": "When i open the game it does not load, and when i click on single player it says “loading” forever, but if i click multiplayer then it loads perfectly fine.  I’m using an Xbox series x with bedrock edition",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "how to build a mega base?",
+    "self_text": "so i have just started playing minecraft and its really fun! i was wondering how to make a mega base, any tips or ideas on where to start??",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "what is the best way to make a mob farm?",
+    "self_text": "im new and dont know how to make it so can anyone help me pls",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "is there a way to make a block go up and down?",
+    "self_text": "i want a block that goes up and down like the pistons but it’s just the block not with slime on the side or something.  i need it for my build because I don’t want slime blocks.",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Why is my skin not working?",
+    "self_text": "I have been trying to change my minecraft skin for a while now but it has not worked and i cant find any solutions online, why isnt it working?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Why are my villagers not spawning?",
+    "self_text": "I’m trying to build a villager breeder, but they won’t spawn in my base. All the conditions seem right though. I have all the beds and work stations placed, and there is no sunlight getting through. The only thing I can think of is that it’s too close to the nether portal?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "How do I get my custom model to be displayed in game?",
+    "self_text": "I have a custom model for a mob, and I'm trying to display it in game but it isn't working. I've followed all the instructions online and tried everything I can think of, but nothing seems to work.  I've made sure that the model is in the correct folder, that the resource pack is enabled, and that the json file is correctly formatted. I'm starting to think that something might be wrong with the model itself, but I don't know what.  Can anyone help me out?  Thanks!",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Need help with a mod for Minecraft Bedrock Edition on Nintendo Switch",
+    "self_text": "I have been looking for a good mod to add more blocks and items but all the websites are giving me viruses or they just don't work. Any recommendations?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Need a mod for 1.12.2 to turn dirt into something else in the nether?",
+    "self_text": "I'm trying to make a portal that looks like a tree with roots coming out of it, and I need some way to replace all the dirt around the base of it without breaking the tree.  I was wondering if there are any mods that can do this.",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "What is the best modpack to play with friends on bedrock?",
+    "self_text": "We are all pretty new to modding, and we want a pack that isn't too difficult to get running on Bedrock. I was thinking of stoneblock but it seems like its only for java edition, and i don't know any other good packs.",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "New mob ideas (I am new to Minecraft)",
+    "self_text": "I'm making a mod for the game that will add new mobs and biome but I can't think of any new ones.   Can anyone help me?  Also, is there a way to make it so my mobs spawn in specific biomes?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Anyone know if you can get the new nether bricks from a village?",
+    "self_text": "I just found a village with basalt pillars and crimson nylium, but no nether brick blocks or stairs. Is there any way to get them from a village without going to the Nether?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "I need help with the new update!",
+    "self_text": "Hey, so i just got minecraft and im trying to build a cool base but it doesnt let me put blocks down without placing them first, how do i fix this?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "How do I fix this bug?",
+    "self_text": "So, when I'm mining coal or iron ore it doesn't break instantly, and instead takes about a second to break each block. This is annoying because sometimes the blocks will randomly get destroyed by lava while I'm waiting for them to break! Is there anything I can do to fix this issue?  I'm using OptiFine version G6.13 for Minecraft 1.8.9 on Windows 7 with a GTX 580 graphics card.  Here are some screenshots of what I mean:  https://imgur.com/a/cTjKq https://imgur.com/a/xU4gX",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Can I get help finding a Minecraft skin?",
+    "self_text": "Hey,  I'm looking for a Minecraft skin of the main character from The Legend Of Zelda Tears of the Kingdom, and I can't find it anywhere. If anyone could make me one, that would be awesome!",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Why can't I change the texture of a stone brick?",
+    "self_text": "I've tried changing it in resource packs, but nothing seems to work. Is there something wrong with my game?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Help me find the right texture pack for a server.",
+    "self_text": "I have a Minecraft server, and I want to change the look of it.  I am looking for a texture pack that has realistic textures.  There is no mod support on the server so I can't use shaders or anything like that. Any suggestions?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Minecraft crashes with a lot of entities, what can I do?",
+    "self_text": "My Minecraft keeps crashing when there are too many entities on the screen. I've tried reducing render distance, turning off particles and disabling fancy graphics but nothing seems to work.  I have an RTX 2060 Super with 8GB VRAM and a Ryzen 5 3600 CPU. Is it possible that my PC is not powerful enough for Minecraft or is there something else I can try?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Help me find a world download?",
+    "self_text": "I'm looking for a map of Minecraft with the same structures as the old 1.8 maps, but in a modern version of the game. Does anyone have any suggestions or know where to look?  Thanks!",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "How to make a custom armor stand on the switch?",
+    "self_text": "I've seen lots of people doing it but I can't find any tutorials for the switch!",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Can you help me fix my minecraft worlds?",
+    "self_text": "I downloaded a couple of old minecraft worlds and when i open them in the latest version, they are broken and have weird glitches (as seen in the photos)  \\n[https://i.imgur.com/u1B0x9C.jpeg](https://i.imgur.com/u1B0x9C.jpeg)\\n[https://i.imgur.com/zYt7TqH.jpeg](https://i.imgur.com/zYt7TqH.jpeg)\\n\\nWhat do i need to do to fix these worlds so that i can play them again?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "How do I download a minecraft realm?",
+    "self_text": "I used to play on my friend's minecraft realm, but he stopped paying for it so i can no longer access the world. I want to play in that world again, is there any way to download the world from somewhere?  Thanks!",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Need help with my first base build!",
+    "self_text": "I just started playing a couple of days ago, and have been having an awesome time exploring and building. The only thing that is giving me trouble is getting the layout right for my base, so I was hoping to get some feedback from you guys.  I really like the look of medieval builds, but I'm not sure how to make it work in survival mode. Any tips would be greatly appreciated!",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "What is the best way to beat the ender dragon with a shield?",
+    "self_text": "I want to try beating the ender dragon with only my shield and sword, but I have no idea how to do it without getting hit by the dragon. Do you guys have any tips?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Question for the builders/designers of Minecraft worlds",
+    "self_text": "I'm looking for a builder to design and build a large city in my server, I can pay with diamonds or other items if needed.",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "How to get rid of the texture pack glitch?",
+    "self_text": "So i was trying to download a texture pack for minecraft, but it does not show up in my options. I've tried restarting the game, reinstalling and deleting the files, but nothing seems to work. Any ideas how to fix this?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Minecraft on Android is kinda broken",
+    "self_text": "I'm trying to play Minecraft on my android device, but it keeps crashing every time I try to open a chest or use an item in my inventory.  I've tried restarting the game and my phone, but nothing seems to fix it.   Is there anything I can do to fix this issue?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Can I have some help?",
+    "self_text": "What's the best way to get diamonds in Minecraft?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "How to disable/remove the block that is inside your character?",
+    "self_text": "I have been playing for a few years, and recently my minecraft has started adding blocks around me while in survival mode. It's only happened when i am walking with an item in my hand, or building. I don't know what caused it, but I would like to fix it if possible.  I already tried restarting the game, updating drivers, re installing the game, changing graphic settings, etc. Nothing seems to work. Is there any way to remove these blocks without destroying everything?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "What are some of the best maps to play in minecraft?",
+    "self_text": "I'm looking for a good map to play on with my friends, but there is so many out there that it's hard to pick!  I've tried a few and they just weren't very fun or challenging. Any recommendations?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Can anyone tell me how to change the volume of a certain block?",
+    "self_text": "I was playing on my server and noticed that when you stand near a jukebox, it is incredibly loud. It's so loud in fact, that it drowns out everything else around it. Is there any way to lower the volume of just the Jukebox without having to lower the global sound? Thanks!",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "how can i make a nether portal without flint and steel",
+    "self_text": "im trying to get into the nether but im on creative mode so no crafting table, no way to make flint and steel, is there any other way?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "How do I change the speed of an item falling?",
+    "self_text": "When throwing a fishing rod, it's pretty fast and accurate but when throwing an item it goes really slow, is there any way to make them fall faster?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "what is the best server for 1.7.10?",
+    "self_text": "I’m trying to get a server going with my friends, but all of them are stuck on 1.7.10.  What is the best server software/server provider?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "What is the name of that song from Minecraft's first trailer?",
+    "self_text": "I can't find it anywhere! It's a really cool song but I don't know where to look for it.  I think it was only used in the original trailer, so maybe that's why nobody knows what it is?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "How to download the latest version of Minecraft?",
+    "self_text": "I've been trying to play Minecraft for a while now, but I can't seem to find the latest version. The website keeps redirecting me to an older version. Can anyone help me out?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "How to fix a broken anvil in Minecraft?",
+    "self_text": "I've got an anvil that says it has \"too much repair\" and won't let me use it anymore. Is there any way to fix it or do I have to break it and make another one?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "How to change the texture of a single block?",
+    "self_text": "I want to replace only the wool blocks with dirt blocks in my world, but it doesn't work for some reason. I tried using /replace, but that just replaces all the wool blocks with dirt blocks.  Is there any way to change the texture of a single block?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "I accidentally built a mob grinder in my base, is there any way to remove the mobs without removing the blocks?",
+    "self_text": "I was building an underground storage area and accidentally dug out a space that's now being used by creepers and zombies to spawn.  I don't want to destroy my build but I can't get into the storage room with them around. Any ideas?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Why isn't there a way to move the bed when you are in spectator mode?",
+    "self_text": "I was thinking that if it doesn't let us break blocks, why can't we at least move the bed around? It seems like an easy thing to add and would make things easier for builders. What do you think?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "How do I download a skin pack?",
+    "self_text": "Hi, I just got Minecraft and when I went to the store it showed me all these skin packs but they weren't free. Is there any way to get them for free? Or is that not allowed?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "How can I change the color of an item in a chest?",
+    "self_text": "Can I add a texture pack to only have colored items? For example, if you had a diamond sword and a gold ingot in a chest, the diamond sword would be red and the gold ingot would be green.  I don't want to make it so that every block has different colors, just the items inside chests.",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "How do I change my skin",
+    "self_text": "I've got a minecraft account, but when I login it doesn't let me go to the marketplace or use skins. It just says that there is an error and restarts.",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Is it possible to get the original Minecraft Java version without a Microsoft Account?",
+    "self_text": "I have an old Minecraft account from around 2014 and I never used a Microsoft account. Can I still play that version or do I need to migrate it?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Minecraft is on the verge of dying. . .",
+    "self_text": "I have seen so many people drop off Minecraft over the last couple years, and its really sad to see a game that meant so much to me slowly die out.&#x20;   What do you think? Is minecraft going downhill?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Question on what modpack to play with friends?",
+    "self_text": "I'm looking for a modpack that is fun and has some good building mods, my friends are mostly new to minecraft so nothing too complicated or hard to set up, any recommendations?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "I want to create a world in Minecraft for the first time, what should I do?",
+    "self_text": "I have never played Minecraft before and I don't know where to start. Should I play on easy mode or hard mode? What are some of the things I need to know about creating a world in Minecraft?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "How do I get a skin from the marketplace on bedrock edition?",
+    "self_text": "Im new to bedrock edition and want to use some skins i bought in the marketplace, but it wont let me select them as my current skin. Am i missing something or is there an option somewhere im not finding?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Best way to connect multiple minecraft servers?",
+    "self_text": "I have a server running on my home network and another on a VPS, is there any way that I can set up something so they are all connected?   I'm not really looking for bungeecord or anything like that as the main goal of doing this is just to make it easier to invite friends onto both servers.  Is there maybe some mod or plugin or something that could help me do this?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Can I install mods for Minecraft Bedrock Edition?",
+    "self_text": "Is there a way to install mods on the Nintendo Switch version of Minecraft Bedrock Edition?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "can i make a mob farm that is also aesthetically pleasing?",
+    "self_text": "hi, im building a mob farm and am wondering if there are any ideas on how to make it look good/ fit in with the rest of my base, so far i have tried using different types of wood but nothing seems right. any advice would be appreciated!",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "How can I change the skin?",
+    "self_text": "Hi, i'm a new player and I wanted to know how to change my skin in minecraft bedrock edition since i don't like the default Steve skin, is there a way to download skins or something? And if so, where do I get them from? Thanks!",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Bedrock is better than java, deal with it",
+    "self_text": "I'm not trying to start a flame war or anything, but bedrock is just way more fun and better for my own enjoyment. If you don't like bedrock that's fine but don't be rude about it.  Bedrock has so many features that Java doesn't have like the ability to import worlds from other platforms.",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "I was wondering if anyone knew how to get the music from Minecraft into a playlist on Spotify?",
+    "self_text": "So, I've been playing Minecraft for years and have always loved its soundtrack. But recently I've been listening to music more than usual and wanted to create a playlist of my favorite songs from the game on Spotify.  I tried looking online but couldn't find any reliable sources that could help me with this. Does anyone know if there is a way to do this or am I stuck just listening to it while playing the game?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "What's the best way to play Minecraft with a friend who is on an older version?",
+    "self_text": "My friend still plays the old versions of Minecraft and I've moved onto newer ones, what's the best way for us to be able to play together?  Are there any servers or mods that allow cross compatibility between different versions?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Is there a way to get the old crafting table textures back?",
+    "self_text": "I loved the older versions of Minecraft, and I really liked how the crafting tables looked in those versions. Now that it's changed, is there any way to get them back?  I would really appreciate it!",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "I think my friend is trolling me...",
+    "self_text": "So, I asked him to build me a house in Minecraft. He said \"ok\" and sent me this screenshot. I'm not sure if he's joking or what lol.  https://i.imgur.com/5xJz9Qn.png",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Can someone help me get my name back?",
+    "self_text": "I'm a minecraft player who is currently going through the process of getting their name changed, and I have to change it on every account that I use online...I tried changing it on minecrat but It won't let me. Anyone know how I can do so?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "How do I make a world that never ends?",
+    "self_text": "i'm making a server with my friends and we want to have an endless world. what are the options for having an endless world on minecraft bedrock edition?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "How to make a working jukebox that plays music without playing it?",
+    "self_text": "I have been trying for days to get my jukebox to play music in the background but no matter what I do, every time i put a disk inside of it, it stops when I turn around and is not playing any music at all. Is there something I'm doing wrong?  I have tried everything!  What am I missing??",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "What is the best way to build a mob farm?",
+    "self_text": "I'm new to minecraft, and want to know what is the most efficient way to get xp from mobs (I play on bedrock edition)",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Minecraft Marketplace question",
+    "self_text": "Is there any way to download the skins I've already purchased onto other devices?  I bought a skin on my switch, but I can't seem to get it on my PC version.",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "I'm trying to find a texture pack that changes the ender dragon and the wither...",
+    "self_text": "...but it also has some other cool textures too like new blocks, items, mobs, etc.  I've been looking for days but haven't found anything good enough yet! Any suggestions?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "My Minecraft world is stuck in a perpetual night cycle, what's going on?",
+    "self_text": "I'm not sure how it happened but my Minecraft world has been stuck in a perpetual night cycle for the past week or so. It's like the sun never rises and there's always darkness, which is making it difficult to play.  I've tried restarting the game and even creating a new world, but the issue persists. Is there anything I can do to fix this problem?  Any help would be greatly appreciated!",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Bedrock help - What does “no permission” mean?",
+    "self_text": "I just created a new world on Minecraft bedrock edition and I can’t build anything in my own world, it says “no permission” when I try to break or place blocks. It doesn’t happen with friends though, they have full permissions in the world. Any ideas what could be causing this?  I’m playing on PC so I’m not sure if that has something to do with it.  Thanks!",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Question about Java/Bedrock crossplay",
+    "self_text": "I'm trying to get a friend on bedrock to play with me, but it doesn't let me add him. Is there something I need to do for it to work?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "Can't find the right setting for a better FPS on my Minecraft Java Edition PC (specs included)",
+    "self_text": "I have been playing Minecraft Java Edition for about three years now, and it has always run well for me. But recently, I noticed that my FPS is dropping even when I am not doing anything in the game.  I have tried turning down the graphics settings, but it doesn't seem to make much of a difference. I have also tried updating my drivers, but that didn't help either.   My specs are as follows:   CPU: Intel Core i5-8400   GPU: NVIDIA GeForce GTX 1060   RAM: 16 GB   Operating System: Windows 10 64-bit   Minecraft Version: 1.19.2   I would appreciate any help you can offer.  Thanks!",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "how to get rid of the sound of water breaking when digging?",
+    "self_text": "it really gets on my nerves and makes me want to turn the volume down",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "How to make a server with mods on it?",
+    "self_text": "i'm trying to make a server but the only thing is I want to be able to use mods in it, can someone help me and tell me how to set that up?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "No way to upgrade the beacon??",
+    "self_text": "I have a nether star and i can't seem to find where to make the beacon. Is it something in the new update?",
+    "subreddit": "Minecraft<eos>"
+  },
+  {
+    "title": "What's the difference between 'Java Edition', 'Bedrock Edition', and 'Legacy Console Editions'?",
+    "self_text": "I understand that Java is the original, Bedrock can be played on multiple platforms, but what are Legacy?",
+    "subreddit": "Minecraft<eos>"
+  }
+]
