@@ -6,6 +6,7 @@ from config import args
 from auth import auth
 from feed import feed
 from experiments import experiments
+from judgement import judgement
 from db.seed import seed_if_empty, clear_served_posts
 from datasets import datasets
 
@@ -26,6 +27,7 @@ app.register_blueprint(auth, url_prefix='/auth')
 app.register_blueprint(feed)
 app.register_blueprint(experiments, url_prefix='/experiments')
 app.register_blueprint(datasets, url_prefix='/datasets')
+app.register_blueprint(judgement)
 
 _bg_started = False
 

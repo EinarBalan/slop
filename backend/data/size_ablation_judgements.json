@@ -1,0 +1,50 @@
+[
+  {
+    "file_path": "generated/train_size_ablation/google/gemma-3-27b-it/minecraft/20.json",
+    "adherence": 4,
+    "coherence": 0,
+    "shown_count": 10
+  },
+  {
+    "file_path": "generated/train_size_ablation/google/gemma-3-27b-it/minecraft/50.json",
+    "adherence": 1,
+    "coherence": 0,
+    "shown_count": 8
+  },
+  {
+    "file_path": "generated/train_size_ablation/google/gemma-3-27b-it/minecraft/500.json",
+    "adherence": 2,
+    "coherence": 0,
+    "shown_count": 7
+  },
+  {
+    "file_path": "generated/train_size_ablation/google/gemma-3-27b-it/minecraft/2000.json",
+    "adherence": 3,
+    "coherence": 0,
+    "shown_count": 11
+  },
+  {
+    "file_path": "generated/train_size_ablation/google/gemma-3-27b-it/minecraft/10.json",
+    "adherence": 1,
+    "coherence": 0,
+    "shown_count": 6
+  },
+  {
+    "file_path": "generated/train_size_ablation/google/gemma-3-27b-it/minecraft/1000.json",
+    "adherence": 1,
+    "coherence": 0,
+    "shown_count": 6
+  },
+  {
+    "file_path": "generated/train_size_ablation/google/gemma-3-27b-it/minecraft/100.json",
+    "adherence": 1,
+    "coherence": 0,
+    "shown_count": 6
+  },
+  {
+    "file_path": "generated/train_size_ablation/google/gemma-3-27b-it/minecraft/250.json",
+    "adherence": 3,
+    "coherence": 0,
+    "shown_count": 6
+  }
+]
