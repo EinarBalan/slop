@@ -19,6 +19,12 @@ def _data_dir() -> str:
     return path
 
 
+def _judgements_dir() -> str:
+    path = os.path.join(_data_dir(), 'judgements')
+    os.makedirs(path, exist_ok=True)
+    return path
+
+
 def _generated_root() -> str:
     # backend/data/generated/train_size_ablation
     path = os.path.join(_data_dir(), 'generated', 'train_size_ablation')
@@ -26,7 +32,7 @@ def _generated_root() -> str:
 
 
 def _judgements_file_path() -> str:
-    return os.path.join(_data_dir(), 'size_ablation_judgements.json')
+    return os.path.join(_judgements_dir(), 'size_ablation_judgements.json')
 
 
 # In-process lock to serialize read-modify-write cycles on the judgements file
@@ -110,7 +116,7 @@ def _iter_topic_files(provider: str, model: str, topic: str) -> List[str]:
 @judgement.route('/judgement')
 def serve_ui():
     # Serve the static UI at /judgement
-    return send_from_directory(_data_dir(), 'judgement.html')
+    return send_from_directory(_judgements_dir(), 'judgement.html')
 
 
 @judgement.route('/judgement/api/files')
