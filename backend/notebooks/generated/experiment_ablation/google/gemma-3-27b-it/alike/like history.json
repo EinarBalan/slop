@@ -1,0 +1,502 @@
+[
+  {
+    "title": "Is it worth buying a refurbished MacBook Air M1?",
+    "self_text": "I've been eyeing a refurbished MacBook Air M1 from Apple Certified Refurbished. It's significantly cheaper than a new M2 model, and the M1 chip still seems incredibly capable based on reviews. My main uses are web browsing, document editing, light photo editing, and streaming videos. I'm hesitant because it's refurbished, even with the certification. Are there typically hidden issues with these? Is the battery life noticeably degraded? Worth saving the money, or should I bite the bullet and get a new one?",
+    "subreddit": "macbook<end_of_turn>"
+  },
+  {
+    "title": "Is anyone else experiencing insane latency spikes with Comcast Xfinity?",
+    "self_text": "Lately, my ping has been fluctuating wildly, even during off-peak hours. I'm consistently seeing spikes into the hundreds of milliseconds, even though my download and upload speeds remain stable. I've rebooted my modem multiple times, and contacted support, who insisted everything looked fine on their end. Speedtests show good results, but online games are unplayable. Anyone else experiencing this, and have you found any solutions?",
+    "subreddit": "Comcast<end_of_turn>"
+  },
+  {
+    "title": "Is it okay to connect my Switch dock to an unpowered USB hub?",
+    "self_text": "I'm short on USB ports on my TV, and I'm wondering if it's alright to plug the Switch dock into an unpowered USB hub to connect controllers and other accessories. I've heard conflicting things about whether this causes issues with charging or connectivity. Will this potentially brick my Switch or cause problems with gameplay?",
+    "subreddit": "NintendoSwitch<end_of_turn>"
+  },
+  {
+    "title": "Is it worth switching to Visible Wireless?",
+    "self_text": "I'm currently with Mint Mobile and my promotional rate expires in January. I've been looking at Visible as an alternative, especially since they now offer nationwide coverage with Verizon. My main concern is data speeds and reliability – I often work remotely and rely on a stable connection. Has anyone made the switch from Mint to Visible recently? Was the performance noticeably different? I'm mainly interested in experiences regarding video calls and general browsing speed.",
+    "subreddit": "visiblewireless<end_of_turn>"
+  },
+  {
+    "title": "Lost progress in Diablo Immortal",
+    "self_text": "Been grinding for a week and just realized none of my progress is syncing to the server. Checked my connection, restarted the game, cleared cache, nothing fixes it. Really disheartening to lose a week's worth of effort. Anybody else experiencing this? Any solutions?",
+    "subreddit": "diabloimmortal<end_of_turn>"
+  },
+  {
+    "title": "Is it okay to disconnect a UPS while still powered on?",
+    "self_text": "I have a CyberPower CP1500AVRLCD UPS. I've been using it for my gaming PC and monitor for a while now. Recently I needed to move the UPS to another room, and I unplugged it from the wall *before* powering off the devices connected to it. Everything seemed fine, but I'm now wondering if I damaged the UPS by doing that. I've read conflicting information online – some say it's okay, others say it can shorten the lifespan of the battery or even damage the unit. Was disconnecting the power cord while the UPS was still running a bad idea? Should I be powering down everything connected to it *first*, then unplugging the UPS?",
+    "subreddit": "ups<end_of_turn>"
+  },
+  {
+    "title": "Thinking of switching from Mint Mobile to Visible",
+    "self_text": "Been with Mint Mobile for about 2 years now, and overall it’s been good, but their customer support is atrocious. Lately I’ve been having consistent data slowdowns, especially during peak hours, and contacting support is a nightmare. Visible seems to have decent coverage in my area (confirmed with friends) and their $25/month plan is tempting. Anyone made the switch recently? Was it a smooth process? Are the data speeds noticeably better? Any hidden downsides I should be aware of?",
+    "subreddit": "visible<end_of_turn>"
+  },
+  {
+    "title": "Getting ghosted after initial interview",
+    "self_text": "I had an initial interview last week with a company and it went really well. The interviewer said they were impressed and would schedule a second interview with the hiring manager within a few days. It's been a week now and I haven't heard anything despite following up twice. Is this a typical rejection or should I assume something unexpected came up on their end? I'm trying not to get discouraged but it's frustrating to be left in the dark.",
+    "subreddit": "jobs<end_of_turn>"
+  },
+  {
+    "title": "Thinking of switching careers - Data Analyst to Software Engineer",
+    "self_text": "Hi everyone, I'm currently working as a data analyst with about 2 years of experience. I enjoy the analytical aspects of my job, but I'm increasingly drawn to the creation side of things – building applications and solving problems through coding. I've started learning Python and JavaScript in my spare time and really enjoy it. I'm considering a career switch to software engineering, but I'm hesitant to leave the stability of my current role. I'm wondering if anyone has made a similar transition, and what their experience was like? What resources did you find helpful for learning the necessary skills? Any advice on navigating the job search as a career changer?  I'm especially interested in web development roles.",
+    "subreddit": "cscareerquestions<end_of_turn>"
+  },
+  {
+    "title": "Considering switching from Mint Mobile to Visible",
+    "self_text": "Been with Mint Mobile for about 2 years now and generally happy, but my data usage has steadily increased. I'm consistently using close to my 15GB/month, and topping up is a pain. Visible offers unlimited data and hotspot, which sounds appealing. I've read mixed reviews about Visible's deprioritization and customer service. Anyone currently with Visible who can weigh in on their experience, especially regarding data speeds and support? Worth the switch from Mint, or should I just bite the bullet and pay for more data with Mint?",
+    "subreddit": "visible<end_of_turn>"
+  },
+  {
+    "title": "Thinking about switching from Spotify to Tidal",
+    "self_text": "Been a spotify user for years but I’m starting to get annoyed with the algorithm and the audio quality. I listen to a lot of FLAC files and am considering switching to Tidal to stream lossless audio. Is it worth the extra money? I’m a bit hesitant to switch ecosystems, especially since I have so many playlists built up on Spotify. Are there good tools for migrating playlists?",
+    "subreddit": "Music<end_of_turn>"
+  },
+  {
+    "title": "Thinking of switching from Mint Mobile to Visible",
+    "self_text": "Been with Mint Mobile for about 2 years now and overall it's been good, but the data speeds have been consistently slow lately, especially uploads. Considering switching to Visible. Anyone currently using Visible? What are your experiences like with data speeds and customer service? I'm mainly concerned about consistent upload speeds for work.",
+    "subreddit": "visible<end_of_turn>"
+  },
+  {
+    "title": "Is it illegal to lie about your skillset on a resume?",
+    "self_text": "I'm applying for jobs and I'm tempted to embellish my skills a bit to get my foot in the door. I'm capable of learning quickly, but I don't have *direct* experience with everything listed in the job descriptions. Is it actually illegal to exaggerate or outright lie on a resume? I've heard conflicting things. What are the risks involved if I get caught?",
+    "subreddit": "legaladvice<end_of_turn>"
+  },
+  {
+    "title": "Question regarding switching providers",
+    "self_text": "I’m currently with Vodafone and my contract is ending in January. I’ve been receiving texts from EE offering deals, and I’m tempted to switch as their coverage seems better in my area. However, I’ve heard horror stories about switching providers – lost data, unexpected bills, difficulty cancelling with the old provider, etc. Has anyone recently switched *from* Vodafone *to* EE? If so, what was your experience like? Any hidden pitfalls I should be aware of? Any advice would be greatly appreciated!",
+    "subreddit": "ukmobiledeals\n\n<end_of_turn>"
+  },
+  {
+    "title": "What is the best way to approach learning Unreal Engine 5 as a beginner with limited programming experience?",
+    "self_text": "I'm eager to dive into game development and Unreal Engine 5 seems like the industry standard. However, my coding background is minimal – I've dabbled in HTML/CSS and some basic Python, but that's about it. I'm overwhelmed by the sheer amount of resources available and unsure where to begin. Should I focus on Blueprints first and delay learning C++? Are there specific tutorials or courses you'd recommend for absolute beginners? What foundational concepts should I prioritize? Any advice on avoiding common pitfalls or staying motivated?",
+    "subreddit": "unrealengine<end_of_turn>"
+  },
+  {
+    "title": "Considering a Switch to Mint Mobile - Worth it?",
+    "self_text": "Been with Verizon for years and my bill is consistently creeping upwards. Seeing ads for Mint Mobile and their seemingly incredibly cheap plans. I use around 10-15 GB of data a month, mostly WiFi at home. I'm hesitant because I rely on good coverage and don't want to sacrifice that for savings. Anyone made the switch from a major carrier to Mint and regretted it? Or conversely, happily saved a bunch of money without issue? I'm in the Midwest (Ohio specifically).",
+    "subreddit": "mintmobile\n\n<end_of_turn>"
+  },
+  {
+    "title": "Is a mechanical keyboard worth it for coding?",
+    "self_text": "I've been coding for a few years now on a standard membrane keyboard and it's...fine. I'm starting to wonder if investing in a mechanical keyboard would actually improve my coding experience. I've heard they're more comfortable for long typing sessions, but they're also significantly more expensive. Is the improvement in typing feel and potentially speed worth the cost for someone who codes frequently? Any recommendations for beginner-friendly mechanical keyboards specifically suited for programming?",
+    "subreddit": "MechanicalKeyboards<end_of_turn>"
+  },
+  {
+    "title": "First Time Car Buyer - Confused About Financing",
+    "self_text": "Okay, so I'm finally in a position to buy a car. I've been saving for ages! I'm looking at a used Honda Civic (around $18,000). I've been pre-approved for a loan through my credit union, but I'm totally overwhelmed by all the financing jargon. APR, loan term, principal... it's a lot!  I'm seeing offers ranging from 4.5% APR for 36 months to 6.8% APR for 72 months. Which is better? Longer loan = lower monthly payments, but more interest overall, right?  I'm also worried about getting ripped off at the dealership. Any advice for a newbie navigating car financing? Should I *only* rely on my credit union's pre-approval, or should I explore dealer financing too?",
+    "subreddit": "personalfinance<end_of_turn>"
+  },
+  {
+    "title": "Is a Costco Executive Membership Worth It?",
+    "self_text": "I’ve been a Costco member for years, but the Gold Star membership. I shop there pretty frequently, maybe $300-400 a month on groceries, gas, and household items. I’m wondering if upgrading to the Executive membership ($120/year vs $60/year) and getting 2% back would actually save me money. Does anyone crunch these numbers regularly? Is it generally worthwhile, or is it just marketing hype?",
+    "subreddit": "CostCo<end_of_turn>"
+  },
+  {
+    "title": "Considering a Switch to Mint Mobile",
+    "self_text": "I’m currently with Verizon and paying around $80/month for one line with unlimited data. I rarely use more than 10 GB a month. I’ve been looking into Mint Mobile and their plans seem significantly cheaper. Has anyone made the switch from a major carrier to Mint and regretted it? What’s the coverage like, especially for traveling occasionally? I'm concerned about customer support as well.",
+    "subreddit": "mintmobile\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else experiencing inconsistent Apex Legends matchmaking?",
+    "self_text": "Lately, my lobbies have been wildly varying in skill level. One game I'm matched with Diamond/Master players, the next I'm dominating Bronze/Silver opponents. It feels incredibly unbalanced and ruins the flow of the game. I'm Platinum consistently, so I expect *some* variation, but this is extreme. Is anyone else noticing this, or is it just me? I'm on PC.",
+    "subreddit": "apexlegends<end_of_turn>"
+  },
+  {
+    "title": "Is it worth buying a refurbished Macbook Air M1?",
+    "self_text": "I'm a college student looking for a lightweight laptop for note-taking, writing papers, and general browsing. I've been eyeing the Macbook Air M1, and I've found a certified refurbished one from Apple for $799. It comes with a one-year warranty. Is this a good deal, or should I save up for a new one? I'm a bit hesitant about buying refurbished, but the price is tempting. Any experiences with Apple's certified refurbished products?",
+    "subreddit": "macbook<end_of_turn>"
+  },
+  {
+    "title": "Question regarding moving data from iCloud to Google Drive",
+    "self_text": "Hi all, I’m planning on switching from an iPhone to a Pixel 7. I currently have a lot of photos and videos stored in iCloud. What’s the easiest and most efficient way to transfer all of that data to Google Drive? I’ve looked at Google One, but I’m confused about the process and if it’s truly seamless. Any recommendations or experiences you can share?",
+    "subreddit": "GooglePixel<end_of_turn>"
+  },
+  {
+    "title": "Is it worth upgrading from a 3070 to a 4070 Ti?",
+    "self_text": "Been thinking about upgrading my GPU. Currently rocking a 3070, 1440p gaming, aiming for high refresh rates. Seeing deals on the 4070 Ti, but wondering if the performance increase justifies the cost. Mostly play AAA titles, Cyberpunk, Elden Ring, etc. Worth it, or should I save for a potential 4080/4090 down the line?",
+    "subreddit": "pcmasterrace<end_of_turn>"
+  },
+  {
+    "title": "Is it worth buying a refurbished Macbook Air M1?",
+    "self_text": "I'm looking to get a Macbook Air for college – mainly for writing papers, browsing, and streaming videos. I've seen some certified refurbished M1 models on Apple's website for around $750-$850. I'm hesitant because I've never purchased a refurbished product before. Is the price worth it compared to potentially getting a newer (but cheaper) Windows laptop? Are refurbished MacBooks generally reliable? Any experiences or advice would be greatly appreciated!",
+    "subreddit": "macbook<end_of_turn>"
+  },
+  {
+    "title": "Question about the new Diablo IV Beta",
+    "self_text": "I signed up for the beta and got accepted, but I'm a bit confused about the schedule. It says \"Early Weekend Access\" starts on March 24th, but I don't recall specifically choosing that option when signing up. Does that mean I *only* get access from the 24th-26th, or do I also get access during the Open Beta weekend (March 25th-26th) as well?  Anyone else experiencing this confusion?",
+    "subreddit": "diablo4<end_of_turn>"
+  },
+  {
+    "title": "Question about 1031 Exchange",
+    "self_text": "I’m planning on selling a rental property that I’ve owned for 5 years and reinvesting the proceeds into a larger rental property. I’ve been reading about 1031 Exchanges to defer capital gains taxes, but I’m confused about the timelines and rules. Specifically, how long do I have to identify a replacement property, and what happens if I can’t find one within that timeframe? Also, is it true that I need to use a qualified intermediary to facilitate the exchange? Any insights or resources would be greatly appreciated.",
+    "subreddit": "realestateinvesting<end_of_turn>"
+  },
+  {
+    "title": "Is there a way to auto-populate fields in a PDF form using Python?",
+    "self_text": "I have a PDF form that I need to fill out repeatedly with data from a CSV file. Manually filling each field is incredibly tedious. I've looked into libraries like PyPDF2 and pdfrw, but I'm struggling to find a straightforward way to map the CSV data to the corresponding fields in the PDF. Is there a relatively simple method or library recommendation for automating this process? Bonus points if it can handle checkboxes and radio buttons!",
+    "subreddit": "learnpython<end_of_turn>"
+  },
+  {
+    "title": "Is it okay to use a VPN for streaming?",
+    "self_text": "I've been wanting to watch a show that's only available on Netflix Japan, and I've been reading about using a VPN to spoof my location. Is this against Netflix's terms of service? I don't want to get banned or anything. Is it generally frowned upon?",
+    "subreddit": "VPN\n\n<end_of_turn>"
+  },
+  {
+    "title": "Is it illegal to record a conversation with a landlord without their consent in Florida?",
+    "self_text": "I’m subletting an apartment in Florida and my landlord has been consistently violating the terms of our lease (entering without notice, refusing to address habitability issues, etc.). I’m documenting everything, and I’m considering secretly recording our conversations to have concrete evidence if I need to pursue legal action. I understand Florida is a “two-party consent” state, but I’ve seen conflicting information about exceptions for landlords. Is it risky to record these conversations, even if it strengthens my case? I'm not planning on sharing recordings publicly, only presenting them to an attorney or in court if necessary.",
+    "subreddit": "legaladvice<end_of_turn>"
+  },
+  {
+    "title": "Considering switching from Mint Mobile to Visible",
+    "self_text": "Been a Mint Mobile customer for years and generally happy, but the data deprioritization is getting increasingly noticeable. Lately, speeds are consistently slow during peak hours. Visible's plans seem comparable in price, especially with party pay, and boast faster speeds. Anyone made the switch recently and have feedback on Visible's performance, specifically regarding data speeds and coverage (I'm in a major metro area)? Is the party pay reliable, or do people often struggle finding stable groups?",
+    "subreddit": "visible<end_of_turn>"
+  },
+  {
+    "title": "Thinking of switching to Mint Mobile - is it worth it?",
+    "self_text": "Been with Verizon for years and my bill is creeping up to almost $200/month for two lines. Seeing ads for Mint Mobile everywhere promising significant savings. Anyone made the switch recently? How's the coverage (I'm in the Dallas, TX area)? Is customer support a nightmare like some people say? I mostly use my phone for calls, texts, and streaming music, occasionally YouTube videos. Data usage is typically around 10-15 GB per month combined for both lines. Worth investigating or sticking with the devil I know?",
+    "subreddit": "mintmobile\n\n<end_of_turn>"
+  },
+  {
+    "title": "Need help diagnosing intermittent freezing on Macbook Pro (M1, 2021)",
+    "self_text": "My Macbook Pro (M1, 2021, 16 inch) has started intermittently freezing for 5-10 seconds at a time. It happens seemingly randomly – sometimes while browsing Safari, sometimes while editing photos in Lightroom, occasionally even just sitting on the desktop. There’s no spinning beach ball, the cursor *can* still move, but clicking on anything doesn't register until the freeze ends. Activity Monitor doesn’t show anything maxing out CPU or Memory *during* the freezes (though I haven't been watching it constantly leading up to them). I’ve restarted a few times, cleared caches, and run Disk Utility First Aid, but nothing has resolved it. Anyone experienced this and found a fix? Thinking about reinstalling macOS but hoping to avoid that if possible.",
+    "subreddit": "macbookpro\n\n<end_of_turn>"
+  },
+  {
+    "title": "Need help identifying a plant!",
+    "self_text": "Hi everyone! I inherited a plant from a friend who sadly moved away. They weren't sure what it was, and I'm hoping someone here can identify it so I can properly care for it. It has thick, fleshy leaves that are speckled with white, and grows upwards. It hasn't flowered yet. Any ideas? [Image Link](https://i.imgur.com/aBcDeFg.jpg)",
+    "subreddit": "whatsthisplant\n\n<end_of_turn>"
+  },
+  {
+    "title": "Should I replace my 10 year old Macbook Pro?",
+    "self_text": "My 2012 Macbook Pro is starting to struggle. It's a 15 inch model with 16GB of RAM, originally configured with a 512GB SSD (now replaced with a 1TB Crucial MX500). Lately, even basic tasks like browsing with multiple tabs open or running Microsoft Teams for work are causing noticeable slowdowns and beachballing. I've cleaned up the OS, maxed out the RAM, and upgraded the SSD, but the aging processor (Intel Core i7-3820QM) is clearly the bottleneck.  Apple support says repairs are limited given the age of the machine.  I'm considering a new Macbook Pro (probably a 14-inch M2 Pro) but they're *expensive*. Would investing in a newer machine significantly improve my daily workflow and overall computing experience, or am I better off limping along with what I have for another year or two? I mostly do office work, web browsing, and occasionally some light photo editing.",
+    "subreddit": "macbook<end_of_turn>"
+  },
+  {
+    "title": "Anyone else experiencing constant disconnects on Destiny 2?",
+    "self_text": "Ever since the Witch Queen expansion launched, I've been consistently disconnecting from Destiny 2 matches. It happens multiple times per Crucible match, and occasionally even in strikes and raids. It's incredibly frustrating, especially during endgame content. I've tried troubleshooting steps like restarting my router, verifying game files, and updating my network drivers, but nothing seems to fix the issue. Others on Reddit and Twitter are reporting similar problems. Is anyone else experiencing this, and has anyone found a solution?",
+    "subreddit": "destiny2<end_of_turn>"
+  },
+  {
+    "title": "What is the best way to organize photos on Google Photos?",
+    "self_text": "I have over 100,000 photos and videos on Google Photos, and it’s become a nightmare to find anything. I’ve been relying on the search function, but it’s often inaccurate or misses things. I've tried albums, but creating and managing thousands of albums seems unrealistic. Are there any strategies or tools within Google Photos that people have found effective for organizing large photo libraries? Should I focus on tagging faces, adding descriptions, or utilizing the automated features more effectively? Any recommendations would be greatly appreciated!",
+    "subreddit": "GooglePhotos<end_of_turn>"
+  },
+  {
+    "title": "Considering a Switch to Fidelity",
+    "self_text": "I currently have all my retirement accounts with Vanguard (Roth IRA, Traditional IRA, 401k rollover). I've been generally happy with Vanguard, but I'm starting to feel limited by their fund selection, especially regarding ETFs. I've been looking at Fidelity and am impressed by their broader ETF offerings and zero-fee index funds. I also like the research tools they provide. Does anyone have experience switching from Vanguard to Fidelity specifically for retirement accounts? Was it a smooth process? Are there any hidden drawbacks I should be aware of? I'm mostly concerned about potential tax implications or disruptions to ongoing investments.",
+    "subreddit": "personalfinance<end_of_turn>"
+  },
+  {
+    "title": "Is it worth switching to Visible Wireless?",
+    "self_text": "I'm currently with Mint Mobile and generally satisfied, but I've been seeing ads for Visible Wireless lately. Their plans are similarly priced, but they boast faster data speeds due to utilizing Verizon's network. However, I've also read complaints about potential deprioritization of data and inconsistent customer support. I primarily use my phone for browsing, social media, streaming music, and occasionally watching videos. I'm not a heavy data user, typically averaging around 5-10 GB per month. Is the potential for faster speeds with Visible worth risking potential data throttling and potentially worse customer service compared to Mint?",
+    "subreddit": "visiblewireless<end_of_turn>"
+  },
+  {
+    "title": "New Job Offer - Should I Negotiate?",
+    "self_text": "Hi everyone, I recently received a job offer for a Data Analyst position. The salary is $75,000 annually. I'm excited about the opportunity, but I'm unsure if I should attempt to negotiate. I have 2 years of experience in data analysis and hold a Bachelor's degree. Based on my research on Glassdoor and Salary.com, the average salary for similar roles in my location (Austin, TX) ranges from $80,000 - $95,000. Should I try to negotiate for a higher salary, and if so, what would be a reasonable range to ask for? I'm worried about potentially rescinding the offer if I come across as demanding.",
+    "subreddit": "personalfinance\n\n<end_of_turn>"
+  },
+  {
+    "title": "Is it normal for my RTX 3070 to run at 90-95°C while gaming?",
+    "self_text": "Hi, I recently built a new PC with an RTX 3070 (Gigabyte Eagle OC). I've been gaming for a few hours and noticed the GPU temperature consistently hits 90-95°C in demanding games like Cyberpunk 2077 and Assassin's Creed Valhalla. My case has decent airflow (Fractal Design Meshify C) with intake and exhaust fans. I've monitored fan speeds and they ramp up significantly at those temperatures. Is this normal behavior for a 3070, or could there be an issue with cooling (thermal paste application, airflow obstruction)? I'm concerned about potentially damaging the card. Specs below: CPU: Ryzen 5 5600X Cooler: Noctua NH-U12S RAM: 32GB DDR4 3200MHz PSU: Corsair RM750x",
+    "subreddit": "pcmasterrace<end_of_turn>"
+  },
+  {
+    "title": "Thinking of switching from Mint Mobile to Visible",
+    "self_text": "Been with Mint Mobile for a couple years now and generally happy, but the data speeds have been consistently slow lately, especially in my city. Considering switching to Visible, as it seems to use Verizon towers and offers unlimited data. Anyone make this switch recently? Was the performance improvement noticeable? Worried about deprioritization with Visible, but wondering if it's still better than consistently slow speeds with Mint.",
+    "subreddit": "visible<end_of_turn>"
+  },
+  {
+    "title": "Is it worth upgrading from a 3070 to a 4070 ti?",
+    "self_text": "I currently have a 3070 and am thinking about upgrading to a 4070 ti. I play mostly AAA titles at 1440p with a high refresh rate monitor. I’m not sure if the performance increase justifies the cost of the upgrade. I've heard the VRAM on the 4070ti is a concern for future proofing. Any thoughts?",
+    "subreddit": "pcmasterrace<end_of_turn>"
+  },
+  {
+    "title": "Is anyone else experiencing frequent disconnects in Apex Legends?",
+    "self_text": "Lately, I've been getting kicked from Apex Legends matches *constantly*. It'll say \"Lost Connection to Server\" and kick me back to the lobby, often mid-fight. It's happening multiple times per play session, and it's incredibly frustrating. I've tried restarting my router, verifying game files, and updating my drivers, but nothing seems to fix it. Seeing a lot of complaints about this on Reddit and Twitter, so it seems like a widespread issue. Anyone else experiencing this, and has anyone found a solution?",
+    "subreddit": "apexlegends<end_of_turn>"
+  },
+  {
+    "title": "Should I refinance my student loans?",
+    "self_text": "I currently have around $30,000 in federal student loans at varying interest rates ranging from 5.05% to 6.8%. I'm employed and have a stable income, and my credit score is around 740. I've been seeing ads for student loan refinancing with rates around 4-5%. Is it a good idea to refinance now, or should I wait to see if the Biden administration implements broader forgiveness plans? I'm concerned about potentially losing federal protections like income-driven repayment and forbearance if I refinance with a private lender.",
+    "subreddit": "personalfinance<end_of_turn>"
+  },
+  {
+    "title": "Thinking of switching to Visible Wireless",
+    "self_text": "Been with Mint Mobile for a while, but the data speeds have been consistently slow lately, especially in my city. Considering switching to Visible. Anyone have experience with Visible's coverage and data speeds? Specifically in the Philadelphia area. Is it significantly better than Mint? Worried about deprioritization since it's Verizon's network.",
+    "subreddit": "visible<end_of_turn>"
+  },
+  {
+    "title": "Thinking about switching to Mint Mobile - Worth it?",
+    "self_text": "Been with Verizon for years and the bill is just getting insane. Seeing ads for Mint Mobile everywhere promising significantly cheaper plans. I use about 10-15 GB of data a month, mostly WiFi at home. Anyone made the switch and regretted it? Coverage concerns in rural Pennsylvania? Is the customer service truly terrible like I’ve heard? Considering the $15/month 15GB plan.",
+    "subreddit": "mintmobile\n\n<end_of_turn>"
+  },
+  {
+    "title": "Question about investing in ETFs",
+    "self_text": "I'm relatively new to investing and am looking to start building a diversified portfolio using ETFs. I've read about VTI (Total Stock Market ETF) and VT (Total World Stock ETF) and both seem like good options. What are the pros and cons of choosing one over the other? I'm based in the US and don't have strong feelings about focusing exclusively on domestic stocks versus international ones.",
+    "subreddit": "investing<end_of_turn>"
+  },
+  {
+    "title": "Is it cheaper to buy a Nintendo Switch OLED or a refurbished Switch?",
+    "self_text": "I'm looking to buy a Nintendo Switch, but I'm torn between getting the newer OLED model or a refurbished standard Switch. The OLED is significantly more expensive, but offers a better screen and more internal storage. Refurbished Switches are cheaper, but come with the risk of potential issues and a shorter warranty. I'm primarily planning to play handheld, so the OLED screen is appealing, but I'm not sure if it's worth the extra cost. Considering reliability and overall value, which option would you recommend?",
+    "subreddit": "NintendoSwitch<end_of_turn>"
+  },
+  {
+    "title": "Been trying to get into tabletop RPGs, where do I start?",
+    "self_text": "I’ve always been fascinated by tabletop RPGs like Dungeons and Dragons, but I’ve never actually played. It seems intimidating to learn all the rules and find a group. I’m looking for recommendations on beginner-friendly systems, resources for learning to play, and ways to find a group (preferably online). I enjoy fantasy and sci-fi stories, and I’m generally interested in collaborative storytelling. Any advice for a newbie?",
+    "subreddit": "rpg<end_of_turn>"
+  },
+  {
+    "title": "Question about moving to Canada from the US",
+    "self_text": "Hi everyone, I'm a US citizen considering moving to Canada permanently. I've done some initial research, but I'm overwhelmed with the amount of information. I'm specifically interested in Ontario, ideally near Toronto. I have a Bachelor's degree in Computer Science and about 5 years of professional experience as a Software Engineer.  My questions are: 1. What's the general job market like for Software Engineers in the Greater Toronto Area right now? 2. What immigration pathways would be the most realistic for my situation? Express Entry seems daunting. 3. Roughly, how much money should I save up *before* applying, factoring in application fees, potential language testing costs, and settling-in funds? 4. Are there any resources or communities you'd recommend for Americans planning a similar move?",
+    "subreddit": "AskCanada<end_of_turn>"
+  },
+  {
+    "title": "Is a 2070 Super still viable in 2023?",
+    "self_text": "Thinking of picking up a used 2070 Super for around $200. I'm mostly playing older AAA titles (like Witcher 3, Skyrim heavily modded, Fallout NV) at 1080p. Would this card still be a good value pick for that purpose, or should I save up for something newer? I'm not planning on playing any super demanding new games.",
+    "subreddit": "pcmasterrace<end_of_turn>"
+  },
+  {
+    "title": "What do you do when your roommate steals food?",
+    "self_text": "Okay, this is awkward. My roommate (male, 22) consistently eats my food. Not like a bite of leftovers, but like, finishes entire containers of things I specifically bought. I label EVERYTHING with my name. I’ve brought it up casually a couple times (“Oh hey, did you enjoy the yogurt? I was planning on having that for breakfast.”), and he acts confused and apologetic, but it *keeps* happening. It’s not a huge financial burden, but it’s incredibly irritating and disrespectful. I’m hesitant to escalate things to a serious confrontation because we otherwise get along okay. What’s the best way to address this without creating major tension? Should I start hiding my food? Is there a passive aggressive tactic that actually works?",
+    "subreddit": "AskReddit<end_of_turn>"
+  },
+  {
+    "title": "Is it worth switching from Spotify to Tidal?",
+    "self_text": "Been a Spotify Premium user for years, but I'm starting to hear more and more about Tidal's lossless audio quality. I listen to music *a lot* – daily commutes, working, relaxing – and I have a decent pair of headphones (Beyerdynamic DT 770 Pros). Wondering if the improvement in audio quality is noticeable enough to justify the extra monthly cost, especially since I'm already happy with Spotify's convenience and features. Anyone made the switch and regretted it, or vice versa?",
+    "subreddit": "Music<end_of_turn>"
+  },
+  {
+    "title": "Thinking of switching to Mint Mobile, any experiences?",
+    "self_text": "Been with Verizon for years and the bill is creeping up and up. Mint Mobile looks attractive with their prepaid plans. Anyone made the switch and have any feedback? Specifically concerned about coverage in rural Pennsylvania – does it compare favorably to Verizon? Also, any issues with customer support?",
+    "subreddit": "mintmobile\n\n<end_of_turn>"
+  },
+  {
+    "title": "Is it cheaper to buy a new car or repair an old one?",
+    "self_text": "My car is a 2008 Honda Civic with 180k miles. It's starting to have major issues – transmission slipping, AC compressor failing, and rust forming on the frame. Repair estimates are totaling around $4,000-$5,000. I could potentially get a newer (used) car for around $10,000-$15,000. Considering ongoing maintenance, reliability, and overall cost, is it smarter to invest in repairs or cut my losses and buy something new? I'm leaning towards a new car, but worried about taking on a loan.",
+    "subreddit": "personalfinance<end_of_turn>"
+  },
+  {
+    "title": "I just discovered the joys of PowerWash Simulator",
+    "self_text": "Seriously, I have no idea why I waited so long to try this game. It's incredibly satisfying to just...clean things. Stressful day? Fire up PowerWash Simulator. Want to zone out and listen to a podcast? PowerWash Simulator. It's surprisingly addictive and relaxing. Highly recommend!",
+    "subreddit": "gaming<end_of_turn>"
+  },
+  {
+    "title": "Is it worth switching to Visible Wireless?",
+    "self_text": "Been with Verizon for years, but my bill keeps creeping up. Visible offers significantly cheaper plans, but I've heard horror stories about customer service and deprioritization of data. I use about 20-30 GB of data a month, mostly streaming music and podcasts. My coverage with Verizon is excellent – is it likely to be noticeably worse with Visible? Worth saving $40-50/month despite potential drawbacks?",
+    "subreddit": "visible<end_of_turn>"
+  },
+  {
+    "title": "Is it worth switching to Visible Wireless?",
+    "self_text": "Been with Verizon for years and my bill is creeping up. Visible seems cheap, but I've heard horror stories about customer service and deprioritization. Anyone currently with Visible who can speak to their experience? Primarily concerned about data speeds and reliability – I stream music and podcasts frequently during my commute. Live in a decently populated suburban area.",
+    "subreddit": "visiblewireless<end_of_turn>"
+  },
+  {
+    "title": "I'm moving to Denver in January...what should I know?",
+    "self_text": "Hi everyone! I'm relocating to Denver from the east coast in January for a new job. I'm excited but also a little overwhelmed. I've visited a few times but never lived there. What are some essential things I should know before moving? Things like: - What's the public transportation like? - What are the neighborhoods like (looking for relatively safe, walkable areas, ideally with some nightlife)? - What's the weather *really* like in the winter? - Any hidden costs of living I should be aware of? - Anything else a newcomer should know about adjusting to life in Denver?",
+    "subreddit": "denver\n\n<end_of_turn>"
+  },
+  {
+    "title": "Is it possible to overclock a Ryzen 5 5600 on a B450 motherboard?",
+    "self_text": "I recently purchased a Ryzen 5 5600 and paired it with a B450 Tomahawk MAX motherboard. I've seen conflicting information online regarding whether or not it's possible to overclock the 5600 on a B450 chipset. Some sources say it requires a BIOS update and even then, it's limited. Others say it's generally not recommended. I'm relatively new to PC building and overclocking, so I'm hesitant to mess things up. I'm aiming for a modest overclock to improve performance in gaming. Any insights or experiences would be greatly appreciated!",
+    "subreddit": "buildapc<end_of_turn>"
+  },
+  {
+    "title": "First Time Car Buyer - Confused About Financing",
+    "self_text": "Okay, so I'm finally in a position to buy a car – aiming for something around $20k. I've been pre-approved for a loan through my credit union at 6.5% APR. However, the dealership is pushing me to finance through them, claiming they can get me a lower rate. They're saying they have special promotions right now. Should I bother negotiating with them, or just stick with my credit union's offer? I'm worried about hidden fees or unfavorable terms if I go through the dealership. What should I be looking out for?",
+    "subreddit": "personalfinance<end_of_turn>"
+  },
+  {
+    "title": "Question regarding tax implications of selling crypto",
+    "self_text": "Hi all, I’m relatively new to crypto and am planning to sell some holdings I’ve had for a while. I understand capital gains taxes apply, but I’m confused about how it’s calculated. I originally purchased Bitcoin for $5,000 in 2021, and it’s now worth $15,000. I also purchased Ethereum for $2,000 in 2022, and it’s now worth $1,000 (so a loss). If I sell both simultaneously, how will my capital gains be calculated? Will the loss on the Ethereum offset the gain on the Bitcoin? And what tax bracket will this fall into? I'm located in the US.",
+    "subreddit": "CryptoCurrency<end_of_turn>"
+  },
+  {
+    "title": "Anyone else experiencing massive latency spikes with Verizon Fios?",
+    "self_text": "Lately, my Verizon Fios connection has been incredibly unstable. I consistently get download speeds advertised (around 900 Mbps), but the ping fluctuates wildly – often spiking to 200ms or even higher for short periods. This makes online gaming and even Zoom calls unbearable. I've rebooted my ONT and router multiple times, and the issue persists. I've run traceroutes, and it seems the problem starts *after* my ONT, somewhere within Verizon's network. Has anyone else experienced this recently? Is there anything I can do besides contacting support (who haven't been helpful so far)?",
+    "subreddit": "verizonfios<end_of_turn>"
+  },
+  {
+    "title": "Is it worth buying a refurbished Macbook Air M1?",
+    "self_text": "I'm a student looking for a lightweight laptop for notes, web browsing, and some light coding. I've been eyeing the Macbook Air M1, but I'm hesitant to spend full price. I've found a certified refurbished one from Apple for $799. It comes with a one-year warranty. Is this a good deal? Are there any major downsides to buying a refurbished MacBook Air versus a new one? I'm concerned about battery life or potential hidden issues.",
+    "subreddit": "macbook<end_of_turn>"
+  },
+  {
+    "title": "First Time Car Buyer - Worried About Getting Ripped Off",
+    "self_text": "Hey everyone, I'm planning on buying my first car in the next month or so. I've been saving up for a while and have about $8,000 for a down payment. I'm looking at used cars in the $15,000-$20,000 range. I'm really nervous about getting ripped off – I don't know much about cars and I'm afraid I'll get pressured into buying something unreliable or overpriced. Any advice for a first-time buyer? Should I bring a mechanic with me to inspect the car? Are there specific dealerships or websites that are generally more trustworthy? Any tips would be greatly appreciated!",
+    "subreddit": "askcars\n\n<end_of_turn>"
+  },
+  {
+    "title": "Need help diagnosing intermittent crashing - Ryzen 5600X, RTX 3070",
+    "self_text": "My PC has been intermittently crashing, usually within 30-60 minutes of gaming. There's no consistent pattern – sometimes it's during loading, sometimes in gameplay, sometimes seemingly at idle. The crashes are a full system freeze requiring a hard reboot. I've monitored temperatures and they seem normal (CPU peaking around 75°C, GPU around 70°C). I’ve run Memtest86 overnight with no errors reported. Drivers are up to date. Power supply is 750W Gold rated.  I suspect it might be related to the RAM, but I'm not sure. Specs: Ryzen 5 5600X, RTX 3070, 16GB DDR4 3200MHz CL16, MSI B450 Tomahawk MAX, 750W PSU. Any suggestions on what to troubleshoot next?",
+    "subreddit": "buildapc<end_of_turn>"
+  },
+  {
+    "title": "Anyone else experiencing insane queue times in Ranked?",
+    "self_text": "Been trying to play ranked all evening and consistently waiting 10-15 minutes for a match. It's getting ridiculous. Saw a post earlier mentioning it might be due to MMR inflation but haven't seen any acknowledgement from Riot. Anyone else running into this?",
+    "subreddit": "leagueoflegends<end_of_turn>"
+  },
+  {
+    "title": "Thinking of switching to Mint Mobile - Worth it?",
+    "self_text": "Been with Verizon for years and my bill is creeping up to almost $200/month for two lines. Mint Mobile looks attractive with their tiered plans and seemingly cheaper costs. I've read mixed reviews – some say the coverage is excellent, others complain about slower data speeds. We live in a suburban area with generally good cell reception. Does anyone have experience with Mint Mobile and can vouch for its reliability and data speeds? Is it truly a significant cost saver, or are there hidden downsides?",
+    "subreddit": "mintmobile\n\n<end_of_turn>"
+  },
+  {
+    "title": "Is it worth switching to Visible Wireless?",
+    "self_text": "I'm currently on Mint Mobile and generally happy with the service, but I've been seeing ads for Visible Wireless claiming great deals. I'm wondering if anyone has made the switch and has feedback on the coverage (I'm in Denver, CO) and overall reliability. Mint is cheaper, but Visible offers hotspot data and potentially faster speeds. Is the trade-off worth it?",
+    "subreddit": "visible<end_of_turn>"
+  },
+  {
+    "title": "Is a Costco membership worth it if you live alone?",
+    "self_text": "I'm a single person living in a relatively small apartment. I generally only buy groceries for myself and don't consume large quantities of anything. I've been considering a Costco membership because I've heard their gas prices are good and occasionally they have deals on electronics, but I'm worried I won't buy enough to offset the $60 annual fee. Does anyone else live solo and find the membership worthwhile? What do you typically buy there?",
+    "subreddit": "frugal<end_of_turn>"
+  },
+  {
+    "title": "Is it possible to get banned for using scripts to automate tasks in Path of Exile?",
+    "self_text": "I've been exploring ways to streamline some of the more tedious aspects of Path of Exile, like crafting or farming certain content. I stumbled upon some scripting tools that can automate clicking and repeating actions. While I'm not looking to cheat or gain an unfair advantage (like automating complex combat sequences), I'm concerned about violating the game's Terms of Service simply by automating mundane tasks. Has anyone experienced bans or warnings for using scripts for basic automation in PoE? I'm specifically avoiding anything that impacts gameplay decisions or interacts with the game client in a malicious way.",
+    "subreddit": "pathofexile<end_of_turn>"
+  },
+  {
+    "title": "Is it cheaper to buy a new fridge or repair my current one?",
+    "self_text": "My fridge is about 10 years old and the compressor is failing. Repair quotes are ranging from $800-$1200 (parts and labor). New fridges (similar size and features) are around $1500-$2000. Energy efficiency is also a consideration – my current fridge is significantly less efficient than newer models. What factors should I weigh to determine if repairing is worthwhile, or if I should just replace it? I'm leaning towards replacement but want to explore all options.",
+    "subreddit": "HomeImprovement<end_of_turn>"
+  },
+  {
+    "title": "Thinking of switching careers - Software Engineer to Data Science",
+    "self_text": "I'm a software engineer with 5 YOE, proficient in Python and SQL, and generally enjoy programming. However, I'm increasingly drawn to data analysis and modeling – I find myself spending a lot of downtime exploring datasets and learning about machine learning concepts. I'm considering a career switch to data science, potentially specializing in ML engineering.  I'm hesitant because I'm comfortable and relatively well-paid in my current role. I'm concerned about the job market volatility in data science, the potential need for further education (Master's degree?), and whether my existing skills translate effectively.  Anyone made a similar leap? Any advice on how to assess the feasibility and prepare for such a transition? What resources would you recommend?",
+    "subreddit": "datascience<end_of_turn>"
+  },
+  {
+    "title": "Need advice on switching careers - Software Engineer to Data Science",
+    "self_text": "Hi everyone, I'm a Software Engineer with 3 years of experience, specializing in backend development (Python, Django, PostgreSQL). I'm increasingly drawn to data science – specifically machine learning – and enjoy the analytical aspects of my current role. I've started taking courses on Coursera and Udemy (Andrew Ng's ML course, Python for Data Science and Machine Learning Bootcamp) and enjoy the material. I'm aiming for roles involving model building and deployment. My question is: what's the most effective path to transition? Should I focus on building a strong portfolio of projects (Kaggle, personal projects)? Pursue a Master's degree? Look for internal opportunities within my current company? Any advice on resources, skills to prioritize, or navigating the job search would be greatly appreciated.",
+    "subreddit": "datascience<end_of_turn>"
+  },
+  {
+    "title": "Question regarding switching from ATT to Verizon",
+    "self_text": "I’m thinking about switching from ATT to Verizon. I currently have a 5G hotspot that I use for internet because my neighborhood doesn’t have fiber optic capabilities. I’m concerned that Verizon’s 5G coverage isn’t as strong as ATT’s in my area. Does anyone have experience with both providers and can speak to the reliability and speed of their 5G hotspots? I'm located in rural Pennsylvania.",
+    "subreddit": "Verizon<end_of_turn>"
+  },
+  {
+    "title": "Anyone else experiencing massive latency spikes with Comcast Xfinity?",
+    "self_text": "Lately, I've been consistently experiencing massive latency spikes with my Comcast Xfinity internet. Ping jumps from a stable 20ms to upwards of 200-300ms seemingly at random intervals, lasting for several seconds. This is affecting online gaming and even streaming. I've rebooted my modem and router multiple times, run speed tests (which show consistent download/upload speeds, but don't reflect the latency issue), and contacted support twice – they've run diagnostics remotely and claimed everything looks fine on their end. Anyone else experiencing this? Any troubleshooting steps I haven't tried?",
+    "subreddit": "Comcast<end_of_turn>"
+  },
+  {
+    "title": "Is it worth buying a refurbished Macbook Air M1?",
+    "self_text": "I'm a college student looking for a lightweight laptop for note-taking, web browsing, and writing papers. I've been eyeing the Macbook Air M1, but I'm hesitant to spend $999 on a new one. I've found certified refurbished ones from Apple for around $799. Are refurbished MacBooks reliable? Are there any downsides to buying one versus new? I'm concerned about battery life and potential hidden issues.",
+    "subreddit": "macbook<end_of_turn>"
+  },
+  {
+    "title": "Is a mechanical keyboard worth it?",
+    "self_text": "I’ve been using membrane keyboards my whole life and I’m considering switching to a mechanical keyboard. I’ve heard they’re more durable, responsive, and enjoyable to type on, but they’re also significantly more expensive. I mostly use my computer for general tasks like browsing, writing emails, and occasionally gaming. Is the upgrade worth it for someone like me, or am I better off sticking with a cheaper membrane keyboard?",
+    "subreddit": "MechanicalKeyboards<end_of_turn>"
+  },
+  {
+    "title": "Is it possible to replace a mechanical keyboard switch without desoldering?",
+    "self_text": "I just got a Keychron Q1 and I love it, but one of the switches is kinda sticky. I’ve watched some videos and it seems like you *usually* have to desolder the switches to replace them, but I'm really hesitant to do that because I don't have a soldering iron and I'm worried about damaging the PCB. Are there any hot-swappable keyboards, or adapters, or tools that allow you to simply pull out a switch and snap in a new one without soldering? I know the Q1 supports switch modifications but I’m not sure if that includes hot swapping.",
+    "subreddit": "MechanicalKeyboards<end_of_turn>"
+  },
+  {
+    "title": "Been ghosted after initial interview - is it normal?",
+    "self_text": "I had an initial screening interview last Monday for a junior data analyst role. The interviewer said they were impressed and would schedule a technical assessment within a week. It's now been eight days and I haven't heard anything back despite emailing to politely follow up yesterday. Is this typical? I'm trying not to get discouraged, but it's hard not to assume I've been rejected without any communication.",
+    "subreddit": "jobs<end_of_turn>"
+  },
+  {
+    "title": "Why does my phone keep restarting?",
+    "self_text": "My Samsung Galaxy S21 keeps restarting seemingly at random. It'll be fine for hours, then just abruptly restart. Doesn't seem to be tied to any specific app or activity. I've cleared the cache partition, but that hasn't solved the issue. Factory reset is a last resort as it's a pain to set everything up again. Any troubleshooting steps I should try before resorting to that?",
+    "subreddit": "AndroidQuestions<end_of_turn>"
+  },
+  {
+    "title": "Is it worth switching to Visible Wireless?",
+    "self_text": "I'm currently with Mint Mobile and my promotional rate expires in a few months. I've been looking at Visible as an alternative, especially since they offer more data than my current plan. I'm concerned about the deprioritization of data and slower speeds, though. Has anyone made the switch recently and experienced noticeable differences in performance? I live in a major city and primarily use my phone for browsing, streaming music, and social media.",
+    "subreddit": "visiblewireless<end_of_turn>"
+  },
+  {
+    "title": "Is it worth upgrading to a newer iPhone if my 12 Pro is still working well?",
+    "self_text": "My iPhone 12 Pro is still functioning flawlessly – battery health is at 88%, no cracks, everything works as expected. However, I'm tempted by the 15 Pro Max due to the camera improvements and USB-C. I'm not experiencing any major pain points with my current phone. Is the upgrade truly worthwhile, or am I better off sticking with what I have for another year or two? Considering I use my phone primarily for photos and general daily tasks.",
+    "subreddit": "iphone<end_of_turn>"
+  },
+  {
+    "title": "Anyone else experiencing major latency spikes with Verizon 5G UW?",
+    "self_text": "Lately, my 5G Ultra Wideband connection has been incredibly inconsistent. I'm consistently getting download speeds advertised (around 800Mbps), but the latency is spiking wildly – often jumping from 20ms to 100ms+ multiple times per minute. This makes online gaming and even smooth video conferencing nearly impossible. I've tested with multiple devices and speed test sites, and the results are the same. I've contacted Verizon support twice, and they've just run me through the typical troubleshooting steps (resetting my router, checking signal strength) with no improvement. Wondering if others are experiencing similar issues, and if anyone has found a solution? Location is central NJ.",
+    "subreddit": "verizon<end_of_turn>"
+  },
+  {
+    "title": "Thinking of switching careers...need advice",
+    "self_text": "Hi everyone! I’m currently a registered nurse with 5 years of experience, but I’m increasingly burnt out and disillusioned with healthcare. I've always enjoyed writing and research, and I’m considering a career change into technical writing or UX writing. I have a bachelor's degree in nursing, but no formal training in writing or design. I'm willing to take courses or bootcamps to gain relevant skills.  What resources would you recommend for breaking into these fields? Are there any certifications that would be helpful? Also, realistically, how long does it typically take to make a successful career transition like this, and what kind of salary expectations should I have starting out? Any advice or insights would be greatly appreciated!",
+    "subreddit": "careerguidance<end_of_turn>"
+  },
+  {
+    "title": "Thinking of switching to Mint Mobile - Worth it?",
+    "self_text": "Been with Verizon for years and my bill is creeping up to $150/month for a single line. Seeing ads for Mint Mobile everywhere promising coverage for $15/month. Sounds too good to be true. Anyone made the switch and have feedback? Worried about coverage reliability since I travel occasionally. Live in suburban Philadelphia.",
+    "subreddit": "mintmobile\n\n<end_of_turn>"
+  },
+  {
+    "title": "New Monitor Question - Ultrawide vs Dual Monitors",
+    "self_text": "Okay, I'm finally upgrading my monitor setup. Currently rocking a single 27\" 1080p monitor. I'm torn between going ultrawide (34\"+) or getting two 27\" 1440p monitors. I mostly game (RPG, strategy, some shooters) and do general productivity stuff (coding, browsing, writing). Budget is around $500-$800. Pros/cons I've thought about: Ultrawide: Immersion, seamless gaming, cleaner desk. Cons: Potential for distortion, harder to drive with weaker GPUs. Dual Monitors: More screen real estate, flexibility, potentially cheaper. Cons: Bezels, requires more desk space, can be distracting. Leaning towards ultrawide, but worried about future proofing. Anyone have experience with both setups? Which would *you* recommend for my usage?",
+    "subreddit": "buildapc<end_of_turn>"
+  },
+  {
+    "title": "Can anyone recommend a good mechanical keyboard under $100?",
+    "self_text": "I'm looking to upgrade from my membrane keyboard to a mechanical one, but I'm on a tight budget. I've been doing some research, but there are so many options it's overwhelming! I mostly use my keyboard for typing and light gaming. I'd prefer something with brown switches or something similar that isn't too loud. Any recommendations for a good mechanical keyboard under $100?",
+    "subreddit": "MechanicalKeyboards<end_of_turn>"
+  },
+  {
+    "title": "Is it worth switching to Visible from Mint Mobile?",
+    "self_text": "I've been a Mint Mobile customer for about 3 years now and generally happy with the service, but my promotional rate is expiring soon and the price is jumping up significantly. I've been looking at Visible and their plans seem comparable in price, especially with party pay. However, I've heard mixed reviews about Visible's data speeds and customer service. I primarily use my phone for browsing, social media, streaming music, and occasionally watching videos. I rarely download large files. I live in a decently populated suburban area. Has anyone made the switch from Mint to Visible recently? Was it worth it? Are the data speeds noticeably slower?",
+    "subreddit": "visible<end_of_turn>"
+  },
+  {
+    "title": "Can I use a USB-C hub with DisplayPort alt mode on a Nintendo Switch dock?",
+    "self_text": "I’m planning on connecting my Switch to a monitor via a USB-C hub that supports DisplayPort Alt Mode. The hub also has USB ports and an Ethernet port, which would be incredibly convenient. However, I’ve read conflicting reports online about compatibility with the Switch dock. Some sources say it works flawlessly, while others mention issues with signal stability or no output at all. Has anyone successfully used a USB-C hub with DP Alt Mode connected to a Switch dock to connect to an external monitor? If so, which hub did you use, and did you encounter any problems?",
+    "subreddit": "NintendoSwitch<end_of_turn>"
+  },
+  {
+    "title": "Question about Costco Executive Membership Worth",
+    "self_text": "Okay, I’ve been debating getting the Costco Executive membership for a while now. I currently spend roughly $600-800/month at Costco (mostly groceries, gas, and household stuff). I'm wondering if the 2% cashback would actually offset the $120 annual fee. Has anyone crunched the numbers on this? Is it generally worth it if you spend around that amount annually? Any insights would be helpful!",
+    "subreddit": "Costco<end_of_turn>"
+  },
+  {
+    "title": "New Car Smell Alternatives?",
+    "self_text": "Okay, I know the “new car smell” is mostly toxic chemicals off-gassing, and I’m trying to avoid that. I just traded in my old car and the new one smells…sterile. I *want* a pleasant scent, but something natural and healthy. I’ve thought about essential oil diffusers, but not sure if that’s practical or safe while driving. Any recommendations for ways to make a new car smell nice *without* relying on synthetic air fresheners? Bamboo charcoal bags? Specific essential oils? Something else entirely?",
+    "subreddit": "cars\n\n<end_of_turn>"
+  },
+  {
+    "title": "Is it worth upgrading to a newer CPU for streaming?",
+    "self_text": "I currently have a Ryzen 5 3600 paired with a RTX 3070. I stream on Twitch while gaming, typically Apex Legends or Valorant. I've noticed some stuttering and frame drops occasionally, especially during intense moments. I'm wondering if upgrading my CPU to something like a Ryzen 7 5800X3D would significantly improve my streaming performance, or if the bottleneck is elsewhere (like potentially VRAM?). I'm hesitant to spend the money if it won't make a noticeable difference. Any thoughts?",
+    "subreddit": "livestreamfails<end_of_turn>"
+  },
+  {
+    "title": "Is it ethical to use ChatGPT to write cover letters?",
+    "self_text": "I'm applying for jobs right now and I've been experimenting with using ChatGPT to draft cover letters based on the job descriptions. It saves a TON of time, and honestly, it writes pretty good ones. But I feel kinda guilty about it – is it dishonest to submit a cover letter that wasn't entirely written by me? I'm still editing and tailoring them, but the core content often comes from the AI. I'm worried about getting caught, but also about whether it undermines the purpose of a cover letter, which is supposed to showcase *my* writing skills and personality. What do other people think?",
+    "subreddit": "jobs\n\n<end_of_turn>"
+  },
+  {
+    "title": "Is it worth it to replace a failing HDD with an SSD?",
+    "self_text": "My current PC is getting noticeably slower, especially boot times and loading applications. Upon investigation, it seems my HDD is nearing capacity and showing signs of failure (clicking noises, slow response times). I'm considering replacing it with an SSD, but I'm hesitant because of the cost. Would the performance improvement be significant enough to justify the expense? I mainly use my PC for general tasks like browsing, office work, and some light gaming.",
+    "subreddit": "buildapc<end_of_turn>"
+  },
+  {
+    "title": "Anyone else experiencing massive packet loss with Comcast/Xfinity?",
+    "self_text": "Lately, I've been getting consistent packet loss – upwards of 20-30% – especially during peak hours. It's impacting online gaming *badly* and even causing Zoom calls to drop. I've rebooted my modem countless times, checked all my connections, and run various tests. Traceroutes show the packet loss starts *immediately* at my local Comcast node. I've contacted support twice, and they've given me the usual runaround (\"reset your modem,\" \"there are no outages in your area\"). Anyone else experiencing this? Is anyone successfully getting Comcast to acknowledge and fix this?",
+    "subreddit": "Comcast<end_of_turn>"
+  },
+  {
+    "title": "Is it okay to tip on takeout?",
+    "self_text": "I've been seeing a lot of debate online about whether or not you should tip on takeout orders. I generally tip 15-20% on everything, but I'm starting to wonder if it's expected or necessary for takeout. The employees aren't providing table service, so it feels different than dining in. But I also want to be respectful and support workers. What's the general consensus?",
+    "subreddit": "tipping<end_of_turn>"
+  },
+  {
+    "title": "Is there a noticeable difference between the Steam Deck OLED and LCD?",
+    "self_text": "I currently own the original LCD Steam Deck and am considering upgrading to the OLED model. I've watched videos comparing the two, but I'm curious to hear from people who have *actually* made the switch. Is the OLED screen significantly better? Is it worth the ~$200 price increase, especially considering the relatively modest improvements to battery life and Wi-Fi? I primarily play AAA games and indies alike, and portability is important to me.",
+    "subreddit": "SteamDeck<end_of_turn>"
+  },
+  {
+    "title": "Is anyone else experiencing a weird bug with the new Destiny 2 season pass?",
+    "self_text": "I purchased the Season of the Seraph season pass, but the seasonal challenges aren’t appearing in the director. I’ve restarted the game multiple times, cleared the cache, and verified game files, but nothing seems to work. I’ve seen a few other people reporting the same issue on Twitter. Anyone else encountering this?",
+    "subreddit": "destiny2<end_of_turn>"
+  }
+]
