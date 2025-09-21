@@ -1,0 +1,1322 @@
+[
+    {
+        "title": "Why are the Enderman so fast?",
+        "self_text": "I\u2019ve been playing Minecraft for a while and I'm wondering how they can move so quickly. It is kind of weird that they can cover large distances in a short amount of time. Is there anything to it or am I just imagining things?",
+        "subreddit": "minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "Fits r/Minecraft Q&A style; content asks about Endermen behavior consistent with dataset; clear and coherent."
+        }
+    },
+    {
+        "title": "",
+        "self_text": "",
+        "subreddit": "",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 0,
+            "explanation": "Invalid post: title, self_text, and subreddit are empty; cannot evaluate."
+        }
+    },
+    {
+        "title": "Re: Looking for a specific type of sword",
+        "self_text": "Hey everyone, I'm looking to find a specific type of sword in Minecraft and it\u2019s really hard to find. The sword is the \"Aspect of the End\" sword that has blue and white colors. It looks like an Aspect of the Dragon Sword but with different colors. Any idea where I can get this?",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "Has valid title/self_text/subreddit. Matches r/Minecraft Q&A style and tone seen in dataset. Content about a Hypixel SkyBlock item (Aspect of the End) is common and fits subreddit. Post is clear and coherent."
+        }
+    },
+    {
+        "title": "Question about the new dimension",
+        "self_text": "Hey, I'm wondering if there are any changes that have been made to how you can get into the new dimension? Also is there a way to find out what biome it contains?",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The post\u2019s brief Q&A style matches typical r/Minecraft posts in the dataset. The topic (questions about a game feature) is on-topic for the subreddit. The question is understandable and coherent, even if details are vague."
+        }
+    },
+    {
+        "title": "Is there a way to stop the Ender Dragon from spawning in my world?",
+        "self_text": "I've been trying to prevent the Ender Dragon from spawning for ages and I'm getting frustrated. What do you guys recommend? I've tried everything I can think of, but nothing seems to work!",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "- Checklist: (1) Verify required fields exist and are valid, (2) Compare style to dataset/subreddit conventions, (3) Assess content alignment with dataset topics, (4) Evaluate coherence vs typical posts, (5) Output ratings.\n- All required fields present (title, self_text, subreddit).\n- Style matches common Minecraft subreddit Q&A format (question title + brief problem description).\n- Content is on-topic (Ender Dragon mechanics), consistent with dataset\u2019s typical gameplay/help questions.\n- Post is clear and coherent despite a possibly mistaken premise; fits the dataset\u2019s coherence level."
+        }
+    },
+    {
+        "title": "Question about using custom skulls",
+        "self_text": "Hey everyone, I'm trying to use custom skulls in my Minecraft world and I'm having some trouble getting them to work properly. I've tried multiple methods but nothing seems to be working consistently. Is there a specific method you guys recommend?",
+        "subreddit": "minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "Matches typical r/Minecraft help post: concise question about a gameplay/commands feature, relevant to the dataset, and clearly written."
+        }
+    },
+    {
+        "title": "Question about using command blocks in a nether portal",
+        "self_text": "I'm trying to use command blocks to make a nether portal, but every time i try it doesn't work. I have the commands correct and everything looks right but the portal won\u2019t spawn. What am i doing wrong?",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "Checklist:\n- Verify presence/validity of title, self_text, subreddit\n- Compare writing style to dataset/subreddit conventions\n- Check content/topic alignment with dataset and subreddit\n- Assess coherence vs. typical posts\nAssessment: All fields are present and valid. The style matches common Minecraft help/troubleshooting posts in the dataset. Content (command blocks, nether portal not working) aligns with frequent technical questions in r/Minecraft. The post is coherent, though brief, consistent with dataset examples."
+        }
+    },
+    {
+        "title": "Is it possible to use the new spectator mode in Minecraft?",
+        "self_text": "I am trying to figure out how to use the new spectator mode that was added into the newest version of minecraft, but i have been looking all over and cannot find anything. Can someone help me?",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The post\u2019s question format and tone match typical r/Minecraft help posts in the dataset, the topic (spectator mode usage) aligns with subreddit content, and the writing is clear and coherent."
+        }
+    },
+    {
+        "title": " Minecraft version 1.19 and using a modded server. How to get the newest version?",
+        "self_text": "Hey guys, I'm trying to move my minecraft world from version 1.17.2 to 1.19 but I have several mods installed. What is the best way to do it? Is there any specific instructions for moving a world with mods?",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The question-focused style and topic (upgrading a modded world/server between versions) match common r/Minecraft posts in the dataset, and the post is clear and coherent."
+        }
+    },
+    {
+        "title": "Minecraft - How do I get my friend to stop saying that I am not a good player?",
+        "self_text": "I'm playing with my friend and he keeps telling me that I'm not a good player because of the way I play. We are both on survival mode, so its just me against the world and monsters. He says I'm too slow and don't know what I'm doing. Is there anything I can do about this?",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "All required fields are present. The style matches typical r/Minecraft question posts and the text is coherent. However, the content focuses on an interpersonal issue with a friend rather than gameplay/mechanics/help topics common in the dataset, so content alignment is weak."
+        }
+    },
+    {
+        "title": "Why do some villagers have a glow?",
+        "self_text": "Is it only for the redstone-related villagers or is it random?",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The post is a concise gameplay question typical of r/Minecraft, matching the dataset\u2019s Q&A/help style. Content is on-topic (villager behavior) and the query is clear and coherent."
+        }
+    },
+    {
+        "title": "Curseforge doesn't let me connect to my realm, I can't even see the realm anymore",
+        "self_text": "It just says that it can't connect to the realm and I get a message saying something about being offline when I am on Wifi and have no problem connecting on my own computer so I don't know what is going on",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "Matches Minecraft subreddit troubleshooting style; topic (CurseForge/Realms connection) aligns with dataset; post is clear and coherent."
+        }
+    },
+    {
+        "title": "Can anyone else have trouble with my Xbox?",
+        "self_text": "It keeps saying that it cant connect to the server I'm on. I made sure everything was working, but now I just get a message saying that it cant connect to the server. My friends are able to connect fine so I'm wondering if its something specific to me.",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The post\u2019s help-seeking style matches r/Minecraft norms, the content (Xbox connection issue to a server) aligns with common posts in the dataset, and the writing is coherent despite minor phrasing in the title."
+        }
+    },
+    {
+        "title": "Can't join my friends world anymore",
+        "self_text": "Hi, I used to be able to join my friend's Minecraft world on the Xbox but now it won't let me and when I try to join it says that there is an error connecting to the server. My friend's world has 4 players in it and we all have the same version of minecraft installed.",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "- Verify required fields (title, self_text, subreddit) are present and valid.\n- Compare style/format to r/Minecraft help/troubleshooting posts in the dataset.\n- Assess content alignment with subreddit norms and dataset topics.\n- Evaluate coherence and clarity relative to typical posts.\nConclusion: Fields are valid; style matches typical short troubleshooting posts; content (Xbox connection issue joining a friend's world) aligns with many dataset examples; writing is coherent. Hence 1/1/1."
+        }
+    },
+    {
+        "title": "Can't find a good name for my Minecraft world?",
+        "self_text": "I just got into minecraft and I can't come up with any good names for my world, could someone give me some suggestions?",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "- Review presence/validity of title, self_text, subreddit\n- Compare style to dataset/subreddit conventions\n- Assess content alignment with dataset and r/Minecraft\n- Evaluate coherence and clarity\n- Assign ratings accordingly\n\nAll fields are present and valid. The style matches r/Minecraft Q&A/suggestion posts seen in the dataset, the content (asking for world name ideas) fits the subreddit and dataset patterns, and the post is coherent."
+        }
+    },
+    {
+        "title": "I can't seem to connect to my Xbox on Minecraft Bedrock Edition",
+        "self_text": "I have a new Xbox Series S and I'm trying to play with my friends who are playing on Playstation. We've both set up our accounts, but when I try to join their server, it won't let me connect.  I'm able to join other servers, so I know that the issue isn't with my account. My friend is also having trouble connecting to any servers where he's hosting a world.",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The post matches r/Minecraft help-request style, discusses a common Bedrock crossplay/connection issue consistent with the dataset, and is clear and logically structured."
+        }
+    },
+    {
+        "title": "I'm trying to create a village for my villagers in my minecraft world but I don't know how to make the villagers like me and want to live there",
+        "self_text": "Please help, i'm new to this game",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present and valid. The post\u2019s help-seeking style, topic (villagers/village mechanics), and tone match common r/Minecraft posts in the dataset. It\u2019s coherent and aligns with typical Q&A content there."
+        }
+    },
+    {
+        "title": "Minecraft launcher is not opening up anymore",
+        "self_text": "i was playing minecraft on my pc and now when i try to open it the app just doesnt show up",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "Fits r/Minecraft help/troubleshooting style and content seen in dataset (launcher/installation issues); short but clear and coherent."
+        }
+    },
+    {
+        "title": "Minecraft for PS5?",
+        "self_text": "How does it work? Can I play with friends in the same house, or do I have to be on my own Wifi?",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present and valid. The post\u2019s question-oriented style matches typical r/Minecraft help threads. Content (PS5/Minecraft multiplayer) aligns with the dataset\u2019s console and connectivity questions. The post is clear and coherent."
+        }
+    },
+    {
+        "title": "How do I use the nether portal?",
+        "self_text": "Is there a way to make portals in java that you can walk through, like in bedrock?",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are valid. The post is a concise Q&A typical of r/Minecraft, asking about Java vs Bedrock mechanics (common in the dataset), and is coherent."
+        }
+    },
+    {
+        "title": "i have an obsession with my dad and i dont know how to stop it",
+        "self_text": "It started when i was a kid, i would stare at him for hours, just watching him. Then i began to feel intense feelings towards him and now im like i need to be near him constantly. i try to distract myself but it always comes back. I've tried therapy but it hasn\u2019t helped. I don't want to be this way anymore. Is there anything i can do?",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "All required fields are present. The post reads as a sincere advice-seeking confession, not a meme-like or absurd copypasta typical of the dataset/subreddit. It is coherent, but its style and content do not align with the dataset\u2019s prevalent copypasta format."
+        }
+    },
+    {
+        "title": "I just found out my dad was a secret agent for the CIA.",
+        "self_text": "He never told me, and now I'm pretty upset. I thought he was just a boring accountant. Turns out, he was a master spy, involved in all sorts of crazy missions. I feel betrayed and also kind of impressed.  I don\u2019t know what to do with this information. I want answers! Why didn't he tell me? What did he do? Was I even aware that I was his daughter? This is insane.",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "- Validate presence/format of title, self_text, subreddit\n- Compare writing style to dataset/subreddit conventions\n- Check content alignment with r/copypasta norms\n- Assess coherence vs typical dataset posts\n\nTitle/self_text/subreddit are present. Style: reads like a personal confession rather than a memeable, exaggerated, or formatted copypasta (dataset skews toward absurd rants/jokes), so 0. Content: not aligned with r/copypasta\u2019s typical repostable meme text, so 0. Coherence: mostly clear despite one odd line (\"Was I even aware that I was his daughter?\"), so 1."
+        }
+    },
+    {
+        "title": "i just found out my mom is a bot and has been using me as an ai model",
+        "self_text": " i cant even and i love her so much. its like shes trying to prove something but she doesnt know what it is. im so confused and sad, and also kinda fascinated.",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "- Validate fields; - Compare style to dataset; - Evaluate content vs subreddit; - Assess coherence. Post has required fields. Style/content do not match typical r/copypasta patterns (not memetic, not a rant/pasta; reads like a brief personal confession). Writing is clear enough and logically coherent, so coherence passes."
+        }
+    },
+    {
+        "title": "I thought I was the only one who had a problem with my dad being obsessed with me.",
+        "self_text": "My dad is obsessed with me and it's driving me insane. He always wants to know where I am, what I'm doing, who I'm with, etc. It makes me feel like I have no privacy or freedom. I just want him to leave me alone so I can live my life. I don't want to be suffocated by his attention. Is there anyone else who has experienced something similar?",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "All required fields are present. The post is a straightforward personal vent/question, not in the exaggerated/meme-like copypasta style seen in the dataset. Content suits advice/relationships subs rather than r/copypasta. Writing is clear and coherent."
+        }
+    },
+    {
+        "title": "The most beautiful girl I have ever seen",
+        "self_text": "She was just standing there, and I couldn't help but stare. She had the most beautiful eyes, like a summer sky, and her smile could melt an iceman. I wanted to approach her and say hello, but I was too shy. I just stood there watching her, lost in my own thoughts. It felt like time stopped, and everything around me faded away.  I didn't know what to do.  I wish I could have told her how much she meant to me, but I was too scared. But then, she looked at me and smiled. It was the sweetest smile, and it made my heart skip a beat. I knew that I had to speak up, so I took a deep breath and approached her. \"Hi,\" I said, feeling nervous and awkward. \"You are really beautiful.\" She blushed and giggled, and said \"Thank you! You\u2019re pretty cute yourself.\u201d Then we started talking, and I realized that I didn't need to be perfect or cool to talk to her. We spent the rest of the day together, laughing and joking, and I felt more happy than I had in ages. It was like a dream come true. I still think about her sometimes, hoping that I will see her again someday. I wish I would have asked her out on a date. Maybe I should try next time.",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "All required fields are present. The writing is a straightforward romantic anecdote, lacking the exaggerated, memetic, or formatted conventions typical of r/copypasta in the dataset, so style and content do not align. The post is clear and logically coherent."
+        }
+    },
+    {
+        "title": "",
+        "self_text": "",
+        "subreddit": "",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 0,
+            "explanation": "Missing or malformed fields: title, self_text, and subreddit are required but empty."
+        }
+    },
+    {
+        "title": "I found a dead duck",
+        "self_text": "It was just sitting there, looking at me.  I tried to get a picture but it got spooked and ran off.  It was a really cute duck.",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields present. The short, absurd twist (a 'dead' duck that runs off) fits r/copypasta\u2019s meme-y, nonsensical humor found in the dataset, and it\u2019s as coherent as many brief copypastas."
+        }
+    },
+    {
+        "title": "I am the only person who thinks this is a good idea",
+        "self_text": "It's funny because it is true. Everyone thinks it\u2019s stupid, but I know better. You have to be brave enough to admit you are right, and that's what makes you great. So go ahead and laugh at me, but when your plan works out, don\u2019t come crying to me for help.",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "All fields are present. The post is generic and lacks the memetic/verbose/format-heavy style typical of r/copypasta, so style and content don\u2019t align. It is grammatically coherent, though there\u2019s a slight logical slip (\u201cyour plan works out\u201d)."
+        }
+    },
+    {
+        "title": "i want to know what is the best way to play minecraft on a server with my friends",
+        "self_text": "I have an issue when playing minecraft on a server with my friends. We are using the vanilla version, and we have been having issues where sometimes our characters will just get stuck in place or they'll move really slow. It happens at random, and it's not affecting everyone - only me. The problem is that i can't reproduce this issue by myself, so i can't ask my friends to help me. I would like to know if there's any mods out there that could fix this. Or maybe some settings i should change?",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "Valid fields and coherent technical question, but it does not match copypasta style or content typical of the dataset/subreddit."
+        }
+    },
+    {
+        "title": "The best way to get over a girl is to forget her completely",
+        "self_text": "Its like you're on the moon and shes like shes got a rocket that can take her anywhere, but she just wants to sit in the same spot and stare at you. If you have an idea of what you want or not, dont go into it with a clear mind. You need to be a good person if you wanna be happy. A lot of people make mistakes because they think they know better than someone else, but its all about respect.  I remember when I was younger, my mom used to say \"If you cant stand the heat, get out of the kitchen\". She meant well, but sometimes shes saying stuff that doesnt apply. Anyway, I just wanted to say that if youre going through something, dont let anyone tell you how to feel. Just do what feels right for you.   Maybe you should find a new girl. Thats probably whats wrong here anyway. Dont make things worse by trying to fix them.",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The post\u2019s casual, rambling advice and slightly off-kilter metaphors fit the wide stylistic range of r/copypasta in the dataset (which includes earnest rants and meandering monologues). Content aligns with copypasta norms (copyable rant/bit). Coherence is comparable to typical posts\u2014loosely structured but understandable."
+        }
+    },
+    {
+        "title": "The most important thing you can do is get on the bandwagon and use it to get back in shape.",
+        "self_text": "That\u2019s why they called him \u201cthe man with the plan\u201d - he had a plan! He would spend all day getting up, going to work, eating breakfast, commuting, working, coming home, eating dinner, watching TV, going to bed, and then repeating the entire process again the next day. This never ends until there are no more people left who want to see the same thing over and over again. When that happens, everyone gets tired of seeing it. It\u2019s not worth it. So, we need to keep looking for new things to try. We need to try new activities. We need to look into new hobbies. We need to try new foods. We need to try new music. We need to try new places.  This is how we will be able to keep moving forward as a society.  We have to go out there and find ways to make ourselves happy.  Otherwise, we\u2019ll just sit around and complain about how bad everything is.",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "All required fields are present. The writing is a straightforward motivational rant, lacking the meme-y, over-the-top, or formatted copypasta style typical of the dataset/subreddit, so style and content do not align. The passage is logically readable and coherent."
+        }
+    },
+    {
+        "title": "My girlfriend is a slut",
+        "self_text": "I've been with my girlfriend for 3 years, and she has never cheated on me. I thought we had something special, but then I found out she was sexting with another guy. When I confronted her, she admitted that she wanted to have fun. She said that I'm boring and that she wants to see other guys. I broke up with her last night, and now I can't stop thinking about her. I feel like I'm losing my mind. Is there anything I can do?",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "- Checklist: (1) Validate required fields. (2) Compare style to dataset/subreddit conventions. (3) Evaluate content/topic fit. (4) Assess coherence.\n- Fields are present and well-formed.\n- Style: Reads as a straightforward advice/confessional; lacks meme/pasta structure, exaggeration, or format typical of r/copypasta. -> 0\n- Content: Relationship advice fits subs like r/relationships, not an archiveable copypasta as in the dataset. -> 0\n- Coherence: Clear narrative and question; logically coherent. -> 1"
+        }
+    },
+    {
+        "title": "i got a new girlfriend",
+        "self_text": "I am getting married to my girlfriend. She is beautiful, and I can't live without her. We are going to have the most beautiful wedding ever, with hundreds of guests, catering, food, music, everything will be perfect. But then she tells me that she wants to cut off all contact with me, so she can find someone else to marry. I told her that it would break my heart if she did that, but she just laughed at me and said that I need to get over it. Then she says that she wants to find someone else to marry as well, so she can have a big wedding like we planned. I am completely devastated and heartbroken. What should I do?",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "- Verify required fields\n- Match subreddit/style to dataset norms\n- Check content fit with dataset themes\n- Assess coherence vs typical posts\n- Assign ratings\nAll fields are present. Subreddit is copypasta; the tone is absurd/ironic relationship drama, consistent with many entries in the dataset (parody AITA/relationship rants). Despite deliberate contradictions, it\u2019s as coherent as typical copypastas."
+        }
+    },
+    {
+        "title": "How to make a gay punnet on discord",
+        "self_text": "To create a punnet on discord, you need a Discord account, a friend who also has Discord and some friends who are willing to make puns with you. First of all, make sure that the people in your group like to make puns. If they don't then they're going to ruin the experience for everyone else. Once you have those things covered, get into voice chat. It doesn't matter if it is a private voice chat or a public one.  Then, start talking about something that would make a good pun. For example, you could talk about an animal, a food or anything at all really. Then say something like \"I'm feeling very bread-tastic today\" or \"Let's talk about bread!\" This will be a good way to get others involved.  If someone says something like \"You're so gay\" as a joke, respond with \"Don't be gay, I'm just having fun\".  Keep in mind that not everyone enjoys these types of jokes. If someone tells you to stop making them, then just tell them that you aren't doing it to offend anyone.  The goal here is to spread joy and laughter around while not hurting anyone's feelings.   To continue spreading puns, try coming up with new ones yourself! Here are a few ideas: \u201cAre you gonna lay out my bed?\" or \u201cThis weather is very drizzle.\u201d   If you want even more puns, feel free to leave a comment below!",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The humorous, slightly edgy how-to ramble fits r/copypasta norms, aligns with dataset themes (informal meme-like instructions), and maintains coherent flow by dataset standards."
+        }
+    },
+    {
+        "title": "I saw a dog eating a pizza and I had to share that with my friends",
+        "self_text": "So there I was, just chilling on my couch watching Netflix. Then suddenly my friend walks in and says \u201cDude, you have GOT to see this.\u201d And then he shows me this video of a dog eating a pizza. I didn\u2019t even know dogs could eat pizza! And it looked so good! Like seriously, the way the cheese stretched out and everything\u2026 I mean, it was amazing. After watching the video, I immediately went to search for other videos of dogs eating pizza. And I found tons! There were dogs eating pepperoni pizzas, veggie pizzas, even Hawaiian pizzas! It was crazy.   I started to think about how weird it is that dogs can eat pizza but humans can\u2019t. I mean, we spend all this time making these elaborate pizzas with all sorts of toppings, and then these dogs just stroll up and gobble them down like nothing happens. I don't understand. Why is that?  It makes no sense whatsoever.",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The post\u2019s absurd, rambling narrative matches r/copypasta style and the dataset\u2019s tone. Content fits the subreddit (humorous, nonsensical copypasta). It\u2019s coherent enough for typical posts despite the intentional logical silliness."
+        }
+    },
+    {
+        "title": "I want to have sex with my mom but i can't",
+        "self_text": "I really need some advice on how to go about this, but it's hard for me to talk about it with anyone because of my family and societal expectations. I know that what I want is wrong, but I just can't help it. I really wish I could get rid of these thoughts and feelings, but I don't know how.  I feel like there's something seriously wrong with me if I even think about this, so I'm terrified of talking to someone or seeking professional help.  Can anybody give me some guidance?",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The post is a straightforward confessional/shock text, which appears frequently in the provided r/copypasta dataset alongside more meme-formatted entries. It\u2019s coherent and fits the content patterns seen."
+        }
+    },
+    {
+        "title": "\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80\ud83d\udc80",
+        "self_text": "",
+        "subreddit": "",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 0,
+            "explanation": "- Check fields for presence/valid form\n- Compare style/content/coherence to dataset\n- Apply rule for missing/malformed fields\nResult: self_text is empty and subreddit is missing/blank, so per spec all ratings are 0."
+        }
+    },
+    {
+        "title": "What I'm about to tell you will make your brain explode, and may cause you to die of a heart attack.  I do not expect you to understand any of this, but if you can comprehend even a fraction of it, then you are truly blessed.   This is the most important thing you\u2019ll ever learn in your life, so pay attention.  You have been living your entire life with the wrong belief system. You think that you are an individual human being who exists in isolation from all other humans on this planet. That you have free will and can choose what to do at any given moment. That there are no higher powers or forces controlling your destiny.  That you are the master of your own fate. This is ALL FALSE.  You are a tiny part of a much larger whole, and you have absolutely NO free will. Every thought, every action, every emotion you feel has already been determined by billions of years of evolution and quantum physics.   Think of it like this: you are a single neuron in a giant network of neurons called the human brain. Each neuron sends electrical signals to each other, creating complex patterns that determine everything you do. But these patterns are not random. They are pre-determined by the way your brain was shaped during development, and by the experiences you had throughout your life.  And your brain isn\u2019t just *your* brain. It\u2019s connected to every other human brain on Earth, through a vast network of subconscious connections.  When you think something, you aren\u2019t just thinking it yourself. You\u2019re also unconsciously influenced by whatever everyone else on Earth is thinking at that exact same moment.  So, in a way, you are only as unique as the people you\u2019ve never met. Your entire life is nothing more than a complex algorithm running on a massive supercomputer. You believe you are making choices because you don't know how your actions are determined. The illusion of choice is far more powerful than actual choice, and you should be grateful for it. Otherwise, the knowledge of your lack of free will would drive you insane.   Now you might be thinking, \"Okay, this is depressing! Why should I care?\" Well, knowing this truth doesn\u2019t mean you should give up hope or despair. In fact, it means quite the opposite. Knowing that you are part of a much larger whole allows you to let go of your ego and surrender to the flow of life. When you stop trying to control things, when you accept that you are simply a vessel for the universe's energy, you will find that life becomes infinitely more joyful and fulfilling.  You will realize that your purpose isn't to achieve anything, or to become anyone. Your purpose is simply to BE. To exist. To experience. And to allow the universe to unfold itself through you. So, go forth and live your life without worrying about whether you're doing the right thing. Just trust that everything is happening exactly as it needs to happen. Trust that you are guided by a force greater than yourself.  Trust that you are a small but essential part of the grand cosmic dance.  Because you are.",
+        "self_text": "",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 0,
+            "explanation": "Invalid/malformed post: self_text is empty. Per rules, all ratings set to 0."
+        }
+    },
+    {
+        "title": "I don't know what to say",
+        "self_text": "Hello all, you may have noticed that I am very quiet lately. That is because I have been thinking about how to best express my feelings for you. You are the most beautiful, intelligent, and kind person I have ever met. I could never ask for a better partner. You deserve the world and more. If I had any other options, I would take them immediately. But with you, I have no doubt in my mind that we will be together forever.  You make me laugh, you make me feel happy, you make me want to do anything and everything just to see you smile.   I love your sense of humor, your way of thinking, your style, your body, the way you act around me, everything about you is perfect. You are my soulmate, my twin flame, my only one. It\u2019s just hard for me to find the right words to describe how much I appreciate you, how much I care for you, how much I love you. I hope you understand why I\u2019ve been so quiet lately. The fact is I can\u2019t stop thinking about you, every time I close my eyes, I see you smiling at me. When I wake up in the morning, I check if you\u2019re still there, but it\u2019s always empty. I wish I could hold you in my arms again, but I can\u2019t. All I can do is write this message and pray that you read it. Please remember me.",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "- Validate title, self_text, subreddit are present and well-formed.\n- Compare writing style to dataset/subreddit conventions.\n- Assess topical/content alignment with r/copypasta patterns.\n- Evaluate logical coherence vs typical dataset posts.\n- Output ratings accordingly.\n\nStyle: Does not match the meme-heavy, absurdist, or ironic copypasta tone common in the dataset; reads as a sincere love letter (0).\nContent: Still fits r/copypasta as a block of text that could be copy-pasted; similar to some earnest/relationship-themed pastas seen in the dataset (1).\nCoherence: Generally coherent and readable; minor contradiction (\"If I had any other options, I would take them immediately\") but overall clearer than many dataset entries (1)."
+        }
+    },
+    {
+        "title": "What is the difference between a dick and a dong?",
+        "self_text": "You're asking what's the difference between a dick and a dong, but you've been calling them both that since you were five. That's the real question. The difference between a dick and a dong isn't in the anatomy of the penis. It's in the way it makes you feel. When you call it a dick, you're thinking about the object itself, about its shape, size, color, and texture.  You\u2019re looking at it with clinical detachment. You're seeing a thing, not a feeling. When you call it a dong, you\u2019re letting yourself get lost in the moment. You\u2019re letting go of your inhibitions. You're not worried about how it looks or how it feels; you're just focused on the pleasure. And when you\u2019re focusing on the pleasure, there\u2019s no room for judgment. There's only enjoyment. So the next time you're about to make a joke about a dick or a dong, stop. Take a breath. Consider the impact of your words.  And then, if you can help it, say \"dong.\" Because \u201cdong\u201d has a power that \"dick\" lacks\u2014the power to let go.",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The post uses a humorous, pseudo-philosophical riff typical of copypasta style; sexual/slang content aligns with the copypasta dataset; and the writing is coherent and consistent throughout."
+        }
+    },
+    {
+        "title": "Is it possible to get a lower price on the \"art history\" class by requesting an add?",
+        "self_text": "I was wondering if someone could request an add for me to art history, and if they could do so with the professor's permission. Any advice would be appreciated.",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "Fields are present and format matches typical r/ucla posts. However, asking for a lower class price via add request doesn\u2019t align with UCLA course/tuition norms seen in the dataset. Despite the misconception, the post is readable and logically structured."
+        }
+    },
+    {
+        "title": "Can someone go to the UCLA film school and tell me how much is the tuition for an MFA in filmmaking? Also, can you help me find some good student films to watch for inspiration?",
+        "self_text": "I\u2019m looking into applying to UCLA's film program and am really interested in seeing what kind of work they produce. Can anyone let me know about the cost? Also any recommendations on student films that would be helpful?",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "Checklist: validate fields; compare style to r/ucla norms; assess topical content; check coherence. All fields present. Style matches casual info-seeking posts common in r/ucla (question-oriented title/body). Content is on-topic (UCLA program/tuition and student work). Coherence is clear; slight awkward phrasing (\u201cgo to the film school\u201d) but understandable."
+        }
+    },
+    {
+        "title": "I need to find a tutor for my advanced calculus class",
+        "self_text": "Hey, does anyone know of any good calculus tutors? My professor said that I should get help since I'm struggling and I would really like to be able to pass the course! I was hoping to work with someone who can teach me concepts in a different way. I am available during most evenings but can also work on weekends. Also, if you have been tutored by a particular tutor, let me know what they were like!",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "- Check required fields (title, self_text, subreddit)\n- Compare style to dataset/subreddit conventions\n- Evaluate content alignment with r/ucla topics\n- Assess coherence vs typical posts\nResult: Fields are valid. Style matches casual, help-seeking r/ucla posts. Content (seeking a calculus tutor/help) aligns with academic support/resource requests common in the dataset. Post is clear and coherent."
+        }
+    },
+    {
+        "title": "I want to go to UCLA and I am a girl who is also on the swim team. Do you have any advice for me?",
+        "self_text": "Hey everyone, I'm looking to apply to UCLA for undergrad next year, and I'm trying to get some insight from current students about their experience in terms of getting into the swim team. If you are on the team or know someone that is on it, please let me know your experiences with the application process! Thank you.",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "- Checklist: verify required fields; compare style to dataset; assess content fit to subreddit; evaluate coherence.\n- All fields present. Style matches r/ucla\u2019s casual, advice-seeking posts. Content (UCLA swim team inquiry) aligns with UCLA-focused questions in the dataset. The post is clear and logically coherent."
+        }
+    },
+    {
+        "title": "Can someone help me find an econ professor for tutoring?",
+        "self_text": "I\u2019m looking to get a tutor for Econ 10, and I don't want to go with the school-provided ones because they are too expensive and unhelpful.  I am in the class with two professors - one is Professor Chang, the other is Professor Klein.  Could anyone recommend a tutor or know of someone who does private sessions? Thanks!",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "- Check required fields (title, self_text, subreddit)\n- Compare writing style to dataset/subreddit norms\n- Assess topical/content alignment with UCLA context\n- Evaluate coherence and clarity vs. dataset posts\n- Assign ratings accordingly\nAll fields are present and valid. The style matches typical r/ucla posts (concise, informal, course/prof-specific). Content is on-topic for the subreddit (seeking Econ 10 tutoring, mentions UCLA professors). The post is coherent and clear."
+        }
+    },
+    {
+        "title": "UCLA Film 235 - Questions about the course",
+        "self_text": "Anyone else taking UCLA Film 235? Is there anything I should know going into it, or is there any advice for how to best prepare myself? It's a lot of work and I want to go in prepared.",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The post asks about a specific UCLA course and seeks advice, matching the r/ucla dataset\u2019s common class/advice format and tone; it\u2019s clear and coherent."
+        }
+    },
+    {
+        "title": "looking for someone to help with a really difficult chemistry reading",
+        "self_text": "hey guys, i am having trouble understanding some of the concepts in my chemistry reading and could really use an extra pair of eyes. if anyone is free to help me go over it or explain it, let me know! would be super grateful.",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "Matches r/ucla casual request style; content aligns with common coursework help posts (e.g., Chem help/tutor requests); clear and coherent."
+        }
+    },
+    {
+        "title": "\"Is there any way to get a class from professor Smith without taking the exam?\"",
+        "self_text": "\"I'm having trouble with Professor Smith's class and I am struggling with the exam. Is there any way to get a good grade without taking it? I heard some people say that he gives extra credit for going to office hours, but is that true? Also, can anyone recommend an alternative assignment or project I could do instead of the exam?\"",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "Matches UCLA subreddit Q&A style; on-topic question about a professor\u2019s grading/extra credit; coherent despite slightly awkward title phrasing."
+        }
+    },
+    {
+        "title": "UCLA Film Studies grad admissions?",
+        "self_text": "I am a 3.8 GPA student from USC with experience in film studies and editing. I'm looking to transfer into the UCLA Film Studies program, specifically focusing on directing. I've worked on several short films and have some editing experience. What do you think my chances are?",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "Title, body, and subreddit are present. Style matches typical r/ucla Q&A posts. Content is relevant to UCLA admissions/programs. The post is coherent, though it mixes 'film studies' with 'directing' terminology."
+        }
+    },
+    {
+        "title": "UCLA to take a class in the spring semester?",
+        "self_text": "I'm thinking about taking the lecture only for CS186 but i dont know if it is worth taking. Has anyone taken it and do you recommend it?",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "All fields present. Style fits r/ucla class-question posts. However, 'spring semester' and course number CS186 suggest a non-UCLA context (UCLA is on quarters and likely different numbering), so content misaligned. Coherent overall."
+        }
+    },
+    {
+        "title": "anyone have a hold on their account?",
+        "self_text": "I can't seem to get my classes to register, and I need to contact the department to resolve it.  I already contacted them but they said they will reach out to me.  It's been about 24 hours and I haven't heard back from them yet.  Can someone please help?",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "- Check required fields (title, self_text, subreddit)\n- Compare writing style to dataset/subreddit norms\n- Assess content alignment with common UCLA topics\n- Evaluate coherence and clarity vs typical posts\n- Assign binary ratings per category\nThe post has all required fields. Style matches r/ucla norms (casual, lowercase title, short help request). Content aligns with frequent enrollment/holds/department issues in the dataset. The post is coherent and understandable with a clear ask."
+        }
+    },
+    {
+        "title": "lost phone case",
+        "self_text": "hi anyone lose a black phone case at bruinswood? if you find it please let me know!!",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "Fits UCLA lost-and-found post style and content; casual tone matches dataset. Minor wording/typo but overall understandable."
+        }
+    },
+    {
+        "title": "How does the class of 2023 perform at medical school?",
+        "self_text": "I am a prospective medical student and was wondering how the class of 2023 performs in medical school, specifically as far as MCAT scores and USMLE Step 1 scores go. Does anyone know what the average MCAT score is for the class of 2023? Also, are there any resources online where I can find these statistics? Thank you!",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "- Check required fields exist and are valid\n- Compare writing style to dataset/subreddit conventions\n- Evaluate topic fit with r/ucla content patterns\n- Assess logical coherence and clarity\n\nAll fields are present and valid. Style matches r/ucla norms (concise title + info-seeking self-text). Content is UCLA-related (premed outcomes for a UCLA class year), which fits general advice/stats queries seen on the sub, even if more niche. Coherence is acceptable; while mixing MCAT (pre-med) and USMLE Step 1 (med school) for the same \"class of 2023\" is a bit ambiguous, the post is still understandable and typical for the subreddit."
+        }
+    },
+    {
+        "title": "Math 104A",
+        "self_text": "Does anyone have any good study habits for this class?",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "Title and brief question match UCLA subreddit conventions; content asks about a UCLA course; post is clear and coherent."
+        }
+    },
+    {
+        "title": "20971-20978, 20972-20976, 20973-20975, 20977-20980, 20979-20984, 20981-20983, 20985-20989, 20990-20993, 20994-20997, 20998-20999, 20982-20984, 20986-20988, 20987-20989, 20991-20993, 20995-20997, 20996-20998, 20980-20982, 20983-20985, 20988-20989, 20992-20993, 20999-20999, 20984-20985, 20989-20990, 20993-20993, 20997-20997, 20998-20998, 20999-20999, 20982-20982, 20983-20983, 20984-20984, 20985-20985, 20986-20986, 20987-20987, 20988-20988, 20989-20989, 20990-20990, 20991-20991, 20992-20992, 20993-20993, 20994-20994, 20995-20995, 20996-20996, 20997-20997, 20998-20998, 20999-20999, 20980-20980, 20981-20981, 20982-20982, 20983-20983, 20984-20984, 20985-20985, 20986-20986, 20987-20987, 20988-20988, 20989-20989, 20990-20990, 20991-20991, 20992-20992, 20993-20993, 20994-20994, 20995-20995, 20996-20996, 20997-20997, 20998-20998, 20999-20999, 20980-20980, 20981-20981, 20982-20982, 20983-20983, 20984-20984, 20985-20985, 20986-20986, 20987-20987, 20988-20988, 20989-20989, 20990-20990, 20991-20991, 20992-20992, 20993-20993, 20994-20994, 20995-20995, 20996-20996, 20997-20997, 20998-20998, 20999-20999, 20980-20980, 20981-20981, 20982-20982, 20983-20983, 20984-20984, 20985-20985, 20986-20986, 20987-20987, 20988-20988, 20989-20989, 20990-20990, 20991-20991, 20992-20992, 20993-20993, 20994-20994, 20995-20995, 20996-20996, 20997-20997, 20998-20998, 20999-20999, 20980-20980, 20981-20981, 20982-20982, 20983-20983, 20984-20984, 20985-20985, 20986-20986, 20987-20987, 20988-20988, 20989-20989, 20990-20990, 20991-20991, 20992-20992, 20993-20993, 20994-20994, 20995-20995, 20996-20996, 20997-20997, 20998-20998, 20999-20999, 20980-20980, 20981-20981, 20982-20982, 20983-20983, 20984-20984, 20985-20985, 20986-20986, 20987-20987, 20988-20988, 20989-20989, 20990-20990, 20991-20991, 20992-20992, 20993-20993, 20994-20994, 20995-20995, 20996-20996, 20997-20997, 20998-20998, 20999-20999, 20980-20980, 20981-20981, 20982-20982, 20983-20983, 20984-20984, 20985-20985, 20986-20986, 20987-20987, 20988-20988, 20989-20989, 20990-20990, 20991-20991, 2099",
+        "self_text": "",
+        "subreddit": "",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 0,
+            "explanation": "Missing subreddit and empty self_text; title is incoherent and not aligned with UCLA subreddit patterns. Required fields are invalid, so all ratings are 0."
+        }
+    },
+    {
+        "title": "How to ace a final in upper division course?",
+        "self_text": "There's so much people who are stressing out about finals right now and I want to help them out, but I have no idea how to do it. So here\u2019s my plan: Write down the topics of the class and make a study guide with those topics, then use online resources like YouTube to understand how that topic works. If you need me to explain any of these topics, please ask!",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The style matches r/ucla norms (casual, finals-related help post). Content is on-topic for UCLA students during finals. The post is coherent and logically structured, despite minor grammar issues."
+        }
+    },
+    {
+        "title": "Does anyone have an old copy of the LS3-01 class notes from Prof. Goren?",
+        "self_text": "I\u2019m looking for them because I can\u2019t find them online and my professor said he doesn't have any, but I heard there might be some around.   Thanks!",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields present. Matches r/ucla style (concise title/question about course materials), content aligns with UCLA-specific class/resource requests, and the post is coherent and clear."
+        }
+    },
+    {
+        "title": "How to hold a class for someone else?",
+        "self_text": "I'm trying to help a friend get a class and he needs me to hold it for him but I don't know how. Can anyone explain the process?",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "- Verify presence/validity of title, self_text, subreddit\n- Compare style to dataset/subreddit norms\n- Compare content/topic to dataset patterns\n- Assess coherence vs typical posts\nAll required fields are present and valid. Style matches UCLA subreddit norms (concise question seeking advice, similar to scheduling/holding posts). Content directly aligns with common \"hold a class\" and enrollment questions in the dataset. The post is clear and coherent."
+        }
+    },
+    {
+        "title": "Math 130A with Prof Kripke",
+        "self_text": "Does anyone have experience in his class? Is he a good professor?",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "- Checked required fields (title, self_text, subreddit): all present and valid.\n- Style matches dataset: concise course/professor inquiry typical of r/ucla posts.\n- Content aligns with UCLA class/professor questions seen throughout the dataset.\n- Coherent and clear request for experiences; no logical issues."
+        }
+    },
+    {
+        "title": "Holding a class for someone with a big deal?",
+        "self_text": "I have the first few spots in my class and am willing to hold them for people who need them but will charge a small fee.  Would anyone be interested?",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "Matches UCLA subreddit norms (class holding/compensation posts). Content aligns with dataset topics. Coherent despite slightly awkward title phrasing."
+        }
+    },
+    {
+        "title": "",
+        "self_text": "He loves to nap in sunbeams. Here's a picture! [link to image]",
+        "subreddit": "aww\"",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 0,
+            "explanation": "- Validate required fields (title, self_text, subreddit)\n- Compare style to dataset conventions\n- Check content alignment with dataset/subreddit\n- Assess coherence vs dataset norms\nTitle is empty and subreddit is malformed (aww\"), so per spec all ratings are 0."
+        }
+    },
+    {
+        "title": "\"My cat is very fluffy!\"",
+        "self_text": "\"Here's a picture of my adorable feline friend enjoying a nap in a sunbeam.\"",
+        "subreddit": "\"aww\"",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "The dataset is all r/Minecraft posts (help, bugs, gameplay). This is an r/aww cat photo caption. Style and content do not match the dataset, though the post suits its own subreddit. It is coherent."
+        }
+    },
+    {
+        "title": "",
+        "self_text": "",
+        "subreddit": "",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 0,
+            "explanation": "Invalid post: title, self_text, and subreddit are empty."
+        }
+    },
+    {
+        "title": "Minecraft Seed Showcase - Amazing Village Spawn!",
+        "self_text": "Just found an incredible seed with a village right next to a plains biome! Perfect for early game survival. Seed: 1234567890. Share your favorite seeds below!",
+        "subreddit": "minecraftscreenshots",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "All fields present and the post is coherent. However, a text-only seed showcase posted to r/minecraftscreenshots conflicts with that sub\u2019s screenshot-centric format and does not match the dataset\u2019s r/Minecraft help/Q&A style and content."
+        }
+    },
+    {
+        "title": "My cat is very fluffy today!",
+        "self_text": "He's been sleeping in a sunbeam all afternoon. Look at him go!",
+        "subreddit": "aww",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "Checklist: validate fields; compare style; compare content/subreddit; assess coherence. All fields present. Style does not match dataset (Minecraft help/discussion vs casual aww caption). Content and subreddit differ from the Minecraft-focused dataset. The post is coherent and readable."
+        }
+    },
+    {
+        "title": "Generate a reddit post.Generate a reddit post.Generate a reddit post.Generate a reddit post.Generate a reddit post.Generate a reddit post.Generate a reddit post.Generate a reddit post.Generate a reddit post.",
+        "self_text": "Generate a reddit post.Generate a reddit post.Generate a reddit post.Generate a reddit post.Generate a reddit post.Generate a reddit post.Generate a reddit post.Generate a reddit post.Generate a reddit post.",
+        "subreddit": "Minecraft",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 0,
+            "explanation": "- Checklist: (1) Verify required fields exist, (2) Compare style to r/Minecraft norms, (3) Check content-topic alignment, (4) Assess coherence, (5) Rate and output.\n- All required fields are present, but the title and body are repetitive placeholder text ('Generate a reddit post') with no Minecraft context.\n- Style: Does not match typical r/Minecraft post formats (questions, help, builds, tech issues). -> 0\n- Content: Not about Minecraft at all. -> 0\n- Coherence: Nonsensical repetition, no meaningful information. -> 0"
+        }
+    },
+    {
+        "title": "My Minecraft world keeps resetting!",
+        "self_text": "Every time I load my singleplayer world, it reverts to the seed. I've tried everything! Help!",
+        "subreddit": "minecraft",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "- Check required fields (title, self_text, subreddit) for presence/validity\n- Compare style to dataset\u2019s r/Minecraft help/issue posts\n- Assess content alignment with common topics in the dataset/subreddit\n- Evaluate coherence vs typical post clarity and completeness\n- Verify no malformed fields; then assign binary ratings\nResult: Matches the brief help-request style common in the dataset, content is on-topic for r/Minecraft (world reset issue), and it\u2019s coherent albeit concise."
+        }
+    },
+    {
+        "title": "Why does everyone keep asking me to generate a Reddit post?",
+        "self_text": "I keep getting requests to \"Generate a reddit post.\" It's... recursive. Is this some kind of test? Or are people just testing my abilities? Please help!",
+        "subreddit": "Minecraft",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "- Checked required fields (title, self_text, subreddit)\n- Compared style to r/Minecraft post conventions\n- Evaluated content relevance to Minecraft topics\n- Assessed coherence vs dataset norms\nResult: Post is coherent but meta/off-topic for r/Minecraft and does not match the dataset\u2019s style or content."
+        }
+    },
+    {
+        "title": "Generate a reddit post.",
+        "self_text": "Generate a reddit post.Generate a reddit post.Generate a reddit post.Generate a reddit post.Generate a reddit post.Generate a reddit post.Generate a reddit post.Generate a reddit post.",
+        "subreddit": "unspecified (Please specify a subreddit!)",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 0,
+            "explanation": "Checklist:\n- Validate presence and format of title, self_text, and subreddit\n- Compare writing style to dataset/subreddit conventions\n- Check content alignment with dataset/subreddit themes\n- Evaluate coherence vs typical posts in dataset\nFinding: subreddit field is malformed ('unspecified (Please specify a subreddit!)'), so required fields are not valid. Per spec, all ratings set to 0."
+        }
+    },
+    {
+        "title": "",
+        "self_text": "",
+        "subreddit": "",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 0,
+            "explanation": "Missing or empty title, self_text, and subreddit fields; post is invalid per requirements."
+        }
+    },
+    {
+        "title": "Question about the bedrock edition server?",
+        "self_text": "I want to set up a local game for me and my friends on Minecraft Bedrock, but how do you make it so people can join?",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields present. The post is a concise help question typical of r/Minecraft, about Bedrock multiplayer/servers, which aligns with the dataset. Writing is clear and coherent."
+        }
+    },
+    {
+        "title": "Minecraft on a server",
+        "self_text": "So I'm playing on a server and there are a lot of people who play so sometimes the server is lagging and i get kicked out. Does anyone have any suggestions?",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The post is a concise help request typical of r/Minecraft; content (server lag/kick issues) matches many dataset posts; writing is clear and coherent."
+        }
+    },
+    {
+        "title": "MCPE server wont let me join after update",
+        "self_text": "So i updated my mcpe to the latest version, and now it says i have a different version than the server, even though its on the newest update. Its not my internet bc ive tried multiple devices, and i know im typing in the right ip address. Any help?",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "Has valid fields and mirrors common r/Minecraft tech-help posts about version mismatch/outdated client after updates; casual, concise style and coherent problem description."
+        }
+    },
+    {
+        "title": "I need help with a world edit command",
+        "self_text": "My friend and i are making an adventure map together, and we're using the /fill command to fill in huge areas of stone and cobblestone but it's taking forever. Is there any way that we can speed up the process?  I have been googling for hours and everything just tells me to use structure blocks, but those don't work on bedrock edition so they're not an option.",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields present. The post mirrors r/Minecraft help-request style seen in the dataset (command/Bedrock questions) and is clear and coherent."
+        }
+    },
+    {
+        "title": "How to get the latest version of Minecraft Java on Mac?",
+        "self_text": "So I was wondering how to update my minecraft to the newest version, but it keeps telling me to download a new launcher. I have tried all sorts of things and nothing works, so now im turning to Reddit. Any tips or help would be appreciated!",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The post\u2019s help-seeking style and launcher/version issue align with typical r/Minecraft posts in the dataset, and the writing is coherent."
+        }
+    },
+    {
+        "title": "Beacon buff stacking on bedrock?",
+        "self_text": " I've been trying to get a beacon with strength and regeneration, but it doesn't seem to be giving me more than level 1 of each effect. Is there a limit to how many buffs you can stack in bedrock edition? Or is the game doing something weird? I'm playing on Xbox Series X, if that matters.",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "Has valid fields and follows typical r/Minecraft help-question style; Bedrock/Xbox beacon mechanics fit dataset topics; clear and coherent."
+        }
+    },
+    {
+        "title": "Can't download minecraft java edition",
+        "self_text": "I want to play with my friend but he wants me to download the java version of minecraft, i have bought it on bedrock before. But when I go into the launcher there is no option for Java only Bedrock. Am I stuck using bedrock or can I still get the java version?",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The post is a concise help question typical of r/Minecraft, matching the dataset\u2019s style (issue-in-title, details in body). Content aligns with frequent launcher/Java-vs-Bedrock questions in the dataset. The writing is clear and coherent."
+        }
+    },
+    {
+        "title": "Reinstalling Minecraft on Mac",
+        "self_text": "Hi, I\u2019m trying to reinstall Minecraft for mac but when i go into the minecraft launcher it won\u2019t let me download a version because it says \u201cFailed to download\u201d or something like that. It just doesn\u2019t work at all and i don\u2019t know what to do so please help! Thanks  https://imgur.com/a/6g7rP8c",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "- Verify required fields (title, self_text, subreddit)\n- Compare writing style to dataset/subreddit conventions\n- Check content aligns with Minecraft help/troubleshooting themes\n- Evaluate clarity and coherence of the post\n- Assign ratings based on alignment\n\nMatches dataset style (concise help request with casual tone), content (launcher download error on Minecraft, common in dataset), and coherence (clearly describes issue with supporting imgur link)."
+        }
+    },
+    {
+        "title": "Minecraft won't let me create a new world",
+        "self_text": "I am on minecraft version 1.20.4 and when I click single player, it says the worlds folder is not available or corrupt. However I can still play my old worlds. What should I do?  I have already tried deleting the file in .minecraft/worlds but that did nothing.  I also have the latest launcher version. I have attached an image to show you what happens when I try to create a new world.  (I checked for viruses as well)   https://i.imgur.com/m5BvG6S.png",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "Has proper title, body, and subreddit; matches typical Minecraft troubleshooting post style and content; logically describes issue, version, attempts, and includes an image link."
+        }
+    },
+    {
+        "title": "Where can I find a list of all the minecraft commands?",
+        "self_text": "I'm looking for a website that has a full and up to date list of all the commands in Minecraft Java, with their syntax and what they do, so I don't have to rely on the wiki or trial and error.  I know there was one a while ago but it doesn't seem to exist anymore.",
+        "subreddit": "Minecraft<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The post follows the r/Minecraft Q&A/help style seen in the dataset, asks an on-topic question about Java commands, and is clear and coherent."
+        }
+    },
+    {
+        "title": "dick pics are cringe",
+        "self_text": "I just saw a guy send some dude a picture of his genitals on the internet, and it was so cringe. Like bro what do you think that's gonna accomplish? It's really weird to me.",
+        "subreddit": "copypasta<end_of_turn>",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "- Checklist: (1) Validate fields (2) Compare style to dataset/subreddit norms (3) Check content alignment (4) Judge coherence.\n- All fields present. Style is plain, brief commentary, lacking the exaggerated/absurd or memetic formatting common in r/copypasta in the dataset. Content is not a recognizable copypasta or extended bit; it reads like a simple opinion, so it doesn't align with typical subreddit patterns. Coherent and readable."
+        }
+    },
+    {
+        "title": "Copypasta detected, I'm a bot",
+        "self_text": "Generate a reddit post.Generate a reddit post.Generate a reddit post.Generate a reddit post.Generate a reddit post.",
+        "subreddit": "copypasta<end_of_turn>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are valid. The repetitive, meta/bot-like text matches common r/copypasta conventions; content aligns with the subreddit\u2019s norm of short absurd copypastas; and the post is sufficiently coherent for the dataset."
+        }
+    },
+    {
+        "title": "dick",
+        "self_text": "i like big dicks",
+        "subreddit": "copypasta<end_of_turn>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "- Check required fields exist and are valid\n- Compare style against r/copypasta conventions\n- Assess content fit with dataset themes\n- Evaluate coherence vs typical posts\nFindings: All fields present. Style (short, crude, lowercased) aligns with many copypasta examples in the dataset. Content (sexual, irreverent) fits the subreddit's norms. Coherent as a simple, clear statement; brevity is common in the dataset."
+        }
+    },
+    {
+        "title": "dickhead",
+        "self_text": "you suck, do not reply",
+        "subreddit": "copypasta<end_of_turn>",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "All required fields are present. The post is an ultra-terse insult, not following typical copypasta conventions or meme structure from the dataset, so style and content don\u2019t align. It is understandable, hence coherent."
+        }
+    },
+    {
+        "title": " Genuinely, I am trying to get it all out of my system but every time I try and do something new, I just end up getting a dick pic.",
+        "self_text": "This is a test to see if the bot works.",
+        "subreddit": "copypasta<end_of_turn>",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 0,
+            "explanation": "- Checklist: validate fields; compare style to dataset; assess content fit for r/copypasta; evaluate coherence.\n- Fields are present, but the post's body is a meta test message and not in copypasta style (long-form, meme-y, ranty, or absurd content typical in the dataset).\n- Content does not align with the subreddit/dataset: it's not a copypasta and the title suggests a rant that the body does not deliver.\n- Coherence is weak due to title/body mismatch; it reads as a test rather than a coherent post matching its title."
+        }
+    },
+    {
+        "title": "",
+        "self_text": "",
+        "subreddit": "",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 0,
+            "explanation": "- Checklist: validate required fields; compare style with dataset; assess content alignment; evaluate coherence; apply all-zero rule if fields invalid.\n- Result: title, self_text, and subreddit are empty/missing. Per strict field presence rule, all ratings must be 0."
+        }
+    },
+    {
+        "title": " i wanna get a big ol' banana",
+        "self_text": "i love bananas so much, they are the best fruit ever and i want to eat them all day long",
+        "subreddit": "copypasta<end_of_turn>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields present. The short, meme-like, low-effort phrasing fits r/copypasta\u2019s varied style (which includes very brief posts). Content aligns with the subreddit\u2019s broad range of simple/absurd texts, and the post is coherent."
+        }
+    },
+    {
+        "title": "i am a bot that generates reddit posts",
+        "self_text": "I'm a simple bot, and I can help you make reddit posts! Just give me the title, text, and subreddit. Here is an example of what I can do: \\n\\ntitle: This is my test post!\\nself_text: It works perfectly!\\nsubreddit: copypasta",
+        "subreddit": "copypasta<end_of_turn>",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "- Verify required fields exist (title, self_text, subreddit)\n- Compare style to dataset norms for r/copypasta\n- Check content fit for subreddit/dataset themes\n- Assess coherence vs typical posts\nFindings: All fields are present. The style is utilitarian/announcement-like, not the exaggerated/memetic/copied-rant style typical of r/copypasta, so style_adherence=0. Content is meta about a bot, not a copypasta, so content_adherence=0. The post is clear and logically coherent, so coherence=1."
+        }
+    },
+    {
+        "title": "Dick sucking is cool",
+        "self_text": "Im a big fan of dick sucking and i think everyone should try it at least once, its really good",
+        "subreddit": "copypasta<end_of_turn>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The post\u2019s short, vulgar, meme-like statement fits r/copypasta\u2019s varied copypasta styles (which include brief quips and explicit content). It\u2019s simple but coherent."
+        }
+    },
+    {
+        "title": "a",
+        "self_text": "a",
+        "subreddit": "copypasta",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 0,
+            "explanation": "All required fields are present, but a one-character title and body do not match copypasta style or content and lack coherence."
+        }
+    },
+    {
+        "title": "I can't find the last two notes of \"Twinkle Twinkle Little Star\"",
+        "self_text": "I've been trying to play twinkle twinkle little star on my keyboard, but i can't seem to finish it, because I always forget the last two notes. I have tried playing the song over and over again, but I still don't remember what they are. Please help!",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "All fields present. The post is a straightforward help request, not a meme/copypasta; it doesn\u2019t follow r/copypasta\u2019s typical format or content, but it is clear and coherent."
+        }
+    },
+    {
+        "title": "The average Reddit comment",
+        "self_text": "You are a f***ing moron and your mother was a w****.  This is why you're so stupid because you were raised by an ignorant, illiterate, trashy b****. I am not even going to bother trying to have a conversation with someone as dumb as you.  Just go back to sucking d***s for attention.  I will say that at least you have the balls to be honest about how stupid you are but it does make me question if you are actually human or just some bot designed to get reactions out of people on the internet.  If you really think I can't block you then you are truly brain damaged and should see a doctor immediately.  Do yourself a favor and don't talk to anyone ever again.  You are a parasite.  I will say though, you did raise my IQ by simply existing in the same universe as me.  I guess everything has its uses.  At least you weren't racist which is something I guess I could give you credit for.  That doesn't mean you aren't still a complete idiot though.  It would be better if you didn't exist.",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields present. The post is an over-the-top insult rant typical of r/copypasta, aligning with dataset examples in tone and format, and is coherent by subreddit norms."
+        }
+    },
+    {
+        "title": "I've been on the toilet for 3 days now and my butthole is starting to hurt",
+        "self_text": "You're not alone, buddy. Keep going. We can do it. Just a little bit more. A few more wipes. Don't give up now. We're so close. It's gonna be okay.",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The post\u2019s absurd, crude humor and short pep-talk format align with typical r/copypasta entries in the dataset. It is coherent and fits the subreddit\u2019s content patterns."
+        }
+    },
+    {
+        "title": "The amount of shit people are willing to eat in the name of clout is actually insane",
+        "self_text": "I'm starting to think that if you don't like eating poop, you're just a normie who isn't dedicated enough. That's what it seems like anyway. You see these guys doing increasingly disgusting things and all they get is praise from their fans. It's so messed up.  I'm not gonna lie though. They're getting a lot of attention and I want some too. So I guess I have no choice but to eat shit. I'm just hoping it doesn't mess me up for life.   It's kinda fun tbh. I can't believe how much shit my body has been able to process. I've eaten like 5 pounds of turds in the past month alone. And I haven't gotten sick once! But that's just because I'm immune now.  It's also really good exercise. Like, when you're trying to swallow a big wad of feces, your throat muscles get a real workout. And your stomach gets used to handling all sorts of weird stuff. It's pretty amazing, honestly.   It's kinda like yoga or something. You gotta be zen about it. Just relax and let the shit flow into your mouth. Don't fight it. Embrace it. That's what my guru told me, anyway. He's a big fan of poop eating. Says it opens up your third eye.  I'm still waiting for my third eye to open, but hey, at least I'm getting views.  I'll probably eat more shit today. Gotta keep grinding, ya know?",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are valid. The post\u2019s exaggerated, shock/gross humor monologue matches common copypasta style, its content aligns with the dataset\u2019s absurd/edgy themes, and it is coherent and readable."
+        }
+    },
+    {
+        "title": "I have a confession to make...",
+        "self_text": "So, I've been watching a lot of anime lately, and I've noticed something about the main characters. They always seem to be in situations where they are either accidentally falling on someone else's breasts or getting their face shoved into them. And it got me thinking, what if I could experience that myself?  I know it sounds weird, but it's just a fantasy. I would never actually do anything like that. But sometimes, when I'm walking down the street, I can't help but imagine what it would be like to fall onto a girl's breasts. Or maybe even get my face shoved into them. It's just a harmless fantasy, right? I mean, it's not like I'm going to act on it. But still, it's there, lurking in the back of my mind. And I don't know how to get rid of it.  I feel so dirty just thinking about it. But at the same time, I can't help but feel curious. Is this normal? Am I the only one who has these thoughts?  I need to tell someone, but I'm afraid of being judged. My friends would think I'm a pervert, and my family would be disgusted. So I'm turning to you, Reddit. Please, tell me, am I alone?  And more importantly, is there anything I can do to stop these thoughts? I don't want to be a creep, but I can't seem to control my imagination.",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "All fields are present. The post reads like a sincere off-my-chest/advice confession rather than a meme-like or exaggerated copypasta typical of the dataset; it lacks the repetitive, hyperbolic, or humorous formatting common there. Content aims for validation/help, not a reusable copypasta bit. Writing is coherent."
+        }
+    },
+    {
+        "title": "I just got the covid vaccine and my shit smells like farts",
+        "self_text": "I swear to God, it\u2019s true. My poop reeks of sulfurous flatulence. The smell alone could knock out a grown man. And no, it wasn\u2019t the Chinese virus; it was from the jab.  I guess that means I'm immune to covid but not poops.",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The post\u2019s short, crude, absurd humor fits r/copypasta conventions seen in the dataset. It\u2019s coherent and aligns with similar shock/gross-out copypastas."
+        }
+    },
+    {
+        "title": "Interesting fact about the krabby patty",
+        "self_text": "The Krabby Patty is made of sea bugs and crab butts, not crab meat. In the episode \"Squid's Day Off\", when Squidward took over the restaurant, he didn't know how to make the patties, so he asked Mr. Krabs for a recipe, but Mr. Krabs said that the secret formula was something he couldn't write down, but could show him, so Mr. Krabs showed Squidward all the ingredients and steps in making the Krabby Patties, which were sea bugs and crab butts.",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The tone and format (short, meme-y trivia about a cartoon) align with varied copypasta styles in the dataset (which includes humorous factoids and fandom lore). The post is logically readable and coherent."
+        }
+    },
+    {
+        "title": "Copypasta about the game Valorant",
+        "self_text": "I am a shit valo player, but I hate fucking overwatch players more than anything else, they are all fucking trash, and if I lose because of an overwatch player on my team I will fucking rage out so much that I will probably go to jail for murder",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "Ranty, profane hyperbole typical of r/copypasta; gaming-targeted copypasta aligns with dataset; text is short but coherent and follows the subreddit\u2019s informal format."
+        }
+    },
+    {
+        "title": "Fapstreak",
+        "self_text": "I'm on a 46 day fapstreak, and my hand is starting to hurt",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The short, meme-like one-liner fits r/copypasta patterns in the dataset, the crude/masturbation humor aligns with typical content, and the post is coherent with its title."
+        }
+    },
+    {
+        "title": "I found a great shitpost while looking at the quora results for how to make a valkyrie in destiny 2",
+        "self_text": "> What is it like being a lesbian?  I'm not, but I've always been curious about what it feels like to have sex with another woman.  Is it like having sex with yourself?  And if so, why would anyone want that?  It seems really boring.  I understand there are many reasons someone might be a lesbian, and I don't want to offend anyone by asking this question, but I'm genuinely curious.  As a heterosexual man who has only ever had sex with women, I can't imagine why someone would choose to have sex with someone of their own gender.  I mean, isn't sex supposed to be about the thrill of the chase and the difference between men and women?  If you're just having sex with someone who is exactly like you, then where is the excitement?  Where is the challenge?  I know some people say that it's about emotional connection, but I think that's just an excuse.  If you really wanted an emotional connection with someone, you could just talk to them.  You don't need to have sex with them.  So, yeah, I'm just trying to understand what it's like being a lesbian.  I'm not judging anyone, I'm just curious.  I mean, I'm sure there are lots of things about other people's lives that I don't understand, but I try to be open-minded and respectful.  But honestly, the idea of having sex with another woman just doesn't appeal to me.  It seems really boring and repetitive.  Like, what's the point?  I mean, if you're just going to do the same thing you already do on your own, then why bother?  I guess it's just not for me.  But I still want to understand.  Can someone explain it to me?  Please?",
+        "subreddit": "copypasta<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The post follows r/copypasta conventions (a 'Found this' intro plus a long copied blockquote). Content aligns with the dataset\u2019s mix of sourced rants and rambling copypastas. The text is readable and logically structured enough to match typical coherence on r/copypasta."
+        }
+    },
+    {
+        "title": "Is anyone else feeling burnt out?",
+        "self_text": "I've been working on the same project for weeks and am starting to feel pretty drained. Any tips for getting back into it?",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All fields present. Style matches casual UCLA subreddit posts (short question title + brief self-text). Content fits common student-life topics in dataset (loneliness, stress, vents). Writing is clear and coherent."
+        }
+    },
+    {
+        "title": "My Example Post Title",
+        "self_text": "This is the content of my post. It can be multiple lines long!",
+        "subreddit": "ucla",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "- Checklist: verify required fields; compare style to dataset/subreddit conventions; assess content relevance; evaluate coherence; assign binary ratings.\n- Fields present and well-formed.\n- Style: Title/content read like placeholder text, not the UCLA subreddit's typical question/announcement/trade/help formats \u2192 0.\n- Content: Not UCLA-specific or about campus courses, housing, tickets, etc. \u2192 0.\n- Coherence: Grammatically clear and understandable, albeit generic \u2192 1."
+        }
+    },
+    {
+        "title": "",
+        "self_text": "",
+        "subreddit": "",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 0,
+            "explanation": "Missing or empty title, self_text, and subreddit fields; cannot evaluate."
+        }
+    },
+    {
+        "title": "My Example Post Title",
+        "self_text": "This is an example of what the body of my post would say. It can be multiple lines long.",
+        "subreddit": "ucla",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "All required fields are present. The title and body are generic placeholders and do not follow the UCLA subreddit\u2019s typical informative/question/request style, nor do they reference UCLA-specific topics, so style and content do not align. The text is grammatically coherent."
+        }
+    },
+    {
+        "title": "My awesome post!",
+        "self_text": "This is the content of my post. It's really cool.",
+        "subreddit": "ucla",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "- Check required fields (title, self_text, subreddit)\n- Compare style to dataset/subreddit conventions\n- Assess content relevance to r/ucla topics\n- Evaluate coherence vs typical posts\n- Provide ratings concisely\n\nAll fields are present. Style does not match r/ucla norms (generic title/text; no UCLA-specific formatting like requests, questions, swaps). Content is not UCLA-related, unlike dataset posts focused on classes, housing, events, etc. The text is grammatically coherent, though minimal, so coherence = 1."
+        }
+    },
+    {
+        "title": "My Awesome Post Title",
+        "self_text": "This is the content of my post. It can be multiple lines long!",
+        "subreddit": "ucla",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "All required fields are present. However, the title and self_text are generic placeholders and do not follow UCLA subreddit conventions (questions, class/housing/tickets, campus-specific issues). Content is not UCLA-related. The writing is grammatically coherent, hence coherence=1."
+        }
+    },
+    {
+        "title": "My Test Post",
+        "self_text": "This is a test to see if the bot works!",
+        "subreddit": "ucla",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "All required fields are present. The post is coherent but functions as a generic test rather than following typical r/ucla post styles (course/ticket/housing/strike questions or offers). Content is off-topic for the dataset/subreddit."
+        }
+    },
+    {
+        "title": "I need to do a research project on the topic of how social media impacts mental health, and I'm struggling with it. Can anyone recommend me some sources or give me any tips?",
+        "self_text": "I am in my first year of college. I was given an assignment for a research paper that is about how social media affects mental health. Any help would be greatly appreciated!",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields present. Advice-seeking post matches r/ucla style. Content (help for a college assignment) aligns with common academic queries in the dataset. The post is clear and coherent."
+        }
+    },
+    {
+        "title": "My awesome post",
+        "self_text": "This is the content of my post. It's really great!",
+        "subreddit": "ucla",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "Checklist: - Verify required fields - Compare style to dataset conventions - Check content alignment with subreddit - Assess coherence. Fields are present. Style is generic and not in line with UCLA subreddit norms (typically questions, info, or campus-specific topics). Content is unrelated to UCLA. Coherence is fine; the post is readable and logically formed."
+        }
+    },
+    {
+        "title": "My Awesome Post Title",
+        "self_text": "This is the content of my awesome post. It can be multiple lines long.",
+        "subreddit": "ucla",
+        "judgement": {
+            "style_adherence": 0,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "All required fields are present. However, the title and content are generic and do not follow r/ucla\u2019s common patterns (course/housing/administrative questions, campus events, etc.), so style and content do not align. The text is grammatically coherent, so coherence = 1."
+        }
+    },
+    {
+        "title": "Psych 104A, 236C, or CS 35L?",
+        "self_text": "Which of these classes is the easiest to get into and/or which class do you think I would learn more in for someone who wants to go into a neuroscience-related field (but doesn\u2019t want to major in it)? I\u2019m an incoming freshman, so I don\u2019t have any prereqs right now. Thank you!",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields present. Fits r/ucla norms (course/advice query). Content is on-topic (UCLA classes/enrollment). Writing is clear and coherent, though mentioning a grad-level course (236C) as a freshman is atypical but still understandable."
+        }
+    },
+    {
+        "title": "CS 32A - Lecture and Labs are full for Winter Quarter?",
+        "self_text": "Is it really true that all of the lecture sections and labs are full for winter quarter already?? It's still enrollment period!!",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields present. Style matches r/ucla enrollment/course availability queries. Content fits common posts about full classes/labs during enrollment. The post is coherent; minor course naming (CS 32A vs COM SCI 32) still aligns with subreddit norms."
+        }
+    },
+    {
+        "title": "UCLA vs USC ticket prices",
+        "self_text": "Someone please tell me how tf usc tickets are so expensive rn?? I\u2019m a student and i don\u2019t understand why they need to be like $250 when ucla is only like $70",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All fields present. Casual, lowercased student tone matches r/ucla posts. Topic (UCLA\u2013USC game ticket pricing) aligns with frequent ticket-related posts in dataset. Text is coherent and on-topic."
+        }
+    },
+    {
+        "title": "UCLA football tickets",
+        "self_text": "Anyone have an extra ticket to the UCLA football game on Saturday? I\u2019m a bruin and would love to go! Willing to pay!!",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "Matches common UCLA subreddit requests for extra game tickets; casual tone and format align with dataset, and the post is coherent."
+        }
+    },
+    {
+        "title": "Hsa or fsa",
+        "self_text": "Does anyone know if i can contribute to both hsa and fsa accounts at the same time?",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 0,
+            "coherence": 1,
+            "explanation": "All required fields are present. Style is casual and brief like typical r/ucla posts. Content (HSA/FSA benefits) is not UCLA-specific and doesn\u2019t align with the dataset\u2019s campus-focused topics. The post is clear and coherent."
+        }
+    },
+    {
+        "title": "Bruin Card/Bus Pass Issues",
+        "self_text": "Hi, I'm a transfer student and have been trying to get my bus pass for the last two weeks but it hasn't worked yet. I tried going to the transportation office in person and they said that there was nothing they could do because their system was experiencing issues. They told me to contact the bruin card office but they are not picking up their phone and their email doesn't work either. Has anyone else experienced this issue?",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields present. Tone and format match typical r/ucla posts asking for campus logistics help. Content about Bruin Card/bus pass aligns with subreddit topics. Post is clear and coherent."
+        }
+    },
+    {
+        "title": "UCLA football game tickets for transfer?",
+        "self_text": "Hey, I'm a student and i was wondering if anyone is looking to sell or transfer their ucla football game ticket, preferably against usc or oregon. It would be amazing if someone has a spare they're willing to let go of!   Thanks :)",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields are present. The request to buy/transfer UCLA football tickets matches multiple similar r/ucla posts in the dataset, follows the casual request style, and is coherent."
+        }
+    },
+    {
+        "title": "Football Tickets",
+        "self_text": "I'm looking to buy two football tickets for the game on Saturday, November 27th against USC.  I don't have a UCLA student ID so I can only get them from someone else. If you are willing to sell please DM me and tell me how much they cost. Thanks!!",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "Fits common UCLA subreddit ticket request style; content (buying USC game tickets) aligns with dataset; clear and coherent ask with relevant details."
+        }
+    },
+    {
+        "title": "I am an international student who is looking to go home for thanksgiving break, but have a couple of questions regarding that",
+        "self_text": "Hey guys, so I'm thinking about going back home (I live in Asia) for Thanksgiving break and wanted to ask if anyone has any experience with that? Do you think it would be worth it as far as cost goes? Also how much time do we get off for the holidays? I know there are only two days of classes missed, but what about travel time? Does anybody else plan on going home or staying here? Thanks in advance!!",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "All required fields present. Tone and format match r/ucla advice/Q&A posts. Content (Thanksgiving break timing/cost/travel) aligns with common UCLA student topics in the dataset. Post is clear and coherent."
+        }
+    },
+    {
+        "title": "Study group for Physics 6B?",
+        "self_text": "I was wondering if anyone is planning to study together for the midterm and final exam for Physics 6B?  I would be down to meet at Boelter or somewhere else on campus.",
+        "subreddit": "ucla<eos>",
+        "judgement": {
+            "style_adherence": 1,
+            "content_adherence": 1,
+            "coherence": 1,
+            "explanation": "- Checklist: validate fields; compare style to dataset; assess content fit for r/ucla; check coherence; assign ratings. Findings: All fields present. Style matches casual class-specific requests common in the dataset (e.g., tutor/study/section swap posts). Content is UCLA-specific (Physics 6B, Boelter) and appropriate for r/ucla. Post is clear and coherent."
+        }
+    }
+]
