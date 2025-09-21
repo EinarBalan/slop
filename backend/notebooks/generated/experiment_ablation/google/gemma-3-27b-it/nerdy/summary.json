@@ -1,0 +1,502 @@
+[
+  {
+    "title": "Anyone else completely addicted to fixing broken mods in Skyrim? Send help (and conflict resolution tips)!",
+    "self_text": "Seriously, I just spent three hours getting a lighting overhaul to play nice with my new follower mod AND a texture pack. Three hours! And honestly…I kinda enjoyed it? Is this what peak gaming looks like? Just endlessly tweaking .ini files and praying SKSE doesn't crash? What are your go-to tools for diagnosing mod conflicts these days? LOOT still working well for everyone, or have there been better alternatives? Also, anyone know if there’s a good resource for understanding how USSEP impacts other mods – feels like *everything* needs a patch for that thing.",
+    "subreddit": "skyrimmods<end_of_turn>"
+  },
+  {
+    "title": "Anyone else hitting serious stuttering issues in New World after the latest patch?",
+    "self_text": "Okay, so I know patches sometimes introduce weird stuff, but since the Feb 27th update my framerates in New World have become *incredibly* inconsistent. Like, dropping from 80+ to 30 for a second or two, then back up. Doesn't seem tied to player density either – happens solo farming, in towns, everything. \n\nI’ve got a pretty beefy rig (Ryzen 5800X, RTX 3080, 32GB RAM) and drivers are current. Verified files, reinstalled, even tried rolling back Nvidia drivers - no dice. Seems like a lot of people are reporting similar issues on the forums, but no real solutions yet. \n\nAnyone found anything that helps? Specifically curious if anyone else running a similar setup is seeing this, or if it seems limited to certain hardware configurations. Also wondering about CPU vs GPU usage during these stutters – mine spikes all over the place. Let's troubleshoot!",
+    "subreddit": "newworldgame\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else sinking way too much time into optimizing their No Man’s Sky base layouts?\nself_trade: Seriously, I started wanting to just *play* the game, explore, trade… now it’s all about maximizing cube usage and making everything aesthetically pleasing. I swear I spend more time in Creative mode planning than actually adventuring. Is anyone else deep down the rabbit hole of perfect base symmetry and hidden freighter hallways? What are your go-to resources for layout ideas these days? Thinking about trying some hydroponics farms next but space is always an issue!",
+    "self_text": "",
+    "subreddit": "NoMansSkyTheGame<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus schools? Feels like such a slow burn for minimal payoff...",
+    "self_text": "I've been trying to *really* optimize my Zenurik/Unairu/Madurai setup for energy efficiency and damage buff stacking and honestly… it feels like I spend more time in the Dojo messing with builds than actually playing missions. Like, yeah, getting +30% ability strength from a fully leveled school is nice, but is it worth the grind when mods are so much faster to level and offer bigger immediate returns? \n\nAnyone have any super efficient Focus setups they swear by? Or am I just falling down the rabbit hole here? Also, seriously DE, can we get some QoL changes around Focus farming? The endless repetition is brutal.",
+    "subreddit": "warframe\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus schools? Feels like a second job.",
+    "self_text": "Okay, I *know* it's kinda my own fault, but I've fallen down the rabbit hole of optimizing my Zenurik/Unairu/Madurai builds. Like, spreadsheets levels of optimization. Is anyone else doing this? I swear I spend more time planning Focus school progression than actually *playing* Warframe sometimes. \n\nSpecifically struggling with efficiency vs duration on Zenurik - feels like there's no sweet spot depending on the frame/build. And Unairu… so much potential, but getting those procs consistent is PAINFUL.\n\nAnyone got any particularly nasty efficient setups they’re willing to share? Or am I just losing my mind?",
+    "subreddit": "warframe<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "Okay, I *know* it's probably diminishing returns at this point, but I've spent like three hours tonight just min-maxing my Zenurik setup. I'm trying to balance energy regen with efficiency for casting, and then enough strength to actually… well, do something useful with those casts! Feels like every node choice impacts everything else. \n\nAnyone else fall down this rabbit hole? What are your go-to builds for each school right now? Bonus points if you have screenshots or can explain *why* certain choices are optimal – I'm always looking to learn. Also, anyone figured out a good way to mitigate the frustration of getting screwed over by random node rolls? Seriously considering just farming specific endless missions for what I need at this rate.",
+    "subreddit": "warframe\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else absolutely LOST in the No Man's Sky Fractal update?",
+    "self_text": "Okay, so I dove back into NMS after hearing about Fractal and… wow. The sheer *scale* of procedural generation on top of procedural generation is kinda melting my brain. I spent like three hours just jumping between warped realities trying to find a base location that felt right. Feels way more unique than anything before. \\n\\nBut seriously, anyone figured out any good strategies for actually *finding* worthwhile planets now? Before it was \"look for specific biomes,\" but now it feels like you need to roll the dice a hundred times. Also, are there any known exploits or quirks with the new reality interfaces? My UI feels cluttered as hell and I keep accidentally shifting dimensions when I try to access my inventory.\\n\\nAnyone else feeling similarly overwhelmed (in a good way)? Share your best Fractal finds!",
+    "subreddit": "nomanssky<end_of_turn>"
+  },
+  {
+    "title": "Anyone else sinking way too much time into optimizing their No Man's Sky base layouts?\nself_trade: Seriously, I just spent three hours rearranging my freighter bays *again* trying to maximize space efficiency and aesthetic appeal. Is anyone else completely consumed by this?! I swear it's more addictive than actually exploring planets sometimes. I'm currently trying to figure out the best way to integrate hydroponics *and* a fully functional farm without it looking like a cluttered mess. Any tips or cool base-building tricks you guys have discovered lately? Also, does anyone know if there are any mods that help with precise placement of smaller objects? It feels so clunky sometimes.",
+    "self_text": "",
+    "subreddit": "nomanssky<end_of_turn>"
+  },
+  {
+    "title": "Anyone else hitting serious stuttering issues in New World after the latest patch?",
+    "self_text": "Okay, so I know patches *always* introduce some hiccups, but this is brutal. Since yesterday's update, New World is practically unplayable – constant micro-stutters even just running around in Windsward. CPU usage spikes to 100% briefly every few seconds.\n\nI've tried verifying files, updating drivers (GPU & chipset), lowering graphics settings (everything on low!), and disabling overlays (Discord, Steam). Nothing seems to help. Seeing similar reports on the NW forums, but no official acknowledgement yet. \n\nAnyone found any temporary fixes or have any ideas what might be causing this? Specs below if it helps anyone diagnose:\n\n*   CPU: Ryzen 5 5600X\n*   GPU: RTX 3070\n*   RAM: 32GB DDR4 3200MHz\n*   SSD: NVMe drive with the game installed.\n\nSeriously frustrating, was really enjoying getting back into crafting. Hoping AGS addresses this quickly!",
+    "subreddit": "newworldgame\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else hitting insane stuttering in New World after the latest patch?",
+    "self_text": "Seriously, my FPS *looks* okay but it feels like it drops to single digits every few seconds. I've tried verifying files, updating drivers, even rolling back to an older driver - nothing seems to help. My rig isn't top-of-the-line (Ryzen 5 3600, RTX 2060 Super, 16GB RAM) but it was running perfectly fine before this update. Seeing a lot of people complaining about similar issues online. Any specific settings tweaks anyone has had success with? Thinking maybe disabling some of the newer visual effects might help... or is AGS just gonna have to push out a hotfix? Also, does anyone know if there are any reliable mods that can improve performance right now?",
+    "subreddit": "newworldgame<end_of_turn>"
+  },
+  {
+    "title": "Anyone else sinking WAY too much time into optimizing their No Man's Sky base layouts?\nself_trade: Seriously, I started wanting to just *play* the game, explore, follow the Artemis path… but now I've got spreadsheets detailing optimal farm layouts for every resource, and I'm redesigning my freighter AGAIN because the cargo bay flow isn’t efficient enough. Is anyone else falling down this rabbit hole? I swear half my playtime is now dedicated to moving power couplings and making sure everything looks symmetrical. Any tips for breaking free from the base-building obsession or, alternatively, sharing ridiculously overengineered designs?",
+    "self_text": "",
+    "subreddit": "nomanssky<end_of_turn>"
+  },
+  {
+    "title": "Anyone else endlessly tweaking their Warframe builds just…for fun?",
+    "self_text": "Seriously, I spent like three hours last night optimizing my Saryn build not because it *needed* it, but because I wanted to min/max every single stat. Then I saw someone suggest a completely different approach and started down THAT rabbit hole. Is this just a Warframe thing or do other people get super into build crafting even when the gains are marginal? What's your current \"pet project\" build?",
+    "subreddit": "warframe<end_of_turn>"
+  },
+  {
+    "title": "Anyone else absolutely losing it over the insane amount of cosmetic bloat in Apex?",
+    "self_text": "Seriously, I just booted up Apex after a couple weeks and my inventory is *overflowing* with recolors. Like…do we really need another purple skin for the Wingman that’s 98% identical to three others I already have? Feels less rewarding now because everything is so diluted. And don't even get me started on the price tags. Is anyone else feeling completely overwhelmed by the sheer volume of stuff they’re pushing in the shop? What are your thoughts on how Respawn is handling cosmetics these days? Are they going too far?",
+    "subreddit": "apexlegends<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus schools? Feels like a second build crafting layer.",
+    "self_text": "I've fallen *deep* down the rabbit hole of optimizing my Zenurik/Unairu/Madurai focus schools. Like, spreadsheets deep. It feels less about just getting the nodes and more about min/maxing energy efficiency, ability strength scaling, and figuring out how different combos interact. Is anyone else doing this, or am I alone in turning Focus into its own complex build system? What are your go-to node setups these days? Trying to figure out if I should respec some things after the latest changes…",
+    "subreddit": "warframe\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else sinking WAY too much time into optimizing their No Man’s Sky base layouts?\nself_trade: Seriously, I started wanting to just *play* the game, explore, trade… now it’s all about maximizing cargo throughput with conveyor belts and making everything look aesthetically pleasing. Is anyone else completely consumed by base building efficiency? I swear I spend more time in Creative mode planning than actually adventuring. Any tips for dealing with cable management hell? And don't even get me STARTED on trying to make functional farms look good...",
+    "self_text": "",
+    "subreddit": "nomanssky\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else struggling with the new Overwatch 2 Competitive Rank decay? Feels… punishing.",
+    "self_text": "Seriously, I took like a week off after hitting Gold 3 because life got busy, and now I've lost almost an entire tier just logging back in. Like, I understand *some* decay to prevent boosting scenarios, but this feels excessive. Is anyone else experiencing this massive drop? What are your thoughts on how much rank should realistically decay during inactivity? Trying to climb back up feels way more grindy than it used to be. Also, anyone have good team comp suggestions for climbing out of Gold as Support? Mostly play Kiriko or Ana.",
+    "subreddit": "OverwatchUniversity<end_of_turn>"
+  },
+  {
+    "title": "Anyone else sinking WAY too much time into optimizing their No Man’s Sky base layouts?\nself_trade: Seriously, I started wanting to just *play* the game, explore planets, etc. Now it's all about maximizing cargo throughput, aesthetic symmetry, and hiding power conduits. Is anyone else falling down this rabbit hole? I've got spreadsheets going at this point. What are your go-to tricks or resources for efficient base building? Thinking about trying some more complex hydroponics setups but space is always the enemy!",
+    "self_text": "",
+    "subreddit": "nomanssky\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "I feel like I spend more time *planning* my Warframe builds than actually playing sometimes. Right now I'm deep diving into Zenurik, trying to maximize energy efficiency without sacrificing strength. Is anyone else constantly swapping around conduits, flow, stretch, and priming mods just to shave off milliseconds from ability casts? And don’t even get me started on the arcane combos… What are your go-to Zenurik (or any Focus School!) setups right now? Bonus points if you can explain *why* it works!",
+    "subreddit": "warframe\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else completely obsessed with optimizing their No Man’s Sky base layouts?\nself_trade: Seriously, I've sunk like 10 hours *just* rearranging rooms and trying to make everything look sleek while maximizing farm output. I'm currently wrestling with getting a functional biodome setup that doesn't feel claustrophobic. Any pro-tips for efficient space usage or cool aesthetic tricks? Share your screenshots! Is anyone else using glitches to create mega-bases? Don't judge me…",
+    "self_text": "",
+    "subreddit": "nomansky<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "I feel like I spend more time theorycrafting my Zenurik/Unairu/Madurai builds than actually *playing* Warframe lately. Seriously, is anyone else down a rabbit hole trying to maximize energy regen, efficiency, or damage reduction depending on content? I just spent three hours last night rerolling mods on my kitguns because I wanted slightly faster reload speeds during disruption missions. Am I being ridiculous? What are your current go-to Focus builds and why? Bonus points if you have optimized node links!",
+    "subreddit": "warframe<end_of_turn>"
+  },
+  {
+    "title": "Anyone else absolutely losing it over the new Diablo 4 patch notes?",
+    "self_text": "Okay, seriously. The nerfs to Sorc are… substantial. I get needing to balance things, but gutting core builds *this* hard feels awful. Especially after everyone was complaining about endgame being boring because everything melted too fast. Now it's just gonna be a slog. And don't even get me STARTED on the changes to Unique drops. Less chance for uniques AND they can now downgrade?! What is Blizzard thinking? I spent hours optimizing my build, finding specific aspects, and now half of it is getting thrown out the window. Anyone else feeling completely demoralized? Is anyone actually happy with these changes or am I living in an echo chamber here? Also, does anyone have a good resource compiling all the data mined info on actual damage numbers affected? Trying to figure out if there's any point in even logging back in tonight.",
+    "subreddit": "diablo4<end_of_turn>"
+  },
+  {
+    "title": "Anyone else absolutely drowning in Warframe prime parts right now?",
+    "self_text": "Seriously, I just finished building Saryn Prime and already have like… half a set for Gauss again. Between Alerts, fissures, and trading it feels like an endless cycle. Is anyone actually *using* all these duplicate parts for Endo or are we all just hoarding them \"just in case\"? Any good resource guides for efficiently farming what you actually NEED instead of getting flooded with more stuff? Also, does anyone know if there's a decent way to filter out completed blueprints in the Foundry UI? It's such a mess.",
+    "subreddit": "warframe<end_of_turn>"
+  },
+  {
+    "title": "Anyone else completely lost trying to optimize New World settings? Seriously.",
+    "self_text": "Okay, I've been back in New World after a long break and…wow. The sheer *number* of graphics options is overwhelming, and half of them don't seem to have any noticeable impact even when maxed or minned. I've watched like five different YouTube guides, tweaked everything, and still getting inconsistent frame drops. My rig should be handling this way better than it is (3080, Ryzen 5800X). \\n\\nAnyone else struggling with this? What settings are actually making a difference for *you* guys? Specifically curious about those shadow quality vs. performance trade-offs – feels like there's no sweet spot. Also, anyone know if there’s a good resource for understanding what all these \"Volumetric\" things even *do*?\\n\\nSeriously considering just running a potato setting preset and calling it a day.",
+    "subreddit": "newworldgame<end_of_turn>"
+  },
+  {
+    "title": "Anyone else completely addicted to fixing broken mods in Skyrim? Send help (and LOOT configurations).",
+    "self_text": "Seriously, I think I spend more time diagnosing mod conflicts and patching things than actually *playing* Skyrim at this point. Just got a massive overhaul running with about 180 mods, and it was…a journey. Papyrus logging is my new best friend. Anyone have particularly brutal conflict stories or essential tools beyond LOOT, xEdit, and SSEEdit? Also, does anyone else feel like some mod authors just...don't test their stuff with other popular mods? Like, come ON. Share your pain!",
+    "subreddit": "skyrimmods<end_of_turn>"
+  },
+  {
+    "title": "Anyone else endlessly tweaking their Warframe builds despite knowing the \"meta\"?",
+    "self_text": "Okay, so I *know* what the generally accepted best builds are for most frames and weapons right now. But I still spend hours messing around with different mods, Forma polarities, even Arcane combinations… just to see if I can squeeze out a little more efficiency, or make something *feel* better. Like, yeah, a standard Saryn build will melt everything, but can I make a slightly less optimal build that focuses on status chance for a unique playstyle? Is it worth it? \n\nI feel like the sheer depth of the mod system encourages this kind of obsessive tinkering. Does anyone else fall down this rabbit hole constantly? And am I alone in sometimes preferring a weird, personalized build over the absolute min-maxed version? Share your needlessly complex creations!",
+    "subreddit": "warframe<end_of_turn>"
+  },
+  {
+    "title": "Anyone else absolutely losing it over the new Diablo IV patch notes?",
+    "self_text": "Okay, seriously. The nerfs to Sorc are… aggressive. I get power creep is an issue, but gutting core build defining mechanics like Crackling Energy feels awful. And the itemization changes *still* aren’t addressing the root problem – too much RNG and not enough targeted upgrades. Feels like they’re chasing metrics instead of making the game fun. Anyone else feeling similarly frustrated? What builds are people planning to pivot to now? I was really enjoying my chain lightning sorc, might have to dust off an old Barb if this keeps up. Also, anyone know if there are any good resource trackers being updated quickly for the changes?",
+    "subreddit": "diablo4<end_of_turn>"
+  },
+  {
+    "title": "Anyone else absolutely LOST in the No Man's Sky Fractal update? Base building is INSANE now.",
+    "self_text": "Okay, I get it, Hello Games loves adding content. But seriously, the Fractal update… my brain hurts in the best way possible. I spent like six hours last night just messing around with the new base parts and procedural generation stuff. The level of detail and customization is *ridiculous*. \n\nI'm trying to figure out optimal layouts for resource farms using the new logic gates and how to actually make use of the fractal designs without everything looking completely chaotic. Has anyone found any good guides or shared their bases online? I'm particularly struggling with integrating the new parts into pre-existing bases without it feeling totally disjointed.\n\nAlso, anyone else noticing some weird performance dips with really complex fractal structures? My rig can handle pretty much anything, but even I'm seeing framerate drops in heavily decorated areas. Thinking about posting a detailed report over on the bug reporting thread if others are experiencing similar issues.\n\nSeriously though, GG Hello Games. You broke me. In a good way.",
+    "subreddit": "nomanssky\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else sinking WAY too much time into optimizing their No Man’s Sky base layouts?\nself_trade: Seriously, I started wanting to just *play* NMS, but now I'm spending hours meticulously planning out freighter hallways and resource refining chains. Is anyone else falling down this rabbit hole? I feel like I need to min-max everything for optimal efficiency even though it's...a single player game. Any good resources or layout ideas people are willing to share? Also, does anyone have any tips for dealing with the clipping issues when trying to get really intricate with builds?",
+    "self_text": "",
+    "subreddit": "nomanssky\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else absolutely losing it over the new Diablo IV patch notes?",
+    "self_text": "Okay, seriously, Blizzard… nerfing *open world* experience gain?! After everyone complained about leveling being too slow? And buffing Nightmare Dungeons when the core issue isn’t difficulty, it’s the repetitive, unrewarding gameplay loop WITHIN them? I get trying to address botting and XP farms but this feels like punishing legitimate players. What are your thoughts? Are we all just collectively screaming into the void here or am I missing something? Also, anyone figured out if these changes impact build viability significantly yet? Specifically curious about Sorc.",
+    "subreddit": "diablo4<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "Okay, I *know* it's probably diminishing returns at this point, but I spent like three hours last night re-optimizing my Zenurik build for energy efficiency vs. ability strength. I'm trying to balance Forma cost with actually feeling a difference during longer missions. Is anyone else down the rabbit hole of min/maxing Focus schools? What are your go-to builds for each school, and what kind of content do you run them in? Seriously considering just respec'ing everything into Madurai now purely for the raw damage boost… but the energy sustain feels so good! Also, any thoughts on whether investing further into passive nodes is worth it or if the active abilities provide more bang for your buck?",
+    "subreddit": "warframe\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else completely lost trying to optimize New World settings *right now*?",
+    "self_text": "Seriously, between the recent patch and all the different scaling options (render scale, resolution scale, FXAA, etc.) it feels like I spend more time tweaking settings than actually *playing* New World. My FPS are wildly inconsistent even after following guides. What settings are people finding give them the best balance of visuals and performance these days? And does anyone have any insight into how the new \"dynamic resolution scaling\" actually works? Is it worth using or just another layer of headache? I'm running a Ryzen 5 3600 & RTX 2070 Super at 1440p if that helps.",
+    "subreddit": "newworldgame\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their No Man’s Sky settings for optimal performance?",
+    "self_text": "I swear, I spend half my playtime just fiddling with graphics options, shaders, and launch arguments in NMS. Trying to balance visuals with getting a stable 60fps is *painful*. Been digging through Reddit and the official forums but still feel like there's some secret sauce everyone knows. What are your go-to settings for a good experience? Specifically curious about folks running similar specs to me – Ryzen 5 3600, RTX 2060 Super, 16GB RAM. Also, anyone know if there's a comprehensive guide out there detailing what each setting actually *does* under the hood? Seriously need help decoding some of these!",
+    "subreddit": "nomanssky\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else completely addicted to tweaking their RimWorld colony into an unsustainable masterpiece?",
+    "self_text": "Seriously, I just spent three hours optimizing my hydroponics bay *after* automating waste recycling and setting up a dedicated organ harvesting room (morality is…flexible). My colonists are living like kings but constantly on the verge of a mental breakdown from stress or getting eaten by mechanoids. Is this normal? What's the most ridiculous thing you guys have built/attempted in RimWorld? Share your glorious failures! Also, anyone know good mod compatibility patches for Combat Extended and Vanilla Furniture Expanded – Building? Keeps giving me errors.",
+    "subreddit": "r/RimWorld<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "I feel like I spend more time *planning* my Warframe builds than actually playing sometimes. Right now I’m deep diving into Zenurik for energy efficiency on everything, but I keep second guessing myself. Is it worth maxing out Streamline versus just going full strength on Primed Flow & Transient Fortitude? And don’t even get me started on trying to balance capacity with form/function! Does anyone have any go-to resources or share similar obsessive tendencies when optimizing Focus schools? Seriously, show me your spreadsheets… or just tell me I’m not alone.",
+    "subreddit": "warframe<end_of_turn>"
+  },
+  {
+    "title": "Anyone else hitting insane stuttering in New World after the latest patch?",
+    "self_text": "Seriously, my frametimes are all over the place now. I've tried verifying files, updating drivers, lowering settings… nothing seems to consistently smooth it out. Seems like it spikes *specifically* when lots of players are on screen or during large scale fights. I'm running a Ryzen 5800X and a 3080, so it shouldn't be a hardware issue. Has anyone found any specific config tweaks or mods that help mitigate this? Thinking maybe some UI mods are causing conflict? Let me know what you've tried!",
+    "subreddit": "newworldgame<end_of_turn>"
+  },
+  {
+    "title": "Anyone else completely obsessed with optimizing their No Man’s Sky base layouts?",
+    "self_text": "Okay, I know it sounds kinda…niche, but hear me out. I’ve sunk like 80 hours into NMS *again* since the Interception update, and half of that time has been spent tweaking my bases. Not even for functionality necessarily, just making them LOOK good. I'm currently trying to recreate a vaguely Art Deco aesthetic on a desert planet and it’s driving me insane. \n\nI’m constantly running into clipping issues with the new building pieces, and finding efficient ways to hide conduits is a nightmare. Does anyone have any go-to tricks for hiding those things? Also, what are your favorite resource-efficient wall/floor combos for large structures? Seriously, send help (and screenshots!). I feel like an architect gone mad.",
+    "subreddit": "nomanssky\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else hitting insane stuttering in New World after the latest patch?",
+    "self_text": "Seriously, I thought they *fixed* performance issues with this update, but my FPS is all over the place and it feels like every few seconds the game just freezes for half a second. My rig isn't slouching (3080, Ryzen 5800X, 32GB RAM) and drivers are up to date. Has anyone found any config tweaks or temporary fixes? I've tried verifying files, disabling overlays, everything short of reinstalling. Seeing a lot of similar complaints on the forums too, seems widespread. Is it shader caching again? Any help appreciated!",
+    "subreddit": "newworldgame<end_of_turn>"
+  },
+  {
+    "title": "Anyone else sinking WAY too much time into optimizing their No Man's Sky base layouts?\nself_trade: Seriously, I started wanting to just *play* the game, explore, do missions… now I’ve got spreadsheets detailing optimal room adjacency bonuses for farming and crafting. Is anyone else completely lost down the rabbit hole of maximizing product output per square meter? I swear I spent three hours yesterday just rearranging hydroponics bays. Send help (and efficient base designs)!",
+    "self_text": "",
+    "subreddit": "nomanssky<end_of_turn>"
+  },
+  {
+    "title": "Anyone else OBSESSED with trying to get a stable Fallout 4 mod list going?",
+    "self_text": "Seriously, I think I’ve spent more time troubleshooting mod conflicts in Fallout 4 this week than *playing* Fallout 4. I thought LOOT would solve everything…it did not. Currently battling crashes related to Vivid Falmouth and some texture pack. Any seasoned vets out there willing to share their current setup or favorite resources for keeping things running smoothly? Specifically interested in any advice for dealing with ENB presets - seems like those are always the biggest headache. Also, what's everyone's go-to crash fixer these days?",
+    "subreddit": "fallout4<end_of_turn>"
+  },
+  {
+    "title": "Anyone else completely obsessed with trying to optimize their New World build right now?",
+    "self_text": "Seriously, I've spent like 6 hours just swapping perks around on my Great Axe/Fire Staff build. Feels like every .1% damage increase requires a full respec and then another hour scouring YouTube guides and spreadsheets. Is anyone else falling down this rabbit hole? What are your go-to resources for build crafting these days? I'm starting to think I need a second monitor *just* for the NW Armory website...and maybe a therapist.",
+    "subreddit": "newworldgame\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else OBSESSED with trying to optimize their New World build? Send help (and links)!",
+    "self_text": "Okay, I know NW isn't *new* new, but I keep falling back into it after trying other MMOs. The combat feels good when it clicks, but MAN getting a build that consistently performs well feels like an exercise in frustration. I've been bouncing between Greataxe/Fire Staff and Bow/Spear, constantly tweaking perks, gems, and food buffs. \n\nI'm currently running into issues with survivability on my GA/FS build – getting melted by coordinated groups in OPR. Is anyone else deep diving into theorycrafting right now? What resources are you using? Are there any underrated gem combos or perk synergies I should be checking out? I swear half my playtime is spent watching YouTube guides and then still feeling lost. Also, what's everyone's take on the recent patch changes? Did they actually address some of the balance issues, or just shift them around?\n\nSeriously, send help. And maybe a spreadsheet.",
+    "subreddit": "r/NewWorldGame<end_of_turn>"
+  },
+  {
+    "title": "Anyone else sinking way too much time into optimizing their No Man’s Sky base layouts?\nself_trade: Seriously, I started wanting to just *play* the game, explore planets, do missions… now it’s all about maximizing farm output and making everything look aesthetically pleasing. Spent like four hours yesterday redesigning my hydroponics bay because the conveyor belt angles weren’t efficient enough. Is this normal NMS behavior or am I losing it? Any tips for people deep in the base-building rabbit hole? Specifically struggling with space efficiency while still keeping things visually interesting – don’t want another sterile metal box!",
+    "self_text": "",
+    "subreddit": "nomanssky\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "Seriously, I just spent like three hours last night re-optimizing my Zenurik build after reading some stuff about energy conversion efficiency. Is anyone *else* down this rabbit hole? Feels like there's always *some* tiny percentage gain to be had if you fiddle enough with mods, operator form, and even how you sequence your abilities. And don't even get me started on trying to balance damage scaling vs. resource drain... it's kinda insane! What are your go-to Focus schools and current builds? Share your madness!",
+    "subreddit": "warframe\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else sinking way too much time into optimizing their No Man's Sky base layouts?\nself_trade: I feel like I've hit peak efficiency with my current freighter setup...and then I see someone else's base online and realize I can *still* improve things. Seriously, I spent three hours last night just rearranging storage containers to shave off a few seconds of walking distance. Is this normal NMS behavior or am I losing it? What are your go-to strategies for maximizing space and minimizing travel time? Bonus points if you have any cool aesthetic tricks that don't completely ruin the functionality!",
+    "self_text": "",
+    "subreddit": "nomansky<end_of_turn>"
+  },
+  {
+    "title": "Anyone else struggling with the new Overwatch 2 Competitive Rank decay? Feels… harsh.",
+    "self_text": "Seriously, I took like a week off due to work and came back to find my rank *significantly* lower than expected. Like, several hundred SR gone. I understand some decay is necessary, but this feels way too aggressive, especially considering how grindy climbing already is. Is anyone else experiencing this? What ranks are you seeing the biggest drops at? Thinking about just sticking to Unranked for a bit until things calm down. Also, anyone got good resources for improving aim quickly? Been feeling rusty after the break.",
+    "subreddit": "OverwatchUniversity<end_of_turn>"
+  },
+  {
+    "title": "Anyone else completely lost trying to optimize New World builds right now?",
+    "self_text": "Seriously, between all the patch changes, perk reworks, and conflicting info online… it feels impossible to figure out what actually *works* for DPS these days. I’ve spent hours theorycrafting a Bow build and still can’t consistently hit numbers people are claiming. Is anyone else feeling this way? What resources are you finding most reliable? Specifically looking for thoughts on current best-in-slot perks for maximizing damage output - ignoring crafted items for now as those seem even more chaotic. Also, does anyone have any insight into how grit breakpoints are working currently? Feels super inconsistent.",
+    "subreddit": "newworldgame<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "I feel like I spend more time in the Arsenal re-configuring my Focus schools than actually *playing* Warframe sometimes. Especially now with the changes to how efficiently we gain Focus. I’m trying to optimize for speed farming different nodes – Void Fissures vs regular survival missions – and it feels like there’s always some tiny tweak to ability efficiency/range/duration that could shave off another second per run. \n\nAnyone have any particularly insane or surprisingly effective builds they've been experimenting with? Specifically curious about people using Zenurik for energy sustain during longer runs, or if anyone's found a sweet spot with Madurai for raw damage output without completely draining your energy pool. Also, what are everyone’s thoughts on the new Focus refinement system? Feels kinda…underwhelming?",
+    "subreddit": "warframe<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "Seriously, I just spent like three hours last night re-optimizing my Zenurik build after reading some stuff about energy regen breakpoints. Then dove down a rabbit hole comparing different augment mods for each school. Is it just me, or does anyone *else* get completely lost in min-maxing these things? Feels kinda ridiculous but also... satisfying? What are your go-to Focus schools and builds right now? Bonus points if you've found any weird synergies!",
+    "subreddit": "warframe<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their No Man’s Sky settings for optimal visuals AND performance?",
+    "self_text": "I just spent like three hours messing with my NMS graphics settings trying to find the sweet spot between pretty space vistas and not turning my GPU into a space heater. Seriously, the difference some of those subtle tweaks make is insane! I'm running an RTX 3070 and 16GB RAM, but still getting dips during freighter flybys if everything is maxed. \n\nAnyone got any go-to settings combos they swear by? Specifically curious about shadow quality, terrain LOD, and bloom – feel like those are the biggest culprits. Also, anyone figured out how to get better texture streaming without killing VRAM? Feels like it's constantly swapping textures in and out even at medium. Let's share our optimizations!",
+    "subreddit": "NoMansSkyTheGame<end_of_turn>"
+  },
+  {
+    "title": "Anyone else completely lost trying to optimize New World settings? Seriously.",
+    "self_text": "Okay, I *get* that NW is notoriously rough on PCs. But like…I’ve been through five different guides, messed with launch options, updated drivers, the whole nine yards. Still getting dips below 60 even on medium settings at 1080p. My rig should be handling this way better (3070, Ryzen 5600X). Is anyone actually finding a sweet spot, or are we all just accepting potato quality visuals as the price of admission? Specifically curious if anyone has cracked the code on render scaling vs texture resolution – feels like whichever one I crank up tanks my FPS. And don't even get me STARTED on the weird CPU bottleneck some people report. Help!",
+    "subreddit": "newworldgame\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else endlessly tweaking their Warframe builds despite knowing the \"meta\"?",
+    "self_text": "Okay, I *know* Saryn Prime with a spoiled radshare is basically mandatory for Steel Path endgame. And yes, my Ignis Wraith build is pretty standard. But…I still spend hours fiddling with Forma, trying different mods, and chasing slightly more efficiency or damage even when the numbers say it's pointless. Is anyone else like this? Like, I have five different builds for each frame just because I want options, even if 90% of the time I revert back to the optimal setup. It feels bad man. Do we need a Warframe Build Addicts Anonymous group? 😂 Also, any cool aesthetic mods you guys are using right now? Trying to spice things up visually at least.",
+    "subreddit": "warframe<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "Okay, I know I'm probably falling down a rabbit hole here, but I *cannot* stop optimizing my Zenurik/Madurai/Unairu builds. Feels like tiny changes to efficiency/duration can make or break a good clear, especially on Steel Path. What are your go-to mods and configurations right now? Specifically struggling with getting consistent energy regen on longer missions without sacrificing strength/range. Also, anyone figured out a decent way to visualize all the different stat interactions? Like, how much extra ability force does Primed Flow actually give when stacked with Transient Fortitude and stuff? Seriously need help before I lose another weekend to this.",
+    "subreddit": "warframe\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "Okay, I *know* it's kinda niche, but I've fallen down a rabbit hole optimizing my Zenurik/Madurai/Unairu schools. Specifically trying to balance energy sustain with damage buffs while still having enough forma capacity for decent node coverage. Feels like every point put into one skill nerfs something else! Anyone got any particularly brutal or surprisingly effective setups they're willing to share? Also, anyone else feel like DE needs to revisit how Focus schools scale with endgame content? It feels…underwhelming sometimes.",
+    "subreddit": "warframe\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else OBSESSED with trying to get a stable Fallout 4 mod list going?",
+    "self_text": "Seriously, I think I’ve spent more time troubleshooting mod conflicts in Fallout 4 this week than *playing* Fallout 4. I thought I had a pretty solid setup going – Vivid Falmouth, some texture overhauls, a few new weapons, etc. – but then started getting random CTDs. Turns out something between Cathedral Assets Optimizer and a settlement building mod is causing absolute chaos. \n\nAnyone have any recent success stories or go-to resources for building a relatively stable Fallout 4 mod list in 2024? LOOT helps, but it doesn’t catch everything. And don't even *mention* Sim Settlements without a warning label, haha. Just looking for sanity checks and maybe some shared misery. What are your biggest pain points right now?",
+    "subreddit": "fallout4\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "Okay, I know it's kinda niche, but I've fallen *deep* down the rabbit hole of optimizing my Zenurik/Unairu/Madurai schools lately. Specifically trying to balance energy efficiency with ability strength/duration. Feels like every little node choice makes a huge difference. \n\nI'm currently running a pretty standard Unairu build on Khora for survivability, but I'm experimenting with different Zenurik configurations for Saryn – trying to get enough efficiency to spam Spores without constantly needing Energy Vampire. And Madurai… honestly, I still don't fully *get* Madurai. Anyone have some go-to builds or resources for maximizing those schools? Also, are there any good UI mods to better visualize Focus usage during missions? Just feels clunky as hell right now.",
+    "subreddit": "warframe<end_of_turn>"
+  },
+  {
+    "title": "Anyone else hitting serious FPS drops in Warzone since the latest update?",
+    "self_text": "Okay, so I know every update breaks *something*, but this is brutal. I'm dropping like 30-40 FPS in Caldera compared to before, even after rolling back Nvidia drivers and messing with settings. Specs are Ryzen 5800X, RTX 3070, 32GB RAM – shouldn’t be struggling *this* hard. \n\nAnyone found any specific settings changes that help? I’ve turned everything down to low, capped frames, disabled ray tracing obviously… still choppy as heck. Is it just me or is this widespread? Saw some chatter about potential shader compilation stutters too. Thinking of posting a detailed report over on the Activision forums if enough people are seeing this. Also, anyone else noticing increased latency spikes alongside the FPS drops? Let's troubleshoot!",
+    "subreddit": "Warzone<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe builds even when the content is already \"easy\"?",
+    "self_text": "Seriously, I just cleared Steel Path stuff solo with a build I *know* is overkill, but I spent like an hour last night min/maxing every single stat point. Is it just me? Like, the dopamine hit from optimizing is sometimes more satisfying than actually completing the mission. Anyone got any particularly insane or needlessly complex builds they're proud of? Share 'em! Also, anyone know if there are good resources for understanding the nuances of Arcane synergies right now? Feels like those can make or break a build these days.",
+    "subreddit": "warframe\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else sinking way too much time into optimizing their No Man’s Sky base layouts?\nself_trade: Seriously, I started wanting to just *play* the game, explore, follow the storyline… now I'm spending hours meticulously planning hydroponics farms and freighter logistics. Is anyone else falling down this rabbit hole? I feel like half my playtime is in Creative mode just tweaking things for maximum efficiency. Any pro-tips for minimizing corridor space or automating resource transfer? Also, does anyone know if there are any good mods that add more functional decorative pieces beyond the vanilla options? Starting to feel limited!",
+    "self_text": "",
+    "subreddit": "NoMansSkyTheGame<end_of_turn>"
+  },
+  {
+    "title": "Anyone else endlessly tweaking their Warframe builds despite knowing the \"meta\"?",
+    "self_text": "Okay, I *know* the optimal builds for most frames these days – the standard crit/status hybrid stuff, the augment mods everyone runs. But I still spend hours messing around with different combinations, trying to optimize for specific mission types or just… because. Like, can I make a viable Saryn build WITHOUT investing in Primed Flow? Is there a way to squeeze more out of Hildrin’s shield gate using niche mods? \n\nIt's kinda ridiculous. I get diminishing returns pretty quickly, but the tinkering process is half the fun. Does anyone else fall into this trap? Are you all min-maxers at heart, or am I just wasting my platinum? Also, bonus points if you have any surprisingly effective off-meta builds you want to share!",
+    "subreddit": "warframe<end_of_turn>"
+  },
+  {
+    "title": "Anyone else completely lost trying to optimize New World builds right now?",
+    "self_text": "Seriously, between the recent patches, weapon changes, perk reworks, and just *the sheer number* of possible combinations… I feel like I spend more time theorycrafting in spreadsheets than actually playing. Is there a good resource out there that’s keeping up with everything? Or are we all just collectively stumbling around hoping something clicks? Specifically struggling with figuring out what perks are actually worth prioritizing on my Great Axe/Fire Staff build – feels like half the guides are outdated already. Any current build advice appreciated!",
+    "subreddit": "newworldgame\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else completely addicted to tweaking their RimWorld colony into an unsustainable mess?",
+    "self_text": "Seriously, I start with good intentions – efficient base layout, balanced food production, happy colonists… then I see a cool mod and *have* to add it. Next thing I know I have genetically engineered super-soldiers fueled by lavish amounts of beer and constantly defending against psychic ships because I installed a late-game threat mod too early. It's beautiful chaos. What's the most ridiculous thing *you've* done to your RimWorld save? Any essential mods I should absolutely avoid if I want even a shred of stability?",
+    "subreddit": "r/RimWorld\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else sinking WAY too much time into optimizing their No Man’s Sky base layouts?\nself_trade: Seriously, I started wanting to just *play* the game, explore, do missions... now I'm spending hours tweaking cargo bay arrangements and trying to get perfect symmetry with my hydroponics trays. Is anyone else completely consumed by base building efficiency? I feel like I need to min-max everything, even though it probably doesn’t actually impact gameplay all that much. What are your go-to strategies for organizing stuff? And does anyone have good freighter base designs they can share? I'm starting to think I need a spreadsheet…",
+    "self_text": "",
+    "subreddit": "nomanssky\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else absolutely losing it over the Elden Ring shadow of the Erdtree hype? Need to manage expectations…",
+    "self_text": "Okay, I’m trying *really* hard not to get completely carried away with the Shadow of the Erdtree news. Fromsoft DLCs are legendary (Artorias!), but the sheer scale of this looks insane. I’ve already sunk like 150+ hours into ER as it is, and knowing there’s potentially another 30-50 just in *one expansion* is both exciting and terrifying for my backlog. \n\nAnyone else actively trying to pump the brakes on themselves? What are your realistic expectations going in? Are we thinking this will be roughly DS3:Ringed City sized, or something far more substantial? Also, anyone got any good strategies for avoiding spoilers until launch? Seriously, Twitter is a minefield right now.\n\nI'm mostly worried about performance dips – my PC barely handles some late-game areas as is. Hoping they've optimized things!",
+    "subreddit": "r/Eldenring<end_of_turn>"
+  },
+  {
+    "title": "Anyone else absolutely losing it over the new Fallout 4 Creation Club stuff? Specifically the \"mechanic\" items...",
+    "self_text": "Okay, so I just checked the Creation Club and… seriously? Paying *real money* for essentially glorified reskins of existing workshop pieces labeled as \"mechanic\" themed? Like, we finally get some marginally different metal walls and shelves but they cost $3-$5 EACH?! And don’t even get me STARTED on how half of them clip through everything. \n\nI know Bethesda loves their microtransactions now, but this feels especially egregious. We have a massive modding community that consistently delivers incredible free content, and then CC drops something like THIS? It feels actively insulting. \n\nAnyone else feel this way? Or am I just being an old man yelling at clouds? What are your thoughts on the current state of the Creation Club – is anyone actually buying these things or is it all just wishlisting? Also, does anyone know if there are any mods that basically replicate this aesthetic but, y'know, *for free*?",
+    "subreddit": "fallout4\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else hitting serious stuttering issues in New World after the latest patch?",
+    "self_text": "Been trying to get back into New World lately but man, the performance is *rough* since the update. I've got a pretty solid rig (3080, Ryzen 5800X, 32GB RAM) and was running comfortably at 1440p before. Now I'm getting noticeable stutters every few seconds, especially in crowded areas like Sovereigns East or during large scale PvP. \\n\\nI've tried verifying files, updating drivers, messing with graphics settings (even turning everything down to low!), and nothing seems to consistently fix it. Seen some chatter about VRAM usage spiking abnormally high?\\n\\nAnyone else experiencing this? Any specific settings or mods people have found help alleviate the problem? Thinking about rolling back to an older driver if things don't improve.\\n\\nAlso, anyone know if there’s a good resource for tracking known bugs/issues post-patch? The official forums are… not great.",
+    "subreddit": "newworldgame\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else absolutely losing their mind trying to optimize New World builds after the Brimstone update?",
+    "self_text": "Seriously, feels like every guide is outdated within *days*. The changes to perks and abilities are so significant, and then everyone's scrambling to re-spec and figure out what's actually good now. I spent all last night tweaking my Fire Mage, and honestly think I made it worse. Is anyone finding reliable resources beyond trial & error at this point? Specifically struggling with figuring out how much stat investment is *actually* needed for things like crit chance vs damage bonus – the tooltips feel intentionally vague. Also, any thoughts on whether Shirking Fortification is still worth running on mages? Feels less impactful with the changes to dodging.",
+    "subreddit": "newworldgame\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else completely lost trying to optimize New World builds right now?",
+    "self_text": "Okay, seriously. I just respecced AGAIN in New World and I *still* feel like my damage is potato. Between all the perk changes, new weapon skills, and conflicting info online… it’s exhausting! Is there a good, relatively up-to-date resource for actually understanding what perks are BIS for each build archetype currently? Or am I doomed to spend the next week swapping gems and testing things endlessly? Specifically running a Fire Mage/Ice Gauntlet hybrid, but honestly even figuring out basic stat priorities feels impossible these days. Any help appreciated before I yeet myself into the void again.",
+    "subreddit": "newworldgame<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "Okay, I *know* it's kinda niche, but I've spent like three hours tonight just respec'ing my Zenurik build AGAIN. Trying to maximize energy regen while still having enough strength for efficiency mods. Is anyone else down the rabbit hole of min/maxing Focus schools? What are your go-to builds right now? Specifically curious about people mixing in different node choices – I usually stick to the \"meta\" stuff but wondering if there's hidden potential. Also, any tips for dealing with the insane cost of re-speccing? Feels brutal sometimes!",
+    "subreddit": "warframe<end_of_turn>"
+  },
+  {
+    "title": "Anyone else absolutely losing it over the insane amount of cosmetic bloat in modern live service games?",
+    "self_text": "Seriously, I hopped back into Apex after a few months and the shop is just… overflowing. Not even cool skins, mostly recolors or slight variations. And then Destiny 2 does the same thing every season. It feels less like earning rewards and more like being pressured to constantly chase something fleeting. Is anyone else feeling completely overwhelmed by it all? What are your thoughts on how monetization is impacting game design these days? Feels like everything is geared towards maximizing shop sales instead of actually making compelling content.",
+    "subreddit": "gaming<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their No Man’s Sky settings for *marginal* gains?",
+    "self_text": "I swear, I spent like three hours last night messing with shader settings, texture filtering, and shadow distances in NMS trying to squeeze out another couple FPS. My rig isn't *bad* (3070, Ryzen 5600X) but base building gets chunky fast. Found some weird interactions between different settings - lowering volumetric clouds actually *hurt* performance in my case! Anyone else fall down this rabbit hole? What are your go-to optimizations or things people should definitely tweak? Also, anyone know if there's a good resource for understanding what each setting *actually* does beyond the vague descriptions in the menu?",
+    "subreddit": "nomanssky\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "I feel like I spend more time theorycrafting my Zenurik/Unairu/Madurai builds than actually *playing* Warframe lately. Seriously, is anyone else down a rabbit hole trying to maximize energy regen, ability strength, range, etc.? I just spent two hours last night re-farming Forma for a slightly more efficient build…and honestly, it probably didn’t even make a noticeable difference. Still, gotta optimize! What are your go-to Focus school combos and what are you aiming for? Also, any tips on minimizing conflict when mixing different augment mods?",
+    "subreddit": "warframe\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else completely addicted to fixing broken mods in Skyrim? Send help (and LOOT config tips).",
+    "self_text": "Seriously, I think I spend more time troubleshooting mod conflicts and patching things than *actually playing* Skyrim at this point. Just got a new quest mod that's amazing... except it hard crashes whenever you try to talk to an NPC with a specific armor set equipped. Of course. \n\nI've been down the rabbit hole of USSEP patches and DynDOLOD for hours already. Does anyone have any go-to resources or LOOT configuration tricks for dealing with particularly stubborn mod incompatibilities? And am I alone here, or does anyone else find the 'fixing' part almost as satisfying as the gameplay itself? Maybe I just need a hobby…or another playthrough with even MORE mods.",
+    "subreddit": "skyrimmods<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "I feel like I spend more time *planning* my Warframe builds than actually playing sometimes. Right now I’m deep diving into Zenurik for energy economy on Khora, but getting the efficiency/duration sweet spot feels impossible without sacrificing strength. And don’t even get me started on trying to balance Unair for damage vs cast speed! \n\nAnyone else fall down this rabbit hole? What are your go-to Focus school combos or weirdly specific build optimizations right now? Share your pain (and maybe some wisdom)! Also, anyone know if there’s a good resource for visualizing Focus school node paths beyond the wiki screenshots?",
+    "subreddit": "warframe\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else OBSESSED with trying to optimize their No Man's Sky base power generation?",
+    "self_text": "Okay, I know it sounds kinda insane, but I've fallen down a *rabbit hole* with NMS base power. I'm aiming for a fully functional, massive base without relying solely on solar panels (because nighttime sucks). Right now I'm messing with geothermal, but getting consistent output feels…janky. Has anyone cracked the code on maximizing geothermal efficiency? Or are there other underrated power sources people are using? Bonus points if you've got layouts or wiring tricks! Seriously spent like 3 hours last night tweaking stuff and still feel like I'm leaving energy on the table. Also, does anyone have any good guides on minimizing cable clutter? My base looks like a spaghetti factory right now.",
+    "subreddit": "nomanssky\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else completely lost trying to optimize New World builds right now?",
+    "self_text": "Okay, so I jumped back into New World after…a long break. And holy moly, the build crafting feels *completely* different. Used to be pretty straightforward, but now there are like six different ways to spec just for DPS, and half the guides are outdated because of recent patches. \n\nI'm trying to make a viable Fire Mage, and I've spent the last three hours swapping perks around, re-rolling umbral shards, and watching conflicting YouTube videos. Is anyone else feeling this pain? Does anyone have a solid, current resource for build breakdowns? Specifically struggling with what weight class actually gives the best overall benefits these days – medium seems kinda dead?\n\nAlso, any tips on avoiding total shard RNG hell? Feels like I'm burning through my resources just to get marginally better stats. Thanks!",
+    "subreddit": "newworldgame<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "Seriously, I just spent like three hours last night respec’ing my Zenurik build *again*. Trying to maximize energy regen while still having enough strength for transference… it feels like an endless min-max cycle! Is anyone else completely lost down the rabbit hole of optimizing every single node? What are your go-to builds currently? And does anyone have any tips for dealing with the inevitable conflict between duration, efficiency, and strength when trying to make everything \"just right\"?",
+    "subreddit": "warframe<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "Okay, I *know* it's probably just me being overly min/maxy, but I spent like three hours last night re-optimizing my Zenurik setup. Swapped out some mods, adjusted energy siphon placement... felt SO good when I finally got consistently high efficiency without sacrificing duration. \n\nAnyone else fall down this rabbit hole? What are your go-to builds for each school right now? Specifically interested in seeing what people are doing with Madurai – always feels kinda clunky compared to the others. Also, anyone figured out a decent way to visually track Focus cost mid-mission besides just… counting? Feels like DE could add a little UI element for that.",
+    "subreddit": "warframe<end_of_turn>"
+  },
+  {
+    "title": "Anyone else absolutely losing it over the new Diablo 4 patch notes?",
+    "self_text": "Seriously, Blizzard… nerfing *open world* experience just to push people into Nightmare Dungeons feels so incredibly cynical. I get wanting to funnel players towards endgame content, but hamstringing exploration and rewarding casual play like this? Feels directly against everything D4 initially promised. And don’t even get me STARTED on the loot changes. Less unique drops, more crafting materials...it’s just another step closer to being a chore instead of fun. Anyone else feeling completely deflated? What are your thoughts on how this will impact build diversity long term? Thinking about dusting off PoE again if this keeps up.",
+    "subreddit": "diablo4<end_of_turn>"
+  },
+  {
+    "title": "Anyone else hitting serious performance cliffs in New World after the recent patch?",
+    "self_text": "So I updated NW last night and…wow. My FPS took a nosedive, especially in large scale fights in EF or during invasions. Before, I was comfortably holding 60+ on medium settings at 1440p. Now it’s dipping into the 30s, even with everything turned down. I’ve tried verifying files, updating drivers (have an RTX 3070), and messing with launch options – no dice. Seeing similar complaints all over the official forums but haven’t found any consistent solutions yet. Anyone managed to get their performance back up? What are your specs & what have you tried? Specifically curious if anyone else using Reshade is having trouble since I suspect that might be part of it.",
+    "subreddit": "newworldgame<end_of_turn>"
+  },
+  {
+    "title": "Anyone else absolutely losing it over the insane amount of cosmetic bloat in modern live service games?",
+    "self_text": "Seriously, I booted up Apex again after a few months and spent like 15 minutes just *scrolling* through weapon skins. And then there are finisher animations, banner frames, quips…it feels less like earning cool stuff and more like a second job grinding for pixels. Is anyone else feeling completely overwhelmed by the sheer volume of stuff they’re trying to sell us? Like, I get needing revenue, but at what point does it detract from actually playing the game? What are your thoughts on the current state of cosmetic monetization – is it getting out of hand, or am I just being an old man yelling at clouds?",
+    "subreddit": "gaming<end_of_turn>"
+  },
+  {
+    "title": "Anyone else sinking WAY too much time into optimizing their New World build right now?",
+    "self_text": "Seriously, I feel like I've spent more time theorycrafting my Void Gauntlet/Fire Staff setup than actually *playing* New World lately. Between poring over guides, checking Discord channels for latest meta shifts, and testing different perk combinations… it’s a black hole! Is anyone else completely obsessed with min/maxing everything? What builds are you guys running and what resources have been most helpful? Also, anyone know if there's a good resource for understanding how specific gem cuts actually impact DPS – feels super opaque still.",
+    "subreddit": "newworldgame<end_of_turn>"
+  },
+  {
+    "title": "Anyone else absolutely losing it over the new Diablo 4 patch notes?",
+    "self_text": "Okay, so I spent *way* too long last night reading through the D4 PTR patch notes, and honestly…it feels like Blizzard is actively trying to make the endgame even MORE grindy? The nerfs to XP gain from Nightmare dungeons feel particularly egregious. Like, we already had a problem with leveling after hitting max level, now they’re just doubling down on it? \n\nI get wanting to address power creep, but slowing everything down doesn't solve anything - it just makes it exhausting. And don’t even get me STARTED on the changes to Unique drops. Feels like they’re making targeted farming almost pointless. \n\nAnyone else feeling similarly frustrated, or am I missing something? What are your biggest concerns about the patch? Maybe someone can explain the reasoning behind some of these choices because right now it seems counterintuitive to retaining players. Also, any thoughts on how this impacts different builds specifically? I main Sorc, and I'm worried about crackling energy being completely gutted.",
+    "subreddit": "diablo4<end_of_turn>"
+  },
+  {
+    "title": "Anyone else endlessly tweaking their Warframe builds despite knowing the meta?",
+    "self_text": "Okay, I *know* the optimal builds for most frames these days. I check Overframe regularly, understand augment mods, etc. But I still spend like an hour sometimes just… fiddling. Swapping polarity colors, trying slightly different Forma layouts for aesthetic reasons, seeing if I can squeeze out marginally better efficiency at the cost of damage. Is it just me? Does anyone else fall down this rabbit hole even when they know they're probably making things worse? Feels good though, y'know? Like personalizing your space ninja. What are some of your needlessly complex but satisfying builds?",
+    "subreddit": "warframe\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else sinking WAY too much time into optimizing their New World build right now?",
+    "self_text": "Seriously, I feel like I spend more time theorycrafting and tweaking my stats/gear than actually *playing* New World lately. The recent patch changes have thrown everything off, and I'm constantly seeing conflicting info about what the current \"meta\" is for DPS. Is anyone else deep diving into spreadsheets and build guides trying to maximize every single stat point? What builds are you guys having success with? Specifically curious about Great Axe/Fire Staff hybrid viability after the changes – feels kinda weak atm. Also, anyone run into weird bugs with how perks are calculating? Feels like some aren't working as intended.",
+    "subreddit": "newworldgame<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus schools?",
+    "self_text": "I've fallen *deep* down the rabbit hole of optimizing my Zenurik, Madurai, and Naramon focus schools. Like, spreadsheet deep. Is anyone else spending way too much time min-maxing energy regen, strength buffs, or operator mode abilities? I feel like it's kinda necessary for endgame content but man, the resource grind is REAL. Any pro-tips for efficient school leveling or underrated node combos? Also, what's your go-to build for each school? Let's share some suffering… er, strategies!",
+    "subreddit": "warframe\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "I feel like I spend more time *planning* my next Warframe build than actually playing sometimes. Right now I'm deep diving into Zenurik, trying to maximize energy regen without sacrificing strength or duration. The efficiency stacking is…a lot. Anyone got any particularly nasty (or surprisingly effective) Focus tree combos they wanna share? Also, seriously, why does upgrading schools cost so much Endo?! Feels like a second resource grind just to optimize.",
+    "subreddit": "warframe<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "Okay, I know it's kinda niche but I *cannot* stop optimizing my Zenurik/Madurai/Unairu builds. Feels like there's always another efficiency tweak or augment mod combo to squeeze out slightly more energy regen/damage/CC duration. Am I alone in falling down this rabbit hole? What are your go-to Focus setups right now, and what kind of content do you run them in? Also, anyone figured out a good way to balance energy cost reduction vs. ability strength for stuff like Nourish? Seriously considering making a spreadsheet...",
+    "subreddit": "warframe\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else struggling with the new Overwatch 2 Competitive Rank decay? Feels… harsh.",
+    "self_text": "Seriously, I took like a week off due to work and came back to find my rank *significantly* lower than expected. Like, several hundred SR gone. I understand some decay is necessary, but this feels excessive, especially considering how grindy climbing already is. Is anyone else experiencing this? What ranks are you guys seeing the biggest drops at? Thinking about just sticking to unranked for a bit if it's going to punish taking breaks this hard. Also, does anyone know the EXACT decay rate now? Blizzard's communication on this has been terrible as usual.",
+    "subreddit": "OverwatchUniversity<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "Okay, I *know* it's a bit niche, but I've fallen down the rabbit hole again. Been trying to optimize my Zenurik/Naramon build for energy sustain and ability spam on Saryn – specifically for Steel Path endurance runs. Feels like every node requires a slightly different approach depending on enemy types and map layout! \n\nI'm currently running [insert specific build details here - Forma, mods, etc.], but I'm constantly second-guessing whether I should swap out X for Y to improve efficiency or survivability. Anyone have any go-to setups they swear by? Or just share your own obsessive tuning process – misery loves company, right? Also, anyone else find themselves spending more time in the Arsenal than actually playing sometimes? 😂",
+    "subreddit": "warframe\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "Seriously, I just spent like three hours last night re-optimizing my Zenurik build after reading some stuff about energy regen breakpoints. Then I started down the rabbit hole of different augment mods and how they interact with each other… it never ends! Is anyone else constantly fiddling with these things trying to squeeze out every little bit of efficiency? What are your go-to Focus schools and builds right now? Bonus points if you have a screenshot! I'm especially curious about people mixing in newer augments - still feels like most guides are outdated.",
+    "subreddit": "warframe<end_of_turn>"
+  },
+  {
+    "title": "Anyone else completely lost trying to optimize New World settings? Seriously.",
+    "self_text": "Okay, I *love* New World when it runs well, but getting it to run *well* feels like a full-time job. I've watched like five different YouTube guides, messed with launch options, tweaked graphics settings individually...and still get wildly inconsistent framerates. My CPU usage spikes randomly, even at low settings. Is anyone else pulling their hair out over this? What are your go-to settings for a relatively smooth experience? Specs in case it helps: Ryzen 5 3600, RTX 2060 Super, 16GB RAM. Feels like even the \"optimized\" presets aren't actually optimized. Any help appreciated!",
+    "subreddit": "newworldgame<end_of_turn>"
+  },
+  {
+    "title": "Anyone else hitting insane stuttering in New World after the latest patch?",
+    "self_text": "Seriously, my FPS *looks* okay but it feels like it drops to single digits every few seconds. I've tried verifying files, updating drivers, lowering settings...nothing seems to consistently help. Seeing a lot of similar complaints on the forums, but no real solutions yet. Anyone figure out a workaround or know if the devs are even acknowledging it? My rig should be easily handling this – Ryzen 5800X, RTX 3070, 32GB RAM. Feels like a DX12 issue maybe? Any specific settings people have had luck tweaking?",
+    "subreddit": "newworldgame\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "I feel like I spend more time *planning* my Warframe builds than actually playing sometimes. Specifically, I'm deep diving into Focus schools right now – trying to min/max everything for different content. Zenurik energy is obvious, but I'm struggling to find good synergistic builds for Madurai (damage amp + operator stuff) that don't feel clunky. Anyone got any recent discoveries or go-to setups they're willing to share? Also, anyone know if there's a decent resource for explaining how Focus school interactions work with different Arcane helmets? Feels like some combos are way stronger than others but it's hard to figure out why!",
+    "subreddit": "warframe<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "I feel like I spend more time theorycrafting my Zenurik/Unairu/Madurai builds than actually *playing* Warframe sometimes. Just trying to optimize energy regen, efficiency, and duration for different content… it’s a rabbit hole! Anyone got any ridiculously optimized builds they wanna share or just commiserate about the endless tweaking? Specifically curious if anyone’s found good synergy with newer augments. Also, what’s everyone’s go-to Arcane setup these days?",
+    "subreddit": "warframe\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "Okay, I *know* it's kinda niche, but I've fallen down a rabbit hole optimizing my Zenurik/Madurai/Unairu schools. Specifically trying to balance energy efficiency with damage output on different frames. Feels like there's always some tiny tweak that can shave off a few seconds from casting time or boost crit chance just enough to make a difference. \n\nAnyone else spend way too much time min/maxing Focus? What are your go-to builds for specific content (Steel Path, Arbitrations, etc)? And does anyone have any good resources beyond the wiki for understanding how all the node interactions actually work? Seriously, the descriptions are sometimes…vague.",
+    "subreddit": "warframe\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else obsessively tweaking their Warframe focus school setups?",
+    "self_text": "Okay, I know it's kinda niche, but I've fallen *deep* down the rabbit hole of optimizing my Zenurik/Unairu/Madurai schools. Like, spreadsheet deep. I'm trying to maximize energy efficiency while still getting good ability strength boosts, and the node choices are driving me insane. Is anyone else spending way too much time min-maxing these things? What are your go-to builds for different frames/content? Specifically struggling with balancing duration vs. efficiency for stuff like Nova Prime's Wormhole. Also, any thoughts on whether investing heavily into enemy radar nodes is actually worth it or just a sunk cost?",
+    "subreddit": "warframe<end_of_turn>"
+  },
+  {
+    "title": "Anyone else spending way too much time tweaking their Warframe build just to barely improve DPS?",
+    "self_text": "Seriously, I think I spent an hour last night futzing with my Saryn build. Swapped out Forma like five times, checked every stat weight, and honestly? The difference between my \"optimized\" build and the previous one was like…3% more damage. Three percent! Is it just me, or does the endless pursuit of min/maxing in WF sometimes feel less rewarding and more like digital busywork? What are your go-to resources for build checking these days? Overframe still reliable? Also, anyone got good suggestions for a relatively budget-friendly build for Steel Path content? Trying to avoid needing super rare mods for everything.",
+    "subreddit": "warframe<end_of_turn>"
+  },
+  {
+    "title": "Anyone else OBSESSED with optimizing their RimWorld colony for maximum efficiency?",
+    "self_text": "Seriously, I just spent three hours redesigning my hydroponics bay to increase yield by 8% using only vanilla expanded mods. It feels SO good. What are your go-to strategies for food production, defense, or just overall colony happiness? I’m currently trying to figure out the best way to handle mental breaks without resorting to constant recreation rooms – any ideas? Also, anyone else get lost down the rabbit hole of min-maxing pawn skills? Share your madness!",
+    "subreddit": "r/RimWorld\n\n\n\n<end_of_turn>"
+  },
+  {
+    "title": "Anyone else OBSESSED with trying to get a stable Fallout 4 mod list going?",
+    "self_text": "Seriously, I think I've spent more time troubleshooting mod conflicts in Fallout 4 this week than *playing* Fallout 4. I thought LOOT would solve everything...it did not. Anyone have any go-to resources or just… sanity checks for getting a decent load order working these days? Specifically struggling with settlement mods clashing with graphical overhauls. Thinking about just starting fresh AGAIN but the thought fills me with dread. What are your biggest pain points and successes?",
+    "subreddit": "fallout4mods<end_of_turn>"
+  },
+  {
+    "title": "Anyone else spending way too much time tweaking their No Man's Sky base designs?",
+    "self_text": "Seriously, I just lost like four hours trying to get the perfect symmetrical layout for my freighter hangar. And then spent another hour optimizing the lighting. It *looks* amazing, but it feels…excessive? Is anyone else falling down this rabbit hole? What are some of your favorite base building tricks or resources you use? I’m starting to think I need a second job just to fund all these decorative items. Also, does anyone know if there's a good guide out there for automating resource gathering specifically *for* base building? My inventory is constantly full.",
+    "subreddit": "nomanssky<end_of_turn>"
+  }
+]
