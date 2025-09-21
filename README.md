@@ -105,3 +105,11 @@ docker run --gpus all -it -p 3000:3000 slop:conda
 # Inside container:
 conda run -n slop python /app/backend/server.py
 ```
+
+things I wanted to do but ran out of time for:
+- testing on actual social media environemnt in the app I made
+- testing w image gen
+- finetuned LLM judge
+- vector similarity of generated posts (more variety is better)
+- investigating social implications
+- prompt: what are some topics you like to discuss

@@ -3,21 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Size Ablation Judgement</title>
+    <title>Judgement</title>
     <style>
       body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 24px; }
       header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
       .controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
       .fileinfo { font-weight: 600; }
-      .grid { margin-top: 16px; display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 12px; }
-      @media (min-width: 900px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-      .post { border: 1px solid #e5e5e5; border-radius: 8px; padding: 12px; }
+      .postwrap { margin-top: 16px; display: flex; flex-direction: column; gap: 12px; }
+      .post { border: 1px solid #e5e5e5; border-radius: 8px; padding: 12px; max-width: 900px; }
       .title { font-weight: 600; margin-bottom: 6px; }
       .meta { color: #666; font-size: 12px; margin-bottom: 6px; }
       .self { white-space: pre-wrap; }
       .row { display: flex; gap: 8px; align-items: center; }
       .sticky { position: sticky; top: 0; background: #fff; padding: 8px 0; z-index: 1; border-bottom: 1px solid #eee; }
       input[type="number"] { width: 80px; }
+      .progressbar { height: 10px; background: #eee; border-radius: 999px; overflow: hidden; min-width: 200px; }
+      .progressbar > .bar { height: 100%; background: #4f46e5; width: 0%; transition: width 0.2s ease; }
+      .subtle { color: #555; font-size: 12px; }
+      .kbd { display: inline-block; border: 1px solid #ddd; border-bottom-width: 2px; border-radius: 6px; padding: 0 6px; font-size: 12px; background: #f9f9f9; }
+      .actions { display: flex; gap: 8px; align-items: center; }
     </style>
   </head>
   <body>
@@ -25,22 +29,40 @@
       <div>
         <div class="fileinfo" id="fileinfo">No file loaded</div>
         <div class="row sticky">
-          <div>Adherence %: <span id="adhPct">0</span></div>
-          <div>Coherence %: <span id="cohPct">0</span></div>
+          <div class="row" style="gap:16px">
+            <div class="row" style="gap:6px">
+              <span class="subtle">Files complete</span>
+              <div class="progressbar" style="width:220px"><div id="filesBar" class="bar"></div></div>
+              <span id="filesProg" class="subtle">0 / 0</span>
+            </div>
+            <div class="row" style="gap:6px">
+              <span class="subtle">Current file</span>
+              <div class="progressbar" style="width:220px"><div id="fileBar" class="bar"></div></div>
+              <span id="fileProg" class="subtle">0 / 0</span>
+            </div>
+          </div>
           <span id="status"></span>
         </div>
       </div>
       <div class="controls">
+        <label>Source <select id="source">
+          <option value="train_size_ablation">train_size_ablation</option>
+          <option value="experiment_ablation">experiment_ablation</option>
+        </select></label>
         <label>Provider <select id="provider"></select></label>
         <label>Model <select id="model"></select></label>
         <label>Topic <select id="topic"></select></label>
-        <button id="loadMixed">Load Posts</button>
-        <button id="prevBatch">Back 10</button>
-        <button id="nextBatch">Next 10</button>
+        <button id="loadMixed">Load</button>
       </div>
     </header>
 
-    <div class="grid" id="posts"></div>
+    <div class="postwrap">
+      <div id="hint" class="subtle">Use <span class="kbd">A</span> for Adherence, <span class="kbd">C</span> for Coherence, <span class="kbd">Enter</span> to go Next</div>
+      <div id="postContainer"></div>
+      <div class="actions">
+        <button id="nextOne">Next ↵</button>
+      </div>
+    </div>
 
     <script>
       const API_LIST = '/judgement/api/files';
@@ -48,23 +70,27 @@
       const API_OPTIONS = '/judgement/api/options';
       const API_MIXED = '/judgement/api/mixed';
       const API_UPDATE = '/judgement/api/update';
+      const API_PROGRESS = '/judgement/api/progress';
 
       const fileinfoEl = document.getElementById('fileinfo');
       const providerEl = document.getElementById('provider');
       const modelEl = document.getElementById('model');
       const topicEl = document.getElementById('topic');
-      const postsEl = document.getElementById('posts');
-      const adhPctEl = document.getElementById('adhPct');
-      const cohPctEl = document.getElementById('cohPct');
+      const postContainerEl = document.getElementById('postContainer');
       const statusEl = document.getElementById('status');
+      const sourceEl = document.getElementById('source');
+      const filesBarEl = document.getElementById('filesBar');
+      const filesProgEl = document.getElementById('filesProg');
+      const fileBarEl = document.getElementById('fileBar');
+      const fileProgEl = document.getElementById('fileProg');
 
       let files = [];
       let currentIndex = -1;
       let currentPath = '';
       let currentMixed = [];
-      const BATCH_SIZE = 10;
-      let pageIndex = 0; // 0-based batch index
+      let cursorIndex = 0; // single-post index
       const stateByPost = new Map(); // key => { adh: boolean, coh: boolean, file: string }
+      let progressCache = { files: [], totals: { files: 0, fully_labeled: 0 } };
 
       function makeKey(file, localIndex) {
         return `${file || ''}#${String(localIndex)}`;
@@ -78,14 +104,16 @@
       }
 
       async function loadFiles() {
-        const res = await fetch(API_LIST);
+        const src = sourceEl.value;
+        const res = await fetch(`${API_LIST}?source=${encodeURIComponent(src)}`);
         const data = await res.json();
         files = data.files || [];
         // nothing to render; mixed mode UI replaces direct file selection
       }
 
       async function loadOptions() {
-        const res = await fetch(API_OPTIONS);
+        const src = sourceEl.value;
+        const res = await fetch(`${API_OPTIONS}?source=${encodeURIComponent(src)}`);
         const data = await res.json();
         const options = data.options || [];
         const providers = [...new Set(options.map(o => o.provider))];
@@ -111,95 +139,104 @@
         const provider = providerEl.value;
         const model = modelEl.value;
         const topic = topicEl.value;
+        const source = sourceEl.value;
         fileinfoEl.textContent = `${provider} / ${model} / ${topic}`;
         statusEl.textContent = '';
-        const res = await fetch(`${API_MIXED}?provider=${encodeURIComponent(provider)}&model=${encodeURIComponent(model)}&topic=${encodeURIComponent(topic)}`);
+        const res = await fetch(`${API_MIXED}?provider=${encodeURIComponent(provider)}&model=${encodeURIComponent(model)}&topic=${encodeURIComponent(topic)}&source=${encodeURIComponent(source)}`);
         const data = await res.json();
         currentMixed = data.posts || [];
         stateByPost.clear();
         shownKeys.clear();
-        pageIndex = 0;
-        showBatch(pageIndex);
+        cursorIndex = 0;
+        await refreshProgress();
+        await showCurrent();
       }
 
-      function renderPosts(posts) {
-        postsEl.innerHTML = '';
-        posts.forEach((p, idx) => {
-          const div = document.createElement('div');
-          div.className = 'post';
-          div.setAttribute('data-file', p.file_path || '');
-          div.innerHTML = `
-            <div class="title">${escapeHtml(p.title || '(no title)')}</div>
-            <div class="meta">${escapeHtml(p.subreddit || '')}</div>
-            <div class="self">${escapeHtml(p.self_text || '')}</div>
-            <div class="row" style="margin-top:8px">
-              <label><input type="checkbox" class="adh" data-index="${idx}"> Adherence</label>
-              <label><input type="checkbox" class="coh" data-index="${idx}"> Coherence</label>
-            </div>
-          `;
-          const key = makeKey(p.file_path, p.local_index);
-          // initialize default state if unseen
-          if (!stateByPost.has(key)) {
-            stateByPost.set(key, { adh: false, coh: false, file: p.file_path });
-          }
-          // set checkbox states from memory
-          const adhCb = div.querySelector('input.adh');
-          const cohCb = div.querySelector('input.coh');
-          const st = stateByPost.get(key);
-          adhCb.checked = !!st.adh;
-          cohCb.checked = !!st.coh;
-          // attach listeners that update memory first
-          adhCb.addEventListener('change', async () => {
-            const cur = stateByPost.get(key) || { adh: false, coh: false, file: p.file_path };
-            cur.adh = adhCb.checked;
-            cur.file = p.file_path;
-            stateByPost.set(key, cur);
-            await computeAndSave();
-          });
-          cohCb.addEventListener('change', async () => {
-            const cur = stateByPost.get(key) || { adh: false, coh: false, file: p.file_path };
-            cur.coh = cohCb.checked;
-            cur.file = p.file_path;
-            stateByPost.set(key, cur);
-            await computeAndSave();
-          });
-          postsEl.appendChild(div);
+      function renderCurrentPost(p) {
+        postContainerEl.innerHTML = '';
+        if (!p) {
+          const done = document.createElement('div');
+          done.className = 'subtle';
+          done.textContent = 'No more posts.';
+          postContainerEl.appendChild(done);
+          return;
+        }
+        const div = document.createElement('div');
+        div.className = 'post';
+        div.setAttribute('data-file', p.file_path || '');
+        div.innerHTML = `
+          <div class="title">${escapeHtml(p.title || '(no title)')}</div>
+          <div class="meta">${escapeHtml(p.subreddit || '')}</div>
+          <div class="self">${escapeHtml(p.self_text || '')}</div>
+          <div class="row" style="margin-top:8px">
+            <label><input type="checkbox" class="adh"> Adherence (A)</label>
+            <label><input type="checkbox" class="coh"> Coherence (C)</label>
+            <label><input type="checkbox" class="uniq"> Unique (U)</label>
+          </div>
+        `;
+        const key = makeKey(p.file_path, p.local_index);
+        if (!stateByPost.has(key)) {
+          stateByPost.set(key, { adh: false, coh: false, uniq: false, file: p.file_path });
+        }
+        const adhCb = div.querySelector('input.adh');
+        const cohCb = div.querySelector('input.coh');
+        const uniqCb = div.querySelector('input.uniq');
+        const st = stateByPost.get(key);
+        adhCb.checked = !!st.adh;
+        cohCb.checked = !!st.coh;
+        uniqCb.checked = !!st.uniq;
+        adhCb.addEventListener('change', async () => {
+          const cur = stateByPost.get(key) || { adh: false, coh: false, uniq: false, file: p.file_path };
+          cur.adh = adhCb.checked;
+          cur.file = p.file_path;
+          stateByPost.set(key, cur);
+          await computeAndSave();
+          await refreshProgress();
+          updateFileProgressBar(p.file_path || '');
         });
-        // Initialize percentages
-        computeAndSave();
+        cohCb.addEventListener('change', async () => {
+          const cur = stateByPost.get(key) || { adh: false, coh: false, uniq: false, file: p.file_path };
+          cur.coh = cohCb.checked;
+          cur.file = p.file_path;
+          stateByPost.set(key, cur);
+          await computeAndSave();
+          await refreshProgress();
+          updateFileProgressBar(p.file_path || '');
+        });
+        uniqCb.addEventListener('change', async () => {
+          const cur = stateByPost.get(key) || { adh: false, coh: false, uniq: false, file: p.file_path };
+          cur.uniq = uniqCb.checked;
+          cur.file = p.file_path;
+          stateByPost.set(key, cur);
+          await computeAndSave();
+          await refreshProgress();
+          updateFileProgressBar(p.file_path || '');
+        });
+        postContainerEl.appendChild(div);
       }
 
-      function getBatchPosts(index) {
-        const start = index * BATCH_SIZE;
-        const end = start + BATCH_SIZE;
-        return currentMixed.slice(start, end);
+      async function showCurrent() {
+        const p = currentMixed[cursorIndex] || null;
+        renderCurrentPost(p);
+        await sendShownCountForCurrent(p);
+        updateFileProgressBar(p?.file_path || '');
       }
 
-      async function showBatch(index) {
-        const batch = getBatchPosts(index);
-        renderPosts(batch);
-        await sendShownCountsForBatch(batch);
-        // Disable next if at end
-        const nextBtn = document.getElementById('nextBatch');
-        const moreRemain = (index + 1) * BATCH_SIZE < currentMixed.length;
-        nextBtn.disabled = !moreRemain;
-      }
-
-      async function sendShownCountsForBatch(batch) {
+      async function sendShownCountForCurrent(p) {
         const fileCounts = {};
         const newlyShown = [];
-        batch.forEach(p => {
-          const key = makeKey(p.file_path, p.local_index);
-          if (!key) return;
-          if (shownKeys.has(key)) return; // already counted
-          newlyShown.push(key);
-          const fp = p.file_path;
-          if (!fp) return;
-          fileCounts[fp] = (fileCounts[fp] || 0) + 1;
-        });
+        if (!p) return;
+        const key = makeKey(p.file_path, p.local_index);
+        if (!key) return;
+        if (shownKeys.has(key)) return;
+        newlyShown.push(key);
+        const fp = p.file_path;
+        if (!fp) return;
+        fileCounts[fp] = (fileCounts[fp] || 0) + 1;
         if (Object.keys(fileCounts).length === 0) return;
         try {
-          const resp = await fetch('/judgement/api/shown', {
+          const src = sourceEl.value;
+          const resp = await fetch(`/judgement/api/shown?source=${encodeURIComponent(src)}`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ file_counts: fileCounts }),
@@ -214,28 +251,19 @@
         }
       }
 
-      function computeCounts() {
-        const total = postsEl.querySelectorAll('.post').length;
-        const adhChecked = postsEl.querySelectorAll('input.adh:checked').length;
-        const cohChecked = postsEl.querySelectorAll('input.coh:checked').length;
-        adhPctEl.textContent = String(adhChecked);
-        cohPctEl.textContent = String(cohChecked);
-        return { adh_count: adhChecked, coh_count: cohChecked, total };
-      }
-
       async function savePercents() {
         if (!currentMixed || currentMixed.length === 0) return;
-        const { adh_count, coh_count } = computeCounts();
         // Group by originating file for CURRENTLY RENDERED batch
         const byFile = new Map();
         // Aggregate across ALL seen posts in current selection
         stateByPost.forEach((st, key) => {
           const file = st.file || '';
           if (!file) return;
-          if (!byFile.has(file)) byFile.set(file, { adh: 0, coh: 0 });
+          if (!byFile.has(file)) byFile.set(file, { adh: 0, coh: 0, uniq: 0 });
           const rec = byFile.get(file);
           if (st.adh) rec.adh += 1;
           if (st.coh) rec.coh += 1;
+          if (st.uniq) rec.uniq += 1;
         });
         let allOk = true;
         for (const [file, rec] of byFile.entries()) {
@@ -243,8 +271,10 @@
             file_path: file,
             adh_count: rec.adh,
             coh_count: rec.coh,
+            uniq_count: rec.uniq,
           };
-          const res = await fetch(API_UPDATE, {
+          const src = sourceEl.value;
+          const res = await fetch(`${API_UPDATE}?source=${encodeURIComponent(src)}`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload),
@@ -256,26 +286,105 @@
       }
 
       async function computeAndSave() {
-        computeCounts();
         await savePercents();
       }
       document.getElementById('loadMixed').addEventListener('click', loadMixed);
-      document.getElementById('nextBatch').addEventListener('click', async () => {
-        pageIndex += 1;
-        await showBatch(pageIndex);
+      document.getElementById('nextOne').addEventListener('click', async () => {
+        await goNext();
       });
-      document.getElementById('prevBatch').addEventListener('click', async () => {
-        if (pageIndex > 0) {
-          pageIndex -= 1;
-          await showBatch(pageIndex);
+
+      async function goNext() {
+        if (cursorIndex < currentMixed.length - 1) {
+          cursorIndex += 1;
+          await showCurrent();
+        } else {
+          renderCurrentPost(null);
+        }
+      }
+
+      document.addEventListener('keydown', async (e) => {
+        if (!currentMixed || currentMixed.length === 0) return;
+        const p = currentMixed[cursorIndex];
+        if (!p) return;
+        const key = makeKey(p.file_path, p.local_index);
+        const cur = stateByPost.get(key) || { adh: false, coh: false, uniq: false, file: p.file_path };
+        let changed = false;
+        if (e.key === 'a' || e.key === 'A') {
+          if (!cur.adh) { cur.adh = true; changed = true; }
+        } else if (e.key === 'c' || e.key === 'C') {
+          if (!cur.coh) { cur.coh = true; changed = true; }
+        } else if (e.key === 'u' || e.key === 'U') {
+          if (!cur.uniq) { cur.uniq = true; changed = true; }
+        } else if (e.key === 'Enter') {
+          await goNext();
+          return;
+        } else {
+          return;
+        }
+        if (changed) {
+          cur.file = p.file_path;
+          stateByPost.set(key, cur);
+          // Update checkboxes visually
+          const adhCb = postContainerEl.querySelector('input.adh');
+          const cohCb = postContainerEl.querySelector('input.coh');
+          const uniqCb = postContainerEl.querySelector('input.uniq');
+          if (adhCb) adhCb.checked = !!cur.adh;
+          if (cohCb) cohCb.checked = !!cur.coh;
+          if (uniqCb) uniqCb.checked = !!cur.uniq;
+          await computeAndSave();
+          await refreshProgress();
         }
       });
+
+      async function refreshProgress() {
+        const provider = providerEl.value;
+        const model = modelEl.value;
+        const topic = topicEl.value;
+        const source = sourceEl.value;
+        if (!provider || !model || !topic) return;
+        try {
+          const res = await fetch(`${API_PROGRESS}?provider=${encodeURIComponent(provider)}&model=${encodeURIComponent(model)}&topic=${encodeURIComponent(topic)}&source=${encodeURIComponent(source)}`);
+          const data = await res.json();
+          if (data && data.ok) {
+            progressCache = { files: data.files || [], totals: data.totals || { files: 0, fully_labeled: 0 } };
+            const totalFiles = progressCache.totals.files || 0;
+            const doneFiles = progressCache.totals.fully_labeled || 0;
+            const pct = totalFiles > 0 ? Math.min(100, Math.round((doneFiles / totalFiles) * 100)) : 0;
+            filesBarEl.style.width = `${pct}%`;
+            filesProgEl.textContent = `${doneFiles} / ${totalFiles}`;
+          }
+        } catch (e) {
+          // ignore
+        }
+      }
+
+      function updateFileProgressBar(filePath) {
+        if (!filePath) {
+          fileBarEl.style.width = '0%';
+          fileProgEl.textContent = '0 / 0';
+          return;
+        }
+        const rec = (progressCache.files || []).find(f => f.file_path === filePath);
+        const total = rec ? (rec.total || 0) : 0;
+        // Count locally labeled posts for this file where both labels set
+        let labeled = 0;
+        stateByPost.forEach((st, key) => {
+          if ((st.file || '') === filePath && st.adh && st.coh) labeled += 1;
+        });
+        const pct = total > 0 ? Math.min(100, Math.round((labeled / total) * 100)) : 0;
+        fileBarEl.style.width = `${pct}%`;
+        fileProgEl.textContent = `${labeled} / ${total}`;
+      }
 
       // Saving happens automatically on checkbox changes
 
       (async function init() {
         await loadFiles();
         await loadOptions();
+        sourceEl.addEventListener('change', async () => {
+          await loadFiles();
+          await loadOptions();
+        });
       })();
     </script>
   </body>

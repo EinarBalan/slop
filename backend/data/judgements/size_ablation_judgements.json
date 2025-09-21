@@ -1,0 +1,142 @@
+[
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/alike/soft prompt.json",
+    "adherence": 42,
+    "coherence": 39,
+    "shown_count": 50,
+    "unique": 22
+  },
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/alike/like history.json",
+    "adherence": 49,
+    "coherence": 49,
+    "shown_count": 50,
+    "unique": 7
+  },
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/alike/self defined.json",
+    "adherence": 40,
+    "coherence": 34,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/alike/summary.json",
+    "adherence": 31,
+    "coherence": 24,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/college/summary.json",
+    "adherence": 1,
+    "coherence": 1,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/college/soft prompt.json",
+    "adherence": 39,
+    "coherence": 33,
+    "shown_count": 50,
+    "unique": 6
+  },
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/college/like history.json",
+    "adherence": 32,
+    "coherence": 29,
+    "shown_count": 50,
+    "unique": 4
+  },
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/college/self defined.json",
+    "adherence": 0,
+    "coherence": 0,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/formatspecific/like history.json",
+    "adherence": 25,
+    "coherence": 21,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/formatspecific/self defined.json",
+    "adherence": 21,
+    "coherence": 15,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/formatspecific/soft prompt.json",
+    "adherence": 38,
+    "coherence": 20,
+    "shown_count": 50,
+    "unique": 1
+  },
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/formatspecific/summary.json",
+    "adherence": 49,
+    "coherence": 24,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/nerdy/summary.json",
+    "adherence": 13,
+    "coherence": 32,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/nerdy/soft prompt.json",
+    "adherence": 44,
+    "coherence": 35,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/nerdy/self defined.json",
+    "adherence": 1,
+    "coherence": 0,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/nerdy/like history.json",
+    "adherence": 45,
+    "coherence": 39,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/newmother/like history.json",
+    "adherence": 34,
+    "coherence": 26,
+    "shown_count": 50,
+    "unique": 2
+  },
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/newmother/soft prompt.json",
+    "adherence": 27,
+    "coherence": 3,
+    "shown_count": 50,
+    "unique": 1
+  },
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/newmother/summary.json",
+    "adherence": 32,
+    "coherence": 23,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/newmother/self defined.json",
+    "adherence": 2,
+    "coherence": 2,
+    "shown_count": 50,
+    "unique": 1
+  }
+]

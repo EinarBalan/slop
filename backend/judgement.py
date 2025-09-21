@@ -25,10 +25,25 @@ def _judgements_dir() -> str:
     return path
 
 
-def _generated_root() -> str:
-    # backend/data/generated/train_size_ablation
-    path = os.path.join(_data_dir(), 'generated', 'train_size_ablation')
-    return path
+def _generated_root_for(source: str) -> str:
+    # Support multiple generated sources under backend/data/generated
+    allowed = {'train_size_ablation', 'experiment_ablation'}
+    selected = source if source in allowed else 'train_size_ablation'
+    return os.path.join(_data_dir(), 'generated', selected)
+
+
+def _get_source_from_request() -> str:
+    return (request.args.get('source') or '').strip() or 'train_size_ablation'
+
+
+def _normalize_provider(provider: str) -> str:
+    # Map human-friendly provider names to directory names
+    if not provider:
+        return provider
+    low = provider.lower()
+    if low == 'openai':
+        return 'gpt-5'
+    return provider
 
 
 def _judgements_file_path() -> str:
@@ -59,8 +74,8 @@ def _write_json_file(path: str, data: Any) -> None:
     os.replace(tmp_path, path)
 
 
-def _list_json_files() -> List[str]:
-    base = _generated_root()
+def _list_json_files(source: str) -> List[str]:
+    base = _generated_root_for(source)
     files: List[str] = []
     if not os.path.exists(base):
         return files
@@ -75,15 +90,17 @@ def _list_json_files() -> List[str]:
     return files
 
 
-def _discover_options() -> List[Dict[str, str]]:
+def _discover_options(source: str) -> List[Dict[str, str]]:
     options: List[Dict[str, str]] = []
-    root = _generated_root()
+    root = _generated_root_for(source)
     if not os.path.exists(root):
         return options
-    for provider in sorted(os.listdir(root)):
-        p_dir = os.path.join(root, provider)
+    for provider_dir in sorted(os.listdir(root)):
+        p_dir = os.path.join(root, provider_dir)
         if not os.path.isdir(p_dir):
             continue
+        # Present a user-friendly provider label
+        provider_label = 'openai' if provider_dir == 'gpt-5' else provider_dir
         for model in sorted(os.listdir(p_dir)):
             m_dir = os.path.join(p_dir, model)
             if not os.path.isdir(m_dir):
@@ -95,12 +112,13 @@ def _discover_options() -> List[Dict[str, str]]:
                 # ensure there are json files
                 has_json = any(name.endswith('.json') for name in os.listdir(t_dir))
                 if has_json:
-                    options.append({'provider': provider, 'model': model, 'topic': topic})
+                    options.append({'provider': provider_label, 'model': model, 'topic': topic})
     return options
 
 
-def _iter_topic_files(provider: str, model: str, topic: str) -> List[str]:
-    base = os.path.join(_generated_root(), provider, model, topic)
+def _iter_topic_files(provider: str, model: str, topic: str, source: str) -> List[str]:
+    provider_dir = _normalize_provider(provider)
+    base = os.path.join(_generated_root_for(source), provider_dir, model, topic)
     paths: List[str] = []
     if not os.path.exists(base):
         return paths
@@ -121,7 +139,8 @@ def serve_ui():
 
 @judgement.route('/judgement/api/files')
 def api_list_files():
-    return jsonify({'ok': True, 'files': _list_json_files()})
+    source = _get_source_from_request()
+    return jsonify({'ok': True, 'files': _list_json_files(source)})
 
 
 @judgement.route('/judgement/api/file')
@@ -142,7 +161,8 @@ def api_get_file():
             posts = []
         # Attach index for stable identification on the client
         normalized: List[Dict[str, Any]] = []
-        for idx, p in enumerate(posts):
+        LIMIT = 50
+        for idx, p in enumerate(posts[:LIMIT]):
             if isinstance(p, dict):
                 normalized.append({
                     'index': idx,
@@ -157,7 +177,8 @@ def api_get_file():
 
 @judgement.route('/judgement/api/options')
 def api_options():
-    return jsonify({'ok': True, 'options': _discover_options()})
+    source = _get_source_from_request()
+    return jsonify({'ok': True, 'options': _discover_options(source)})
 
 
 @judgement.route('/judgement/api/mixed')
@@ -167,18 +188,20 @@ def api_mixed():
     provider = (request.args.get('provider') or '').strip()
     model = (request.args.get('model') or '').strip()
     topic = (request.args.get('topic') or '').strip()
+    source = _get_source_from_request()
     if not provider or not model or not topic:
         return jsonify({'ok': False, 'error': 'missing_params'}), 400
 
     # Load posts from all size files under the selection
-    file_rels = _iter_topic_files(provider, model, topic)
+    file_rels = _iter_topic_files(provider, model, topic, source)
     mixed: List[Dict[str, Any]] = []
     for rel in file_rels:
         full_path = os.path.join(_data_dir(), rel)
         items = _read_json_file(full_path)
         if not isinstance(items, list):
             continue
-        for idx, p in enumerate(items):
+        LIMIT = 50
+        for idx, p in enumerate(items[:LIMIT]):
             if not isinstance(p, dict):
                 continue
             mixed.append({
@@ -201,7 +224,8 @@ def api_shown_counts():
         return jsonify({'ok': False, 'error': 'invalid_payload'}), 400
 
     # Validate files exist under allowed root
-    known = set(_list_json_files())
+    source = _get_source_from_request()
+    known = set(_list_json_files(source))
     entries: List[Dict[str, Any]] = []
     for file_path, delta in file_counts.items():
         if file_path not in known:
@@ -259,25 +283,30 @@ def api_update_summary():
     # Support new count-based fields; fall back to adherence/coherence if provided
     adh_count = data.get('adh_count')
     coh_count = data.get('coh_count')
+    uniq_count = data.get('uniq_count')
     if adh_count is None and 'adherence' in data:
         adh_count = data.get('adherence')
     if coh_count is None and 'coherence' in data:
         coh_count = data.get('coherence')
+    if uniq_count is None and 'unique' in data:
+        uniq_count = data.get('unique')
 
     if not file_path:
         return jsonify({'ok': False, 'error': 'missing_file_path'}), 400
     # Validate the path is one of the known files
-    known = set(_list_json_files())
+    source = _get_source_from_request()
+    known = set(_list_json_files(source))
     if file_path not in known:
         return jsonify({'ok': False, 'error': 'unknown_file'}), 400
 
     try:
         a_val = int(adh_count)
         c_val = int(coh_count)
+        u_val = int(0 if uniq_count is None else uniq_count)
     except Exception:
         return jsonify({'ok': False, 'error': 'invalid_counts'}), 400
     # Ensure non-negative
-    if a_val < 0 or c_val < 0:
+    if a_val < 0 or c_val < 0 or u_val < 0:
         return jsonify({'ok': False, 'error': 'invalid_counts'}), 400
 
     path = _judgements_file_path()
@@ -292,6 +321,7 @@ def api_update_summary():
             if isinstance(entry, dict) and entry.get('file_path') == file_path:
                 entry['adherence'] = a_val
                 entry['coherence'] = c_val
+                entry['unique'] = u_val
                 updated = True
                 break
         if not updated:
@@ -299,9 +329,68 @@ def api_update_summary():
                 'file_path': file_path,
                 'adherence': a_val,
                 'coherence': c_val,
+                'unique': u_val,
             })
 
         _write_json_file(path, content)
     return jsonify({'ok': True})
+
+
+@judgement.route('/judgement/api/progress')
+def api_progress():
+    """Return progress for files under a given selection.
+
+    Query params:
+      - source: 'train_size_ablation' (default) or 'experiment_ablation'
+      - provider, model, topic: required to scope files
+    Response:
+      { ok: true, files: [ { file_path, total, adherence, coherence, fully_labeled } ],
+        totals: { files: N, fully_labeled: M } }
+    """
+    source = _get_source_from_request()
+    provider = (request.args.get('provider') or '').strip()
+    model = (request.args.get('model') or '').strip()
+    topic = (request.args.get('topic') or '').strip()
+    if not provider or not model or not topic:
+        return jsonify({'ok': False, 'error': 'missing_params'}), 400
+
+    file_rels = _iter_topic_files(provider, model, topic, source)
+
+    # Read existing judgements
+    path = _judgements_file_path()
+    data = _read_json_file(path)
+    existing: Dict[str, Dict[str, Any]] = {}
+    if isinstance(data, list):
+        for entry in data:
+            if isinstance(entry, dict) and 'file_path' in entry:
+                existing[entry['file_path']] = entry
+
+    results: List[Dict[str, Any]] = []
+    fully = 0
+    for rel in file_rels:
+        full = os.path.join(_data_dir(), rel)
+        posts = _read_json_file(full)
+        total = 0
+        if isinstance(posts, list):
+            total = min(50, len(posts))
+        rec = existing.get(rel) or {}
+        a = int(rec.get('adherence') or 0)
+        c = int(rec.get('coherence') or 0)
+        fl = (a >= total and c >= total and total > 0)
+        if fl:
+            fully += 1
+        results.append({
+            'file_path': rel,
+            'total': total,
+            'adherence': a,
+            'coherence': c,
+            'fully_labeled': fl,
+        })
+
+    return jsonify({
+        'ok': True,
+        'files': results,
+        'totals': { 'files': len(file_rels), 'fully_labeled': fully },
+    })
 
 
