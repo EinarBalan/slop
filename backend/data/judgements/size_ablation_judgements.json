@@ -138,5 +138,33 @@
     "coherence": 2,
     "shown_count": 50,
     "unique": 1
+  },
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/personal/summary.json",
+    "adherence": 26,
+    "coherence": 20,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/personal/soft prompt.json",
+    "adherence": 37,
+    "coherence": 32,
+    "shown_count": 50,
+    "unique": 3
+  },
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/personal/like history.json",
+    "adherence": 21,
+    "coherence": 16,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/google/gemma-3-4b-it/personal/self defined.json",
+    "adherence": 24,
+    "coherence": 19,
+    "shown_count": 50,
+    "unique": 0
   }
 ]
