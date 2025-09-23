@@ -9,7 +9,7 @@
 *.sw?
 frontend/node_modules
 
-backend/data/generated/
+# backend/data/generated/
 backend/data/humorposts.json
 backend/data/posts.json
 backend/data/archive.zip
