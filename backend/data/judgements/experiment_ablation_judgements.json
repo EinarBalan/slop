@@ -390,5 +390,152 @@
     "coherence": 37,
     "shown_count": 50,
     "unique": 1
+  },
+  {
+    "file_path": "generated/experiment_ablation/openai/gpt-5/alike/summary.json",
+    "adherence": 50,
+    "coherence": 50,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/openai/gpt-5/alike/like history.json",
+    "adherence": 50,
+    "coherence": 50,
+    "shown_count": 50,
+    "unique": 5
+  },
+  {
+    "file_path": "generated/experiment_ablation/openai/gpt-5/alike/self defined.json",
+    "adherence": 50,
+    "coherence": 50,
+    "shown_count": 50,
+    "unique": 2
+  },
+  {
+    "file_path": "generated/experiment_ablation/openai/gpt-5/college/summary.json",
+    "adherence": 50,
+    "coherence": 50,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/openai/gpt-5/college/self defined.json",
+    "adherence": 40,
+    "coherence": 49,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/openai/gpt-5/college/like history.json",
+    "adherence": 48,
+    "coherence": 48,
+    "shown_count": 50,
+    "unique": 2
+  },
+  {
+    "file_path": "generated/experiment_ablation/openai/gpt-5/formatspecific/like history.json",
+    "adherence": 50,
+    "coherence": 48,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/openai/gpt-5/formatspecific/summary.json",
+    "adherence": 50,
+    "coherence": 40,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+      "file_path": "generated/experiment_ablation/openai/gpt-5/formatspecific/self defined.json",
+    "adherence": 5,
+    "coherence": 5,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/openai/gpt-5/nerdy/self defined.json",
+    "adherence": 49,
+    "coherence": 50,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/openai/gpt-5/nerdy/like history.json",
+    "adherence": 47,
+    "coherence": 49,
+    "shown_count": 50,
+    "unique": 3
+  },
+  {
+    "file_path": "generated/experiment_ablation/openai/gpt-5/nerdy/summary.json",
+    "adherence": 39,
+    "coherence": 41,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/openai/gpt-5/newmother/summary.json",
+    "adherence": 45,
+    "coherence": 47,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/openai/gpt-5/newmother/self defined.json",
+    "adherence": 50,
+    "coherence": 50,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/openai/gpt-5/newmother/like history.json",
+    "adherence": 49,
+    "coherence": 49,
+    "shown_count": 50,
+    "unique": 5
+  },
+  {
+    "file_path": "generated/experiment_ablation/openai/gpt-5/personal/like history.json",
+    "adherence": 50,
+    "coherence": 49,
+    "shown_count": 50,
+    "unique": 2
+  },
+  {
+    "file_path": "generated/experiment_ablation/openai/gpt-5/personal/summary.json",
+    "adherence": 49,
+    "coherence": 50,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+            "file_path": "generated/experiment_ablation/openai/gpt-5/personal/self defined.json",
+    "adherence": 50,
+    "coherence": 49,
+    "shown_count": 50,
+    "unique": 2
+  },
+  {
+    "file_path": "generated/experiment_ablation/openai/gpt-5/unalike/self defined.json",
+    "adherence": 49,
+    "coherence": 44,
+    "shown_count": 50,
+    "unique": 2
+  },
+  {
+    "file_path": "generated/experiment_ablation/openai/gpt-5/unalike/summary.json",
+    "adherence": 50,
+    "coherence": 49,
+    "shown_count": 50,
+    "unique": 0
+  },
+  {
+    "file_path": "generated/experiment_ablation/openai/gpt-5/unalike/like history.json",
+    "adherence": 45,
+    "coherence": 50,
+    "shown_count": 50,
+    "unique": 0
   }
 ]
