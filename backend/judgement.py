@@ -46,6 +46,27 @@ def _normalize_provider(provider: str) -> str:
     return provider
 
 
+def _resolve_topic_base(provider: str, model: str, topic: str, source: str) -> str:
+    """Return an existing directory path for (provider, model, topic), trying common layouts.
+
+    Supports both:
+      - generated/<source>/gpt-5/<model>/<topic>
+      - generated/<source>/openai/<model>/<topic> (where model may be 'gpt-5')
+    """
+    root = _generated_root_for(source)
+    candidates = []
+    # 1) Use provider as-is
+    candidates.append(os.path.join(root, provider, model, topic))
+    # 2) Normalized provider (e.g., openai -> gpt-5)
+    candidates.append(os.path.join(root, _normalize_provider(provider), model, topic))
+    # Pick the first that exists
+    for base in candidates:
+        if os.path.isdir(base):
+            return base
+    # Fallback to first candidate
+    return candidates[0]
+
+
 def _judgements_file_path() -> str:
     return os.path.join(_judgements_dir(), 'size_ablation_judgements.json')
 
@@ -72,6 +93,60 @@ def _write_json_file(path: str, data: Any) -> None:
         f.flush()
         os.fsync(f.fileno())
     os.replace(tmp_path, path)
+
+
+def _parse_string_post(raw: str) -> Dict[str, Any] | None:
+    """Parse a single string-formatted post into a dict.
+
+    Expected rough format inside a single string element:
+      "title: ...\n self_text: ...\n subreddit: ..."
+    This parser is tolerant to leading spaces before keys and varying line breaks.
+    """
+    try:
+        text = str(raw)
+    except Exception:
+        return None
+    title = ''
+    body_lines: List[str] = []
+    subreddit = ''
+    in_body = False
+    for line in text.splitlines():
+        stripped = line.lstrip()
+        if stripped.lower().startswith('title:'):
+            title = stripped.split(':', 1)[1].strip()
+            in_body = False
+            continue
+        if stripped.lower().startswith('self_text:') or stripped.lower().startswith('self text:'):
+            body_lines.append(stripped.split(':', 1)[1].lstrip())
+            in_body = True
+            continue
+        if stripped.lower().startswith('subreddit:'):
+            subreddit = stripped.split(':', 1)[1].strip()
+            in_body = False
+            continue
+        if in_body:
+            body_lines.append(line)
+    self_text = '\n'.join(body_lines).strip()
+    if not (title or self_text):
+        return None
+    return {
+        'title': title,
+        'self_text': self_text,
+        'subreddit': subreddit,
+    }
+
+
+def _normalize_post(item: Any) -> Dict[str, Any] | None:
+    """Convert a raw JSON item into a standard post dict, or None if unparseable."""
+    if isinstance(item, dict):
+        return {
+            'title': item.get('title') or '',
+            'self_text': item.get('self_text') or '',
+            'subreddit': item.get('subreddit') or '',
+        }
+    if isinstance(item, str):
+        return _parse_string_post(item)
+    return None
 
 
 def _list_json_files(source: str) -> List[str]:
@@ -117,8 +192,7 @@ def _discover_options(source: str) -> List[Dict[str, str]]:
 
 
 def _iter_topic_files(provider: str, model: str, topic: str, source: str) -> List[str]:
-    provider_dir = _normalize_provider(provider)
-    base = os.path.join(_generated_root_for(source), provider_dir, model, topic)
+    base = _resolve_topic_base(provider, model, topic, source)
     paths: List[str] = []
     if not os.path.exists(base):
         return paths
@@ -140,7 +214,9 @@ def serve_ui():
 @judgement.route('/judgement/api/files')
 def api_list_files():
     source = _get_source_from_request()
-    return jsonify({'ok': True, 'files': _list_json_files(source)})
+    resp = jsonify({'ok': True, 'files': _list_json_files(source)})
+    resp.headers['Cache-Control'] = 'no-store'
+    return resp
 
 
 @judgement.route('/judgement/api/file')
@@ -163,14 +239,18 @@ def api_get_file():
         normalized: List[Dict[str, Any]] = []
         LIMIT = 50
         for idx, p in enumerate(posts[:LIMIT]):
-            if isinstance(p, dict):
-                normalized.append({
-                    'index': idx,
-                    'title': p.get('title') or '',
-                    'self_text': p.get('self_text') or '',
-                    'subreddit': p.get('subreddit') or '',
-                })
-        return jsonify({'ok': True, 'file_path': path, 'count': len(normalized), 'posts': normalized})
+            np = _normalize_post(p)
+            if np is None:
+                continue
+            normalized.append({
+                'index': idx,
+                'title': np['title'],
+                'self_text': np['self_text'],
+                'subreddit': np['subreddit'],
+            })
+        resp = jsonify({'ok': True, 'file_path': path, 'count': len(normalized), 'posts': normalized})
+        resp.headers['Cache-Control'] = 'no-store'
+        return resp
     except Exception as e:
         return jsonify({'ok': False, 'error': 'read_error', 'detail': str(e)}), 500
 
@@ -178,7 +258,9 @@ def api_get_file():
 @judgement.route('/judgement/api/options')
 def api_options():
     source = _get_source_from_request()
-    return jsonify({'ok': True, 'options': _discover_options(source)})
+    resp = jsonify({'ok': True, 'options': _discover_options(source)})
+    resp.headers['Cache-Control'] = 'no-store'
+    return resp
 
 
 @judgement.route('/judgement/api/mixed')
@@ -202,18 +284,21 @@ def api_mixed():
             continue
         LIMIT = 50
         for idx, p in enumerate(items[:LIMIT]):
-            if not isinstance(p, dict):
+            np = _normalize_post(p)
+            if np is None:
                 continue
             mixed.append({
-                'title': p.get('title') or '',
-                'self_text': p.get('self_text') or '',
-                'subreddit': p.get('subreddit') or '',
+                'title': np['title'],
+                'self_text': np['self_text'],
+                'subreddit': np['subreddit'],
                 # Track the originating file for later percentage saving
                 'file_path': rel,
                 'local_index': idx,
             })
     shuffle(mixed)
-    return jsonify({'ok': True, 'count': len(mixed), 'posts': mixed})
+    resp = jsonify({'ok': True, 'count': len(mixed), 'posts': mixed})
+    resp.headers['Cache-Control'] = 'no-store'
+    return resp
 
 
 @judgement.route('/judgement/api/shown', methods=['POST'])
@@ -273,7 +358,9 @@ def api_shown_counts():
             updated += 1
 
         _write_json_file(path, content)
-    return jsonify({'ok': True, 'updated': updated})
+    resp = jsonify({'ok': True, 'updated': updated})
+    resp.headers['Cache-Control'] = 'no-store'
+    return resp
 
 
 @judgement.route('/judgement/api/update', methods=['POST'])
@@ -333,7 +420,9 @@ def api_update_summary():
             })
 
         _write_json_file(path, content)
-    return jsonify({'ok': True})
+    resp = jsonify({'ok': True})
+    resp.headers['Cache-Control'] = 'no-store'
+    return resp
 
 
 @judgement.route('/judgement/api/progress')
@@ -387,10 +476,12 @@ def api_progress():
             'fully_labeled': fl,
         })
 
-    return jsonify({
+    resp = jsonify({
         'ok': True,
         'files': results,
         'totals': { 'files': len(file_rels), 'fully_labeled': fully },
     })
+    resp.headers['Cache-Control'] = 'no-store'
+    return resp
 
 

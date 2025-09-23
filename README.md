@@ -113,3 +113,4 @@ things I wanted to do but ran out of time for:
 - vector similarity of generated posts (more variety is better)
 - investigating social implications
 - prompt: what are some topics you like to discuss
+- relationship between number of training samples and number of topics able to be captured and represented
