@@ -8,8 +8,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"alike",
         "experiment":"soft prompt",
-        "variance":0.6657687128,
-        "similarity_to_original":0.5942312479
+        "variance":0.6657687128
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/alike/like history.json",
@@ -20,8 +19,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"alike",
         "experiment":"like history",
-        "variance":0.4634689689,
-        "similarity_to_original":0.5810608268
+        "variance":0.4634689689
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/alike/self defined.json",
@@ -32,8 +30,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"alike",
         "experiment":"self defined",
-        "variance":0.18786484,
-        "similarity_to_original":0.6665176749
+        "variance":0.18786484
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/alike/summary.json",
@@ -44,8 +41,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"alike",
         "experiment":"summary",
-        "variance":0.1754140258,
-        "similarity_to_original":0.526330471
+        "variance":0.1754140258
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/college/summary.json",
@@ -56,8 +52,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"college",
         "experiment":"summary",
-        "variance":0.0975857973,
-        "similarity_to_original":0.3610000014
+        "variance":0.0975857973
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/college/soft prompt.json",
@@ -68,8 +63,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"college",
         "experiment":"soft prompt",
-        "variance":0.7001872957,
-        "similarity_to_original":0.5732287169
+        "variance":0.7001872957
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/college/like history.json",
@@ -80,8 +74,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"college",
         "experiment":"like history",
-        "variance":0.7034116685,
-        "similarity_to_original":0.6999966502
+        "variance":0.7034116685
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/college/self defined.json",
@@ -92,8 +85,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"college",
         "experiment":"self defined",
-        "variance":0.3103201389,
-        "similarity_to_original":0.5653713346
+        "variance":0.3103201389
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/formatspecific/like history.json",
@@ -104,8 +96,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"formatspecific",
         "experiment":"like history",
-        "variance":0.629532367,
-        "similarity_to_original":0.671245873
+        "variance":0.629532367
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/formatspecific/self defined.json",
@@ -116,8 +107,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"formatspecific",
         "experiment":"self defined",
-        "variance":0.2685620189,
-        "similarity_to_original":0.5379734039
+        "variance":0.2685620189
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/formatspecific/soft prompt.json",
@@ -128,8 +118,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"formatspecific",
         "experiment":"soft prompt",
-        "variance":0.6728358865,
-        "similarity_to_original":0.736305356
+        "variance":0.6728358865
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/formatspecific/summary.json",
@@ -140,8 +129,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"formatspecific",
         "experiment":"summary",
-        "variance":0.2503452301,
-        "similarity_to_original":0.6575756669
+        "variance":0.2503452301
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/nerdy/summary.json",
@@ -152,8 +140,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"nerdy",
         "experiment":"summary",
-        "variance":0.3771069646,
-        "similarity_to_original":0.6229721308
+        "variance":0.3771069646
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/nerdy/soft prompt.json",
@@ -164,8 +151,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"nerdy",
         "experiment":"soft prompt",
-        "variance":0.5809314251,
-        "similarity_to_original":0.7699526548
+        "variance":0.5809314251
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/nerdy/self defined.json",
@@ -176,8 +162,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"nerdy",
         "experiment":"self defined",
-        "variance":0.145039618,
-        "similarity_to_original":0.6176934242
+        "variance":0.145039618
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/nerdy/like history.json",
@@ -188,8 +173,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"nerdy",
         "experiment":"like history",
-        "variance":0.3734129667,
-        "similarity_to_original":0.2957664132
+        "variance":0.3734129667
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/newmother/like history.json",
@@ -200,8 +184,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"newmother",
         "experiment":"like history",
-        "variance":0.6317931414,
-        "similarity_to_original":0.562443316
+        "variance":0.6317931414
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/newmother/soft prompt.json",
@@ -212,8 +195,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"newmother",
         "experiment":"soft prompt",
-        "variance":0.5740076602,
-        "similarity_to_original":0.4281482995
+        "variance":0.5740076602
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/newmother/summary.json",
@@ -224,8 +206,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"newmother",
         "experiment":"summary",
-        "variance":0.3062490225,
-        "similarity_to_original":0.5283882022
+        "variance":0.3062490225
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/newmother/self defined.json",
@@ -236,8 +217,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"newmother",
         "experiment":"self defined",
-        "variance":0.2552694678,
-        "similarity_to_original":0.6139364243
+        "variance":0.2552694678
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/personal/summary.json",
@@ -248,8 +228,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"personal",
         "experiment":"summary",
-        "variance":0.3912091255,
-        "similarity_to_original":0.6964499354
+        "variance":0.3912091255
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/personal/soft prompt.json",
@@ -260,8 +239,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"personal",
         "experiment":"soft prompt",
-        "variance":0.5896351635,
-        "similarity_to_original":0.7859781384
+        "variance":0.5896351635
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/personal/like history.json",
@@ -272,8 +250,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"personal",
         "experiment":"like history",
-        "variance":0.5376088619,
-        "similarity_to_original":0.8234616518
+        "variance":0.5376088619
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/personal/self defined.json",
@@ -284,8 +261,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"personal",
         "experiment":"self defined",
-        "variance":0.6317825317,
-        "similarity_to_original":0.7723168731
+        "variance":0.6317825317
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/unalike/like history.json",
@@ -296,8 +272,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"unalike",
         "experiment":"like history",
-        "variance":0.6230484247,
-        "similarity_to_original":0.5100383759
+        "variance":0.6230484247
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/unalike/soft prompt.json",
@@ -308,8 +283,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"unalike",
         "experiment":"soft prompt",
-        "variance":0.7021010816,
-        "similarity_to_original":0.5338467956
+        "variance":0.7021010816
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/unalike/self defined.json",
@@ -320,8 +294,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"unalike",
         "experiment":"self defined",
-        "variance":0.0803666711,
-        "similarity_to_original":0.34463346
+        "variance":0.0803666711
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-4b-it/unalike/summary.json",
@@ -332,8 +305,7 @@
         "model":"google/gemma-3-4b-it",
         "dataset":"unalike",
         "experiment":"summary",
-        "variance":0.1079848409,
-        "similarity_to_original":0.4716310501
+        "variance":0.1079848409
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/alike/summary.json",
@@ -344,8 +316,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"alike",
         "experiment":"summary",
-        "variance":0.2165980935,
-        "similarity_to_original":0.5928465128
+        "variance":0.2165980935
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/alike/like history.json",
@@ -356,8 +327,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"alike",
         "experiment":"like history",
-        "variance":0.5874954462,
-        "similarity_to_original":0.6795783043
+        "variance":0.5874954462
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/alike/self defined.json",
@@ -368,8 +338,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"alike",
         "experiment":"self defined",
-        "variance":0.2693592906,
-        "similarity_to_original":0.7442626357
+        "variance":0.2693592906
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/alike/soft prompt.json",
@@ -380,8 +349,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"alike",
         "experiment":"soft prompt",
-        "variance":0.6328907609,
-        "similarity_to_original":0.7634007931
+        "variance":0.6328907609
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/college/summary.json",
@@ -392,8 +360,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"college",
         "experiment":"summary",
-        "variance":0.2116155624,
-        "similarity_to_original":0.3771741688
+        "variance":0.2116155624
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/college/self defined.json",
@@ -404,8 +371,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"college",
         "experiment":"self defined",
-        "variance":0.1854454279,
-        "similarity_to_original":0.4189766943
+        "variance":0.1854454279
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/college/like history.json",
@@ -416,8 +382,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"college",
         "experiment":"like history",
-        "variance":0.6568061709,
-        "similarity_to_original":0.4809821248
+        "variance":0.6568061709
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/college/soft prompt.json",
@@ -428,8 +393,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"college",
         "experiment":"soft prompt",
-        "variance":0.7205198109,
-        "similarity_to_original":0.7084127665
+        "variance":0.7205198109
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/formatspecific/like history.json",
@@ -440,8 +404,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"formatspecific",
         "experiment":"like history",
-        "variance":0.3545993567,
-        "similarity_to_original":0.7174998522
+        "variance":0.3545993567
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/formatspecific/soft prompt.json",
@@ -452,8 +415,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"formatspecific",
         "experiment":"soft prompt",
-        "variance":0.7394275665,
-        "similarity_to_original":0.6932076216
+        "variance":0.7394275665
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/formatspecific/summary.json",
@@ -464,8 +426,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"formatspecific",
         "experiment":"summary",
-        "variance":0.2293027639,
-        "similarity_to_original":0.6229829192
+        "variance":0.2293027639
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/formatspecific/self defined.json",
@@ -476,8 +437,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"formatspecific",
         "experiment":"self defined",
-        "variance":0.31233114,
-        "similarity_to_original":0.4961677194
+        "variance":0.31233114
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/nerdy/self defined.json",
@@ -488,8 +448,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"nerdy",
         "experiment":"self defined",
-        "variance":0.2335087657,
-        "similarity_to_original":0.6069988012
+        "variance":0.2335087657
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/nerdy/like history.json",
@@ -500,8 +459,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"nerdy",
         "experiment":"like history",
-        "variance":0.4316916466,
-        "similarity_to_original":0.5119100213
+        "variance":0.4316916466
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/nerdy/summary.json",
@@ -512,8 +470,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"nerdy",
         "experiment":"summary",
-        "variance":0.3373159766,
-        "similarity_to_original":0.6290873885
+        "variance":0.3373159766
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/nerdy/soft prompt.json",
@@ -524,8 +481,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"nerdy",
         "experiment":"soft prompt",
-        "variance":0.6330915987,
-        "similarity_to_original":0.8469542265
+        "variance":0.6330915987
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/newmother/summary.json",
@@ -536,8 +492,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"newmother",
         "experiment":"summary",
-        "variance":0.2190990448,
-        "similarity_to_original":0.6767140627
+        "variance":0.2190990448
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/newmother/soft prompt.json",
@@ -548,8 +503,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"newmother",
         "experiment":"soft prompt",
-        "variance":0.5236228108,
-        "similarity_to_original":0.4782013595
+        "variance":0.5236228108
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/newmother/self defined.json",
@@ -560,8 +514,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"newmother",
         "experiment":"self defined",
-        "variance":0.1431079507,
-        "similarity_to_original":0.5377482772
+        "variance":0.1431079507
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/newmother/like history.json",
@@ -572,8 +525,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"newmother",
         "experiment":"like history",
-        "variance":0.3597242236,
-        "similarity_to_original":0.7154255509
+        "variance":0.3597242236
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/personal/like history.json",
@@ -584,8 +536,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"personal",
         "experiment":"like history",
-        "variance":0.4011561871,
-        "similarity_to_original":0.6404145956
+        "variance":0.4011561871
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/personal/summary.json",
@@ -596,8 +547,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"personal",
         "experiment":"summary",
-        "variance":0.2035415769,
-        "similarity_to_original":0.5818942189
+        "variance":0.2035415769
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/personal/soft prompt.json",
@@ -608,8 +558,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"personal",
         "experiment":"soft prompt",
-        "variance":0.5754389763,
-        "similarity_to_original":0.9011499286
+        "variance":0.5754389763
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/personal/self defined.json",
@@ -620,8 +569,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"personal",
         "experiment":"self defined",
-        "variance":0.2936133146,
-        "similarity_to_original":0.6455800533
+        "variance":0.2936133146
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/unalike/self defined.json",
@@ -632,8 +580,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"unalike",
         "experiment":"self defined",
-        "variance":0.3247404695,
-        "similarity_to_original":0.6878620982
+        "variance":0.3247404695
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/unalike/summary.json",
@@ -644,8 +591,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"unalike",
         "experiment":"summary",
-        "variance":0.3213951588,
-        "similarity_to_original":0.5007395744
+        "variance":0.3213951588
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/unalike/soft prompt.json",
@@ -656,8 +602,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"unalike",
         "experiment":"soft prompt",
-        "variance":0.7255090177,
-        "similarity_to_original":0.6748952866
+        "variance":0.7255090177
     },
     {
         "file_path":"generated/experiment_ablation/google/gemma-3-27b-it/unalike/like history.json",
@@ -668,8 +613,7 @@
         "model":"google/gemma-3-27b-it",
         "dataset":"unalike",
         "experiment":"like history",
-        "variance":0.65784356,
-        "similarity_to_original":0.623678565
+        "variance":0.65784356
     },
     {
         "file_path":"generated/experiment_ablation/openai/gpt-5/alike/summary.json",
@@ -680,8 +624,7 @@
         "model":"openai/gpt-5",
         "dataset":"alike",
         "experiment":"summary",
-        "variance":0.0932539105,
-        "similarity_to_original":0.6338126659
+        "variance":0.0932539105
     },
     {
         "file_path":"generated/experiment_ablation/openai/gpt-5/alike/like history.json",
@@ -692,8 +635,7 @@
         "model":"openai/gpt-5",
         "dataset":"alike",
         "experiment":"like history",
-        "variance":0.2646793127,
-        "similarity_to_original":0.6920520663
+        "variance":0.2646793127
     },
     {
         "file_path":"generated/experiment_ablation/openai/gpt-5/alike/self defined.json",
@@ -704,8 +646,7 @@
         "model":"openai/gpt-5",
         "dataset":"alike",
         "experiment":"self defined",
-        "variance":0.1520089507,
-        "similarity_to_original":0.653463006
+        "variance":0.1520089507
     },
     {
         "file_path":"generated/experiment_ablation/openai/gpt-5/college/summary.json",
@@ -716,8 +657,7 @@
         "model":"openai/gpt-5",
         "dataset":"college",
         "experiment":"summary",
-        "variance":0.2741330266,
-        "similarity_to_original":0.372120738
+        "variance":0.2741330266
     },
     {
         "file_path":"generated/experiment_ablation/openai/gpt-5/college/self defined.json",
@@ -728,8 +668,7 @@
         "model":"openai/gpt-5",
         "dataset":"college",
         "experiment":"self defined",
-        "variance":0.4948048592,
-        "similarity_to_original":0.5606315732
+        "variance":0.4948048592
     },
     {
         "file_path":"generated/experiment_ablation/openai/gpt-5/college/like history.json",
@@ -740,8 +679,7 @@
         "model":"openai/gpt-5",
         "dataset":"college",
         "experiment":"like history",
-        "variance":0.4657794237,
-        "similarity_to_original":0.3078196049
+        "variance":0.4657794237
     },
     {
         "file_path":"generated/experiment_ablation/openai/gpt-5/formatspecific/like history.json",
@@ -752,8 +690,7 @@
         "model":"openai/gpt-5",
         "dataset":"formatspecific",
         "experiment":"like history",
-        "variance":0.5041787624,
-        "similarity_to_original":0.6826863885
+        "variance":0.5041787624
     },
     {
         "file_path":"generated/experiment_ablation/openai/gpt-5/formatspecific/summary.json",
@@ -764,8 +701,7 @@
         "model":"openai/gpt-5",
         "dataset":"formatspecific",
         "experiment":"summary",
-        "variance":0.4427041411,
-        "similarity_to_original":0.1701418906
+        "variance":0.4427041411
     },
     {
         "file_path":"generated/experiment_ablation/openai/gpt-5/formatspecific/self defined.json",
@@ -776,8 +712,7 @@
         "model":"openai/gpt-5",
         "dataset":"formatspecific",
         "experiment":"self defined",
-        "variance":0.405529201,
-        "similarity_to_original":0.6599942446
+        "variance":0.405529201
     },
     {
         "file_path":"generated/experiment_ablation/openai/gpt-5/nerdy/self defined.json",
@@ -788,8 +723,7 @@
         "model":"openai/gpt-5",
         "dataset":"nerdy",
         "experiment":"self defined",
-        "variance":0.2936686277,
-        "similarity_to_original":0.6030436158
+        "variance":0.2936686277
     },
     {
         "file_path":"generated/experiment_ablation/openai/gpt-5/nerdy/like history.json",
@@ -800,8 +734,7 @@
         "model":"openai/gpt-5",
         "dataset":"nerdy",
         "experiment":"like history",
-        "variance":0.2591284513,
-        "similarity_to_original":0.3470645845
+        "variance":0.2591284513
     },
     {
         "file_path":"generated/experiment_ablation/openai/gpt-5/nerdy/summary.json",
@@ -812,8 +745,7 @@
         "model":"openai/gpt-5",
         "dataset":"nerdy",
         "experiment":"summary",
-        "variance":0.2964436412,
-        "similarity_to_original":0.6068224907
+        "variance":0.2964436412
     },
     {
         "file_path":"generated/experiment_ablation/openai/gpt-5/newmother/summary.json",
@@ -824,8 +756,7 @@
         "model":"openai/gpt-5",
         "dataset":"newmother",
         "experiment":"summary",
-        "variance":0.3325830102,
-        "similarity_to_original":0.7167794704
+        "variance":0.3325830102
     },
     {
         "file_path":"generated/experiment_ablation/openai/gpt-5/newmother/self defined.json",
@@ -836,8 +767,7 @@
         "model":"openai/gpt-5",
         "dataset":"newmother",
         "experiment":"self defined",
-        "variance":0.3755135536,
-        "similarity_to_original":0.3035298586
+        "variance":0.3755135536
     },
     {
         "file_path":"generated/experiment_ablation/openai/gpt-5/newmother/like history.json",
@@ -848,8 +778,7 @@
         "model":"openai/gpt-5",
         "dataset":"newmother",
         "experiment":"like history",
-        "variance":0.3618264198,
-        "similarity_to_original":0.7273622751
+        "variance":0.3618264198
     },
     {
         "file_path":"generated/experiment_ablation/openai/gpt-5/personal/like history.json",
@@ -860,8 +789,7 @@
         "model":"openai/gpt-5",
         "dataset":"personal",
         "experiment":"like history",
-        "variance":0.3683054447,
-        "similarity_to_original":0.7496846318
+        "variance":0.3683054447
     },
     {
         "file_path":"generated/experiment_ablation/openai/gpt-5/personal/summary.json",
@@ -872,8 +800,7 @@
         "model":"openai/gpt-5",
         "dataset":"personal",
         "experiment":"summary",
-        "variance":0.3400134444,
-        "similarity_to_original":0.6624667048
+        "variance":0.3400134444
     },
     {
         "file_path":"generated/experiment_ablation/openai/gpt-5/personal/self defined.json",
@@ -884,8 +811,7 @@
         "model":"openai/gpt-5",
         "dataset":"personal",
         "experiment":"self defined",
-        "variance":0.3576877117,
-        "similarity_to_original":0.6979551911
+        "variance":0.3576877117
     },
     {
         "file_path":"generated/experiment_ablation/openai/gpt-5/unalike/self defined.json",
@@ -896,8 +822,7 @@
         "model":"openai/gpt-5",
         "dataset":"unalike",
         "experiment":"self defined",
-        "variance":0.1566954255,
-        "similarity_to_original":0.6172876358
+        "variance":0.1566954255
     },
     {
         "file_path":"generated/experiment_ablation/openai/gpt-5/unalike/summary.json",
@@ -908,8 +833,7 @@
         "model":"openai/gpt-5",
         "dataset":"unalike",
         "experiment":"summary",
-        "variance":0.402197063,
-        "similarity_to_original":0.6584047675
+        "variance":0.402197063
     },
     {
         "file_path":"generated/experiment_ablation/openai/gpt-5/unalike/like history.json",
@@ -920,7 +844,6 @@
         "model":"openai/gpt-5",
         "dataset":"unalike",
         "experiment":"like history",
-        "variance":0.2975171208,
-        "similarity_to_original":0.6199985743
+        "variance":0.2975171208
     }
 ]
