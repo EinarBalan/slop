@@ -33,3 +33,93 @@ backend/app.sqlite*
 __pycache__
 
 database
+
+# LaTeX build files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+*.xdv
+*.dvi
+*.ps
+
+# LaTeX temporary files
+*.figlist
+*.makefile
+*.fglist
+*.tps
+*.glo
+*.glg
+*.gls
+*.ist
+*.acn
+*.acr
+*.alg
+*.glsdefs
+*.lol
+*.idx
+*.ind
+*.ilg
+*.thm
+
+# bibtex
+*.brf
+
+# latexmk
+.latexmkrc
+
+# TeXShop
+*.texshop
+
+# KBibTeX
+*.backup
+
+# Texpad
+.texpadtmp
+
+# LyX
+*.lyx~
+
+# Kile
+*.cmd
+
+# WinEdt
+*.bak
+*.sav
+
+# TeXnicCenter
+*.tps
+
+# TeXworks
+*.prv
+
+# Latexian
+TSWLatexianTemp*
+
+# TeXShop
+*.texshop
+
+# SumatraPDF
+*.synctex(busy)
+*.synctex.gz(busy)
+
+# GummiTeX
+.*.lb
+
+# TEXworks
+*_latexmk
+
+# XeLaTeX
+*.auxlock
